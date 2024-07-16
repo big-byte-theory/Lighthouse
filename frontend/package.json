@@ -1,17 +1,19 @@
 {
 	"name": "lighthouse",
-	"version": "1.0.0",
 	"private": true,
-  "author": "Big Byte Theory",
+	"version": "0.0.0",
+	"type": "module",
+	"author": "Big Byte Theory",
 	"license": "ISC",
 	"description": "An LLM catalog application project for HorizonX Consulting. Made for Digital Future's Hackathon week.",
 	"scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint ."
-  },
+		"start": "vite",
+		"build": "vite build",
+		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
 	"eslintConfig": {
 		"extends": [
 			"react-app",
@@ -30,7 +32,7 @@
 			"last 1 safari version"
 		]
 	},
-  "dependencies": {
+	"dependencies": {
 		"@testing-library/jest-dom": "^5.17.0",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
@@ -40,7 +42,19 @@
 		"react-scripts": "5.0.1",
 		"web-vitals": "^2.1.4"
 	},
-  "devDependencies": {
-    "eslint": "^7.32.0"
-  }
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"autoprefixer": "^10.4.19",
+		"eslint": "^8.57.0",
+		"eslint-plugin-react": "^7.34.3",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-refresh": "^0.4.7",
+		"postcss": "^8.4.39",
+		"sass": "^1.77.8",
+		"sass-loader": "^14.2.1",
+		"tailwindcss": "^3.4.5",
+		"vite": "^5.3.4"
+	}
 }
