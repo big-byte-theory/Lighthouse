@@ -1,7 +1,7 @@
 {
 	"name": "lighthouse",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
 	"author": "Big Byte Theory",
 	"license": "ISC",
@@ -41,6 +41,7 @@
 		"react-dom": "^18.3.1",
 		"react-router-dom": "^6.24.1",
 		"react-scripts": "5.0.1",
+		"svgxuse": "^1.2.6",
 		"web-vitals": "^2.1.4"
 	},
 	"devDependencies": {

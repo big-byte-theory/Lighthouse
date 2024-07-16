@@ -10,3 +10,7 @@ html, body {
   border: 0;
   height: 100%;
 }
+
+body {
+  @apply bg-light-cream;
+}

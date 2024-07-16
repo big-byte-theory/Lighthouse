@@ -1,10 +1,11 @@
 import Footer from "./Footer"
+import Header from "./Header"
 
 const layout = (props) => {
   return (
     <>
-      {/* Add in header and footer */}
-      {props.children}
+      <Header />
+      <main className="flex-1">{props.children}</main>
       <Footer />
     </>
   )
