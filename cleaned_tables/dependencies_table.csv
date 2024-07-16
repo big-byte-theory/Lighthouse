@@ -1,0 +1,304 @@
+dependencies_id,dependencies
+219,"['QM9', 'TOX21', 'ZINC12K']"
+129,"['L1000 VCAP', 'L1000 MCF7', 'PCBA1328', 'PCQM4M_G25_N4']"
+202,['PM6_83M']
+302,[]
+181,['NASA HLS data']
+113,['Granite']
+6,['Animagine XL 3.0']
+194,['OpenAI API']
+91,['GPT-4 API']
+12,['AudioLM']
+34,['ChatGPT API']
+98,"['GPT-J', 'P3', 'NaturalInstructions-v2']"
+101,"['GPT-NeoX', 'OIG-43M']"
+99,"['GPT-JT', 'OIG-moderation']"
+200,"['P3', 'NaturalInstructions-v2', 'FLAN dataset']"
+107,"['GitHub', 'Wikipedia']"
+19,"['BookSum dataset', 'MQA dataset', 'Together API', 'LLaMA 2']"
+49,['Common Crawl']
+114,"['Hyena', 'RedPajama-Data']"
+161,"['MIMIC-IT', 'OpenFlamingo']"
+280,"['YFCC100M', 'Image-Chat']"
+157,['Llama 2']
+5,"['AlphaFold2', 'OpenProteinSet']"
+27,"['CLIP', 'Vicuna']"
+218,"['QLoRA', 'OASST1']"
+136,"['LLaMA 2', 'Jukebox']"
+173,"['Mistral', 'PubMed Central']"
+148,['LLaMA']
+92,"['GPT-4', 'Claude', 'Falcon-40B']"
+243,['StarCoderPlus']
+174,['Mistral']
+187,"['OBELICS', 'Wikipedia', 'LAION-5B', 'PMD']"
+18,['BLOOM']
+175,['Mixtral']
+249,['The Cauldron']
+150,"['LNarratives', 'Rendered Text', 'WebSight', 'DaTikz']"
+134,['LAION-5B']
+242,"['StableLM-Alpha dataset', 'Alpaca dataset', 'gpt4all dataset', 'ShareGPT52K dataset', 'Dolly dataset', 'HH dataset']"
+153,['Large Video Dataset']
+270,"['WebVid-10M', 'CoCa', 'V-BLIP']"
+226,"['RedPajama-Data', 'The Pile', 'RefinedWeb', 'The Stack', 'OpenWebText', 'OpenWebMath']"
+191,['Objaverse']
+15,['AudioSparx']
+186,"['Nous Hermes 2', 'OpenChat 3.5']"
+221,"['Qwen', 'OpenOrca']"
+171,"['Mistral', 'Mistral Large']"
+63,"['Dolphin', 'Yi']"
+276,['WizardLM']
+7,['Anthropic API']
+88,"['GPT-3.5', 'Bing Search']"
+214,"['Perplexity Ask', 'OpenAI API']"
+72,['Falcon-180B']
+255,['The Pile']
+102,['GPT-NeoX']
+265,"['VQGAN', 'CLIP']"
+215,"['Proof Pile 2', 'Code LLaMA']"
+48,"['Common Crawl', 'OpenWebMath', 'Arxiv', 'RedPajama-Data']"
+253,"['The Pile', 'T5x', 'LLaMA', 'umT5']"
+252,"['The Pile', 'GLM-130B Chinese corpora', 'P3', 'DeepStruct finetuning dataset']"
+267,"['Vicuna', 'CLIP']"
+262,['UltraChat']
+109,['Github']
+140,['LLaMA 2']
+117,['Inflection-2.5']
+126,"['Jurassic-2', 'Claude', 'Stable Diffusion', 'Amazon Titan', 'Claude 2', 'Cohere Command']"
+73,['Falcon-40B']
+248,['T5']
+128,"['Kinetics-400', 'WebVid-2M', 'WebVid-10M', 'HowTo100M', 'AVA', 'Something-Something-v2', 'Kinetics-710']"
+190,['OPUS']
+93,"['GPT-4', 'LLaMA 2']"
+118,"['InternVL', 'VideoMAEv2', 'LAION', 'WebVid', 'InternVid', 'LLaVA', 'KMash']"
+57,['CosmicMan-HQ 1.0']
+229,['RefinedWeb']
+16,['Azure Cognitive Services for Vision']
+192,"['Open X-Embodiment dataset', 'ImageNet EfficientNet', 'USE']"
+193,"['Open X-Embodiment dataset', 'ViT (unknown size)', 'UL2']"
+24,"['CLIP', 'LAION-400M', 'Wukong', 'Stable Diffusion XL']"
+162,"['MSR-VTT', 'Video-ChatGPT Video Descriptions Dataset']"
+135,"['LLaMA 2', 'Guanaco LLaMA dataset']"
+103,"['GPT-style autoregressive decoder', 'BiomedGPT biomedical datasets']"
+228,"['RefinedWeb', 'The Pile', 'RedPajama-Data', 'Dolma', 'CoreNet library']"
+258,['The Stack']
+257,"['The Stack', 'BigCode Dataset']"
+108,['GitHub']
+256,['The Stack v2']
+100,"['GPT-NeoX', 'H2O AI OpenAssistant', 'h2oGPT Repositories']"
+241,['Stable Diffusion']
+53,['CommonCrawl']
+21,['C4']
+119,['Internal Google BERT dataset']
+120,"['Internal Google BERT', 'MUM']"
+116,['Infiniset']
+246,"['T5', 'Muffin', 'P3', 'NaturalInstructions-v2', 'Flan CoT']"
+20,"['C4', 'LAION-400M', 'FIT400M', 'JFT-4B']"
+130,"['LAION-400M', 'Google internal image-text dataset']"
+14,"['AudioSet', 'HowTo100M']"
+206,['PaLM dataset']
+211,['PaLM']
+77,"['Flan-PaLM', 'MultiMedQA']"
+212,"['PaLM-E', 'MultiMedBench']"
+167,"['MedQA', 'MedMCQA', 'PubMedQA', 'MMLU', 'LiveQA', 'Medication QA', 'HealthSearchQA']"
+207,"['PaLM', 'Muffin', 'P3', 'NaturalInstructions-v2']"
+259,"['U-PaLM', 'Muffin', 'P3', 'NaturalInstructions-v2']"
+208,"['PaLM', 'PaLM dataset']"
+81,"['GLaM Web dataset', 'Wikipedia', 'GLaM Conversations dataset', 'GLaM Forums dataset', 'BooksCorpus', 'GLaM News dataset']"
+163,['MUM dataset']
+131,"['LAION-400M', 'Phenaki Video-Text Corpus']"
+260,"['UL2', 'Flan Collection']"
+76,"['Flan dataset', 'P3', 'NaturalInstructions-v2']"
+238,"['SoundStream', 'w2v-BERT', 'MuLan', 'MusicLM semantic model', 'MusicLM acoustic model']"
+80,['Free Music Archive']
+3,"['AST', 'BERT', 'MuLan dataset']"
+180,['MusicLM dataset']
+185,['Noise2Music pseudolabel dataset']
+152,['LaMDA']
+179,['MusicCaps']
+176,"['MuLan', 'MuLaMCap', 'LaMDA-LF', 'Rater-LF', 'Rater-SF']"
+184,"['Noise2Music audio dataset', 'Noise2Music pseudolabeler']"
+210,"['PaLM', 'arXiv', 'PaLM dataset', 'Minerva Math Web Pages dataset']"
+281,"['YT-NLU-U', 'Pub-U', 'Web-NTL', 'YT-SUP+', 'Pub-S']"
+261,['USM']
+209,"['PaLM', 'ViT-22B']"
+121,['JFT']
+300,"['w2v-BERT', 'SoundStream']"
+295,"['mT5', 'ViT-e', 'WebLI']"
+244,"['T5', 'CLIP', 'YT-Temporal-1B']"
+31,"['CTC blank-filtering', 'Speech2Text adapter']"
+205,['PaLM 2 dataset']
+105,"['Gemini', 'MultiMedBench']"
+75,"['Firefly Image 2', 'Firefly Vector', 'Firefly Design']"
+293,"['mC4', 'OSCAR']"
+232,"['SARS-CoV-2 genome dataset', 'BV-BRC dataset']"
+45,['Cohere Base']
+235,['SkyPile']
+269,['WebText']
+83,['GPT-3 dataset']
+84,"['GPT-3', 'Codex dataset', 'HumanEval']"
+86,"['GPT-3', 'OpenAI API']"
+273,['Whisper dataset']
+22,['CLIP dataset']
+60,['DALL·E dataset']
+122,['Jukebox Dataset']
+59,"['DALL·E dataset', 'CLIP dataset']"
+85,"['GPT-3', 'Codex', 'code-davinci-002', 'text-davinci-002', 'text-davinci-003', 'gpt-3.5-turbo', 'Whisper', 'DALL·E', 'GPT-4', 'GPT-4 Turbo']"
+301,['web_clean']
+292,"['gpt-3.5-turbo', 'OpenAI toxicity classifier']"
+291,['gpt-3.5-turbo dataset']
+288,['code-davinci-002 dataset']
+289,['code-davinci-002']
+298,['text-davinci-002']
+275,['Whisper']
+35,['ChatGPT']
+195,['OpenAI toxicity classifier']
+196,['OpenAI toxicity dataset']
+234,['Sage']
+64,['Dragonfly']
+95,['GPT-4']
+58,"['DALL·E 2 dataset', 'CLIP dataset', 'ChatGPT']"
+74,"['FinPile', 'The Pile', 'C4', 'Wikipedia']"
+137,"['LLaMA 2', 'Platypus curated dataset']"
+284,['You dataset']
+285,['You model']
+78,['Flickr']
+165,['MassiveText']
+216,['Protein Data Bank']
+160,"['M3W', 'ALIGN', 'LTIP', 'VTP', 'Chinchilla']"
+104,['Gato dataset']
+36,"['Chinchilla', 'Google Search', 'Sparrow Rule reward model', 'Sparrow Preference reward model']"
+37,"['Chinchilla', 'Sparrow adversarial probing dataset']"
+38,"['Chinchilla', 'Sparrow response preference dataset']"
+39,['Chinchilla']
+110,"['Gopher', 'Google Search', 'GopherCite reward model']"
+112,"['Gopher', 'GopherCite Preference dataset']"
+111,"['Gopher', 'Google Search']"
+204,"['PaLI-X', 'PaLM-E', 'RT-2 action tokens']"
+287,['YouTube']
+271,['WebVid-10M']
+233,"['SODA', 'ProsocialDialog', 'T5']"
+69,"['FLAN Collection', 'Open Assistant 1', 'ShareGPT', 'Alpaca dataset', 'Code Alpaca', 'LIMA', 'WizardLM', 'OpenOrca']"
+139,"['LLaMA 2', 'Tulu-V2-mix']"
+42,"['Code LLaMA', 'Tulu-V2-mix']"
+62,['Dolma']
+87,"['GPT-3', 'The Pile']"
+237,['SlimPajama']
+227,['RedPajama-Data']
+266,"['ViT-B', 'BERT', 'COCO', 'Visual Genome', 'Conceptual Captions', 'Conceptual 12M', 'SBU Captions', 'LAION-115M']"
+132,['LAION-400M']
+189,['OPT']
+151,['LOTSA']
+182,['Neeva dataset']
+183,['Neeva model']
+123,['Jurassic-1 dataset']
+124,"['Jurassic-1', 'Jurassic-1 Instruct dataset']"
+125,"['Jurassic-1', 'Jurassic-1 Instruct', 'Jurassic-2', 'AI21 Summarization API', 'AI21 Paraphrase API']"
+127,['Jurassic-2']
+1,['AI21 Paraphrase API']
+2,['AI21 Summarize API']
+225,"['RedPajama-Data', 'C4', 'The Stack', 'Multimodal C4']"
+50,['CommonCatalog']
+279,"['YFCC100M', 'BLIP-2']"
+55,['Conformer-1 dataset']
+56,['Conformer-1']
+166,"['MathInstruct', 'LLaMA', 'Code LLaMA']"
+138,"['LLaMA 2', 'The Stack', 'RefinedWeb', 'RedPajama', 'Common Crawl', 'Wikipedia', 'ArXiv']"
+154,"['Lemur', 'OpenAssistant 1', 'OpenOrca', 'ShareGPT & ChatLogs', 'Evol-CodeAlpaca data']"
+67,"['Eurus SFT', 'UltraInteract', 'UltraFeedback']"
+264,"['UniRef50', 'UniRef90']"
+30,"['COCO', 'YFCC100M', 'SBU Captions', 'Localized Narratives', 'Visual Genome', 'Wikipedia', 'Conceptual Captions', 'Red Caps']"
+203,['PMD']
+52,"['CommonCrawl', 'Wikipedia', 'arXiv']"
+250,['The Galactica Corpus']
+230,"['RoBERTa dataset', 'The Pile', 'PushShift.io Reddit']"
+133,"['LAION-5B', 'WebVid-10M', 'HD-VILA-100M']"
+164,['Make-A-Video dataset']
+51,"['CommonCrawl', 'C4', 'Github', 'Wikipedia', 'BooksCorpus', 'arXiv', 'StackExchange']"
+188,"['OPT', 'OPT-IML Bench']"
+231,['SA-1B']
+168,"['Meta Music Initative Sound Collection', 'Shutterstock music collection', 'Pond5 music collection']"
+13,"['AudioSet', 'BBC sound effects', 'AudioCaps', 'Clotho v2', 'VGG-Sound', 'FSD50K', 'Free To Use Sounds', 'Sonniss Game Effects', 'WeSoundEffects', 'Paramount Motion - Odeon Cinematic Sound Effects']"
+26,"['CLIP', 'T5']"
+66,"['Emu', 'CLIP', 'T5']"
+0,"['AI-HUB dataset', 'National Institute of Korean Language dataset']"
+9,['Anthropic Human Feedback Interface']
+8,"['Anthropic Harmlessness dataset', 'Anthropic Helpfulness dataset']"
+10,['Anthropic RLHF models']
+41,"['Claude', 'Claude Instant']"
+40,"['Claude human feedback data', 'Unknown licensed third party datasets']"
+201,['P3']
+247,"['T5', 'P3']"
+222,['ROOTS']
+296,"['mT5', 'xP3']"
+17,"['BLOOM', 'xP3']"
+220,"['Qwen', 'OpenOrca', 'Open Platypus']"
+197,"['OpenHermes 2.5 Mistral', 'OpenOrca Mistral']"
+277,['Writer dataset']
+213,"['Palmyra', 'Camel dataset']"
+96,"['GPT-J', 'Alpaca dataset']"
+146,"['LLaMA', 'ShareGPT conversations data']"
+33,"['ChatGPT API', 'Sonantic AI']"
+147,"['LLaMA', 'web-scraped dialogue data']"
+145,"['LLaMA', 'Gorilla document retriever']"
+224,['RedPajama']
+32,"['ChatGPT API', 'GPT-4 API', 'Claude API', 'Dragonfly API', 'Sage API']"
+61,['Deepseek']
+23,"['CLIP', 'CommonCrawl']"
+28,"['CLIP', 'mCLIP', 'CommonCrawl']"
+25,"['CLIP', 'LAION-5B']"
+141,"['LLaMA', 'CLIP']"
+274,"['Whisper', 'BEATs', 'Vicuna']"
+239,['Stable Diffusion XL']
+54,"['Conceptual Captions', 'SBU Captions', 'COCO', 'Visual Genome', 'Wikipedia', 'BooksCorpus']"
+43,['Codex']
+217,['PubMed']
+251,"['The Pile', 'CommonCrawl', 'LAION-2B-en', 'LAION-400M', 'COYO-700M', 'Conceptual Captions']"
+71,['FLD-900M']
+79,['Florence']
+170,['Microsoft 365 Copilot']
+169,"['Microsoft 365 Copilot', 'Microsoft Business Chat']"
+94,"['GPT-4', 'Microsoft security-specific model']"
+177,['Multiway Transformer network']
+143,"['LLaMA', 'Evol-Instruct', 'Alpaca dataset']"
+68,"['Evol-Instruct', 'Alpaca dataset', 'StarCoder']"
+70,['FLD-5B']
+89,"['GPT-3.5', 'GPT-4', 'Flan Collection']"
+198,"['OpenOrca', 'LLongMA-2']"
+297,['phi-1']
+155,"['Llama 2', 'BLOOM']"
+290,['coheretext']
+47,"['Cohere Generate Endpoint', 'Cohere Embed Endpoint', 'Cohere Classify Endpoint', 'Cohere Summarize Endpoint']"
+44,"['Cohere Base', 'Cohere Command']"
+46,"['Cohere Embed (Multilingual)', 'Cohere Embed (English)']"
+294,"['mT5', 'Aya Dataset']"
+272,['Whisper API']
+240,"['Stable Diffusion', 'RoentGen radiology dataset']"
+82,"['GPT-2', 'BABEL', 'text-davinci-003']"
+299,['text-davinci-003']
+149,"['LLaMa', 'Alpaca dataset']"
+199,"['OpenWebMath', 'RedPajama-Data', 'Algebraic Stack', 'Qwen']"
+283,['Yi']
+172,"['Mistral', 'OpenHermes 2.5 Dataset', 'Nous Hermes 2']"
+286,"['YouTube', 'Wikipedia', 'Reddit']"
+245,"['T5', 'Mask R-CNN', 'VIMA dataset']"
+142,"['LLaMA', 'CLUE', 'BigTrans parallel dataset']"
+254,"['The Pile', 'Yandex Russian Pretraining Dataset']"
+282,['YaLM']
+90,"['GPT-4 API', 'Code Llama', 'Claude API', 'WizardCoder', 'PaLM API']"
+144,"['LLaMA', 'GOAT dataset']"
+223,"['RedPajama', 'The Stack']"
+278,['Wu Dao dataset']
+268,"['Vicuna', 'JudgeLM Dataset']"
+4,"['Alpaca', 'GPT-4', 'Dolly', 'ShareGPT', 'LLaMA', 'Vicuna']"
+29,['CLIP']
+158,['Luminous dataset']
+159,['Luminous']
+97,"['GPT-J', 'CLIP']"
+115,"['ImageNet', 'WebVision', 'LAION-1B']"
+106,['Gemma']
+156,"['Llama 2', 'Mistral', 'Falcon-180B', 'Deepseek', 'BLOOM', 'LLaVA', 'CLIP']"
+178,"['MusicCaps', 'Million Song Dataset', 'Magnatagtune']"
+263,"['UltraFeedback', 'Zephyr']"
+11,"['Arxiv', 'Books', 'C4', 'RefinedWeb', 'StarCoder', 'StackExchange', 'Wikipedia']"
+236,"['SlimPajama', 'StarCoder']"
+65,"['Duolingo Role Play', 'Duolingo Explain My Answer']"
