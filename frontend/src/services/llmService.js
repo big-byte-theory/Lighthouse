@@ -11,3 +11,13 @@ export const addLlm = async (llm) => {
   const response = await axios.post(apiUrl, llm);
   return response.data;
 };
+
+export const updateLlm = async (id, llm) => {
+  const response = await axios.put(`${apiUrl}/${id}`, llm);
+  return response.data;
+};
+
+export const deleteLlm = async (id) => {
+  const response = await axios.delete(`${apiUrl}/${id}`);
+  return response.data;
+};

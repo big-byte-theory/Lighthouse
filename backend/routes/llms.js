@@ -1,30 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const Llm = require('../models/Llm');
-const Type = require('../models/Type');
-const Organisation = require('../models/Organisation');
-const Size = require('../models/Size');
-const Dependencies = require('../models/Dependencies');
-const Date = require('../models/Date');
-const Url = require('../models/Url');
-const Modality = require('../models/Modality');
-const Access = require('../models/Access');
-const ModelCard = require('../models/ModelCard');
 
 // @route   GET api/llms
 // @desc    Get all LLMs
 router.get('/', async (req, res) => {
   try {
-    const llms = await Llm.find()
-      .populate('type_id')
-      .populate('organisation_id')
-      .populate('date_id')
-      .populate('url_id')
-      .populate('modality_id')
-      .populate('size_id')
-      .populate('dependencies_id')
-      .populate('access_id')
-      .populate('model_type_id');
+    const llms = await Llm.find();
     res.json(llms);
   } catch (err) {
     console.error(err.message);
@@ -36,16 +18,7 @@ router.get('/', async (req, res) => {
 // @desc    Get LLM by ID
 router.get('/:id', async (req, res) => {
   try {
-    const llm = await Llm.findById(req.params.id)
-      .populate('type_id')
-      .populate('organisation_id')
-      .populate('date_id')
-      .populate('url_id')
-      .populate('modality_id')
-      .populate('size_id')
-      .populate('dependencies_id')
-      .populate('access_id')
-      .populate('model_type_id');
+    const llm = await Llm.findById(req.params.id);
 
     if (!llm) {
       return res.status(404).json({ msg: 'LLM not found' });

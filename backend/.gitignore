@@ -1,0 +1,12 @@
+# Dependency directory
+node_modules/
+
+# Production build files
+build/
+dist/
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env

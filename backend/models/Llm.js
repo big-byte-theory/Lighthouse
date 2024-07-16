@@ -2,8 +2,7 @@ const mongoose = require('mongoose');
 
 const LlmSchema = new mongoose.Schema({
   type_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Type',
+    type: String,
     required: true,
   },
   name: {
@@ -11,8 +10,7 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   organisation_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Organisation',
+    type: String,
     required: true,
   },
   description: {
@@ -20,13 +18,11 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   date_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Date',
+    type: Date,
     required: true,
   },
   url_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Url',
+    type: String,
     required: true,
   },
   datasheet: {
@@ -34,13 +30,11 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   modality_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Modality',
+    type: String,
     required: true,
   },
   size_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Size',
+    type: String,
     required: true,
   },
   sample: {
@@ -52,8 +46,7 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   dependencies_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Dependencies',
+    type: String,
     required: true,
   },
   included: {
@@ -69,8 +62,7 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   access_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Access',
+    type: String,
     required: true,
   },
   license: {
@@ -94,8 +86,7 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   model_type_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'ModelCard',
+    type: String,
     required: true,
   },
   training_emissions: {
@@ -134,6 +125,6 @@ const LlmSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-});
+}, { timestamps: true });
 
 module.exports = mongoose.model('Llm', LlmSchema);

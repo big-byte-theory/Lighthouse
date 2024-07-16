@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getLlms, addLlm } from './services/llmService';
+import { getLlms, addLlm, updateLlm, deleteLlm } from './services/llmService';
 
 const App = () => {
   const [llms, setLlms] = useState([]);
@@ -64,8 +64,7 @@ const App = () => {
         <input type="text" name="type_id" placeholder="Type ID" onChange={onChange} />
         <input type="text" name="name" placeholder="Name" onChange={onChange} />
         <input type="text" name="organisation_id" placeholder="Organisation ID" onChange={onChange} />
-        <input type="text" name="description" placeholder="Description" onChange={onChange} />
-        <input type="text" name="date_id" placeholder="Date ID" onChange={onChange} />
+        <input type="date" name="date_id" placeholder="Date" onChange={onChange} />
         <input type="text" name="url_id" placeholder="URL ID" onChange={onChange} />
         <input type="text" name="datasheet" placeholder="Datasheet" onChange={onChange} />
         <input type="text" name="modality_id" placeholder="Modality ID" onChange={onChange} />

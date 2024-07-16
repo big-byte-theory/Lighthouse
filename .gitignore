@@ -18,98 +18,11 @@ lib-cov
 coverage
 *.lcov
 
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Bower dependency directory (https://bower.io/)
-bower_components
-
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directories
-backend/node_modules/
-frontend/node_modules/
-
-# Snowpack dependency directory (https://snowpack.dev/)
-web_modules/
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
+# dotenv environment variables file
 .env
-.env.test
-.env.production
-
-# Next.js build output
-.next
-out
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Gatsby files
-.cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# public
-
-# vuepress build output
-.vuepress/dist
-
-# Serverless directories
-.serverless/
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-*.local
-
-# TernJS port file
-.tern-port
-
-# VS Code directories
-.vscode/
-*.code-workspace
-
-# SvelteKit build / generate output
-.svelte-kit
-
-# Sapper build / generate output
-__sapper__
-
-# Python artifacts
-*.pyc
-*.pyo
-__pycache__/
-
-# Additional files or directories to ignore
-public/build/
-public/dist/
-dist/
 
 # macOS
 .DS_Store
@@ -119,3 +32,26 @@ dist/
 
 # Windows
 Thumbs.db
+
+# VS Code directories
+.vscode/
+.vscode/*
+.history
+
+# Other files and directories
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.idea
+.idea/*
+.project
+.classpath
+.c9/
+*.tmproj
+*.esproj
+*.sln
+*.suo
+*.ntvs*
+*.njsproj
+*.sublime*
+*.codekit-cache/
