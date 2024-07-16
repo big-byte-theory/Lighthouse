@@ -14,14 +14,17 @@ export default {
     },
     extend: {
       colors: {
-        red: '#a41c30',
+        red: {
+          dark: '#8c192f',
+          DEFAULT: '#a41c30',
+        },
         blue: {
-          dark: '#0f0335',
           light: '#302d6e',
+          DEFAULT: '#0f0335',
         },
         black: {
           slate: '#242323',
-          default: '#000000',
+          DEFAULT: '#000000',
         },
         accent: {
           purple: '#d0baeb',
@@ -33,6 +36,7 @@ export default {
       },
       margin: {
         '2.5': '0.625rem',
+        '3.75': '0.9375rem',
         '7.5': '1.875rem',
       },
       spacing: {

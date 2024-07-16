@@ -1,3 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-red font-sans mt-3.75 mb-5;
+}
+
 h1 {
-  
+  @apply text-4xl mb-7.5;
+}
+
+h2 {
+  @apply text-3xl mb-7;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl text-blue;
+}
+
+h5 {
+  @apply text-lg text-blue;
+}
+
+h6 {
+  @apply text-lg text-blue;
 }

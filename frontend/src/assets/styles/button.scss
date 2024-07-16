@@ -1,7 +1,15 @@
 .btn {
-  @apply rounded-md text-white px-4 py-2.5;
+  @apply rounded-md text-white px-4 py-2.5 mt-5 transition-colors;
 
   &-primary {
     @apply bg-red;
+
+    &:hover {
+      @apply bg-red-dark;
+    }
+  }
+
+  &-secondary {
+    @apply bg-blue;
   }
 }
