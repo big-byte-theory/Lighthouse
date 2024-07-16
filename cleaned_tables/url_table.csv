@@ -1,0 +1,444 @@
+link_type_id,link_type,url
+4,Scientific paper,https://arxiv.org/pdf/2310.04292.pdf
+4,Scientific paper,https://time-series-foundation-models.github.io/lag-llama.pdf
+1,Github Link,https://github.com/NASA-IMPACT/hls-foundation-os
+3,Other,https://www.ibm.com/products/watsonx-ai
+0,Blog,https://www.ibm.com/blog/building-ai-for-business-ibms-granite-foundation-models/
+3,Other,https://cagliostrolab.net/posts/animagine-xl-v31-release
+3,Other,https://portkey.ai/
+3,Other,https://www.askviable.com/
+3,Other,https://news.agpt.co/
+1,Github Link,https://github.com/suno-ai/bark
+3,Other,https://ecosystem.hubspot.com/marketplace/apps/sales/sales-enablement/the-obo-group-chatgpt-1398072
+0,Blog,https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
+0,Blog,https://www.together.xyz/blog/openchatkit
+0,Blog,https://laion.ai/blog/oig-dataset/
+0,Blog,https://www.together.xyz/blog/redpajama
+0,Blog,https://together.ai/blog/llama-2-7b-32k-instruct
+0,Blog,https://together.ai/blog/redpajama-data-v2
+0,Blog,https://www.together.ai/blog/stripedhyena-7b
+4,Scientific paper,https://arxiv.org/pdf/2311.16079.pdf
+1,Github Link,https://github.com/xverse-ai/XVERSE-65B
+4,Scientific paper,https://arxiv.org/pdf/2305.03726v1.pdf
+4,Scientific paper,https://arxiv.org/pdf/2310.10967.pdf
+1,Github Link,https://github.com/GeneZC/MiniMA
+0,Blog,https://chatglm.cn/blog
+3,Other,https://www.biorxiv.org/content/10.1101/2022.11.20.517210v2
+4,Scientific paper,https://arxiv.org/pdf/2310.07704.pdf
+4,Scientific paper,https://arxiv.org/pdf/2305.14314v1.pdf
+4,Scientific paper,https://arxiv.org/pdf/2310.07160.pdf
+1,Github Link,https://github.com/InternLM/InternLM
+4,Scientific paper,https://arxiv.org/pdf/2402.10373.pdf
+3,Other,https://www.khanacademy.org/khan-labs#khanmigo
+4,Scientific paper,https://arxiv.org/pdf/2309.17080.pdf
+1,Github Link,https://github.com/GreenBitAI/low_bit_llama
+0,Blog,https://cresta.com/blog/introducing-ocean-1-worlds-first-contact-center-foundation-model/
+4,Scientific paper,https://arxiv.org/pdf/2404.00399
+3,Other,https://twitter.com/lvwerra/status/1467933794699259908
+2,Huggingface Link,https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
+2,Huggingface Link,https://huggingface.co/blog/idefics
+4,Scientific paper,https://arxiv.org/pdf/2311.05640.pdf
+3,Other,
+2,Huggingface Link,https://huggingface.co/blog/idefics2
+0,Blog,https://stability.ai/blog/deepfloyd-if-text-to-image-model
+1,Github Link,https://github.com/Stability-AI/StableLM
+0,Blog,https://stability.ai/blog/stable-diffusion-public-release
+3,Other,https://stability.ai/stablediffusion
+4,Scientific paper,https://static1.squarespace.com/static/6213c340453c3f502425776e/t/655ce779b9d47d342a93c890/1700587395994/stable_video_diffusion.pdf
+3,Other,https://clipdrop.co/real-estate/sky-replacer
+3,Other,https://stability.ai/news/introducing-stable-lm-2
+2,Huggingface Link,https://huggingface.co/stabilityai/stable-cascade
+3,Other,https://stability.ai/news/introducing-stable-video-3d
+3,Other,https://stability-ai.squarespace.com/news/stable-audio-2-0
+3,Other,https://reka.ai/reka-flash-an-efficient-and-capable-multimodal-language-model/
+3,Other,https://www.reka.ai/news/reka-core-our-frontier-class-multimodal-language-model
+3,Other,https://arxiv.org/abs/2402.16107
+2,Huggingface Link,https://huggingface.co/moreh/MoMo-72B-lora-1.8.7-DPO
+3,Other,https://mistral.ai/news/announcing-mistral-7b/
+3,Other,https://mistral.ai/news/mistral-large/
+3,Other,https://mistral.ai/news/le-chat-mistral/
+3,Other,https://re.express/index.html
+3,Other,https://erichartford.com/dolphin
+2,Huggingface Link,https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored
+3,Other,https://spreadprivacy.com/duckassist-launch/
+3,Other,https://www.perplexity.ai/
+3,Other,https://www.perplexity.ai/sql
+3,Other,https://labs.perplexity.ai/
+2,Huggingface Link,https://huggingface.co/vilm/vulture-180b
+0,Blog,https://deci.ai/blog/introducing-decilm-7b-the-fastest-and-most-accurate-7b-large-language-model-to-date
+4,Scientific paper,https://arxiv.org/pdf/2101.00027.pdf
+3,Other,https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/
+1,Github Link,https://github.com/EleutherAI/gpt-neo
+4,Scientific paper,http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf
+3,Other,goose.ai
+4,Scientific paper,https://arxiv.org/pdf/2204.08583.pdf
+4,Scientific paper,https://arxiv.org/pdf/2304.01373.pdf
+4,Scientific paper,https://arxiv.org/pdf/2310.10631.pdf
+0,Blog,https://blog.eleuther.ai/pile-t5/
+0,Blog,https://www.bemyeyes.com/blog/introducing-be-my-eyes-virtual-volunteer
+1,Github Link,https://github.com/THUDM/CodeGeeX
+3,Other,https://arxiv.org/abs/2105.13290
+3,Other,https://arxiv.org/abs/2204.14217
+3,Other,https://arxiv.org/abs/2205.15868
+3,Other,https://keg.cs.tsinghua.edu.cn/glm-130b/
+4,Scientific paper,https://arxiv.org/pdf/2311.03079.pdf
+1,Github Link,https://github.com/thunlp/UltraChat#UltraLM
+1,Github Link,https://github.com/thunlp/UltraChat
+3,Other,https://arxiv.org/abs/2202.13169
+4,Scientific paper,https://arxiv.org/pdf/2402.03885.pdf
+2,Huggingface Link,https://huggingface.co/OpenAssistant/llama2-70b-oasst-sft-v10
+3,Other,https://inflection.ai/inflection-1
+3,Other,https://inflection.ai/press
+3,Other,https://inflection.ai/inflection-2
+3,Other,https://inflection.ai/inflection-2-5
+2,Huggingface Link,https://huggingface.co/RWKV/rwkv-4-world-7b
+2,Huggingface Link,https://huggingface.co/RWKV/rwkv-4-14b-pile
+2,Huggingface Link,https://huggingface.co/RWKV/rwkv-5-world-3b
+3,Other,https://arxiv.org/abs/2112.12731
+3,Other,https://arxiv.org/abs/2112.15283
+3,Other,https://arxiv.org/abs/2210.15257
+3,Other,https://www.prnewswire.com/news-releases/baidu-launches-ernie-4-0-foundation-model-leading-a-new-wave-of-ai-native-applications-301958681.html
+0,Blog,https://openai.com/blog/introducing-chatgpt-and-whisper-apis
+3,Other,https://aws.amazon.com/bedrock/
+2,Huggingface Link,https://huggingface.co/amazon/FalconLite2
+1,Github Link,https://github.com/amazon-science/chronos-forecasting
+4,Scientific paper,https://arxiv.org/pdf/2402.07865.pdf
+4,Scientific paper,https://arxiv.org/pdf/2212.03191.pdf
+4,Scientific paper,https://arxiv.org/pdf/2212.10551.pdf
+4,Scientific paper,https://arxiv.org/pdf/2310.03731.pdf
+1,Github Link,https://github.com/OpenGVLab/InternVideo2
+1,Github Link,https://cosmicman-cvpr2024.github.io/
+4,Scientific paper,https://arxiv.org/pdf/2404.01294
+3,Other,https://www.withnucleus.ai/
+3,Other,https://www.cognition-labs.com/introducing-devin
+3,Other,https://en.konantech.com/en/llm/konanllm
+3,Other,https://www.linkedin.com/
+3,Other,https://beta.character.ai/
+1,Github Link,https://robotics-transformer-x.github.io/
+4,Scientific paper,https://arxiv.org/pdf/2401.14688.pdf
+0,Blog,https://app.twelvelabs.io/blog/introducing-pegasus-1
+0,Blog,https://www.twelvelabs.io/blog/introducing-marengo-2-6
+2,Huggingface Link,https://huggingface.co/MayaPH/GodziLLa2-70B
+4,Scientific paper,https://arxiv.org/pdf/2305.17100.pdf
+4,Scientific paper,https://arxiv.org/pdf/2403.09611.pdf
+3,Other,https://machinelearning.apple.com/research/openelm
+4,Scientific paper,https://arxiv.org/pdf/2305.06161.pdf
+4,Scientific paper,https://arxiv.org/pdf/2301.03988.pdf
+4,Scientific paper,https://arxiv.org/pdf/2211.15533.pdf
+2,Huggingface Link,https://www.servicenow.com/company/media/press-room/huggingface-nvidia-launch-starcoder2.html
+4,Scientific paper,https://arxiv.org/pdf/2306.08161.pdf
+4,Scientific paper,https://arxiv.org/pdf/2401.16818.pdf
+3,Other,https://faradaylab.fr/
+3,Other,https://arxiv.org/abs/1910.10683
+0,Blog,https://blog.google/products/search/search-language-understanding-bert/
+3,Other,https://aclanthology.org/P18-1238/
+4,Scientific paper,https://arxiv.org/pdf/2102.08981.pdf
+4,Scientific paper,https://arxiv.org/pdf/2201.08239.pdf
+4,Scientific paper,https://arxiv.org/pdf/2204.02311.pdf
+3,Other,https://arxiv.org/abs/2210.11416
+3,Other,https://arxiv.org/abs/2205.05131
+3,Other,https://parti.research.google/
+3,Other,https://imagen.research.google/
+3,Other,https://arxiv.org/abs/2104.11178
+0,Blog,https://developers.googleblog.com/2023/03/announcing-palm-api-and-makersuite.html
+3,Other,https://arxiv.org/abs/2212.13138
+4,Scientific paper,https://arxiv.org/pdf/2307.14334.pdf
+3,Other,https://arxiv.org/abs/2109.01652
+3,Other,https://arxiv.org/abs/2210.11399
+3,Other,https://arxiv.org/abs/2204.01691
+3,Other,https://arxiv.org/abs/2112.06905
+0,Blog,https://blog.google/products/search/introducing-mum/
+4,Scientific paper,https://openreview.net/pdf?id=vOEXS39nOF
+3,Other,https://arxiv.org/abs/2301.13688
+4,Scientific paper,https://arxiv.org/pdf/2301.11325.pdf
+3,Other,https://arxiv.org/abs/2208.12415
+4,Scientific paper,https://google-research.github.io/noise2music/noise2music.pdf
+0,Blog,https://blog.google/technology/ai/join-us-in-the-ai-test-kitchen/
+0,Blog,https://blog.google/technology/ai/bard-google-ai-search-updates/
+3,Other,https://arxiv.org/abs/2206.14858
+3,Other,https://arxiv.org/abs/2303.01037
+3,Other,https://www.youtube.com/
+3,Other,https://arxiv.org/abs/2303.03378
+3,Other,https://arxiv.org/abs/2302.05442
+3,Other,https://arxiv.org/abs/2209.03143
+3,Other,https://arxiv.org/abs/2209.06794
+3,Other,https://arxiv.org/abs/2302.14115
+4,Scientific paper,https://arxiv.org/pdf/2306.07944.pdf
+0,Blog,https://blog.google/technology/ai/google-palm-2-ai-large-language-model/
+3,Other,https://cloud.google.com/vertex-ai/docs/generative-ai/medlm/overview
+3,Other,https://deepmind.google/technologies/gemini/#introduction
+0,Blog,https://blog.research.google/2024/02/a-decoder-only-foundation-model-for.html
+0,Blog,https://blog.google/technology/developers/gemma-open-models/
+4,Scientific paper,https://arxiv.org/pdf/2404.18416
+3,Other,https://arxiv.org/abs/2109.04650
+4,Scientific paper,https://arxiv.org/pdf/2404.01954
+3,Other,https://www.thetrevorproject.org/
+3,Other,https://firefly.adobe.com/
+4,Scientific paper,https://arxiv.org/pdf/2309.09400
+3,Other,https://www.biorxiv.org/content/10.1101/2022.10.10.511571v1
+3,Other,https://www.moonhub.ai/
+4,Scientific paper,https://arxiv.org/pdf/2310.19341.pdf
+1,Github Link,https://github.com/kakaobrain/coyo-dataset
+2,Huggingface Link,https://huggingface.co/kotoba-tech/kotoba-speech-v0.1
+4,Scientific paper,https://arxiv.org/pdf/2005.14165.pdf
+4,Scientific paper,https://arxiv.org/pdf/2107.03374.pdf
+4,Scientific paper,https://arxiv.org/pdf/2103.00020.pdf
+3,Other,https://arxiv.org/abs/2102.12092
+4,Scientific paper,https://cdn.openai.com/papers/whisper.pdf
+4,Scientific paper,https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+4,Scientific paper,https://arxiv.org/pdf/2203.02155.pdf
+4,Scientific paper,https://arxiv.org/pdf/2102.12092.pdf
+3,Other,https://arxiv.org/abs/2005.00341
+3,Other,https://arxiv.org/abs/2204.06125
+3,Other,https://openai.com/api/
+3,Other,https://arxiv.org/abs/2206.11795
+0,Blog,https://openai.com/blog/chatgpt
+3,Other,https://platform.openai.com/docs/models/gpt-3-5
+3,Other,https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
+3,Other,https://platform.openai.com/docs/model-index-for-researchers
+0,Blog,https://openai.com/blog/new-and-improved-content-moderation-tooling
+3,Other,"https://time.com/6247678/openai-chatgpt-kenya-workers/#:~:text=In%20a%20statement%2C%20an%20OpenAI,datasets%20of%20tools%20like%20ChatGPT."
+0,Blog,https://quorablog.quora.com/Poe-1
+3,Other,https://www.salesforce.com/news/stories/chatgpt-app-for-slack/
+3,Other,https://arxiv.org/abs/2303.08774
+3,Other,https://openai.com/product/gpt-4
+3,Other,https://openai.com/enterprise
+3,Other,https://openai.com/dall-e-3
+3,Other,https://openai.com/sora
+3,Other,https://about.ideogram.ai/1.0
+4,Scientific paper,https://arxiv.org/pdf/2303.17564.pdf#section.2
+3,Other,https://arxiv.org/abs/2303.17564
+2,Huggingface Link,https://huggingface.co/blog/Pclanglais/common-corpus
+3,Other,https://www.nolano.org/services/Cformers/
+4,Scientific paper,https://arxiv.org/pdf/2308.07317.pdf
+4,Scientific paper,https://arxiv.org/pdf/2311.09257.pdf
+3,Other,https://help.nextdoor.com/s/article/Introducing-Assistant
+3,Other,https://you.com/
+4,Scientific paper,https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf
+4,Scientific paper,https://arxiv.org/pdf/2112.11446.pdf
+4,Scientific paper,https://arxiv.org/pdf/2204.14198.pdf
+0,Blog,https://www.deepmind.com/blog/a-generalist-agent
+3,Other,https://www.nature.com/articles/s41586-021-03819-2
+3,Other,https://arxiv.org/abs/2203.07814
+4,Scientific paper,https://arxiv.org/pdf/2203.15556.pdf
+3,Other,https://arxiv.org/abs/2209.14375
+3,Other,https://arxiv.org/abs/2112.04426
+4,Scientific paper,https://storage.googleapis.com/deepmind-media/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes/Teaching%20language%20models%20to%20support%20answers%20with%20verified%20quotes.pdf
+3,Other,https://arxiv.org/abs/2209.14958
+4,Scientific paper,https://arxiv.org/pdf/2307.15818.pdf
+0,Blog,https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/
+3,Other,https://sites.google.com/view/genie-2024
+3,Other,https://arxiv.org/abs/2201.02639
+1,Github Link,https://m-bain.github.io/webvid-dataset/
+3,Other,https://www.sanalabs.com/
+3,Other,https://arxiv.org/abs/2204.07705
+4,Scientific paper,https://arxiv.org/pdf/2212.10465.pdf
+4,Scientific paper,https://arxiv.org/pdf/2304.06939.pdf
+0,Blog,https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64
+4,Scientific paper,https://arxiv.org/pdf/2311.10702.pdf
+4,Scientific paper,https://allenai.org/olmo/olmo-paper.pdf
+3,Other,https://arxiv.org/abs/2309.04662
+1,Github Link,https://github.com/ncsoft/ncresearch
+3,Other,https://dais.com/underwritegpt/
+0,Blog,https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
+4,Scientific paper,https://inceptioniai.org/jais/docs/Technicalpaper.pdf
+0,Blog,https://www.cerebras.net/blog/btlm-3b-8k-7b-performance-in-a-3-billion-parameter-model/
+2,Huggingface Link,https://huggingface.co/datasets/cerebras/SlimPajama-627B
+3,Other,https://arxiv.org/abs/2203.13474
+3,Other,https://arxiv.org/abs/2201.12086
+3,Other,https://www.salesforce.com/products/einstein/overview/?d=cta-body-promo-8
+4,Scientific paper,https://arxiv.org/pdf/2301.12597.pdf
+0,Blog,https://blog.salesforceairesearch.com/moirai/
+4,Scientific paper,https://arxiv.org/pdf/2402.02592.pdf
+3,Other,https://neeva.com/index
+0,Blog,https://neeva.com/blog/introducing-neevaai
+4,Scientific paper,https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf
+3,Other,https://docs.ai21.com/docs/jurassic-1-instruct-beta
+3,Other,https://docs.ai21.com/docs/jurassic-2-models
+3,Other,https://studio.ai21.com/playground/
+3,Other,https://docs.ai21.com/docs/paraphrase-api
+3,Other,https://docs.ai21.com/docs/summarize-api
+3,Other,https://www.wordtune.com/
+3,Other,https://www.wordtune.com/read
+0,Blog,https://www.ai21.com/blog/announcing-jamba
+0,Blog,https://www.mosaicml.com/blog/mpt-7b
+4,Scientific paper,https://arxiv.org/pdf/2310.16825.pdf
+3,Other,https://play.aidungeon.io
+0,Blog,https://www.assemblyai.com/blog/conformer-1/
+3,Other,https://www.assemblyai.com/
+2,Huggingface Link,https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1
+4,Scientific paper,https://arxiv.org/pdf/2311.05997.pdf
+4,Scientific paper,https://arxiv.org/pdf/2309.05653.pdf
+3,Other,https://www.sktelecom.com/en/press/press_detail.do?idx=1582
+1,Github Link,https://github.com/01-ai/Yi
+4,Scientific paper,https://arxiv.org/pdf/1906.03327.pdf
+4,Scientific paper,https://arxiv.org/pdf/2310.06830.pdf
+0,Blog,https://www.adept.ai/blog/act-1
+0,Blog,https://www.adept.ai/blog/persimmon-8b
+0,Blog,https://www.adept.ai/blog/fuyu-8b
+0,Blog,https://www.adept.ai/blog/adept-fuyu-heavy
+1,Github Link,https://github.com/OpenBMB/CPM-Bee
+1,Github Link,https://github.com/OpenBMB/UltraFeedback
+1,Github Link,https://github.com/OpenBMB/MiniCPM/
+3,Other,https://arxiv.org/abs/2404.02078
+2,Huggingface Link,https://huggingface.co/blog/community-datasets
+4,Scientific paper,https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2.full.pdf+html
+3,Other,https://arxiv.org/abs/2112.04482
+4,Scientific paper,https://galactica.org/static/paper.pdf
+3,Other,https://arxiv.org/abs/2204.05999
+3,Other,https://arxiv.org/abs/2205.01068
+4,Scientific paper,https://arxiv.org/pdf/2209.14792.pdf
+3,Other,https://arxiv.org/abs/2302.13971
+3,Other,https://ai.meta.com/resources/models-and-libraries/llama/
+3,Other,https://arxiv.org/abs/2212.12017
+3,Other,https://ai.facebook.com/datasets/segment-anything/
+4,Scientific paper,https://arxiv.org/pdf/2304.02643.pdf
+3,Other,https://research.facebook.com/publications/voicebox-text-guided-multilingual-universal-speech-generation-at-scale/
+4,Scientific paper,https://arxiv.org/pdf/2208.11663.pdf
+2,Huggingface Link,https://huggingface.co/spaces/facebook/MusicGen/tree/main
+4,Scientific paper,https://felixkreuk.github.io/audiogen/paper.pdf
+3,Other,https://ai.meta.com/research/publications/emu-enhancing-image-generation-models-using-photogenic-needles-in-a-haystack/
+3,Other,https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/
+3,Other,https://emu-video.metademolab.com/
+3,Other,https://emu-edit.metademolab.com/
+3,Other,https://llama.meta.com/llama3/
+3,Other,https://hyperwriteai.com/
+2,Huggingface Link,https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1
+4,Scientific paper,https://arxiv.org/pdf/2204.05862.pdf
+3,Other,https://console.anthropic.com/docs/api
+3,Other,https://www.anthropic.com/index/introducing-claude
+3,Other,https://www.anthropic.com/index/claude-2
+3,Other,https://www.anthropic.com/index/claude-2-1
+3,Other,https://workspace.google.com/marketplace/app/claude_for_sheets/909417792257
+3,Other,https://www.anthropic.com/news/claude-3-family
+3,Other,https://openreview.net/forum?id=UoEw6KigkUn
+4,Scientific paper,https://arxiv.org/pdf/2110.08207.pdf
+3,Other,https://arxiv.org/abs/2211.01786
+3,Other,https://arxiv.org/abs/2211.05100
+4,Scientific paper,https://arxiv.org/pdf/2211.01786.pdf
+2,Huggingface Link,https://huggingface.co/CausalLM/14B
+3,Other,https://www.bain.com/vector-digital/partnerships-alliance-ecosystem/openai-alliance/
+2,Huggingface Link,https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO
+3,Other,https://www.transformify.ai/automate
+3,Other,https://gpt3demo.com/apps/palmyra
+3,Other,https://chatcamel.vercel.app/
+0,Blog,https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html
+0,Blog,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm
+0,Blog,https://lmsys.org/blog/2023-03-30-vicuna/
+3,Other,https://www.lgresearch.ai/exaone
+3,Other,https://global.rakuten.com/corp/news/press/2024/0321_01.html
+4,Scientific paper,https://arxiv.org/pdf/2309.10706.pdf
+3,Other,https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/
+0,Blog,https://bair.berkeley.edu/blog/2023/04/03/koala/
+4,Scientific paper,https://arxiv.org/pdf/2305.15334v1.pdf
+1,Github Link,https://github.com/openlm-research/open_llama
+2,Huggingface Link,https://huggingface.co/deepnight-research/saily_100b
+3,Other,https://www.notion.so/help/guides/notion-ai-for-docs
+1,Github Link,https://github.com/deepseek-ai/DeepSeek-LLM
+1,Github Link,https://github.com/deepseek-ai/DeepSeek-Coder
+3,Other,https://starling.cs.berkeley.edu/
+4,Scientific paper,https://arxiv.org/pdf/2311.16867.pdf
+4,Scientific paper,https://arxiv.org/pdf/2306.01116.pdf
+3,Other,https://fortune.com/2023/03/07/cfo-chatbot-chatgpt-ai-brex-finance-software-startup-budgets-policies/
+0,Blog,https://laion.ai/blog/laion-400-open-dataset/
+0,Blog,https://laion.ai/blog/laion-5b/
+4,Scientific paper,https://arxiv.org/pdf/2210.08402.pdf
+0,Blog,https://laion.ai/blog/open-flamingo/
+1,Github Link,https://github.com/bytedance/SALMONN
+4,Scientific paper,https://arxiv.org/pdf/2402.13929.pdf
+3,Other,https://arxiv.org/abs/2111.02358
+0,Blog,https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv5-tops-xtreme-leaderboard-and-trains-100x-faster/
+0,Blog,https://www.microsoft.com/en-us/research/blog/efficiently-and-effectively-scaling-up-language-model-pretraining-for-best-language-representation-model-on-glue-and-superglue/?OCID=msr_blog_TNLRV5_tw
+3,Other,https://arxiv.org/abs/2201.11990
+1,Github Link,https://valle-demo.github.io/
+1,Github Link,https://copilot.github.com/
+3,Other,https://academic.oup.com/bib/article/23/6/bbac409/6713511?guestAccessKey=a66d9b5d-4f83-4017-bb52-405815c907b9&login=true
+0,Blog,https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/
+4,Scientific paper,https://arxiv.org/pdf/2302.14045.pdf
+3,Other,https://arxiv.org/abs/2111.11432
+0,Blog,https://azure.microsoft.com/en-us/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/?utm_content=buffer16fa0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+4,Scientific paper,https://arxiv.org/pdf/2303.04671.pdf
+0,Blog,https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
+3,Other,https://www.microsoft.com/en-us/microsoft-365/excel
+3,Other,https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook
+3,Other,https://powerplatform.microsoft.com/en-us/
+3,Other,https://www.microsoft.com/en-us/microsoft-365/powerpoint
+3,Other,https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
+3,Other,https://www.microsoft.com/en-us/microsoft-365/word
+3,Other,https://support.microsoft.com/en-us/office/see-file-insights-before-you-open-a-file-87a23bbc-a516-42e2-a7b6-0ecb8259e026
+3,Other,https://support.microsoft.com/en-us/office/use-suggested-replies-in-outlook-19316194-0434-43ba-a742-6b5890157379
+0,Blog,https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/
+4,Scientific paper,https://proceedings.neurips.cc/paper_files/paper/2019/file/c20bb2d9a50d5ac1f713f8b34d9aac5a-Paper.pdf
+3,Other,https://www.docugami.com/generative-ai
+4,Scientific paper,https://arxiv.org/pdf/2208.10442.pdf
+4,Scientific paper,https://arxiv.org/pdf/2304.12244v1.pdf
+4,Scientific paper,https://arxiv.org/pdf/2306.08568.pdf
+4,Scientific paper,https://arxiv.org/pdf/2311.06242.pdf
+2,Huggingface Link,https://huggingface.co/datasets/Open-Orca/OpenOrca
+2,Huggingface Link,https://huggingface.co/Open-Orca/LlongOrca-7B-16k
+4,Scientific paper,https://arxiv.org/pdf/2309.05463.pdf
+4,Scientific paper,https://arxiv.org/pdf/2311.11045.pdf
+0,Blog,https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/
+4,Scientific paper,https://arxiv.org/pdf/2312.08688.pdf
+3,Other,https://docs.cohere.com/docs/command-beta
+3,Other,https://txt.cohere.ai/multilingual/
+3,Other,https://cohere.ai/
+3,Other,https://docs.cohere.ai/reference/generate
+3,Other,https://docs.cohere.ai/reference/embed
+3,Other,https://docs.cohere.ai/reference/classify
+3,Other,https://docs.cohere.ai/reference/summarize
+3,Other,https://txt.cohere.com/introducing-embed-v3/
+4,Scientific paper,https://arxiv.org/pdf/2402.07827.pdf
+3,Other,https://txt.cohere.com/command-r/
+4,Scientific paper,https://arxiv.org/pdf/2402.06619.pdf
+0,Blog,https://cohere.com/blog/rerank-3
+3,Other,https://grok.x.ai/
+0,Blog,https://x.ai/blog/grok-1.5v
+3,Other,https://www.zjukg.org/project/OceanGPT/
+3,Other,https://crfm.stanford.edu/2022/12/15/pubmedgpt.html
+4,Scientific paper,https://arxiv.org/pdf/2211.12737.pdf
+4,Scientific paper,https://arxiv.org/pdf/2306.07012.pdf
+3,Other,https://crfm.stanford.edu/2023/03/13/alpaca.html
+1,Github Link,https://github.com/yifanzhang-pro/AutoMathText
+2,Huggingface Link,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+4,Scientific paper,https://arxiv.org/pdf/2309.00071.pdf
+2,Huggingface Link,https://huggingface.co/NousResearch/Nous-Capybara-34B
+2,Huggingface Link,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
+2,Huggingface Link,https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B
+2,Huggingface Link,https://huggingface.co/NousResearch/Genstruct-7B
+3,Other,https://arxiv.org/abs/2104.04473
+3,Other,https://arxiv.org/abs/2206.08853
+1,Github Link,https://vimalabs.github.io/
+4,Scientific paper,https://arxiv.org/pdf/2402.16819.pdf
+4,Scientific paper,https://arxiv.org/pdf/2305.18098v1.pdf
+4,Scientific paper,https://arxiv.org/pdf/2312.14862.pdf
+3,Other,https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6
+3,Other,https://continue.dev
+4,Scientific paper,https://arxiv.org/pdf/2305.14201.pdf
+1,Github Link,https://github.com/XueFuzhao/OpenMoE
+4,Scientific paper,https://arxiv.org/pdf/2309.10305.pdf
+3,Other,https://www.tsinghua.edu.cn/en/info/1420/10473.htm
+4,Scientific paper,https://arxiv.org/pdf/2310.17631.pdf
+2,Huggingface Link,https://huggingface.co/datasets/BAAI/JudgeLM-100K
+4,Scientific paper,https://arxiv.org/pdf/2401.13560v2.pdf
+4,Scientific paper,https://arxiv.org/pdf/2402.03216.pdf
+4,Scientific paper,https://arxiv.org/pdf/2402.04252.pdf
+3,Other,https://twitter.com/Aleph__Alpha/status/1514576711492542477
+3,Other,https://www.aleph-alpha.com/
+4,Scientific paper,https://arxiv.org/pdf/2112.05253.pdf
+3,Other,https://www.robinai.co.uk/
+3,Other,https://junilearning.com/
+4,Scientific paper,https://arxiv.org/pdf/2302.09778.pdf
+3,Other,https://arxiv.org/abs/2309.16609
+1,Github Link,https://qwenlm.github.io/blog/qwen1.5/
+1,Github Link,https://qwenlm.github.io/blog/qwen-moe/
+1,Github Link,https://github.com/DAMO-NLP-SG/SeaLLMs
+4,Scientific paper,https://arxiv.org/pdf/2310.06786.pdf
+1,Github Link,https://github.com/OrionStarAI/Orion
+0,Blog,https://sambanova.ai/blog/sambalingo-open-source-language-experts
+0,Blog,https://sambanova.ai/blog/samba-1-composition-of-experts-mode
+4,Scientific paper,https://arxiv.org/pdf/2307.16372.pdf
+2,Huggingface Link,https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k
+0,Blog,https://argilla.io/blog/notus7b/
+3,Other,https://www.llm360.ai/
+0,Blog,https://blog.duolingo.com/duolingo-max/
