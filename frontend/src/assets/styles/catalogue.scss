@@ -1,0 +1,45 @@
+.catalogue {
+	@apply relative bg-white;
+
+	thead {
+		@apply bg-blue-light text-left text-white;
+
+		th {
+			@apply p-2.5;
+		}
+	}
+	tbody {
+		tr {
+			@apply relative border-b border-gray-200 py-2.5;
+		}
+    td {
+      @apply p-2.5;
+    }
+
+    a {
+      @apply text-red inline-flex items-center text-sm font-medium text-center after:absolute after:inset-0 after:content-[''];
+
+      &:hover {
+        @at-root tr#{&} {
+          @apply bg-red;
+        }
+      }
+    }
+
+		.label {
+			@apply text-white px-2.5 py-2 rounded-md text-sm font-medium text-center;
+
+			&-ltd {
+				@apply bg-yellow-600;
+			}
+
+			&-open {
+				@apply bg-green-700;
+			}
+
+			&-closed {
+				@apply bg-gray-600;
+			}
+		}
+	}
+}
