@@ -1,0 +1,55 @@
+license_id,license
+1,AI2 ImpACT
+2,Apache 2.0
+3,Apple
+4,BSD-3-Clause
+5,BigCode Open RAIL-M v1
+6,BigCode Open RAIL-M v1.0
+7,BigCode Open Rail-M
+8,BigCode OpenRail-M
+9,BigScience RAIL v1.0
+10,CC BY 4.0
+11,CC BY NC 4.0
+12,CC BY NC 4.0 (model weights)
+13,CC BY-NC 4.0
+14,CC BY-NC-SA 4.0
+15,CC BY-SA 4.0
+16,CC by-NC-SA 4.0
+17,CC-BY-4.0
+18,CC-BY-NC 4.0
+19,CC-BY-NC-4.0
+20,Conceptual Captions License
+21,Custom
+22,Databricks Open Model License
+23,Fair AI Public License 1.0-SD
+24,GLM-130B License
+25,LLaMA 2
+26,LLaMA2
+27,"LLaMa License (model weights), GPLv3 (code)"
+28,"Limited use license to Cohere platform users [[Terms of Use]](https://cohere.ai/terms-of-use).
+"
+29,Llama 2
+30,Llama 3
+31,MIT
+32,Modified MIT License
+33,Noncommercial Use License
+34,ODC-BY
+35,ODC-By
+36,ODC-By 1.0
+37,OPT-175B License
+38,OPT-IML 175B License
+39,Open Rail++
+40,OpenRail++
+41,SA-1B Dataset Research License
+42,StabilityAI Non-Commercial Research Community License
+43,"The Stack is a collection of source code from repositories with various licenses. Any use of all or part of the code gathered in The Stack must abide by the terms of the original licenses, including attribution clauses when relevant. Provenance information is provided for each data point."
+44,WTFPL
+45,WebVid Dataset Terms
+46,Wordtune License
+47,bigscience-bloom-rail-1.0
+48,custom
+49,"mC4, OSCAR"
+50,"none (model weights), BSD-3-Clause (code)"
+51,unknkown
+52,unknown
+53,"unknown (model weights), Apache 2.0 (SayCan code)"

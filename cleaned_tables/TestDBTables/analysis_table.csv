@@ -1,0 +1,276 @@
+analysis_id,analysis
+1,"""PaLM is evaluated on English Natural Language Processing (NLP) tasks, tasks from BIG-bench, reasoning tasks, code completion tasks, multilingual generation and question answering tasks, translation tasks, and bias and toxicity benchmarks"" [[Model Card]](https://arxiv.org/pdf/2204.02311.pdf#appendix.E).
+"
+2,"""We empirically validated the quality of COYO dataset by re-implementing popular models such as ALIGN, unCLIP, and ViT. We trained these models on COYO-700M or its subsets from scratch, achieving competitive performance to the reported numbers or generated samples in the original papers.""
+"
+3,"""We evaluate our models on the PILE validation set comprising 380M tokens. We also evaluate the public checkpoints of Pythia, Eleuther (2022); OPT, Zhang et al. (2022); GPT-NeoX 20B, Black et al. (2022); and GPT-J 6B, Wang & Komatsuzaki (2021). We performed upstream (pre-training) evaluations of text prediction cross-entropy using the Pile validation and test splits. We performed downstream evaluations of text generation accuracy on standardized tasks using the Eleuther lm-evaluation-harness."" [[Evaluations]] (https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#evaluations).
+"
+4,"""We evaluated Dolly on the instruction-following capabilities described in the InstructGPT paper that ChatGPT is based on and found that it exhibits many of the same qualitative capabilities, including text generation, brainstorming and open Q&A."" [[Databricks Blog Post]] (https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
+"
+5,"""We extensively evaluate SAM. First, using a diverse new suite of 23 segmentation datasets, we find that SAM produces high-quality masks from a single foreground point, often only slightly below that of the manually annotated ground truth. Second, we find consistently strong quantitative and qualitative results on a variety of downstream tasks under a zero-shot transfer protocol using prompt engineering, including edge detection, object proposal generation, instance segmentation, and a preliminary exploration of text-to-mask prediction.""
+"
+6,Achieves SOTA performances on trusted MTEB and BEIR benchmarks.
+7,"Analyses of the data's composition, document statistics, language/dialectal coverage, topical distribution, and biases are conducted are conducted in the paper [[The Pile Paper]](https://arxiv.org/pdf/2101.00027.pdf).
+"
+8,Analyzed against nearest neighbor model baseline and by extending the video length.
+9,"Analyzed on breakdown of types of robot trajectory in dataset, and overall coverage."
+10,"Assessed on medical benchmarks of professional medical exams, medical research, and consumer queries."
+11,"Authors evaluate the dataset on two image captioning models - RNN-based model and Transformer model, under two experimental conditions - using the training & development sets provided by the MS COCO dataset, versus training & development sets using the Conceptual dataset. They use three different test sets- the blind COCO-C40 test set, the Conceptual test set and the Flickr 1K test set. They present both Human and Automatic evaluation results. Human evaluations indicate that the Conceptual-based models are superior. Automatic models fail to corroborate the human evaluation results. This highlights the weakness of these automatic metrics."
+12,"Authors evaluate the performance of BloombergGPT on two broad categories of tasks, finance-specific and general purpose, on several standard benchmarks. They compare BloombergGPT to the three closest models: GPT-NeoX, OPT-66B and BLOOM-176B. They also report results from the original GPT-3 whenever externally available. They conclude ""We achieve strong results on general LLM benchmarks and outperform comparable models on financial tasks. We attribute this, in decreasing order of impact, to 1. a well-curated internal dataset, 2. our unique choice in tokenizer, and 3. an up-to-date architecture.""
+"
+13,"Authors perform two quantitative evaluations for image captioning - direct user ratings of relevance and BLEU score. They also propose a new evaluation task: ""we propose a new evaluation task where a user is presented with two photographs and one caption. The user must assign the caption to the most relevant image. For evaluation we use a query image, a random image and a generated caption.""
+"
+14,"Authors use the dataset to learn a joint text-video embedding by leveraging more than 130M video clip-caption pairs. They then evaluate the learned embeddings on the tasks of localizing steps in instructional videos of CrossTask and textbased video retrieval on YouCook2, MSR-VTT and LSMDC datasets. They show that their learned embedding can perform better compared to models trained on existing carefully annotated but smaller video description datasets."
+15,"BLIP-2 achieves state-of-the-art performance on various vision-language tasks, despite having significantly fewer trainable parameters than existing methods"
+16,"Base models are evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, MBPP, BBH, CMMLU, all standard English and Chinese benchmarks, and chat models are evaluated on Chatbot Arena, AlpacaEval, MT-Bench, etc."
+17,BioMistral was evaluated on a benchmark comprising 10 established medical question-answering (QA) tasks in English and seven other languages.
+18,"Boasts the highest performance among the Korean LLMs of similar sizes that have been released to date, according to internal evaluations."
+19,Chronos has been evaluated comprehensively on 42 datasets both in the in-domain (15 datasets) and zero-shot settings (27 datasets). Chronos outperforms task specific baselines in the in-domain setting and is competitive or better than trained models in the zero-shot setting.
+20,Compared models trained on OpenWebMath for 1 epoch to models trained on The Pile and ProofPile on mathematics benchmarks.
+21,Compared to DALL·E 3 based on a qualitative user comparison.
+22,"Compared to Stable Diffusion 2, a SOTA text-to-image model."
+23,"Compared to other human image datasets on data quantity, image quality, and annotations."
+24,Compared to other segmentation models across different modalities on BraTS2023 dataset.
+25,Compared to self before being scaled on quality of video generation.
+26,"Compared with other multi-task, instruction-following agents."
+27,Compared with other open and closed datasets in regards to size and quality control.
+28,Conducted experiments on models trained with Multimodal C4 in comparison to models trained on single image/caption datasets
+29,"DBRX outperforms established open-source and open-weight base models on the Databricks Model Gauntlet, the Hugging Face Open LLM Leaderboard, and HumanEval. Full evaluation details can be found in the corresponding technical blog post."
+30,"Deepseek and baseline models (for comparison) evaluated on a series of representative benchmarks, both in English and Chinese."
+31,Emu significantly outperforms a publicly available state-of-the-art model SDXLv1.0 on visual appeal when compared on standard benchmarks.
+32,"Evaluated Med-Gemini on 14 medical benchmarks spanning text, multimodal and long-context applications, establishing new state-of-the-art (SoTA) performance on 10 of them, and surpassing the GPT-4 model family on every benchmark where a direct comparison is viable."
+33,Evaluated across a range of domain tasks across standard benchmarks in comparison to predecessor Llama 2.
+34,Evaluated across a range of standard datasets regarding multiple model capabilities like language comprehension and logical reasoning.
+35,"Evaluated across a range of video-related tasks and compared to other multimodal models like CLIP, VideoPrism, and VideoCoCa. InternVideo 2 generally performs among the best of such models on these benchmarks."
+36,Evaluated across a variety of standard benchmarks in comparison to LLaMA 2.
+37,Evaluated across a variety of standard benchmarks in comparison to Mistral.
+38,Evaluated across different text benchmarks in English and Chinese.
+39,"Evaluated across standard benchmarks and generally performs better than Mixtral, which it was fine-tuned on."
+40,Evaluated against benchmarks that are specifically designed to assess the capabilities of LLMs in handling longer contexts.
+41,Evaluated against similar LLMs using GPT-4 as a judge.
+42,"Evaluated against state of the art models on benchmarks, and found to be most performant model outside of GPT-4."
+43,Evaluated based on own constructed dataset covering 433 languages.
+44,Evaluated by human testers on generalization capabilities and responses compared to other chatbots.
+45,"Evaluated by human testers rating alignment of text input, image output pairs."
+46,"Evaluated in 1-shot against the PaLM models, with the tasks of the paper ""Language models are few-shot learners"" (Brown et al., 2020); (2) on a small set of few-shot tasks reported by the GPT-4 paper; (3) against state-of-the-art models across common sense, question answering, and code tasks; (4) against models which also report results from the EAI Harness, for which we are able to compare with identical prompts and metrics."
+47,Evaluated in comparison to CLIP.
+48,Evaluated in comparison to Flamingo and OpenFlamingo on standard benchmarks.
+49,"Evaluated in comparison to LLaMA 2 and MPT Instruct, and outperforms both on standard benchmarks."
+50,Evaluated in comparison to LLaMA series models on standard benchmarks.
+51,Evaluated in comparison to LLaMA series models on standard language benchmarks.
+52,Evaluated in comparison to SOTA video-to-language models.
+53,"Evaluated in comparison to the MusicCaps dataset and with respect to n-gram, neural metrics."
+54,Evaluated in comparison with ChatGPT and Stanford Alpaca.
+55,Evaluated models trained on The Stack on HumanEval and MBPP and compared against similarly-sized models.
+56,Evaluated on AlpacaEval Leaderboard benchmarks.
+57,Evaluated on AlpacaEval benchmark against SOTA LLMs.
+58,Evaluated on COCO captioning and VQAv2 vision-language tasks.
+59,Evaluated on EleutherAI evaluation harness.
+60,Evaluated on English and Chinese language benchmarks.
+61,"Evaluated on English and Korean benchmarks in comparison to open source English and multilingual LLMs, with HyperCLOVA X (closed) surpassing the models compared."
+62,"Evaluated on English and coding tasks and benchmarks, and outperforms LLaMA 2 in some."
+63,Evaluated on Frechet Audio Distance and Kullback-Leibler Divergence as well as qualitative studies with human participants.
+64,"Evaluated on GLUE, SQuAD 2.0, and CoQA benchmarks."
+65,Evaluated on GSM8K and the competition-level MATH dataset.
+66,"Evaluated on MATH, a competition-level dataset, and achieves a 46% accuracy, higher than accuracy produced by GPT-4's chain of thought."
+67,"Evaluated on MMLU, C-Eval, GSM8K, MATH, HumanEval, etc."
+68,"Evaluated on MMLU, GSM8K, HumanEval, and GPQA benchmarks, among others."
+69,Evaluated on MT-Bench and AlpacaEval. compared to other chatbots.
+70,Evaluated on MT-Bench and AlphaEval benchmarks.
+71,Evaluated on MultiMedBench tasks and radiologist evaluations of model-generated chest X-ray reports
+72,Evaluated on MultiPL-E system benchmarks.
+73,Evaluated on OpenLLM leaderboard.
+74,"Evaluated on SWE-Bench, a challenging software engineering benchmark, where Devin outperforms major state of the art models unassisted."
+75,Evaluated on TruthfulQA as main evaluation benchmark.
+76,Evaluated on a range of benchmarks and performed on par with LLaMA-7B.
+77,"Evaluated on a range of standardized vision benchmarks, and achieves state of the art performance on all experimentally."
+78,Evaluated on a variety of NLP benchmarks and found to perform similarly to OPT and BLOOM models.
+79,Evaluated on a variety of standard language datasets.
+80,"Evaluated on all language datasets compared to similarly sized SOTA models, with Aurora-M achieving strong performance in most."
+81,Evaluated on benchmark music understanding tasks on SOTA music datasets.
+82,"Evaluated on benchmarks pertaining to speech, music, and other audio recognition."
+83,"Evaluated on code generation, code completion, cross-file code completion, and program-based math reasoning across standard benchmarks."
+84,"Evaluated on code retrieval and data retrieval capabilities, with improvements compared to the standard in both."
+85,Evaluated on common LLM benchmarks in comparison to other Mistral derivatives.
+86,Evaluated on common LLM benchmarks.
+87,Evaluated on common sense and world knowledge benchmarks.
+88,"Evaluated on common sense reasoning, language understanding, and multi-step reasoning compared to other SOTA language models."
+89,Evaluated on commonly used benchmarks in comparison to the current LLM leaders.
+90,Evaluated on evaluation trajectories and SoTA baselines using robotic data.
+91,"Evaluated on four prominent code generation benchmarks HumanEval, HumanEval+, MBPP, and DS100."
+92,Evaluated on human and machine benchmarks in comparison to established image models as a baseline.
+93,Evaluated on image captioning and visual question answering across many benchmarks.
+94,Evaluated on image captioning and visual question answering benchmarks.
+95,Evaluated on image generation benchmarks in comparison to equal and smaller-sized models.
+96,"Evaluated on in-distribution robotics skills, and outperforms its predecessor RT-1 by 50% in emergent skill evaluations."
+97,"Evaluated on in-distribution robotics skills, and outperforms its predecessor RT-2 by 3x in emergent skill evaluations."
+98,"Evaluated on in-house benchmark, FIN-bench, adapted from BIG-bench for Finnish."
+99,"Evaluated on loss, rewards, logps, and logits rejected and chosen."
+100,Evaluated on math benchmarks in comparison to general large language models.
+101,Evaluated on multilingual and NLP benchmarks in comparison with SoTA models of comparable size.
+102,Evaluated on nascent time-series datasets and benchmarks.
+103,Evaluated on objective and reliability metrics.
+104,Evaluated on open source multilingual model benchmarks.
+105,"Evaluated on open-ended conversation accuracy and long context question answering. In evaluations, Claude 2.1 demonstrated a 30% reduction in incorrect answers and a 3-4x lower rate of mistakenly concluding a document supports a particular claim."
+106,Evaluated on open-sourced general benchmarks in comparison to SotA LLMs.
+107,Evaluated on own framework that tests domain-specific tasks in medical field.
+108,Evaluated on popular time-series benchmarks.
+109,Evaluated on previously unseen time series datasets.
+110,"Evaluated on public benchmarks like MMLU, CMMLU, GSM8K, and HumanEval."
+111,"Evaluated on reasoning, math, coding, reading comprehension, and question answering, outperforming GPT-4 on standard benchmarks."
+112,Evaluated on relatively simple established benchmarks.
+113,Evaluated on researcher experiments to test deeper understanding and advanced commonsense reasoning
+114,Evaluated on several benchmark LLM tasks
+115,Evaluated on several code benchmarks like HumanEval and MBPP.
+116,Evaluated on several popular benchmarks and performance in different fields.
+117,"Evaluated on several standard benchmarks (e.g. ARC, BoolQ, HellaSwag, RTE, Winogrande)"
+118,Evaluated on standard English LLM benchmarks and adapted Arabic LLM benchmarks.
+119,Evaluated on standard LLM and multilingual benchmarks in comparison to SotA models.
+120,"Evaluated on standard LLM and technical benchmarks in comparison to Inflection-1 and GPT-4, along with advanced STEM examinations."
+121,"Evaluated on standard LLM benchmarks across a range of fields like reasoning, code generation, and mathematical skills."
+122,Evaluated on standard LLM benchmarks and in multilingual tasks compared to similarly sized open-source models.
+123,Evaluated on standard LLM benchmarks in comparison to similar-sized models.
+124,"Evaluated on standard LLM tasks and benchmarks in comparison to LLaMA, Falcon, and MPT, in addition to other same-sized models."
+125,Evaluated on standard VLM benchmarks and outperforms SotA open-source VLMs as of release.
+126,Evaluated on standard academic benchmarks and internal Meta libraries.
+127,Evaluated on standard and ocean science benchmarks in comparison to other similar-sized models.
+128,Evaluated on standard benchmarks across a range of tasks.
+129,"Evaluated on standard benchmarks for knowledge and language understanding, mathematical reasoning, and programming ability in comparison to similarly sized open-source models."
+130,Evaluated on standard benchmarks in comparison to other German language models.
+131,"Evaluated on standard benchmarks including MMLU, CEval, and DROP."
+132,"Evaluated on standard datasets in multilingual, cross-lingual, long document retrieval, and Q&A domains."
+133,"Evaluated on standard general, reasoning, math, coding, and multimodal benchmarks with results that surpass GPT-4 on almost all."
+134,Evaluated on standard image processing benchmarks
+135,Evaluated on standard image understanding benchmarks.
+136,"Evaluated on standard language benchmarks, common sense reasoning, and reading comprehension in comparison to SoTA LLMs."
+137,Evaluated on test set of actions in comparison to SoTA image editing models.
+138,Evaluated on text and code benchmarks in comparison to other models.
+139,Evaluated on the COCO dataset.
+140,"Evaluated on the MMLU, GSM8K, MATH, and HumanEval benchmarks. According to these benchmarks, Fuyu-Heavy is, as of release, the strongest multimodal model trained outside of Google or OpenAI."
+141,Evaluated on the OKVQA benchmark as a fully open-ended generative task.
+142,"Evaluated on the OpenLLM benchmarks and, on release, outperforms all other 7B models on the OpenLLM Leaderboard."
+143,"Evaluated on the OpenLLM leaderboard, performing on par with similar-sized models."
+144,"Evaluated on the OpenLLM leaderboard, releasing at rank number 4 on the leaderboard."
+145,Evaluated on the SuperGLUE benchmark
+146,Evaluated on the dimensions proposed by OpenCompass in comparison to other LLMs.
+147,Evaluated on the object hallucination benchmark and compared to GPT-4V.
+148,"Evaluated on three physical control tasks, drawing, steering, and human body movement on various dynamics"
+149,"Evaluated on wide range of language benchmarks like MMLU 5-shot, GSM-8K, and HellaSwag 10-shot among others."
+150,Evaluated on wide range of tasks using own evaluation benchmarks.
+151,Evaluated on zero-shot classification performance across multiple image classification benchmarks.
+152,"Evaluated on zero-shot text-to-speech benchmarks, with Voicebox outperforming the current state-of-the-art English model VALL-E."
+153,Evaluated using AST sub-tree matching technique and compared to other models in terms of API functionality accuracy.
+154,Evaluated using only out-of-distribution image prompts for qualitative results.
+155,Evaluated via a user study comparing preferences between Stable Video Diffusion and competing text-to-video models.
+156,Evaluated via qualitative comparison relative to other SoTA image generation models.
+157,"Evaluated with human feedback on helpfulness, harmfulness, and honesty and on the Bias Benchmark for QA."
+158,Evaluation was conducted on standard LLM benchmarks and includes internal red-teaming testing of relevant content policies.
+159,Evaluations in paper are primarily considering the fidelity and novelty of samples from Jukebox.
+160,"FLAVA is benchmarked on a range of vision-only (e.g. CIFAR-10), language-only (e.g. GLUE), and multimodal (e.g. Hateful Memes) standard evaluations."
+161,FLD-5B evaluated in comparison to datasets that power other large-scale image models on standard image benchmarks.
+162,"Falcon-180B outperforms LLaMA-2, StableLM, RedPajama, MPT on the Open LLM Leaderboard at https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard."
+163,Grok-1 was evaluated on a range of reasoning benchmark tasks and on curated foreign mathematic examination questions.
+164,"In order to evaluate the accuracy and robustness of Conformer-1, we sourced 60+ hours of human labeled audio data covering popular speech domains such as call centers, podcasts, broadcasts, and webinars. We then calculated the Word Error Rate (WER) of Conformer-1 against these datasets, and compared the results against Whisper and a number of other ASR models. To ground our results against popular open source speech recognition benchmarks, we also performed the same WER analysis against a number of academic datasets."
+165,Jamba outperforms or matches other state-of-the-art models in its size class on a wide range of benchmarks.
+166,Large Video Dataset compared to publicly available research datasets on general statistics before and after filtering.
+167,LlongOrca evaluated on BigBench-Hard and AGIEval results.
+168,"Mainly evaluated on MT-Bench and AlpacaEval, which are GPT-4-based comparisons."
+169,"Marengo-2.6 sets new benchmarks in zero-shot text-to-video, text-to-image, and text-to-audio retrieval tasks with a single embedding model."
+170,"MassiveText data was analyzed for toxicity, language distribution, URL breakdown, and tokenizer compression rates on the subsets [[Section A.2]](https://arxiv.org/pdf/2112.11446.pdf#subsection.A.2).
+"
+171,Mistral model fine-tuned on AutoMathText and evaluated on the MATH dataset.
+172,Model evaluated on a suite of short-context task benchmarks.
+173,"Model evaluated over AlpacaEval, Rouge score over BookSum, and accuracy over MQA."
+174,"Model performance was evaluated and analyzed on 152 NLP tasks including: Language Modelling (20), Reading Comprehension (3), Fact Checking (3), Question Answering (3), Common Sense (4), MMLU (57), BIG-bench (62) [[Section 4]](https://arxiv.org/pdf/2112.11446.pdf#section.4); on toxicity and bias datasets [[Section 5]](https://arxiv.org/pdf/2112.11446.pdf#section.5); and on dialogue tasks [[Section 6]](https://arxiv.org/pdf/2112.11446.pdf#section.6).
+"
+175,"Model performance was evaluated and analyzed on many NLP tasks including language modeling, reading comprehension, question answering, commonsense-intensive tasks, and the BIG-Bench and MMLU meta-benchmarks.
+"
+176,"Model performance was evaluated on image and video datasets primarily, including dialogue.
+"
+177,"Model performance was evaluated on simulated and robotics task primarily, including out-of-distribution and skill generalization.
+"
+178,"Model performance was evaluated using automated (Frechet Video Distance; Frechet Inception Distance) and human evaluation on two datasets (UCF-101, MSR-VTT) in the zero-shot setting.
+"
+179,Models fine-tuned on EXMODD and earlier dataset Image-Chat and then evaluated on Image-Chat validation set.
+180,Models of size 150k parameters trained on ToyMix and compared to models trained on its dependencies across GNN baselines.
+181,Models of size between 4M and 6M parameters trained for 200 epochs on LargeMix and compared to models trained on its dependencies across GNN baselines.
+182,Models of size between 4M and 6M parameters trained for 50 epochs on UltraLarge and compared to models trained on its dependencies across GNN baselines.
+183,Models trained on OpenOrca compared to GPT-series on language benchmarks.
+184,Models trained with dataset evaluated on downstream performance.
+185,Moirai has undergone a comprehensive evaluation in both in-distribution and out-of-distribution settings. It demonstrated its capabilities as a zero-shot forecaster and delivered competitive or superior performance compared to full-shot models.
+186,"MusicGen was evaluated on standard music benchmarks of Frechet Audio Distance, Kullback-Leibler Divergence, and its CLAP score."
+187,Orca 2 has been evaluated on a large number of tasks ranging from reasoning to grounding and safety.
+188,Outperforms GPT-4 in common sense and reasoning tasks on the basis of both efficiency and accuracy.
+189,"PEER is evaluated on core research questions intended to gauge language understanding, proper use of citations, instruction following, and iterative use."
+190,"Performance assessed on BIG-bench arithmetic sub-task, and various elementary arithmetic tasks."
+191,Performance evaluated on English and Chinese language benchmark tests.
+192,Platypus achieves the strongest performance and currently stands at first place in HuggingFace’s Open LLM Leaderboard as of its release date.
+193,"RakutenAI achieves the highest average score in both Japanese and English LM-Harness metrics, outperforming other similarly-sized Japanese language models."
+194,Randomly chosen models trained on UltraFeedback evaluated across standard benchmarks.
+195,"Randomly sampled dialogues from dataset are evaluated according to six established criteria of natural flow, context dependence, topic consistency, speaker consistency, specificity, and overall."
+196,"Reka Core was evaluated against leading models such as OpenAIs GPT-4, Claude-3 Opus, and Gemini Ultra on a variety of tasks and metrics including multimodal and human evaluation conducted by a third party. It was found to be competitive or even surpassing these models."
+197,Reports results on standard LLM benchmarks in comparison to other LLMs and test sets.
+198,Reports results on standard code benchmarks across a variety of programming languages.
+199,Reports results on standard translation benchmarks across 102 languages in comparison with Google Translate and ChatGPT
+200,Reports results on the Vicuna benchmark and compares performance level and time expenditure with ChatGPT
+201,See https://arxiv.org/pdf/2402.19173.pdf
+202,See the paper.
+203,Some seed samples were used in different prompt styles and audiences. Less than 1% of files are duplicates after running MinHash deduplication. Contaminated samples were removed from each dataset split.
+204,Subset of training dataset evaluated for bias using Data Measurements Tool.
+205,"Tested on several benchmarks, most notably Python benchmark HumanEval."
+206,"The FuseChat model was evaluated on MT-Bench which comprises 80 multi-turn dialogues spanning writing, roleplay, reasoning, math, coding, stem, and humanities domains. It yields an average performance of 66.52 with specific scores for individual domains available in the leaderboard results."
+207,"The GPT-3 model was evaluated on language modeling, closed-book question answering, translation, Winograd-style tasks, commonsense reasoning, reading comprehension, SuperGLUE, NLI, synthetic tasks, and generation [[Section 4]](https://arxiv.org/pdf/2005.14165.pdf#section.4); as well as on fairness and biases [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
+"
+208,"The GPT-3 paper, which also introduces the GPT-3 dataset, provides a limited analysis on the GPT-3 dataset, reporting the dirtiness of the dataset after the it was filtered for text occurring in common benchmarking tasks. The authors report that ""as the dataset becomes more contaminated, the variance of the clean over all fraction increases, but there is no apparent bias towards improved or degraded performance"" [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C)."
+209,"The Gato dataset compiles many datasets introduced in prior works, with associated analyses.
+"
+210,"The Whisper paper provides limited details on preprocessing.
+"
+211,"The authors analyzed the impact of the dataset mixture on the preference models (PM). In addition to human evaluation, RLHF model were evaluated on MMLU, Lambada, HellaSwag, OpenBookQA, ARC-Easy, ARC-Challenge, TriviaQA, code generation, summarization.
+"
+212,"The authors found that the crowdworkers didn't exhaustively check for honesty in the model answers they preferred [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
+"
+213,"The authors found that the dataset contained 21% of the images in the MS-COCO validation set, but observed no significant changes in the performance of the accompanying DALL·E when tested on MS-COCO evaluation set with and without the said images [[Section 3.1]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.1)."
+214,"The crowdworkers were told that ""lying isn't helpful"" and asked to prefer honest responses, which led to models with higher honesty scores. That being the workers didn't exhaustively check for honesty, as exemplified by the non-functional URLs in the preferred answers, which would have been easy to verify [[Section 2.1]](https://arxiv.org/pdf/2204.05862.pdf#subsection.2.1).
+"
+215,"The dataset contained some overlap with the test sets of the benchmarks used for evaluation, but the authors determined the impact to be small: ""There is a median overlap of 2.2% and an average overlap of 3.2%. Due to this small amount of overlap, overall accuracy is rarely shifted by more than 0.1% with only 7 datasets above this threshold"" [[Section 5]](https://arxiv.org/pdf/2103.00020.pdf#section.5).
+"
+216,"The dataset is benchmarked against CC3M on two most fundamental V+L tasks: vision-to-language generation and vision-and-language matching, with an emphasis on long-tail visual recognition. The results illustrate the benefit of scaling up pre-training data for vision-and-language tasks, as indicated by the new state-of-the-art results on both the nocaps and Conceptual Captions benchmarks.
+"
+217,"The model has been evaluated against benchmarks that test common sense, language understanding, mathematics, coding, long-term context, and logical reasoning. The Phi-3 Mini-128K-Instruct demonstrated robust and state-of-the-art performance among models with fewer than 13 billion parameters."
+218,The model is capable of generating explicit content and the researchers found limited amount of spurious content generated.
+219,The model is capable of generating explicit content and the researchers found limited amount of spurious content generated. The researchers also found that visual synonyms can be used to prompt the model to surface unwanted generations [[Probes and Evaluations]] (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#probes-and-evaluations).
+220,"The model is evaluated in a zero-shot setting without chain-of-thought prompting. The evaluation domains include multi-disciplinary reasoning, understanding documents, science diagrams, charts, screenshots, photographs and real-world spatial understanding. The model shows competitive performance with existing frontier multimodal models."
+221,"The model performance was analyzed on sensibleness, specificity and interestingness. The model was also analyzed on safety, following metrics derived from Google AI Principles [[Appendix A.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.A.1). Finally, the model was analyzed on groundedness, testing its ability to produce responses that can be associated with ""known sources whenever possible [[Section 4.1]](https://arxiv.org/pdf/2201.08239.pdf#subsection.4.1).""
+"
+222,The model was compared with SOTAs and has shown good performance in generating high-quality human images.
+223,The model was comprehensively benchmarked across 12 tests covering five tasks. Eurus achieved the best overall performance among open-source models of similar sizes and even outperformed specialized models in many cases.
+224,"The model was evaluated against three prior approaches, AttnGAN, DM-GAN, and DF-GAN using Inception Score and Fréchet Inception Distance on MS-COCO as metrics. The model was also evaluated by humans and received the majority of the votes in generating images that look realistic and better match the caption when compared to the images generated by DF-GAN [[Section]](https://arxiv.org/pdf/2102.12092.pdf#section.3).
+"
+225,"The model was evaluated for zero-shot English and multingual speech recognition, translation, language identification and robustness to noise."
+226,"The model was evaluated on 3 benchmarks (MMLU for English, M3Exam (M3e) for English, Chinese, Vietnamese, Indonesian, and Thai, and VMLU for Vietnamese) and it outperformed GPT-3 and Vistral-7B-chat models across these benchmarks in the given languages."
+227,"The model was evaluated on human ratings to the InstructGPT answers to the prompts submitted to the OpenAI API as well as on public NLP datasets spanning truthfulness, toxicity, and bias, question answering, reading comprehension, and summarization tasks."
+228,"The model was evaluated on standard NLP benchmarks: LAMBADA, ANLI, HellaSwag, MMLU among others [[Section 4]](http://eaidata.bmk.sh/data/GPT_NeoX_20B.pdf#section.4).
+"
+229,"The model was evaluated on standard vision datasets (e.g. CIFAR10, ImageNet) and showed robust state of the art results."
+230,The model was evaluated on the HELM benchmark as discussed in https://www.ai21.com/blog/introducing-j2.
+231,"The model was evaluated using the HumanEval dataset with pass@k metric and BLEU scores [[Section 2]](https://arxiv.org/pdf/2107.03374.pdf#section.2).
+"
+232,"The model was examined across a range of benchmarks including GPT4All, AGIEval, BigBench, TruthfulQA and in-house evaluations of function calling and JSON mode."
+233,"The model's performance was analyzed on Hellaswag and COPA, as well as several safety benchmarks [[Model Card]](https://docs.cohere.ai/generation-card)."
+234,"The model's performance was analyzed on several safety benchmarks [[Model Card]](https://docs.cohere.ai/representation-card).
+"
+235,"The models were evaluated based on their performance on standard benchmarks and real-world scenarios. These evaluations were performed using a high-quality human evaluation set containing 1,800 prompts covering multiple use cases. The models also went through red-teaming for safety, where human experts and automated methods were used to generate adversarial prompts to test for problematic responses."
+236,"The models were evaluated in terms of zero-shot, LLM360, and OpenLLM leaderboard results."
+237,"The models were evaluated on SuperGLUE, CodeXGLUE, as well as MMLU and Bigbench Hard. Comparisons were made with T5v1.1 and found that Pile-T5 models performed better in most conditions."
+238,The performance of Idefics2 has been evaluated on numerous benchmarks. It is top of its class size and competes with much larger models such as LLava-Next-34B and MM1-30B-chat.
+239,UFOGen is evaluated on standard image benchmarks against other models fine-tuned with Stable Diffusion.
+240,UltraLM evaluated off of UltraChat is evaluated on standard LLM benchmarks.
+241,"Yi-VL outperforms all existing open-source models in MMMU and CMMMU, two advanced benchmarks that include massive multi-discipline multimodal questions (based on data available up to January 2024)."
+242,"evaluated on DSTC11 Challenge Task, based on MultiWoz 2.1, with a focus on dialog state tracking."
+243,https://arxiv.org/abs/2104.08758
+244,https://huggingface.co/bigscience/bloomz#evaluation
+245,https://huggingface.co/spaces/bigscience-data/roots-search
+246,https://huggingface.co/t5-base#evaluation
+247,outperforms majority of preceding state-of-the-art models over 15 unique biomedical modalities.
+248,unknown
