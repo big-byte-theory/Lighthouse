@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getLlms, addLlm, updateLlm, deleteLlm } from "../services/llmService";
+import { getLlmAccess, getLlmAdaptation, getLlmAnalysis } from "../services/llmService";
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
 
