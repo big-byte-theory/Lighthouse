@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const LlmSchema = new mongoose.Schema({
   type_id: {
@@ -127,4 +127,6 @@ const LlmSchema = new mongoose.Schema({
   },
 }, { timestamps: true });
 
-module.exports = mongoose.model('Llm', LlmSchema);
+const llm = mongoose.model('Llm', LlmSchema);
+
+export default llm;
