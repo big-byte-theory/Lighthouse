@@ -39,7 +39,7 @@ export default class Server {
       origin: this.#allowedOrigin, //allow only the react front end to be the origin
       credentials: true, //allow for the use of the auth tokens
       methods: ['GET', 'DELETE', 'POST', 'PUT'], //allowed methods
-      allowedHeaders: ['Content-Type', 'Authorization', 'x-userprofile'], //allowed headers
+      allowedHeaders: ['Content-Type', 'Authorization'], //allowed headers
     };
   }
   

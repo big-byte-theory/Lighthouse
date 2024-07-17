@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from "/assets/images/lighthouse-logo.svg";
 
@@ -29,7 +29,7 @@ const Header = () => {
 							</li>
 						</ul>
 					</nav>
-					<button className="ml-6 btn btn-primary !mt-0">Sign In</button>
+					<Link to="/login" className="ml-6 btn btn-primary !mt-0">Sign In</Link>
 				</div>
 			</div>
 		</header>
