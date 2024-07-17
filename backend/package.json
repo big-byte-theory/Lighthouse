@@ -9,9 +9,14 @@
 	"type": "module",
 	"scripts": {
 		"start": "node index.js",
-		"dev": "nodemon NODE_ENV=development index.js",
-		"test": "NODE_ENV=test echo \"Error: no test specified\" && exit 1",
+		"dev": "cross-env NODE_ENV=development nodemon index.js",
+		"prod": "cross-env NODE_ENV=production nodemon index.js",
+		"test": "cross-env NODE_ENV=test echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint ."
+	},
+	"engines": {
+		"node": "20.11.1",
+		"npm": "10.2.4"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
@@ -20,6 +25,7 @@
 		"mongoose": "^5.13.3"
 	},
 	"devDependencies": {
+		"cross-env": "^7.0.3",
 		"eslint": "^7.32.0",
 		"nodemon": "^2.0.7"
 	}
