@@ -308,7 +308,7 @@ const Catalogue = () => {
 									<td>Shining Star</td>
 									<td>Earth, Wind, and Fire</td>
 									<td>
-										<div className="label label-ltd">Limited</div>
+										<div className="label label-limited">Limited</div>
 									</td>
 									<td>Earth, Wind, and Fire</td>
 									<td>1975</td>
