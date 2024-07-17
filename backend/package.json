@@ -1,25 +1,35 @@
 {
 	"name": "lighthouse",
 	"version": "1.0.0",
-  "main": "server.js",
 	"keywords": [],
 	"author": "Big Byte Theory",
 	"license": "ISC",
 	"description": "An LLM catalog application project for HorizonX Consulting. Made for Digital Future's Hackathon week.",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.13.3"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "nodemon": "^2.0.7"
-  }
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "cross-env NODE_ENV=development nodemon index.js",
+		"prod": "cross-env NODE_ENV=production nodemon index.js",
+		"test": "cross-env NODE_ENV=test echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint ."
+	},
+	"engines": {
+		"node": "20.11.1",
+		"npm": "10.2.4"
+	},
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-validator": "^7.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^5.13.3"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.3",
+		"eslint": "^7.32.0",
+		"nodemon": "^2.0.7"
+	}
 }
