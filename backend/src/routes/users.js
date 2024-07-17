@@ -20,12 +20,12 @@ export default class UserRoutes {
     //   "/login",
     //   this.#controller.loginUser
     // );
-    // this.#router.post(
-    //   "/sign-up",
-    //   // UserValidator.validate(),
-    //   // UserValidator.checkDuplicateEmail,
-    //   this.#controller.addUser
-    // );
+    this.#router.post(
+      "/sign-up",
+      // UserValidator.validate(),
+      // UserValidator.checkDuplicateEmail,
+      this.#controller.addUser
+    );
     // this.#router.get(
     //   "/members/:id",
     //   this.#controller.getUser
