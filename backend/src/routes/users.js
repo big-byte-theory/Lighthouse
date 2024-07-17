@@ -16,10 +16,10 @@ export default class UserRoutes {
   }
 
   #initialiseRoutes = () => {
-    // this.#router.post(
-    //   "/login",
-    //   this.#controller.loginUser
-    // );
+    this.#router.post(
+      "/login",
+      this.#controller.loginUser
+    );
     this.#router.post(
       "/sign-up",
       // UserValidator.validate(),
@@ -27,11 +27,11 @@ export default class UserRoutes {
       this.#controller.addUser
     );
     // this.#router.get(
-    //   "/members/:id",
+    //   "/user/:id",
     //   this.#controller.getUser
     // );
     // this.#router.put(
-    //   "/members/:id/edit",
+    //   "/user/:id",
     //   // Jwt.verifyToken,
     //   // ProfileValidator.validate(),
     //   this.#controller.editUser
