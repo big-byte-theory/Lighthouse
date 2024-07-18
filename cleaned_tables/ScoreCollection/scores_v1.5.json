@@ -1,0 +1,822 @@
+{
+  "01-ai_yi-large-preview": [
+    {
+      "test_name": "commonsense",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.946
+        }
+      ]
+    },
+    {
+      "test_name": "gsm",
+      "metric": "final_number_exact_match",
+      "subsets": [
+        {
+          "score": 0.69
+        }
+      ]
+    },
+    {
+      "test_name": "legalbench",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.7368421052631579,
+          "subset": "abercrombie"
+        },
+        {
+          "score": 0.14489795918367346,
+          "subset": "corporate_lobbying"
+        },
+        {
+          "score": 0.23705722070844687,
+          "subset": "function_of_decision_section"
+        },
+        {
+          "score": 0.591,
+          "subset": "international_citizenship_questions"
+        },
+        {
+          "score": 0.8842105263157894,
+          "subset": "proa"
+        }
+      ]
+    },
+    {
+      "test_name": "math",
+      "metric": "math_equiv_chain_of_thought",
+      "subsets": [
+        {
+          "score": 0.8740740740740741,
+          "subject": "algebra"
+        },
+        {
+          "score": 0.7692307692307693,
+          "subject": "counting_and_probability"
+        },
+        {
+          "score": 0.5526315789473685,
+          "subject": "geometry"
+        },
+        {
+          "score": 0.5576923076923077,
+          "subject": "intermediate_algebra"
+        },
+        {
+          "score": 0.8,
+          "subject": "number_theory"
+        },
+        {
+          "score": 0.7790697674418605,
+          "subject": "prealgebra"
+        },
+        {
+          "score": 0.6491228070175439,
+          "subject": "precalculus"
+        }
+      ]
+    },
+    {
+      "test_name": "med_qa",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.6600397614314115
+        }
+      ]
+    },
+    {
+      "test_name": "mmlu",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.6,
+          "subject": "abstract_algebra"
+        },
+        {
+          "score": 0.52,
+          "subject": "college_chemistry"
+        },
+        {
+          "score": 0.86,
+          "subject": "computer_security"
+        },
+        {
+          "score": 0.7280701754385965,
+          "subject": "econometrics"
+        },
+        {
+          "score": 0.85,
+          "subject": "us_foreign_policy"
+        }
+      ]
+    },
+    {
+      "test_name": "narrative_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.37282202834298434
+        }
+      ]
+    },
+    {
+      "test_name": "natural_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.42769608198028625,
+          "mode": "closedbook"
+        },
+        {
+          "score": 0.5864410195534986,
+          "mode": "openbook_longans"
+        }
+      ]
+    },
+    {
+      "test_name": "wmt_14",
+      "metric": "bleu_4",
+      "subsets": [
+        {
+          "score": 0.21171286504538103,
+          "language_pair": "cs-en"
+        },
+        {
+          "score": 0.17540612783606496,
+          "language_pair": "de-en"
+        },
+        {
+          "score": 0.21829904451109755,
+          "language_pair": "fr-en"
+        },
+        {
+          "score": 0.14923454786363446,
+          "language_pair": "hi-en"
+        },
+        {
+          "score": 0.1256687442986824,
+          "language_pair": "ru-en"
+        }
+      ]
+    }
+  ],
+  "anthropic_claude-3-5-sonnet-20240620": [
+    {
+      "test_name": "commonsense",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.972
+        }
+      ]
+    },
+    {
+      "test_name": "gsm",
+      "metric": "final_number_exact_match",
+      "subsets": [
+        {
+          "score": 0.949
+        }
+      ]
+    },
+    {
+      "test_name": "legalbench",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.8,
+          "subset": "abercrombie"
+        },
+        {
+          "score": 0.7346938775510204,
+          "subset": "corporate_lobbying"
+        },
+        {
+          "score": 0.4550408719346049,
+          "subset": "function_of_decision_section"
+        },
+        {
+          "score": 0.575,
+          "subset": "international_citizenship_questions"
+        },
+        {
+          "score": 0.968421052631579,
+          "subset": "proa"
+        }
+      ]
+    },
+    {
+      "test_name": "math",
+      "metric": "math_equiv_chain_of_thought",
+      "subsets": [
+        {
+          "score": 0.8222222222222222,
+          "subject": "algebra"
+        },
+        {
+          "score": 0.8205128205128205,
+          "subject": "counting_and_probability"
+        },
+        {
+          "score": 0.5789473684210527,
+          "subject": "geometry"
+        },
+        {
+          "score": 0.8269230769230769,
+          "subject": "intermediate_algebra"
+        },
+        {
+          "score": 0.9333333333333333,
+          "subject": "number_theory"
+        },
+        {
+          "score": 0.9534883720930233,
+          "subject": "prealgebra"
+        },
+        {
+          "score": 0.7543859649122807,
+          "subject": "precalculus"
+        }
+      ]
+    },
+    {
+      "test_name": "med_qa",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.8250497017892644
+        }
+      ]
+    },
+    {
+      "test_name": "mmlu",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.75,
+          "subject": "abstract_algebra"
+        },
+        {
+          "score": 0.59,
+          "subject": "college_chemistry"
+        },
+        {
+          "score": 0.89,
+          "subject": "computer_security"
+        },
+        {
+          "score": 0.8070175438596491,
+          "subject": "econometrics"
+        },
+        {
+          "score": 0.96,
+          "subject": "us_foreign_policy"
+        }
+      ]
+    },
+    {
+      "test_name": "narrative_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.7462731245648014
+        }
+      ]
+    },
+    {
+      "test_name": "natural_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.5015987604513761,
+          "mode": "closedbook"
+        },
+        {
+          "score": 0.7493178538118532,
+          "mode": "openbook_longans"
+        }
+      ]
+    },
+    {
+      "test_name": "wmt_14",
+      "metric": "bleu_4",
+      "subsets": [
+        {
+          "score": 0.23034318702908446,
+          "language_pair": "cs-en"
+        },
+        {
+          "score": 0.22782444725576256,
+          "language_pair": "de-en"
+        },
+        {
+          "score": 0.23525202257259342,
+          "language_pair": "fr-en"
+        },
+        {
+          "score": 0.18138759205222438,
+          "language_pair": "hi-en"
+        },
+        {
+          "score": 0.2701113668319304,
+          "language_pair": "ru-en"
+        }
+      ]
+    }
+  ],
+  "google_gemini-1.0-pro-002": [
+    {
+      "test_name": "commonsense",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.788
+        }
+      ]
+    },
+    {
+      "test_name": "gsm",
+      "metric": "final_number_exact_match",
+      "subsets": [
+        {
+          "score": 0.816
+        }
+      ]
+    },
+    {
+      "test_name": "legalbench",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.5894736842105263,
+          "subset": "abercrombie"
+        },
+        {
+          "score": 0.11836734693877551,
+          "subset": "corporate_lobbying"
+        },
+        {
+          "score": 0.4032697547683924,
+          "subset": "function_of_decision_section"
+        },
+        {
+          "score": 0.454,
+          "subset": "international_citizenship_questions"
+        },
+        {
+          "score": 0.8105263157894737,
+          "subset": "proa"
+        }
+      ]
+    },
+    {
+      "test_name": "math",
+      "metric": "math_equiv_chain_of_thought",
+      "subsets": [
+        {
+          "score": 0.8592592592592593,
+          "subject": "algebra"
+        },
+        {
+          "score": 0.6410256410256411,
+          "subject": "counting_and_probability"
+        },
+        {
+          "score": 0.5526315789473685,
+          "subject": "geometry"
+        },
+        {
+          "score": 0.5961538461538461,
+          "subject": "intermediate_algebra"
+        },
+        {
+          "score": 0.6,
+          "subject": "number_theory"
+        },
+        {
+          "score": 0.7558139534883721,
+          "subject": "prealgebra"
+        },
+        {
+          "score": 0.6491228070175439,
+          "subject": "precalculus"
+        }
+      ]
+    },
+    {
+      "test_name": "med_qa",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.4831013916500994
+        }
+      ]
+    },
+    {
+      "test_name": "mmlu",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.27,
+          "subject": "abstract_algebra"
+        },
+        {
+          "score": 0.42,
+          "subject": "college_chemistry"
+        },
+        {
+          "score": 0.69,
+          "subject": "computer_security"
+        },
+        {
+          "score": 0.4824561403508772,
+          "subject": "econometrics"
+        },
+        {
+          "score": 0.81,
+          "subject": "us_foreign_policy"
+        }
+      ]
+    },
+    {
+      "test_name": "narrative_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.7506089527885245
+        }
+      ]
+    },
+    {
+      "test_name": "natural_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.3905657523185001,
+          "mode": "closedbook"
+        },
+        {
+          "score": 0.7141677669834366,
+          "mode": "openbook_longans"
+        }
+      ]
+    },
+    {
+      "test_name": "wmt_14",
+      "metric": "bleu_4",
+      "subsets": [
+        {
+          "score": 0.2311621341929641,
+          "language_pair": "cs-en"
+        },
+        {
+          "score": 0.20540570815247217,
+          "language_pair": "de-en"
+        },
+        {
+          "score": 0.21795342237567317,
+          "language_pair": "fr-en"
+        },
+        {
+          "score": 0.14404041650455712,
+          "language_pair": "hi-en"
+        },
+        {
+          "score": 0.1736110401522043,
+          "language_pair": "ru-en"
+        }
+      ]
+    }
+  ],
+  "google_gemini-1.5-flash-001": [
+    {
+      "test_name": "commonsense",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.928
+        }
+      ]
+    },
+    {
+      "test_name": "gsm",
+      "metric": "final_number_exact_match",
+      "subsets": [
+        {
+          "score": 0.785
+        }
+      ]
+    },
+    {
+      "test_name": "legalbench",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.5789473684210527,
+          "subset": "abercrombie"
+        },
+        {
+          "score": 0.789795918367347,
+          "subset": "corporate_lobbying"
+        },
+        {
+          "score": 0.4250681198910082,
+          "subset": "function_of_decision_section"
+        },
+        {
+          "score": 0.543,
+          "subset": "international_citizenship_questions"
+        },
+        {
+          "score": 0.968421052631579,
+          "subset": "proa"
+        }
+      ]
+    },
+    {
+      "test_name": "math",
+      "metric": "math_equiv_chain_of_thought",
+      "subsets": [
+        {
+          "score": 0.8888888888888888,
+          "subject": "algebra"
+        },
+        {
+          "score": 0.7692307692307693,
+          "subject": "counting_and_probability"
+        },
+        {
+          "score": 0.631578947368421,
+          "subject": "geometry"
+        },
+        {
+          "score": 0.6538461538461539,
+          "subject": "intermediate_algebra"
+        },
+        {
+          "score": 0.7333333333333333,
+          "subject": "number_theory"
+        },
+        {
+          "score": 0.8023255813953488,
+          "subject": "prealgebra"
+        },
+        {
+          "score": 0.7894736842105263,
+          "subject": "precalculus"
+        }
+      ]
+    },
+    {
+      "test_name": "med_qa",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.679920477137177
+        }
+      ]
+    },
+    {
+      "test_name": "mmlu",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.58,
+          "subject": "abstract_algebra"
+        },
+        {
+          "score": 0.6,
+          "subject": "college_chemistry"
+        },
+        {
+          "score": 0.79,
+          "subject": "computer_security"
+        },
+        {
+          "score": 0.6140350877192983,
+          "subject": "econometrics"
+        },
+        {
+          "score": 0.93,
+          "subject": "us_foreign_policy"
+        }
+      ]
+    },
+    {
+      "test_name": "narrative_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.7828677496382116
+        }
+      ]
+    },
+    {
+      "test_name": "natural_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.33241428445406646,
+          "mode": "closedbook"
+        },
+        {
+          "score": 0.7232397428872679,
+          "mode": "openbook_longans"
+        }
+      ]
+    },
+    {
+      "test_name": "wmt_14",
+      "metric": "bleu_4",
+      "subsets": [
+        {
+          "score": 0.23155878999827426,
+          "language_pair": "cs-en"
+        },
+        {
+          "score": 0.21372880556145774,
+          "language_pair": "de-en"
+        },
+        {
+          "score": 0.2406581055724361,
+          "language_pair": "fr-en"
+        },
+        {
+          "score": 0.18608984738647275,
+          "language_pair": "hi-en"
+        },
+        {
+          "score": 0.25347957580346714,
+          "language_pair": "ru-en"
+        }
+      ]
+    }
+  ],
+  "google_gemini-1.5-pro-001": [
+    {
+      "test_name": "commonsense",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.902
+        }
+      ]
+    },
+    {
+      "test_name": "gsm",
+      "metric": "final_number_exact_match",
+      "subsets": [
+        {
+          "score": 0.836
+        }
+      ]
+    },
+    {
+      "test_name": "legalbench",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.7894736842105263,
+          "subset": "abercrombie"
+        },
+        {
+          "score": 0.8612244897959184,
+          "subset": "corporate_lobbying"
+        },
+        {
+          "score": 0.4604904632152589,
+          "subset": "function_of_decision_section"
+        },
+        {
+          "score": 0.675,
+          "subset": "international_citizenship_questions"
+        },
+        {
+          "score": 1.0,
+          "subset": "proa"
+        }
+      ]
+    },
+    {
+      "test_name": "math",
+      "metric": "math_equiv_chain_of_thought",
+      "subsets": [
+        {
+          "score": 0.9555555555555556,
+          "subject": "algebra"
+        },
+        {
+          "score": 0.8717948717948718,
+          "subject": "counting_and_probability"
+        },
+        {
+          "score": 0.7105263157894737,
+          "subject": "geometry"
+        },
+        {
+          "score": 0.6923076923076923,
+          "subject": "intermediate_algebra"
+        },
+        {
+          "score": 0.8,
+          "subject": "number_theory"
+        },
+        {
+          "score": 0.9534883720930233,
+          "subject": "prealgebra"
+        },
+        {
+          "score": 0.7894736842105263,
+          "subject": "precalculus"
+        }
+      ]
+    },
+    {
+      "test_name": "med_qa",
+      "metric": "quasi_exact_match",
+      "subsets": [
+        {
+          "score": 0.6918489065606361
+        }
+      ]
+    },
+    {
+      "test_name": "mmlu",
+      "metric": "exact_match",
+      "subsets": [
+        {
+          "score": 0.75,
+          "subject": "abstract_algebra"
+        },
+        {
+          "score": 0.62,
+          "subject": "college_chemistry"
+        },
+        {
+          "score": 0.83,
+          "subject": "computer_security"
+        },
+        {
+          "score": 0.7280701754385965,
+          "subject": "econometrics"
+        },
+        {
+          "score": 0.93,
+          "subject": "us_foreign_policy"
+        }
+      ]
+    },
+    {
+      "test_name": "narrative_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.7825409539853793
+        }
+      ]
+    },
+    {
+      "test_name": "natural_qa",
+      "metric": "f1_score",
+      "subsets": [
+        {
+          "score": 0.37802870840922326,
+          "mode": "closedbook"
+        },
+        {
+          "score": 0.7481250574384422,
+          "mode": "openbook_longans"
+        }
+      ]
+    },
+    {
+      "test_name": "wmt_14",
+      "metric": "bleu_4",
+      "subsets": [
+        {
+          "score": 0.24556013264656876,
+          "language_pair": "cs-en"
+        },
+        {
+          "score": 0.18709913251551805,
+          "language_pair": "de-en"
+        },
+        {
+          "score": 0.25153855943082887,
+          "language_pair": "fr-en"
+        },
+        {
+          "score": 0.11781184200882963,
+          "language_pair": "hi-en"
+        },
+        {
+          "score": 0.1444894297174213,
+          "language_pair": "ru-en"
+        }
+      ]
+    }
+  ]
+}
