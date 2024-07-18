@@ -1,0 +1,10 @@
+header {
+  a {
+    @apply text-black;
+  }
+  .btn.btn-primary {
+    &:hover {
+      @apply text-white;
+    }
+  }
+}
