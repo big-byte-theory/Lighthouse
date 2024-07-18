@@ -1,9 +1,11 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { isAdmin } from "../services/AuthUserService.js";
 import Layout from "../components/Layout.jsx";
 
 const Dashboard = ({ user }) => {
 	const adminUser = isAdmin(user);
+	console.log(adminUser);
 	useEffect(() => {}, [user]);
 
 	return (
@@ -15,45 +17,45 @@ const Dashboard = ({ user }) => {
 							{!adminUser && (
 								<>
 									<h1 className="col-span-full">Dashboard - User</h1>
-									<div className="col-span-4 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/3</p>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<Link to="/catalogue">Catalogue</Link>
 									</div>
-									<div className="col-span-4 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/3</p>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<Link to="/matrix">Matrix</Link>
 									</div>
-									<div className="col-span-4 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/3</p>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Number of LLMs</p>
 									</div>
-									<div className="col-span-6 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
 										<p>Widget 1/2</p>
 									</div>
-									<div className="col-span-6 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/2</p>
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>News Stories</p>
 									</div>
-									<div className="col-span-full bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Favourite LLMs</p>
+									<div className="col-span-full bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Starred LLMs</p>
 									</div>
 								</>
 							)}
 							{adminUser && (
 								<>
-									<h1>Dashboard - Admin</h1>
-									<div className="col-span-4 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
+									<h1 className="col-span-full">Dashboard - Admin</h1>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
 										<p>Add New LLM</p>
 									</div>
-									<div className="col-span-4 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/3</p>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Number of LLMs</p>
 									</div>
-									<div className="col-span-4 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/3</p>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Number of Users</p>
 									</div>
-									<div className="col-span-6 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/2</p>
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>News Stories</p>
 									</div>
-									<div className="col-span-6 bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
-										<p>Widget 1/2</p>
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Top 5 models</p>
 									</div>
-									<div className="col-span-full bg-red rounded-lg p-5 min-h-40 place-content-center text-white font-semibold">
+									<div className="col-span-full bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
 										<p>Widget Full</p>
 									</div>
 								</>

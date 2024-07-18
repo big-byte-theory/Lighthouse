@@ -41,14 +41,17 @@ export const loggedIn = () => {
   return isTokenExpired(token) ? false : true;
 };
 
-export const isAdmin = (localUser) => {
+export const isAdmin = async (localUser) => {
   if (!localUser) return false;
   const token = JSON.parse(localUser).token;
   const decodedToken = jwtDecode(token);
-  const user = getUser(decodedToken.userId, localUser.token);
-  // const { role } = JSON.parse(user);
-  console.log("role", user.role);
-  return user.role === "admin";
+  try {
+    const user = await getUser(decodedToken.userId, token);
+    return user.data.role === "admin";
+  } catch (error) {
+    console.error("Error decoding token:", error);
+    return error.message;
+  }
 };
 
 export const logout = () => {

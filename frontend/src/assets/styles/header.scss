@@ -1,7 +1,18 @@
 header {
+  .logo a {
+    &:hover {
+      @apply text-red-dark;
+    }
+  }
+
   a {
     @apply text-black;
+
+    &.active {
+      @apply text-red-dark font-semibold;
+    }
   }
+
   .btn.btn-primary {
     &:hover {
       @apply text-white;
