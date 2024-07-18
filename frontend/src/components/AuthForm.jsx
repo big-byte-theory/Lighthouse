@@ -67,8 +67,8 @@ const AuthForm = ({ path }) => {
 				});
 				localStorage.setItem("user", JSON.stringify(result.data));
 				setErrors("");
-				//redirect to home page
-				window.location.href = "/";
+				//redirect to dashboard
+				window.location.href = "/dashboard";
 				break;
 			case 201:
 				//User added. Return them to login page
