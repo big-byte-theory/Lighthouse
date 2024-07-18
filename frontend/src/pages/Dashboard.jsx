@@ -1,27 +1,70 @@
-import Layout from '../components/Layout.jsx';
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { isAdmin } from "../services/AuthUserService.js";
+import Layout from "../components/Layout.jsx";
 
-const Dashboard = () => {
-  return (
+const Dashboard = ({ user }) => {
+	const adminUser = isAdmin(user);
+	console.log(adminUser);
+	useEffect(() => {}, [user]);
+
+	return (
 		<>
 			<Layout>
 				<section className="container wrapper pb-14">
 					<div className="col-span-12 flex flex-col justify-evenly items-center gap-3 text-center z-1">
-            <h1>Dashboard</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium fugiat dolorem cum ratione ut vero voluptate! Quidem, aperiam accusamus?</p>
-            <h2>Heading 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium fugiat dolorem cum ratione ut vero voluptate! Quidem, aperiam accusamus?</p>
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium fugiat dolorem cum ratione ut vero voluptate! Quidem, aperiam accusamus?</p>
-            <h4>Heading 4</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium fugiat dolorem cum ratione ut vero voluptate! Quidem, aperiam accusamus?</p>
-            <h5>Heading 5</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium fugiat dolorem cum ratione ut vero voluptate! Quidem, aperiam accusamus?</p>
-            <h6>Heading 6</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium fugiat dolorem cum ratione ut vero voluptate! Quidem, aperiam accusamus?</p>
+						<div className="flex container">
+							{!adminUser && (
+								<>
+									<h1 className="col-span-full">Dashboard - User</h1>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<Link to="/catalogue">Catalogue</Link>
+									</div>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<Link to="/matrix">Matrix</Link>
+									</div>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Number of LLMs</p>
+									</div>
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Widget 1/2</p>
+									</div>
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>News Stories</p>
+									</div>
+									<div className="col-span-full bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Starred LLMs</p>
+									</div>
+								</>
+							)}
+							{adminUser && (
+								<>
+									<h1 className="col-span-full">Dashboard - Admin</h1>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Add New LLM</p>
+									</div>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Number of LLMs</p>
+									</div>
+									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Number of Users</p>
+									</div>
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>News Stories</p>
+									</div>
+									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Top 5 models</p>
+									</div>
+									<div className="col-span-full bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p>Widget Full</p>
+									</div>
+								</>
+							)}
+						</div>
 					</div>
 				</section>
 			</Layout>
 		</>
 	);
-}
-export default Dashboard
+};
+export default Dashboard;

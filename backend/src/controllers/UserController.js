@@ -4,7 +4,7 @@ import User from "../models/User.js";
 export default class UserController { 
   getUser = async (req, res) => {
     try {
-      const user = await User.findById(req.body.id);
+      const user = await User.findById(req.params.id);
       if (!user) throw new Error("User not found");
       return res.status(200).json(user);
     } catch (err) {
@@ -63,7 +63,7 @@ export default class UserController {
       const token = Jwt.generateToken(user._id);
 
       return res.status(200).json({
-        id: user.id,
+        // id: user.id,
         message: "User logged in",
         token,
       });
