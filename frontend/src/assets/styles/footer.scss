@@ -1,0 +1,9 @@
+footer {
+  .social-icons {
+    .social-icon {
+      .icon {
+        @apply text-red w-full h-full;
+      }
+    }
+  }
+}

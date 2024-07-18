@@ -1,7 +1,7 @@
 import { Router } from "express";
 import UserController from "../controllers/UserController.js";
 // import UserValidator from "../middleware/User.validator.js";
-// import Jwt from "../middleware/Jwt.authenticator.js";
+import Jwt from "../middleware/JwtAuthenticator.js";
 
 export default class UserRoutes {
   #controller;
@@ -26,10 +26,11 @@ export default class UserRoutes {
       // UserValidator.checkDuplicateEmail,
       this.#controller.addUser
     );
-    // this.#router.get(
-    //   "/user/:id",
-    //   this.#controller.getUser
-    // );
+    this.#router.get(
+      "/user/:id",
+      Jwt.verifyToken,
+      this.#controller.getUser
+    );
     // this.#router.put(
     //   "/user/:id",
     //   // Jwt.verifyToken,
