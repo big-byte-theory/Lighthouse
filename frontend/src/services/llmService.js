@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:5000/api/llms';
+const apiUrl = import.meta.env.VITE_APP_BACKENDURL;
 
 export const getLlms = async () => {
-  const response = await axios.get(apiUrl);
+  const response = await axios.get(`${ apiUrl }/catalogue`);
   return response.data;
 };
 
 export const addLlm = async (llm) => {
-  const response = await axios.post(apiUrl, llm);
+  const response = await axios.post(`${apiUrl}/llms`, llm);
   return response.data;
 };
 
