@@ -1,0 +1,76 @@
+training_time_id,training_time
+1,1 day
+2,1 week
+3,10 days
+4,"10,000 steps in 7 hours"
+5,100-1000 petaflop/s-days
+6,1000 epochs
+7,11 days
+8,13 days
+9,130.4 days
+10,"14,284 GPU hours"
+11,"145,152 hours (cumulative)"
+12,15 days
+13,15 days on 1536 TPUs
+14,18 days according to [[the paper]](https://arxiv.org/abs/2210.15257)
+15,2 million steps
+16,2 months
+17,2 weeks
+18,2.5 to 5 days
+19,"20,000 steps"
+20,"24 days, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)"
+21,"24,602 A100 GPU hours"
+22,27 hours
+23,29600 petaflop/s-days
+24,3 days
+25,3 months
+26,30 minutes
+27,3000 A100 hours
+28,"320,256 GPU hours"
+29,35 days
+30,3640 petaflop/s-days
+31,37 hours
+32,38k GPU hours
+33,39 days
+34,4 days
+35,4 days on a 16x16 TPU v3 slice
+36,4 weeks
+37,400K GPU hours
+38,4096 A100 days
+39,4108.80 petaflop/s-day
+40,47.10 petaflop/s-day
+41,47k A100 hours
+42,48 days
+43,5 hours
+44,"50,000 GPU hours"
+45,53 days
+46,54 hours
+47,6 hours
+48,6 weeks
+49,6.79 days
+50,60 petaflops/s-days
+51,60k training steps per day
+52,63 hours on p4d.24xlarge EC2 instance
+53,68 hours
+54,7 days
+55,70 hours on 3 epochs
+56,7039 petaflop/s-days
+57,71.12 petaflop/s-day
+58,7303.24 petaflop/s-day
+59,"750,000 iterations"
+60,8 days
+61,80 hours
+62,84 days
+63,9 months
+64,9.5 days
+65,92k GPU hours
+66,"97,120 hours (cumulative)"
+67,"Approximately 15 days, totaling over 350 GPU hours."
+68,Less than 1 V100-hour
+69,Less than two weeks
+70,Several months
+71,Unknown
+72,few months
+73,less than 9 days
+74,less than 9 hours
+75,unknown

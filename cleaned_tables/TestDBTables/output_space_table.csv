@@ -1,0 +1,36 @@
+output_space_id,output_space
+1,AI-generated chat conversations
+2,AI-generated creations
+3,AI-generated text from prompt
+4,"Actionable responses to security-related questions (text and image). Security event, incident or threat reports (PowerPoint slide)."
+5,Chatbot output in response to user queries
+6,Code completions
+7,Dialogue
+8,Document level insights for users.
+9,Generation
+10,"Given a prompting text, the OpenAI API provides access to text completions, and log probabilities. The support for text and code embeddings were added on 2022-01-25 [[OpenAI Blog Post]] (https://openai.com/blog/introducing-text-and-code-embeddings/).
+"
+11,"Question and answer, summarization, sentiment analysis, topic identification"
+12,Search results
+13,Suggested emails.
+14,"Text Generation, Text Completion"
+15,The text models provide text outputs given text inputs. The multimodal models provide text completions given text and image inputs.
+16,"UI allowing users to indicate their preference for the model responses shown.
+"
+17,data analyses
+18,deployed AI models
+19,embedding
+20,foundation models made accessible via an API
+21,generated images
+22,generation
+23,generation and embeddings
+24,generative AI apps
+25,image
+26,job candidate matches
+27,natural language text guidance
+28,natural language text responses
+29,"question and answer, summarization, sentiment analysis,topic identification"
+30,text
+31,text and code
+32,unknown
+33,web page ranking

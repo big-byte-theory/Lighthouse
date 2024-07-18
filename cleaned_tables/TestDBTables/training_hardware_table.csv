@@ -1,0 +1,121 @@
+training_hardware_id,training_hardware
+1,1 A100 GPU
+2,1 NVIDIA Tesla K80 GPU
+3,"1,024 TPU v3 chips (Cloud TPU Pods)"
+4,10 NVIDIA A5000 GPUs
+5,1024 A100 GPUs
+6,1024 NVIDIA A800 GPUs
+7,1024 TPU-V3 chips
+8,1024 x H100 GPUs
+9,12 x 8 A100 GPUs
+10,128 A100 NVIDIA GPUs
+11,128 NVIDIA A800 (80G) GPUs
+12,128 TPU-v4
+13,128 TPUv3 cores
+14,128 TPUv4
+15,16 A100 GPUs with 80 GB of RAM
+16,16 V100 32GB GPUs
+17,16 x A100 (40GB)
+18,160 A100 GPUs
+19,16x Cerebras CS-2 wafer scale systems
+20,16x16 TPU v3 slice
+21,"192 nodes, each consisting of 4 AMD Instinct MI250X GPUs, a single 64-core AMD Trento CPU and 512GB of memory."
+22,2 custom-built Meta 24K GPU clusters
+23,24 GB VRAM GPU
+24,"248 V100 GPUs, according to [[the paper]](https://arxiv.org/pdf/2204.05999.pdf)"
+25,256 A100
+26,256 A100 40GB GPUs
+27,256 A100 GPUs
+28,"256 NVIDIA A100 GPUs for 32 days, and 64 GPUs for 3 days"
+29,256 TPU-v3
+30,"27 nodes, with each node containing 8x NVIDIA A100-40GB GPUs provided by MosaicML"
+31,2x A100 80GB GPUs
+32,3072 A100 GPUs
+33,3072 H100 80GB SXM5 GPUs across 384 DGX H100 nodes
+34,3072 NVIDIA H100s connected by 3.2Tbps Infiniband
+35,32 80G NVIDIA A100 GPUs
+36,32 A100 40GB GPUs
+37,32 A100 80GB GPUs
+38,32 A100 GPUs
+39,32 A100-40G GPUs
+40,32 GPUs of unspecified type
+41,32 NVIDIA A100 80GB GPUs
+42,32 NVIDIA A800 80GB GPUs
+43,320 A100 GPUs according to [[the paper]](https://arxiv.org/abs/2210.15257)
+44,384 A100 40GB GPUs
+45,4 80GB NVIDIA A40 GPUs
+46,4 A100 GPUs
+47,4 NVIDIA A100 GPUs
+48,4 RTX-3090 GPUs
+49,4096 A100 40GB GPUs
+50,432 H100 GPUs
+51,440 A100 40GB GPUs
+52,4480 A100s (560 x 8)
+53,5000 NVIDIA H100 GPUs
+54,510 V100s
+55,512 A100 80GB GPUs distributed across 64 nodes
+56,512 A800-80GB GPUs
+57,512 H100-80G GPUs
+58,512 NVIDIA A100 40GB GPUs
+59,512 v4 TPU Chips
+60,"56 DGX A100 nodes, each equipped with 4 80GB A100 GPUs"
+61,6 A800 NVIDIA GPUs
+62,6144 TPU v4 chips
+63,64 A100 80G GPUs
+64,64 A100 GPUs
+65,64 Amazon EC2 p4d.24xlarge instances each with 8 NVIDIA 40GB A100 GPUs (i.e. total 512 A100 GPUs)
+66,64 GPUs
+67,8 A100 40GB NVIDIA GPUs
+68,8 A100 80G GPUs
+69,8 A100 GPUs
+70,8 NVIDIA A100 40G GPUs
+71,8 NVIDIA A100 GPUs and 8 NVIDIA H800 GPUs
+72,8 NVIDIA A100-80GB GPUs
+73,8 NVIDIA RTX 8000
+74,8 NVIDIA Tesla V100 32GB GPUs
+75,8 V100 GPUs
+76,8 x A100 40GB GPUs
+77,8x A6000-48GB (first-gen) GPUs
+78,8x H100 GPUs on a single node
+79,96 NVIDIA Tesla V100 GPUs
+80,A single 24 GB GPU
+81,A single NDasrA100_v4 machine with 8x A100 40GB GPUs
+82,A single NVIDIA Tesla-P100 GPU
+83,A100-80GB GPUs
+84,AMD’s MI250 GPU
+85,Azure
+86,"Baidu V100 Cluster, PengCheng Lab Ascend 910 NPU cluster"
+87,Condor Galaxy Supercomputer
+88,Condor Galaxy Supercomputer from Cerebras
+89,"Jean Zay (288 A100 80GB GPUs with 8 GPUs per node (36 nodes) using NVLink 4 inter-gpu connects, 4 OmniPath links)"
+90,Jean Zay (48 * 8xA100 80GB nodes)
+91,Jean Zay (v3-512)
+92,"LUMI supercomputer, using 128 AMD MI250X GPUs"
+93,Meta AI Cluster. Trained on 1024 80GB A100 GPUs (128 8xA100 80GB nodes)
+94,Meta AI cluster. Trained on 992 80GB A100 GPUs
+95,NVIDIA A10 GPUs
+96,NVIDIA A100 40G GPUs
+97,NVIDIA A100-80GB GPUs (TDP of 350-400W)
+98,NVIDIA V100 GPUs
+99,Over 800 A100 GPUs
+100,Single A100 NVIDIA GPU
+101,Single A6000 GPU
+102,Some number of A100 GPUs
+103,THUDM 1536 Ascend 910 (32GB) Cluster
+104,THUDM 96 DGX-A100 (40G) cluster
+105,TPU
+106,TPU v4 (number unspecified)
+107,TPUv3 pods
+108,TPUv3/TPUv4 pods
+109,TPUv4-512 pod
+110,TPUv5e
+111,TRC (Unspecified # of TPU v3-8s)
+112,"Trained on the Cerebras Condor Galaxy 1 (CG-1), a 4 exaFLOPS, 54 million core, 64-node cloud AI supercomputer."
+113,Unspecified Salesforce Compute (TPU-V4s)
+114,Yandex 800 A100 Cluster
+115,one NVIDIA A40 GPU
+116,over 1000 A800 GPUs
+117,thousands of GPUs
+118,unknown
+119,unspecified number of 48GB A100 NVIDIA GPUs
+120,v3-128 TPU accelerators with batch size 256

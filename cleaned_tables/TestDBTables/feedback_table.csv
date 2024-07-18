@@ -1,0 +1,202 @@
+feedback_id,feedback
+1,Contact the authors.
+2,"Contact the paper author(s) specified on the paper [[Paper]](https://arxiv.org/pdf/2102.12092.pdf).
+"
+3,Email support
+4,"Email the authors [[Codex Paper]](https://arxiv.org/pdf/2107.03374.pdf).
+"
+5,"Email the authors [[InstructGPT Paper]](https://arxiv.org/pdf/2203.02155.pdf).
+"
+6,"Email the authors [[Paper]](https://arxiv.org/pdf/2204.05862.pdf).
+"
+7,Feedback can be given by emailing at coyo at kakaobrain.com
+8,Feedback can be given by emailing at info at ai21.com
+9,Feedback can be given by emailing at maxbain at robots.ox.ac.uk
+10,"Feedback can be given by emailing the authors at contact at eleuther.ai.
+"
+11,Feedback can be given via the feedback form on their website [segment-anything.com](https://segment-anything.com/) or by emailing at segment-anything at meta.com.
+12,Feedback can be provided at openai.com
+13,Feedback can be provided at support at openai.com.
+14,Feedback can be provided by creating an issue in the [[Conceptual 12M GitHub repository]](https://github.com/google-research-datasets/conceptual-12m) or by emailing at conceptual-captions at google.com
+15,Feedback can be provided by creating an issue in the [[Conceptual Captions GitHub repository]](https://github.com/google-research-datasets/conceptual-captions) or by emailing at conceptual-captions at google.com
+16,"Feedback can be provided in the CoPilot feedback project [[CoPilot feedback]] (https://github.com/github/feedback/discussions/categories/copilot-feedback).
+"
+17,Feedback can be provided on [[GitHub Issues]](https://github.com/tatsu-lab/stanford_alpaca/issues).
+18,"Feedback can be provided using the  # 20b channel in EleutherAI Discord group [[EleutherAI Blog Post]](https://blog.eleuther.ai/announcing-20b/). Find the Discord link in the FAQ page [[FAQ]](https://www.eleuther.ai/faq/).
+"
+19,"Feedback can be sent to Google Feedback using the product interface [[Google Feedback]](https://www.google.com/tools/feedback).
+"
+20,Feedback can be sent to Together via https://www.together.ai/contact
+21,Feedback can be sent to authors via poplpr@bit.edu.cn
+22,"Feedback can be submitted at [bing.com](bing.com).
+"
+23,"Feedback for GPT-3 can be provided on the feedback form linked in the model card [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md). The form is especially meant to collect feedback on concerns about misuse, synthetic text detection, bias, and risk of generative language models.
+"
+24,"Feedback is encouraged from users to improve the model, but the feedback mechanism is not explicitly described."
+25,"General feedback as well as the violations of the usage guidelines can be reported to Cohere at responsibility at cohere.ai [[Usage Guidelines]](https://docs.cohere.ai/usage-guidelines).
+"
+26,Point of Contact is [Niklas Muennighoff](https://huggingface.co/datasets/bigscience/xP3)
+27,Point of Contact is [Victor Sanh](https://huggingface.co/datasets/bigscience/P3)
+28,Questions can be shared at the feedback form linked in the CLIP model card [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.mdlicen).
+29,Reviews on https://workspace.google.com/marketplace/app/claude_for_sheets/909417792257
+30,Specific queries provided by annotators
+31,"The discussions page of the codebase is not formally cited as a place for feedback, but is being used in this way [[Discussions page]](https://github.com/openai/whisper/discussions)
+"
+32,"The feedback for the model can be provided at the email linked in the model card, geoffreyi at google.com [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+"
+33,"The feedback for the model can be provided at the email linked in the model card, reedscot at google.com [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+"
+34,"The feedback for the model can be provided at the email linked in the model card, {jordanhoffmann, sborgeaud, amensch,sifre} at deepmind.com [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
+"
+35,https://github.com/ReexpressAI/support
+36,https://github.com/amazon-science/chronos-forecasting/discussions
+37,https://github.com/databrickslabs/dolly/issues
+38,https://huggingface.co/01-ai/Yi-34B/discussions
+39,https://huggingface.co/01-ai/Yi-VL-34B/discussions
+40,https://huggingface.co/BAAI/EVA-CLIP-8B-448/discussions
+41,https://huggingface.co/BAAI/JudgeLM-13B-v1.0/discussions
+42,https://huggingface.co/BAAI/bge-m3/discussions
+43,https://huggingface.co/BioMistral/BioMistral-7B/discussions
+44,https://huggingface.co/ByteDance/SDXL-Lightning/discussions
+45,https://huggingface.co/Cohere/Cohere-embed-english-v3.0/discussions
+46,https://huggingface.co/CohereForAI/aya-101/discussions
+47,https://huggingface.co/CohereForAI/c4ai-command-r-v01/discussions
+48,https://huggingface.co/CompVis/stable-diffusion/discussions
+49,https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/discussions
+50,https://huggingface.co/EleutherAI/llemma_34b/discussions
+51,https://huggingface.co/EleutherAI/pythia-6.9b/discussions
+52,https://huggingface.co/FuseAI/FuseChat-7B-VaRM/discussions
+53,https://huggingface.co/GeneZC/MiniMA-3B/discussions
+54,https://huggingface.co/GreenBitAI/LLaMA-30B-2bit-groupsize8/discussions
+55,https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha/discussions
+56,https://huggingface.co/HuggingFaceM4/idefics-80b-instruct/discussions
+57,https://huggingface.co/HuggingFaceM4/idefics2-8b/discussions
+58,https://huggingface.co/IDEA-CCNL/Taiyi-Stable-Diffusion-XL-3.5B/discussions
+59,https://huggingface.co/James-WYang/BigTrans/discussions
+60,https://huggingface.co/KT-AI/midm-bitext-S-7B-inst-v1/discussions
+61,https://huggingface.co/LLM360/Amber/discussions
+62,https://huggingface.co/LLM360/CrystalCoder/discussions
+63,https://huggingface.co/MSIIP/SALMONN/discussions
+64,https://huggingface.co/NinedayWang/PolyCoder-2.7B/discussion
+65,https://huggingface.co/NousResearch/Genstruct-7B/discussions
+66,https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B/discussions
+67,https://huggingface.co/NousResearch/Nous-Capybara-34B/discussions
+68,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO/discussions
+69,https://huggingface.co/NousResearch/Yarn-Llama-2-70b-32k/discussions
+70,https://huggingface.co/NousResearch/Yarn-Mistral-7b-128k/discussions
+71,https://huggingface.co/NucleusAI/nucleus-22B-token-500B/discussions
+72,https://huggingface.co/Open-Orca/LlongOrca-7B-16k/discussions
+73,https://huggingface.co/OpenAssistant/llama2-70b-oasst-sft-v10/discussions
+74,https://huggingface.co/OpenBA/OpenBA-LM/discussions
+75,https://huggingface.co/OpenLemur/lemur-70b-chat-v1/discussions
+76,https://huggingface.co/OpenLemur/lemur-70b-v1/discussions
+77,https://huggingface.co/OrionStarAI/Orion-14B-Base/discussions
+78,https://huggingface.co/OrionZheng/openmoe-base/discussions
+79,https://huggingface.co/Qwen/Qwen1.5-72B/discussions
+80,https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/discussions
+81,https://huggingface.co/RWKV/rwkv-4-14b-pile/discussions
+82,https://huggingface.co/RWKV/rwkv-4-world-7b/discussions
+83,https://huggingface.co/RWKV/rwkv-5-world-3b/discussions
+84,https://huggingface.co/Rakuten/RakutenAI-7B/discussions
+85,https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions
+86,https://huggingface.co/Salesforce/moirai-1.0-R-large/discussions
+87,https://huggingface.co/SciPhi/SciPhi-Mistral-7B-32k/discussions
+88,https://huggingface.co/SeaLLMs/SeaLLM-7B-v2.5/discussions
+89,https://huggingface.co/Skywork/Skywork-13B-base/discussions
+90,https://huggingface.co/TheBloke/koala-7B-GPTQ-4bit-128g/discussions
+91,https://huggingface.co/TigerResearch/tigerbot-180b-base-v2/discussions
+92,https://huggingface.co/TurkuNLP/bloom-finnish-176b/discussions
+93,https://huggingface.co/TurkuNLP/gpt3-finnish-13B/discussions
+94,https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO/discussions
+95,https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/discussions
+96,https://huggingface.co/Writer/camel-5b-hf/discussions
+97,https://huggingface.co/Writer/palmyra-base/discussions
+98,https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1/discussions
+99,https://huggingface.co/adept/fuyu-8b/discussions
+100,https://huggingface.co/ai21labs/Jamba-v0.1/discussions
+101,https://huggingface.co/allenai/OLMo-7B/discussions
+102,https://huggingface.co/allenai/codetulu-2-13b/discussions
+103,https://huggingface.co/allenai/cosmo-xl/discussions
+104,https://huggingface.co/allenai/tulu-2-70b/discussions
+105,https://huggingface.co/allenai/tulu-2-dpo-70b/discussions
+106,https://huggingface.co/amazon/FalconLite2/discussions
+107,https://huggingface.co/apple/OpenELM-3B-Instruct/discussions
+108,https://huggingface.co/argilla/notus-7b-v1/discussions
+109,https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha/discussions
+110,https://huggingface.co/bigcode/santacoder/discussions
+111,https://huggingface.co/bigcode/starcoder/discussions
+112,https://huggingface.co/bigcode/starcoder2-15b/discussions
+113,https://huggingface.co/bigcode/starcoder2-3b/discussions
+114,https://huggingface.co/bigcode/starcoder2-7b/discussions
+115,https://huggingface.co/bigscience/T0pp/discussions
+116,https://huggingface.co/bigscience/bloom/discussions
+117,https://huggingface.co/bigscience/bloomz/discussions
+118,https://huggingface.co/cagliostrolab/animagine-xl-3.1/discussions
+119,https://huggingface.co/cerebras/btlm-3b-8k-base/discussions
+120,https://huggingface.co/cognitivecomputations/WizardLM-30B-Uncensored/discussions
+121,https://huggingface.co/cognitivecomputations/dolphin-2_2-yi-34b/discussions
+122,https://huggingface.co/databricks/dbrx-base/discussions
+123,https://huggingface.co/datasets/BAAI/JudgeLM-100K/discussions
+124,https://huggingface.co/datasets/CohereForAI/aya_dataset/discussions
+125,https://huggingface.co/datasets/DIBT/10k_prompts_ranked/discussions
+126,https://huggingface.co/datasets/EleutherAI/proof-pile-2/discussions
+127,https://huggingface.co/datasets/HuggingFaceM4/OBELICS/discussions
+128,https://huggingface.co/datasets/HuggingFaceM4/the_cauldron/discussions
+129,https://huggingface.co/datasets/HuggingFaceTB/cosmopedia/discussions
+130,https://huggingface.co/datasets/Salesforce/lotsa_data/discussions
+131,https://huggingface.co/datasets/WizardLM/evol_instruct_70k/discussions
+132,https://huggingface.co/datasets/allenai/MADLAD-400/discussions
+133,https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture/discussions
+134,https://huggingface.co/datasets/bigcode/the-stack/discussions
+135,https://huggingface.co/datasets/c4/discussions
+136,https://huggingface.co/datasets/cerebras/SlimPajama-627B/discussions
+137,https://huggingface.co/datasets/math-ai/AutoMathText/discussions
+138,https://huggingface.co/datasets/open-web-math/open-web-math/discussions
+139,https://huggingface.co/datasets/openbmb/UltraFeedback/discussions
+140,https://huggingface.co/datasets/stingning/ultrachat/discussions
+141,https://huggingface.co/datasets/uonlp/CulturaX/discussions
+142,https://huggingface.co/deepnight-research/saily_100b/discussions
+143,https://huggingface.co/deepseek-ai/deepseek-coder-33b-base/discussions
+144,https://huggingface.co/deepseek-ai/deepseek-llm-67b-base/discussions
+145,https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat/discussions
+146,https://huggingface.co/epfl-llm/meditron-7b/discussions
+147,https://huggingface.co/facebook/audiogen-medium/discussions
+148,https://huggingface.co/facebook/flava-full/discussions
+149,https://huggingface.co/garage-bAInd/Platypus2-13B/discussions
+150,https://huggingface.co/google/flan-t5-xxl/discussions
+151,https://huggingface.co/google/gemma-7b/discussions
+152,https://huggingface.co/h2oai/h2o-danube-1.8b-base/discussions
+153,https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b/discussions
+154,https://huggingface.co/ibm-nasa-geospatial/Prithvi-100M/discussions
+155,https://huggingface.co/internlm/internlm-20b/discussions
+156,https://huggingface.co/kotoba-tech/kotoba-speech-v0.1/discussions
+157,https://huggingface.co/microsoft/Orca-2-13b/discussions
+158,https://huggingface.co/microsoft/Phi-3-mini-128k-instruct/discussions
+159,https://huggingface.co/microsoft/phi-1_5/discussions
+160,https://huggingface.co/mistralai/Mistral-7B-v0.1/discussions
+161,https://huggingface.co/moreh/MoMo-72B-lora-1.8.7-DPO/discussions
+162,https://huggingface.co/openbmb/Eurus-70b-nca/discussions
+163,https://huggingface.co/openbmb/MiniCPM-V/discussions
+164,https://huggingface.co/openbmb/UltraLM-13b/discussions
+165,https://huggingface.co/openbmb/cpm-bee-10b/discussions
+166,https://huggingface.co/sambanovasystems/SambaLingo-Arabic-Base/discussions
+167,https://huggingface.co/spaces/bigscience-data/roots-search/discussions
+168,https://huggingface.co/spaces/facebook/MusicGen/discussions
+169,https://huggingface.co/spaces/suno/bark/discussions
+170,https://huggingface.co/stabilityai/stable-cascade/discussions
+171,https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/discussions
+172,https://huggingface.co/stabilityai/stablelm-2-1_6b/discussions
+173,https://huggingface.co/stabilityai/sv3d/discussions
+174,https://huggingface.co/t5-large/discussions
+175,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B/discussions
+176,https://huggingface.co/tiiuae/falcon-180b/discussions
+177,https://huggingface.co/tiiuae/falcon-40b/discussions
+178,https://huggingface.co/time-series-foundation-models/Lag-Llama/discussions
+179,https://huggingface.co/togethercomputer/Llama-2-7B-32K-Instruct/discussions
+180,https://huggingface.co/togethercomputer/StripedHyena-Hessian-7B/discussions
+181,https://huggingface.co/togethercomputer/StripedHyena-Nous-7B/discussions
+182,https://huggingface.co/vilm/vulture-180b/discussions
+183,https://huggingface.co/wenge-research/yayi2-30b/discussions
+184,https://huggingface.co/xverse/XVERSE-65B/discussions
+185,https://huggingface.co/zjunlp/OceanGPT-7b/discussions
+186,unknown
