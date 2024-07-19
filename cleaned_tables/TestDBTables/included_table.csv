@@ -1,0 +1,70 @@
+included_id,included
+1,"""To encourage visual descriptiveness in our collection, we select only those images with descriptions of satisfactory length based on observed lengths in visual descriptions. We also enforce that retained descriptions contain at least 2 words belonging to our term lists and at least one prepositional word, e.g. “on”, “under” which often indicate visible spatial relationships.""
+"
+2,"""our team curated a dataset of 650K hours of English audio - consisting of proprietary internal datasets and various sources from the internet""
+"
+3,"164 hand-written questions.
+"
+4,"As stated in the datasheet, the dataset ""includes the Google Books dataset, CommonCrawl, and text from the internet scraped by the Cohere infrastructure team."" The top ten domains scraped were: wordpress.com, medium.com, stackexchange.com, tumblr.com, elsevier.com, genius.com, bbc.co.uk, libsyn.com, yahoo.com, nytimes.com [[Datasheet]](https://docs.cohere.ai/data-statement).
+"
+5,"Data crawled from the internet, without any filtering (including de-duplication) or curation.
+"
+6,"Data from the internet, including Conceptual Captions and a filtered subset of YFCC100M.
+"
+7,"Dialogue data of questions about the world, writing and creation tasks, and questions on existing materials."
+8,"FinPile consists of English financial documents. Authors utilize the The Bloomberg
+Terminal, which is an extensive collection of curated and maintained documents,
+to create the FinPile dataset. Each document in FinPile is time-stamped, with
+dates ranging from 2007-03-01 to 2022-07-31.
+Types of data included are given below:
+  1. Web (298B tokens) - Inclues Bloomberg's web crawl focused on high-quality
+websites that have financially relevant information. This makes up the majority
+of FinPile.
+  2. News (38B tokens) - Includes all news sources relevant to the financial
+community, excluding news articles written by Bloomberg journalists. Overall,
+there are hundreds of English news sources in FinPile including ""Bloomberg
+Transcripts"", which are transcripts of Bloomberg TV news.
+  3. Filings (14B tokens) - Includes financial statements prepared by (public)
+companies and made available to the general public.  In the dataset, a majority
+of the filings come from EDGAR, which is the SEC's online database.
+  4. Press (9B tokens) - Includes press releases typically issued by companies
+that are financially relevant.
+  5. Bloomberg (5B tokens) - Includes Bloomberg authored news and other documents
+such as opinions and analyses. The largest sources are “Bloomberg News” and
+“Bloomberg First Word”, the Bloomberg-authored wire of real-time news.
+"
+9,Included all image formats that Pillow library can decode. Collected only English text using cld3.
+10,"Included in the dataset are data from ""public forums (0%); C4 data (12.5% ); code documents from sites related to programming like Q&A sites tutorials, etc (12.5%); Wikipedia (English) (12.5%); English web documents (6.25%); and Non-English web documents (6.25%).""
+"
+11,"M3W has interleaved images (185M) and text (182GB) from the web.
+"
+12,"MassiveText data come from 6 sources: MassiveWeb (48%), Books (27%), C4 (10%), News (10%), GitHub (3%), and Wikipedia (2%). MassiveWeb is a web text corpus curated for MassiveText.
+"
+13,Prompts and reasoning data is explicitly included to improve model capabilities derived from this data.
+14,"SA-1B consists of 11M diverse, high-resolution (averaging 1500×2250 pixels), and privacy protecting images collected and licensed from a third party photo company. The images are photos taken from a camera, i.e. not artwork. The images vary in subject matter. Common themes of the images include: locations, objects, scenes. The dataset includes 1.1B high-quality segmentation masks collected with the Segment Anything Data Engine. SA-1B only includes automatically generated masks (99.1%), as the authors conclude after experiments that the automatic masks are high quality and effective for training models. The masks range from large scale objects such as buildings to fine grained details such as door handles. Masks are provided in the COCO run-length encoding (RLE) annotation format.
+"
+15,See section 2 of the paper.
+16,"The Pile data come from 22 sources, with over half of the data being from Common Crawl (Pile-CC; 227GB), fiction and nonfiction books (Books3; 101GB), biomedical articles (PubMed Central; 90GB), and code (Github; 95 GB). Refer to the paper for full decomposition [[Table 1]](https://arxiv.org/pdf/2101.00027.pdf#table.caption.2).
+"
+17,The Public Pool of Prompts relies on the Hugging Face Dataset library. Any public dataset in the Datasets library can be prompted. We select the datasets that have at least one subset in English and excluded datasets containing (predominantly) non-natural language examples.
+18,"The dataset features 1.22 million videos from YouTube with a primary focus on videos containing ""visual tasks"", that involve some interaction with the physical world (e.g. Making peanut butter, Pruning a tree) as compared to others that are more abstract (e.g. Ending a toxic relationship, Choosing a gift). To obtain predominantly visual tasks, the authors limit them to one of 12 categories (Food and Entertaining, Home and Garden, Hobbies and Crafts, Cars & Other Vehicles, Pets and Animals, Holidays and Traditions, Personal Care and Style, Sports and Fitness, Health, Education and Communications, Arts and Entertainment, Computers and Electronics). They also restrict to the top 200 YouTube search results, as the latter ones may not be related to the query task."
+19,"The dataset included all the answers that the workers were asked to ranked against each other.
+"
+20,"The dataset includes 500 billion words from a wide diversity of cultural heritage initiatives. It also has the largest English-speaking dataset to date with 180 billion words, including a major US collection of 21 million digitized newspapers and large monographs datasets collected by digital historian Sebastian Majstorovic. It also contains a huge volume of data in French (110 billion words), German (30 billion words), Spanish, Dutch and Italian, as well as data in low-resource languages that are currently underrepresented."
+21,"The dataset includes 54 million public software repositories hosted on GitHub as of an unspecified date in May 2020 [[Section 3.1]](https://arxiv.org/pdf/2107.03374.pdf#subsection.3.1).
+"
+22,"The dataset is based on Infiniset. It included multilingual text containing text from over 100 languages. The breakdown of the data included is as follows: Social media conversations (multilingual) 50, Filtered webpages (multilingual) 27%, BooksCorpus (English) 13%, GitHub (code) 5%, Wikipedia (multilingual) 4%, and News (English) 1%. Code was collected from GitHub repositories with appropriate licenses, totalling 96GB of source code [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
+"
+23,"The dataset is composed of several NLP corpora including Common Crawl (filtered, 60%), WebText2 (22%), Books1 (8%), Books2 (8%), Wikipedia (3%) [[Section 2.2]](https://arxiv.org/pdf/2005.14165.pdf#subsection.2.2)."
+24,"The dataset is composed three major sources: multilingual speech recognition (17%), translation (18%), and English speech recognition (65%). [[Figure 11]](https://cdn.openai.com/papers/whisper.pdf).
+"
+25,"The full composition of the dataset across individual sources can be found in the paper.
+"
+26,Video URLs and textual description annotations
+27,"Web pages, and search queries"
+28,"documents in English, German, French, Spanish, and Italian."
+29,"domain observations in energy, transport, climate, cloudops, web, sales, nature, econ/finance, and healthcare"
+30,images with derivative licenses
+31,"scientific papers, web data containing mathematics, mathematical code"
+32,unknown
+33,xP3 adds 28 multilingual datasets to P3 based on the P3 task taxonomy.

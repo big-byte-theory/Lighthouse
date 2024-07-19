@@ -1,0 +1,74 @@
+modality_id,modality
+1,NLP tasks
+2,amino acid sequence; protein structure
+3,audio
+4,"audio, image, text, video; text"
+5,"audio, image, text; audio, image, video"
+6,"audio, text"
+7,"audio, text; audio"
+8,"audio, text; audio, text"
+9,"audio, text; text"
+10,audio; audio
+11,audio; text
+12,code
+13,"code, text"
+14,"code, text; code, text"
+15,code; code
+16,code; text
+17,human trajectories; text
+18,image
+19,"image, image"
+20,"image, text"
+21,"image, text, genome sequence; text"
+22,"image, text, robotics trajectories, simulated control tasks"
+23,"image, text, video"
+24,"image, text, video; text"
+25,"image, text; image"
+26,"image, text; image, text"
+27,"image, text; image, text, robotics trajectories"
+28,"image, text; robotics trajectories"
+29,"image, text; text"
+30,image-caption pairings
+31,image; image
+32,image; text
+33,image; video
+34,"images, text, robot trajectories; robot trajectories"
+35,"images, text; robot trajectories"
+36,"molecules, tasks"
+37,robot trajectories
+38,text
+39,text (English)
+40,text ;text
+41,"text, mathematical tokens"
+42,"text, text"
+43,"text, video"
+44,"text, video; text"
+45,"text, video; text, robotics trajectories"
+46,"text, video; text, video"
+47,"text, video; video"
+48,text; API
+49,text; audio
+50,"text; audio, video"
+51,text; code
+52,"text; code, text"
+53,text; genome sequence
+54,text; image
+55,"text; image, text"
+56,"text; image, text, video"
+57,"text; image, video"
+58,text; in-game actions
+59,text; music
+60,text; protein sequence
+61,text; robotics trajectories
+62,text; template design
+63,text; text
+64,"text; text, code"
+65,text; vector graphic
+66,text; video
+67,time-series
+68,time-series; time-series
+69,unknown
+70,video
+71,video with caption
+72,video; text
+73,video; video

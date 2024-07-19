@@ -25,21 +25,21 @@
         }
       }
     }
+	}
 
-		.label {
-			@apply text-white px-2.5 py-2 rounded-md text-sm font-medium text-center;
+	.label {
+		@apply text-white px-2.5 py-2 rounded-md text-sm font-medium text-center;
 
-			&-ltd {
-				@apply bg-yellow-600;
-			}
+		&-limited {
+			@apply bg-yellow-600;
+		}
 
-			&-open {
-				@apply bg-green-700;
-			}
+		&-open {
+			@apply bg-green-700;
+		}
 
-			&-closed {
-				@apply bg-gray-600;
-			}
+		&-closed {
+			@apply bg-gray-600;
 		}
 	}
 }

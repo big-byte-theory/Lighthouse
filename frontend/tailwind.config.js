@@ -27,7 +27,7 @@ export default {
           DEFAULT: '#000000',
         },
         accent: {
-          purple: '#d0baeb',
+          purple: '#b693e1',
         },
         light: {
           cream: '#f8f4f4',          

@@ -1,0 +1,32 @@
+monitoring_id,monitoring
+1,Advanced content recognition is used to maintain compliance and prevent copyright infringement.
+2,"All applications developed using the Cohere API is subject to review by Cohere.
+"
+3,At will monitoring by the provider
+4,Extensive internal and external performance evaluation and red-teaming approach for safety testing.
+5,Google internal monitoring
+6,"Governed by the laws of China, without regard to conflict of law principles, and the UN Convention on Contracts for the International Sale of Goods does not apply to this Agreement. And The People's Courts in Hangzhou City shall have exclusive jurisdiction over any dispute arising out of this Agreement."
+7,"Issues like allocation, high-risk scenarios, misinformation, generation of harmful content and misuse should be monitored and addressed."
+8,"It is implied that Google scan uses of its products for spam, malware and illegal content in the [[Term of Service]](https://policies.google.com/terms).
+"
+9,"OpenAI may monitor the API use to ensure ""quality and improve OpenAI systems, products and services; perform research; and ensure compliance"" with the Terms of Service and all applicable laws. Users of the API will give OpenAI reasonable access to their application to monitor compliance with the terms listed in the Terms of Service [[Section 5(b)]](https://openai.com/api/policies/terms/). Apps using the OpenAI API should submit an application once they are deployed to real users. The review form takes 10 minutes to complete and over 97% of the applications are directly accepted or conditionally accepted. The applicants are notified of the decision within 2 business days [[App Review Guidelines]] (https://beta.openai.com/docs/usage-guidelines/app-review).
+"
+10,"OpenAI reviews all use cases of the model [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
+"
+11,"Quality filtration, deduplication, and risk mitigation via logistic qualifiers and regular expressions used."
+12,"The dataset will be hosted at https://ai.facebook.com/datasets/segment-anything and maintained by Meta AI. ""If a user observes objectionable image(s) in the dataset, we invite them to report the image(s) at segment-anything at meta.com for removal"" ""To aid reproducibility of research using SA-1B, the only updates (to the dataset) will be to remove reported images."" ""We encourage users to gather further annotations for SA-1B. Any users who generate annotations will be liable for hosting and distributing their annotations.""
+"
+13,"The usage of the model is monitored by Cohere [[Model Card]](https://docs.cohere.ai/generation-card).
+"
+14,"The usage of the model is monitored by Cohere [[Model Card]](https://docs.cohere.ai/representation-card).
+"
+15,Unknown
+16,"Uses of the model are monitored. In the preview version, any user can flag content. The specific policies for monitoring are not disclosed, but possible measures include disabling of accounts violating the content"
+17,"Uses of the model are monitored. In the preview version, any user can flag content. The specific policies for monitoring are not disclosed, but possible measures include disabling of accounts violating the content policies [[Monitoring and Reporting]] (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#monitoring-and-reporting).
+'"
+18,unknkown
+19,unknokwn
+20,unknown
+21,"value: unknown explanation: >
+  There may be internal monitoring mechanisms unknown to the public.
+"

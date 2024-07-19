@@ -1,0 +1,11 @@
+adaptation_id,adaptation
+1,"Customized GPT-3, fine-tuned on private data [[Sana GPT-3 Demo]](https://gpt3demo.com/apps/sanalabs).
+"
+2,Fine-tuning
+3,"GPT-4 adapted to run autonomously by chaining together LLM ""thoughts"""
+4,Security Copilot combines OpenAI's GPT-4 generative AI with a security-specific model from Microsoft. This security-specific model in turn incorporates a growing set of security-specific skills and is informed by Microsoft's unique global threat intelligence and more than 65 trillion daily signals.
+5,The AI21 language models are further specialized to the task of paraphrasing.
+6,The AI21 language models are further specialized to the task of summarization.
+7,The API exposes the models fairly direclty with a range of hyperparameters (e.g. temperature scaling).
+8,The Playground provides direct access to the language models (Complete API) as well as wrapped for Rewrite and Summarize.
+9,unknown
