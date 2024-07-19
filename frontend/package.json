@@ -8,6 +8,7 @@
 	"description": "An LLM catalog application project for HorizonX Consulting. Made for Digital Future's Hackathon week.",
 	"scripts": {
 		"start": "vite",
+		"prod": "vite --mode production",
 		"build": "vite build",
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",

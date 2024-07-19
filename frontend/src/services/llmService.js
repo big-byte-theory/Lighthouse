@@ -13,11 +13,11 @@ export const addLlm = async (llm) => {
 };
 
 export const updateLlm = async (id, llm) => {
-  const response = await axios.put(`${apiUrl}/${id}`, llm);
+  const response = await axios.put(`${apiUrl}/llms/${id}`, llm);
   return response.data;
 };
 
 export const deleteLlm = async (id) => {
-  const response = await axios.delete(`${apiUrl}/${id}`);
+  const response = await axios.delete(`${apiUrl}/llms/${id}`);
   return response.data;
 };

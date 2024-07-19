@@ -127,6 +127,6 @@ const LlmSchema = new mongoose.Schema({
   },
 }, { timestamps: true });
 
-const llm = mongoose.model('Llm', LlmSchema);
+const llm = mongoose.model('llm_data', LlmSchema);
 
 export default llm;

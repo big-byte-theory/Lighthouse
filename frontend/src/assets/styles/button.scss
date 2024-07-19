@@ -1,6 +1,10 @@
 .btn {
   @apply rounded-md text-white px-4 py-2.5 mt-5 transition-colors;
 
+  &:hover {
+    @apply text-white;
+  }
+
   &-primary {
     @apply bg-red;
 
