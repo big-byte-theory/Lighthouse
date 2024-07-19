@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
 import { useEffect, useState } from "react";
-import { loggedIn } from "./services/AuthUserService";
 import Catalogue from "./pages/Catalogue";
 import Dashboard from "./pages/Dashboard";
 import Details from "./pages/Details";

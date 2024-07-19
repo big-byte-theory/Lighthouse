@@ -14,7 +14,6 @@ const Catalogue = () => {
 
 		fetchLlms();
 	}, []);
-	console.log(llms);
 
 	return (
 		<>
@@ -42,7 +41,7 @@ const Catalogue = () => {
 							</thead>
 							<tbody>
 								{llms.length > 0 ? (
-									llms.map((llm, index) => (
+									llms.map((llm) => (
 										<tr key={llm.llm_data_id}>
 											<td>{llm.type_id}</td>
 											<td>{llm.name}</td>
@@ -57,60 +56,17 @@ const Catalogue = () => {
 											<td>{llm.license_id}</td>
 											<td>{llm.dependencies_id}</td>
 											<td>
-												<Link to={`/llm/${llm.llm_data_id}`}>View</Link>
+												<Link
+													to={`/llm/${llm.llm_data_id}`}
+													state={{ data: llm }}>View</Link>
 											</td>
 										</tr>
 									))
 								) : (
 									<tr>
-										<td colSpan="6">No LLMs found</td>
+										<td className="text-center" colSpan="6">No LLMs found</td>
 									</tr>
 								)}
-								<tr>
-									<td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-									<td>Malcolm Lockyer</td>
-									<td>1961</td>
-									<td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-									<td>Malcolm Lockyer</td>
-									<td>
-										<div className="label label-open">Open</div>
-									</td>
-									<td>N/A</td>
-									<td>N/A</td>
-									<td>
-										<Link to="/llm/1">View</Link>
-									</td>
-								</tr>
-								<tr>
-									<td>Witchy Woman</td>
-									<td>The Eagles</td>
-									<td>1972</td>
-									<td>Witchy Woman</td>
-									<td>The Eagles</td>
-									<td>
-										<div className="label label-closed">Closed</div>
-									</td>
-									<td>The Eagles</td>
-									<td>1972</td>
-									<td>
-										<Link to="/llm/2">View</Link>
-									</td>
-								</tr>
-								<tr>
-									<td>Shining Star</td>
-									<td>Earth, Wind, and Fire</td>
-									<td>1975</td>
-									<td>Shining Star</td>
-									<td>Earth, Wind, and Fire</td>
-									<td>
-										<div className="label label-limited">Limited</div>
-									</td>
-									<td>Earth, Wind, and Fire</td>
-									<td>1975</td>
-									<td>
-										<Link to="/llm/3">View</Link>
-									</td>
-								</tr>
 							</tbody>
 						</table>
 					</div>
