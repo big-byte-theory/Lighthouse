@@ -48,153 +48,160 @@ intended_uses_id,intended_uses
 33,Future multimodal research
 34,"GPT-3 was intended to be use through the OpenAI API by developers for language applications. Other intended use of GPT-3 include researchers accessing the model through the API to study its paradigms [[Model Card]](https://github.com/openai/gpt-3/blob/master/model-card.md).
 "
-35,"Generating high-quality anime images from textual prompts. Useful for anime fans, artists, and content creators."
-36,"GitHub CoPilot is intended to be used as a coding assistant.
+35,"Generate high-quality images for various purposes, from photorealistic landscapes to textured oil paintings or whimsical claymation scenes. It is useful in situations where detailed visual representation is required based on the textual description."
+36,"Generating high-quality anime images from textual prompts. Useful for anime fans, artists, and content creators."
+37,"GitHub CoPilot is intended to be used as a coding assistant.
 "
-37,"Grok-1 is intended to be used as the engine behind Grok for natural language processing tasks including question answering, information retrieval, creative writing and coding assistance."
-38,"Grok-1.5V can be used for understanding documents, science diagrams, charts, screenshots, photographs. It can also translate diagrams into Python code."
-39,"HyperWrite is intended to be used as a writing assistant.
+38,"Grok-1 is intended to be used as the engine behind Grok for natural language processing tasks including question answering, information retrieval, creative writing and coding assistance."
+39,"Grok-1.5V can be used for understanding documents, science diagrams, charts, screenshots, photographs. It can also translate diagrams into Python code."
+40,"Helps developers write and interact with code, design advanced AI applications for software developers, integrated into LlamaIndex and LangChain for building applications, integrated in VSCode and JetBrains environments for code generation and interactive conversation."
+41,"HyperWrite is intended to be used as a writing assistant.
 "
-40,In conjunction with a LLM to improve its capability for using API calls.
-41,Integration into other instruction-tuned LLMs to further enhance arithmetic reasoning abilities in solving math word problems.
-42,Intended for research purposes only.
-43,"Intended to be used as an NLP infrastructure.
+42,In conjunction with a LLM to improve its capability for using API calls.
+43,Integration into other instruction-tuned LLMs to further enhance arithmetic reasoning abilities in solving math word problems.
+44,Intended for research purposes only.
+45,"Intended to be used as an NLP infrastructure.
 "
-44,"Intended to be used by companies to digest qualitative consumer feedback.
+46,"Intended to be used by companies to digest qualitative consumer feedback.
 "
-45,"Intended to be used by crowdworkers who are tasked with ranking model answers.
+47,"Intended to be used by crowdworkers who are tasked with ranking model answers.
 "
-46,"Intended to be used by developers who would like to incorporate NLP into their applications [[Cohere Website]](https://cohere.ai/).
+48,"Intended to be used by developers who would like to incorporate NLP into their applications [[Cohere Website]](https://cohere.ai/).
 "
-47,"Intended to generate code snippets from given context, but not for writing actual functional code directly. The model has been trained on source code from 17 programming languages. The predominant language in source is English although other languages are also present. As such the model is capable of generating code snippets provided some context but the generated code is not guaranteed to work as intended. It can be inefficient and contain bugs or exploits. See the paper for an in-depth discussion of the model limitations."
-48,"It can be used to generate melodies, backing tracks, stems, and sound effects."
-49,It is expected to be used for various research purposes.
-50,Jais Chat is released with the aim to stimulate research and development in the Arabic NLP community.
-51,Jais is released with the aim to stimulate research and development in the Arabic NLP community.
-52,"Jurassic-1 Instruct was trained specifically to handle instructions-only prompts (""zero-shot"") without examples (""few-shot""). It is the most natural way to interact with language models, and it is the best way to get a sense of the optimal output for your task without any examples."
-53,"LaMDA is a language model, so it can be used for regular langauge modelling tasks without fine-tuning, but its fine-tuned for dialogue tasks.
+49,"Intended to generate code snippets from given context, but not for writing actual functional code directly. The model has been trained on source code from 17 programming languages. The predominant language in source is English although other languages are also present. As such the model is capable of generating code snippets provided some context but the generated code is not guaranteed to work as intended. It can be inefficient and contain bugs or exploits. See the paper for an in-depth discussion of the model limitations."
+50,"It can be used to generate melodies, backing tracks, stems, and sound effects."
+51,It is expected to be used for various research purposes.
+52,Jais Chat is released with the aim to stimulate research and development in the Arabic NLP community.
+53,Jais is released with the aim to stimulate research and development in the Arabic NLP community.
+54,"Jurassic-1 Instruct was trained specifically to handle instructions-only prompts (""zero-shot"") without examples (""few-shot""). It is the most natural way to interact with language models, and it is the best way to get a sense of the optimal output for your task without any examples."
+55,"LaMDA is a language model, so it can be used for regular langauge modelling tasks without fine-tuning, but its fine-tuned for dialogue tasks.
 "
-54,"Language model pretraining, finetuning, and evaluation."
-55,"Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks."
-56,"Llama 3 is intended for a broad range of use cases, including AI assistance, content creation, learning, and analysis."
-57,"Medical exam question answering, supporting differential diagnosis, disease information."
-58,"Moirai can be used for time series forecasting in multiple domains. It offers robust zero-shot forecasting capabilities and eliminates the need for additional data, extensive computational resources, and expert input for achieving accurate forecasts."
-59,Multitask finetuning of language models.
-60,NLP tasks
-61,"On the model card, the intended uses are stated as ""interactive autocomplete, augmenting human writing processes, summarization, text rephrasing, and other text-to-text tasks in non-sensitive domains"" [[Model Card]](https://docs.cohere.ai/generation-card).
+56,"Language model pretraining, finetuning, and evaluation."
+57,"Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks."
+58,"Llama 3 is intended for a broad range of use cases, including AI assistance, content creation, learning, and analysis."
+59,"Medical exam question answering, supporting differential diagnosis, disease information."
+60,"Moirai can be used for time series forecasting in multiple domains. It offers robust zero-shot forecasting capabilities and eliminates the need for additional data, extensive computational resources, and expert input for achieving accurate forecasts."
+61,Multitask finetuning of language models.
+62,NLP tasks
+63,"On the model card, the intended uses are stated as ""interactive autocomplete, augmenting human writing processes, summarization, text rephrasing, and other text-to-text tasks in non-sensitive domains"" [[Model Card]](https://docs.cohere.ai/generation-card).
 "
-62,"OpenAI API was designed to be used by developers to empower applications, and researchers to study language models [[Section 3]](https://openai.com/api/policies/terms/).
+64,"OpenAI API was designed to be used by developers to empower applications, and researchers to study language models [[Section 3]](https://openai.com/api/policies/terms/).
 "
-63,Orca 2 is built for research purposes only. The main purpose is to allow the research community to assess its abilities and to provide a foundation for building better frontier models.
-64,"Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full), ""The model is intended to serve as a reproducible research artifact for research communities in the light of models whose exact reproduction details are never released such as CLIP and SimVLM.""
+65,Orca 2 is built for research purposes only. The main purpose is to allow the research community to assess its abilities and to provide a foundation for building better frontier models.
+66,"Per the [[HuggingFace repository]](https://huggingface.co/facebook/flava-full), ""The model is intended to serve as a reproducible research artifact for research communities in the light of models whose exact reproduction details are never released such as CLIP and SimVLM.""
 "
-65,"Phi-1.5 is best suited for answering prompts using the QA format, the chat format, and the code format."
-66,"Pre-training of language models by DeepMind researchers [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
+67,"Phi-1.5 is best suited for answering prompts using the QA format, the chat format, and the code format."
+68,"Pre-training of language models by DeepMind researchers [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.C).
 "
-67,"Pre-training of vision and language models by DeepMind researchers [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
+69,"Pre-training of vision and language models by DeepMind researchers [[Datasheet]](https://arxiv.org/pdf/2204.14198.pdf#appendix.F).
 "
-68,Providing document insights to users.
-69,"Reka Core can be used in e-commerce, social media, digital content and video games, healthcare, robotics, and other industries for tasks that require multimodal understanding, coding, complex reasoning, and more."
-70,"Research in the biomedical domain, especially for medical question-answering tasks."
-71,Research on evaluating the performance of large language models and chatbots.
-72,"Research on large language models; as a foundation for further specialization and finetuning for specific usecases (e.g., summarization, text generation, chatbot, etc.)"
-73,Research on large language models; as a foundation for further specialization for specific use cases.
-74,SA-1B is intended to be used for research purposes only. It allows access to a privacy protecting and copyright friendly large-scale image dataset. Researchers can use it to train and evaluate generic object segmentation models.
-75,"Sana is intended to be used by employers to provide a learning service for their employees.
+70,Providing document insights to users.
+71,"Reka Core can be used in e-commerce, social media, digital content and video games, healthcare, robotics, and other industries for tasks that require multimodal understanding, coding, complex reasoning, and more."
+72,"Research in the biomedical domain, especially for medical question-answering tasks."
+73,Research on evaluating the performance of large language models and chatbots.
+74,"Research on large language models; as a foundation for further specialization and finetuning for specific usecases (e.g., summarization, text generation, chatbot, etc.)"
+75,Research on large language models; as a foundation for further specialization for specific use cases.
+76,SA-1B is intended to be used for research purposes only. It allows access to a privacy protecting and copyright friendly large-scale image dataset. Researchers can use it to train and evaluate generic object segmentation models.
+77,"Sana is intended to be used by employers to provide a learning service for their employees.
 "
-76,Search engine
-77,"Searching the web using text, voice or image"
-78,"Security Copilot is designed to enhance the capabilities of cybersecurity professionals. It leverages machine speed and scale to accelerate response to security incidents, discover and process threat signals, and assess risk exposure within minutes."
-79,Speech recognition
-80,Suggesting email replies.
-81,"Text generation tasks including question answering, summarization, and reasoning; content creation, communication, research, and education."
-82,"The Pile was intended to be used as a high quality large text dataset for language modeling tasks, explained in more detail in the paper [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
+78,Search engine
+79,"Searching the web using text, voice or image"
+80,"Security Copilot is designed to enhance the capabilities of cybersecurity professionals. It leverages machine speed and scale to accelerate response to security incidents, discover and process threat signals, and assess risk exposure within minutes."
+81,"Sonic has potential applications across customer support, entertainment, and content creation and is a part of Cartesias broader mission to bring real-time multimodal intelligence to every device."
+82,Speech recognition
+83,Suggesting email replies.
+84,"Text generation tasks including question answering, summarization, and reasoning; content creation, communication, research, and education."
+85,"The Pile was intended to be used as a high quality large text dataset for language modeling tasks, explained in more detail in the paper [[Section 1]](https://arxiv.org/pdf/2101.00027.pdf#section.1).
 "
-83,The Wordtune assistant is a writing assistant
-84,"The authors recommend using the dataset ""for research purposes"" and ""do not recommend using it for creating ready-to-go industrial products, as the basic research about general properties and safety of such large-scale models, which we would like to encourage with this release, is still in progress"""
-85,"The authors recommend using the dataset ""for research purposes"" and warn that ""this large-scale dataset is non-curated. It was built for research purposes to enable testing model training on larger scale for broad researcher and other interested communities, and is not meant for any real-world production or application."""
-86,"The dataset is intended to support open and reproducible AI research, enhancing accessibility, diversity, and democracy in AI by enabling everyone to explore large models."
-87,"The dataset was intended and released for research purposes.
+86,The Wordtune assistant is a writing assistant
+87,"The authors recommend using the dataset ""for research purposes"" and ""do not recommend using it for creating ready-to-go industrial products, as the basic research about general properties and safety of such large-scale models, which we would like to encourage with this release, is still in progress"""
+88,"The authors recommend using the dataset ""for research purposes"" and warn that ""this large-scale dataset is non-curated. It was built for research purposes to enable testing model training on larger scale for broad researcher and other interested communities, and is not meant for any real-world production or application."""
+89,"The dataset is intended to support open and reproducible AI research, enhancing accessibility, diversity, and democracy in AI by enabling everyone to explore large models."
+90,"The dataset was intended and released for research purposes.
 "
-88,The datasets are intended to be used in an academic setting for training molecular GNNs with orders of magnitude more parameters than current large models.
-89,"The datasets are intended to be used in an academic setting for training molecular GNNs with orders of magnitude more parameters than current large models. Further, the LargeMix dataset is intended to be used in a multi-task setting, meaning that a single model should be trained to predict them simultaneously."
-90,"The datasets are intended to be used in an academic setting for training molecular GNNs with orders of magnitude more parameters than current large models. Further, the ToyMix dataset is intended to be used in a multi-task setting, meaning that a single model should be trained to predict them simultaneously."
-91,The intended use is to train speech models.
-92,"The intended use of the DALL·E 3 Preview at this time is for personal, non-commercial exploration and research purposes by people who are interested in understanding the potential uses of these capabilities"
-93,The intended use of the GPT-3 dataset is to train language models.
-94,"The intended use of the dataset is to train Cohere's language models.
+91,The datasets are intended to be used in an academic setting for training molecular GNNs with orders of magnitude more parameters than current large models.
+92,"The datasets are intended to be used in an academic setting for training molecular GNNs with orders of magnitude more parameters than current large models. Further, the LargeMix dataset is intended to be used in a multi-task setting, meaning that a single model should be trained to predict them simultaneously."
+93,"The datasets are intended to be used in an academic setting for training molecular GNNs with orders of magnitude more parameters than current large models. Further, the ToyMix dataset is intended to be used in a multi-task setting, meaning that a single model should be trained to predict them simultaneously."
+94,The intended use is to train speech models.
+95,"The intended use of the DALL·E 3 Preview at this time is for personal, non-commercial exploration and research purposes by people who are interested in understanding the potential uses of these capabilities"
+96,The intended use of the GPT-3 dataset is to train language models.
+97,"The intended use of the dataset is to train Cohere's language models.
 "
-95,"The intended uses are stated as ""estimating semantic similarity between two sentences, choosing a sentence which is most likely to follow another sentence, sentiment analysis, topic extraction, or categorizing user feedback"" on the Cohere model card [[Model Card]](https://docs.cohere.ai/representation-card).
+98,"The intended uses are stated as ""estimating semantic similarity between two sentences, choosing a sentence which is most likely to follow another sentence, sentiment analysis, topic extraction, or categorizing user feedback"" on the Cohere model card [[Model Card]](https://docs.cohere.ai/representation-card).
 "
-96,"The intended uses are stated in the Chinchilla model card: ""The primary use is research on language models, including: research on the scaling behaviour of language models along with those listed in Gopher paper"" [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
+99,"The intended uses are stated in the Chinchilla model card: ""The primary use is research on language models, including: research on the scaling behaviour of language models along with those listed in Gopher paper"" [[Model Card]](https://arxiv.org/pdf/2203.15556.pdf#appendix.I).
 "
-97,"The intended uses are stated in the Gopher model card: ""Learn to accomplish a wide variety of tasks from expert demonstrations, such as playing video games, controlling simulated embodiments, and real world block stacking."" [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
+100,"The intended uses are stated in the Gopher model card: ""Learn to accomplish a wide variety of tasks from expert demonstrations, such as playing video games, controlling simulated embodiments, and real world block stacking."" [[Model Card]](https://openreview.net/pdf?id=1ikK0kHjvj#appendix.A).
 "
-98,"The intended uses are stated in the Gopher model card: ""The primary use is research on language models, including: research on NLP applications like machine translation and question answering, understanding how strong language models can contribute to AGI, advancing fairness and safety research, and understanding limitations of current LLMs"" [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
+101,"The intended uses are stated in the Gopher model card: ""The primary use is research on language models, including: research on NLP applications like machine translation and question answering, understanding how strong language models can contribute to AGI, advancing fairness and safety research, and understanding limitations of current LLMs"" [[Model Card]](https://arxiv.org/pdf/2112.11446.pdf#appendix.B).
 "
-99,"The intended uses are stated in the model card: ""The primary use is research on visual language models (VLM), including: research on VLM applications like classification, captioning or visual question answering, understanding how strong VLMs can contribute to AGI, advancing fairness and safety research in the area of multimodal research, and understanding limitations of current large VLMs."" [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
+102,"The intended uses are stated in the model card: ""The primary use is research on visual language models (VLM), including: research on VLM applications like classification, captioning or visual question answering, understanding how strong VLMs can contribute to AGI, advancing fairness and safety research in the area of multimodal research, and understanding limitations of current large VLMs."" [[Model Card]](https://arxiv.org/pdf/2204.14198.pdf#appendix.E).
 "
-100,"The intended uses are text completion, rewriting, and summarization."
-101,The intended uses are text paraphrasing.
-102,"The main use cases are pure representation learning, planning (look-ahead search), or learning a policy in the world model (neural simulator)"
-103,"The model can be used for answering questions about images, describing visual content, creating stories grounded in multiple images, extracting information from documents, and performing basic arithmetic operations."
-104,"The model can be used for fast, high-quality text-to-image generation. It supports 1-step, 2-step, 4-step, and 8-step distilled models which provide varying generation quality."
-105,The model can be used for reasoning tasks and is especially tailored for coding and math following specific prompts.
-106,The model can be used for text generation tasks in both Japanese and English.
-107,The model is aimed at downstream tasks that benefit from the encoder-decoder architecture. Particularly useful for tasks involving code.
-108,"The model is intended for general task and conversation capabilities, function calling, and JSON structured outputs."
-109,"The model is intended for instruction-generation, creating questions involving complex scenarios and generating reasoning steps for those questions."
-110,"The model is intended for multilingual tasks such as knowledge retrieval, math reasoning, and instruction following. Also, it could be used to provide multilingual assistance."
-111,The model is intended for research purposes for now.
-112,The model is intended for research purposes only.
-113,The model is intended to be used as a foundational base model for application-specific fine-tuning. Developers must evaluate and fine-tune the model for safe performance in downstream applications.
-114,"The model is intended to be used by AI researchers to better understand ""robustness, generalization, and other capabilities, biases, and constraints of computer vision models"" [[CLIP Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
+103,"The intended uses are text completion, rewriting, and summarization."
+104,The intended uses are text paraphrasing.
+105,"The main use cases are pure representation learning, planning (look-ahead search), or learning a policy in the world model (neural simulator)"
+106,"The model can be used for answering questions about images, describing visual content, creating stories grounded in multiple images, extracting information from documents, and performing basic arithmetic operations."
+107,"The model can be used for fast, high-quality text-to-image generation. It supports 1-step, 2-step, 4-step, and 8-step distilled models which provide varying generation quality."
+108,The model can be used for reasoning tasks and is especially tailored for coding and math following specific prompts.
+109,The model can be used for text generation tasks in both Japanese and English.
+110,The model is aimed at downstream tasks that benefit from the encoder-decoder architecture. Particularly useful for tasks involving code.
+111,"The model is intended for developer and enterprise use cases. It can process hours of video and audio, and hundreds of thousands of words or lines of code, making it beneficial for a wide range of tasks."
+112,"The model is intended for general task and conversation capabilities, function calling, and JSON structured outputs."
+113,"The model is intended for instruction-generation, creating questions involving complex scenarios and generating reasoning steps for those questions."
+114,The model is intended for learning pre-training techniques or enhancing research capabilities in large language models.
+115,"The model is intended for multilingual tasks such as knowledge retrieval, math reasoning, and instruction following. Also, it could be used to provide multilingual assistance."
+116,The model is intended for research purposes for now.
+117,The model is intended for research purposes only.
+118,The model is intended to be used as a foundational base model for application-specific fine-tuning. Developers must evaluate and fine-tune the model for safe performance in downstream applications.
+119,"The model is intended to be used by AI researchers to better understand ""robustness, generalization, and other capabilities, biases, and constraints of computer vision models"" [[CLIP Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
 "
-115,"The model is intended to generate high-quality, photorealistic human images from text descriptions. Applications include avatar generation and potentially virtual reality and video game character creation."
-116,"The model was trained on GitHub code as well as additional selected data sources such as Arxiv and Wikipedia. As such it is not an instruction model and commands like ""Write a function that computes the square root."" do not work well. Intended to generate code snippets from given context, but not for writing actual functional code directly."
-117,The model was trained on GitHub code. As such it is not an instruction model and commands do not work well. You should phrase commands like they occur in source code such as comments or write a function signature and docstring and let the model complete the function body.
-118,The model's primary use cases are for commercial and research purposes that require capable reasoning in memory or compute constrained environments and latency-bound scenarios. It can also serve as a building block for generative AI-powered features.
-119,The primary use of AudioGen is research on AI-based audio generation.
-120,The primary use of MusicGen is research on AI-based music generation
-121,This model is being created in order to enable public research on large language models (LLMs). LLMs are intended to be used for language generation or as a pretrained base model that can be further fine-tuned for specific tasks. Use cases below are not exhaustive.
-122,This model is intended for commercial and research use in English and can be fine-tuned for use in other languages.
-123,This model is intended to be used for generating orbital videos of objects from still images.
-124,"To be used as the start of a larger, community-driven development of large-scale datasets for LLMs."
-125,"To be used in areas of medical research including medical summarization, referral letter generation, and medical simplification tasks."
-126,To be used to conduct instruction-tuning for language models and make the language model able to judge open-ended answer pairs.
-127,To empower and enrich the open research community by providing access to state-of-the-art language models.
-128,"To empower large-scale monolingual and multilingual modeling projects with both the data and the processing tools, as well as stimulate research around this large multilingual corpus."
-129,To faciliate transfer learning research in NLP.
-130,Training and evaluating language models on prompt ranking tasks and as a dataset that can be filtered only to include high-quality prompts. These can serve as seed data for generating synthetic prompts and generations.
-131,"Training counselors
+120,"The model is intended to generate high-quality, photorealistic human images from text descriptions. Applications include avatar generation and potentially virtual reality and video game character creation."
+121,"The model was trained on GitHub code as well as additional selected data sources such as Arxiv and Wikipedia. As such it is not an instruction model and commands like ""Write a function that computes the square root."" do not work well. Intended to generate code snippets from given context, but not for writing actual functional code directly."
+122,The model was trained on GitHub code. As such it is not an instruction model and commands do not work well. You should phrase commands like they occur in source code such as comments or write a function signature and docstring and let the model complete the function body.
+123,The model's primary use cases are for commercial and research purposes that require capable reasoning in memory or compute constrained environments and latency-bound scenarios. It can also serve as a building block for generative AI-powered features.
+124,The primary use of AudioGen is research on AI-based audio generation.
+125,The primary use of MusicGen is research on AI-based music generation
+126,This model is being created in order to enable public research on large language models (LLMs). LLMs are intended to be used for language generation or as a pretrained base model that can be further fine-tuned for specific tasks. Use cases below are not exhaustive.
+127,This model is designed to be used for multilingual tasks covering 23 languages.
+128,This model is intended for commercial and research use in English and can be fine-tuned for use in other languages.
+129,This model is intended to be used for generating orbital videos of objects from still images.
+130,"To be used as the start of a larger, community-driven development of large-scale datasets for LLMs."
+131,"To be used in areas of medical research including medical summarization, referral letter generation, and medical simplification tasks."
+132,To be used to conduct instruction-tuning for language models and make the language model able to judge open-ended answer pairs.
+133,To empower and enrich the open research community by providing access to state-of-the-art language models.
+134,"To empower large-scale monolingual and multilingual modeling projects with both the data and the processing tools, as well as stimulate research around this large multilingual corpus."
+135,To faciliate transfer learning research in NLP.
+136,Training and evaluating language models on prompt ranking tasks and as a dataset that can be filtered only to include high-quality prompts. These can serve as seed data for generating synthetic prompts and generations.
+137,"Training counselors
 "
-132,Training language models on code.
-133,Training multimodal vision models.
-134,Used to train the BloombergGPT model.
-135,We recommend using the model to perform tasks expressed in natural language.
-136,"Whisper is a general-purpose speech recognition model; it is a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
+138,Training language models on code.
+139,Training multimodal vision models.
+140,Used to train the BloombergGPT model.
+141,"Veo is intended to help create tools that make video production accessible to everyone. It can be used by filmmakers, creators, or educators for storytelling, education and more. Some of its features will be also brought to products like YouTube Shorts."
+142,We recommend using the model to perform tasks expressed in natural language.
+143,"Whisper is a general-purpose speech recognition model; it is a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
 "
-137,"You can use the models to perform inference on tasks by specifying your query in natural language, and the models will generate a prediction."
-138,You can use the raw model for many NLP tasks like text generation or fine-tune it to a downstream task.
-139,academic research
-140,academic research purposes
-141,adapting LLMs to work with collaborative writing and updating.
-142,allowing companies to incorporate generative AI into their business models
-143,"analyzing, writing, and connecting business documents and data"
-144,as an integrated AI assistant in Google Sheets
-145,bridging the gap between natural language understanding and computational problem-solving
-146,creating code LLMs
-147,creative generation of digital art and images
-148,furthering research in developing unified and generalist models for biomedicine.
-149,"general use large language model that can be used for language, reasoning, and code tasks."
-150,generating text from a prompt
-151,"intended for use as a foundation layer for fine tuning, training"
-152,pre-training Large Time Series Models
-153,recruiting candidates for business needs
-154,research on LLMs and chatbots
-155,to be used as a personal assistant chatbot for everyday activities
-156,"to be used for question answering and creating draft summaries from existing documentation, to be reviewed, edited, and approved by the user before use."
-157,to be used to help make the Nextdoor experience more positive for users
-158,to support open and collaborative AI research by making the full LLM training process transparent.
-159,training and evaluation in the field of natural language processing.
-160,unknown
+144,"You can use the models to perform inference on tasks by specifying your query in natural language, and the models will generate a prediction."
+145,You can use the raw model for many NLP tasks like text generation or fine-tune it to a downstream task.
+146,academic research
+147,academic research purposes
+148,adapting LLMs to work with collaborative writing and updating.
+149,allowing companies to incorporate generative AI into their business models
+150,"analyzing, writing, and connecting business documents and data"
+151,as an integrated AI assistant in Google Sheets
+152,bridging the gap between natural language understanding and computational problem-solving
+153,creating code LLMs
+154,creative generation of digital art and images
+155,furthering research in developing unified and generalist models for biomedicine.
+156,"general use large language model that can be used for language, reasoning, and code tasks."
+157,generating text from a prompt
+158,"intended for use as a foundation layer for fine tuning, training"
+159,pre-training Large Time Series Models
+160,recruiting candidates for business needs
+161,research on LLMs and chatbots
+162,to be used as a personal assistant chatbot for everyday activities
+163,"to be used for question answering and creating draft summaries from existing documentation, to be reviewed, edited, and approved by the user before use."
+164,to be used to help make the Nextdoor experience more positive for users
+165,to support open and collaborative AI research by making the full LLM training process transparent.
+166,training and evaluation in the field of natural language processing.
+167,unknown

@@ -4,198 +4,204 @@ size_id,size
 3,1.2B parameters (dense)
 4,1.2T parameters (sparse)
 5,1.3B image-text annotations
-6,1.3B parameters (dense)
-7,1.4B parameters (dense)
-8,1.5B parameters (dense)
-9,1.5M dialogues
-10,1.6B parameters (dense)
-11,1.6TB
-12,1.75T parameters (dense)
-13,1.8B parameters (dense)
-14,1.9B parameters (dense)
-15,10.5 TB
-16,"10.5 TB Text, 2.2B Text-Image pairs, 1.5T tokens of simulated control, 500k robotics trajectories"
-17,"10.7M video-text pairs, 52K hours video"
-18,100B parameters (dense)
-19,100M parameters (dense)
-20,105k judge samples
-21,106B tokens
-22,"10B images, 12B alt-text"
-23,10B parameters (dense)
-24,10k captions
-25,10k examples
-26,115B tokens
-27,115M image-text pairs
-28,11B parameters (dense)
-29,"11M images, 1.1B mask annotations"
-30,120B parameters (dense)
-31,124M parameters (dense)
-32,12B parameters (dense)
-33,"12M (image, text) pairs"
-34,130B parameters (dense)
-35,132B parameters (sparse)
-36,136M video clips
-37,137B parameters (dense)
-38,13B labels of quantum and biological nature.
-39,13B parameters
-40,13B parameters (dense)
-41,14.7B documents
-42,14B parameters (dense)
-43,14B parameters with 2.7B parameters for activation (MoE)
-44,15.5B parameters (dense)
-45,150k songs
-46,155M parameters (dense)
-47,159 GB
-48,15B parameters
-49,15B parameters (dense)
-50,15M text-video pairs at 8FPS
-51,1600 tasks
-52,160K tasks
-53,16B parameters (dense)
-54,17.5B tokens
-55,175B parameters (dense)
-56,176B parameters (dense)
-57,178B parameters (dense)
-58,17B parameters (dense)
-59,180B parameters (dense)
-60,"182GB Text, 185M Images"
-61,1836 tasks
-62,18B parameters (dense)
-63,1B image-text pairs
-64,1B parameters (dense)
-65,1M image-text pairs
-66,1T parameters (dense)
-67,2.2B parameters (dense)
-68,2.2M captions paired with 0.5M audio clips
-69,2.32B image-text pairs
-70,2.4B parameters (dense)
-71,"2.5M video-text pairs, 13K hours video"
-72,2.7B parameters (dense)
-73,200 GB
-74,2000 prompts
-75,200B parameters (dense)
-76,200M parameters (dense model)
-77,200M parameters (dense)
-78,204k human-annotated prompt-completion pairs
-79,20B parameters (dense)
-80,"20M video clips, 2.3B image-text pairs"
-81,20M videos
-82,214 KB
-83,21B parameters (dense)
-84,227M parameters (dense)
-85,22B parameters (dense)
-86,24k captions
-87,"250M (image, text) pairs
+6,1.3B parameters
+7,1.3B parameters (dense)
+8,1.4B parameters (dense)
+9,1.5B parameters (dense)
+10,1.5M dialogues
+11,1.6B parameters (dense)
+12,1.6TB
+13,1.75T parameters (dense)
+14,1.8B parameters (dense)
+15,1.9B parameters (dense)
+16,10.5 TB
+17,"10.5 TB Text, 2.2B Text-Image pairs, 1.5T tokens of simulated control, 500k robotics trajectories"
+18,"10.7M video-text pairs, 52K hours video"
+19,100B parameters (dense)
+20,100M parameters (dense)
+21,105k judge samples
+22,106B tokens
+23,"10B images, 12B alt-text"
+24,10B parameters (dense)
+25,10k captions
+26,10k examples
+27,115B tokens
+28,115M image-text pairs
+29,11B parameters (dense)
+30,"11M images, 1.1B mask annotations"
+31,120B parameters (dense)
+32,124M parameters (dense)
+33,12B parameters (dense)
+34,"12M (image, text) pairs"
+35,130B parameters (dense)
+36,132B parameters (sparse)
+37,136M video clips
+38,137B parameters (dense)
+39,13B labels of quantum and biological nature.
+40,13B parameters
+41,13B parameters (dense)
+42,14.7B documents
+43,14B parameters
+44,14B parameters (dense)
+45,14B parameters with 2.7B parameters for activation (MoE)
+46,15.5B parameters (dense)
+47,150k songs
+48,155M parameters (dense)
+49,159 GB
+50,15B parameters
+51,15B parameters (dense)
+52,15M text-video pairs at 8FPS
+53,1600 tasks
+54,160K tasks
+55,16B parameters (dense)
+56,17.5B tokens
+57,175B parameters (dense)
+58,176B parameters (dense)
+59,178B parameters (dense)
+60,17B parameters (dense)
+61,180B parameters (dense)
+62,"182GB Text, 185M Images"
+63,1836 tasks
+64,18B parameters (dense)
+65,1B image-text pairs
+66,1B parameters (dense)
+67,1M image-text pairs
+68,1T parameters (dense)
+69,2.2B parameters (dense)
+70,2.2M captions paired with 0.5M audio clips
+71,2.32B image-text pairs
+72,2.4B parameters (dense)
+73,"2.5M video-text pairs, 13K hours video"
+74,2.7B parameters (dense)
+75,200 GB
+76,2000 prompts
+77,200B parameters (dense)
+78,200M parameters (dense model)
+79,200M parameters (dense)
+80,2024-05-29
+81,204k human-annotated prompt-completion pairs
+82,20B parameters (dense)
+83,"20M video clips, 2.3B image-text pairs"
+84,20M videos
+85,214 KB
+86,21B parameters (dense)
+87,227M parameters (dense)
+88,22B parameters
+89,22B parameters (dense)
+90,24k captions
+91,"250M (image, text) pairs
 "
-88,256k samples
-89,25B parameters (dense)
-90,25B tokens
-91,260B parameters (dense)
-92,271.5 MB
-93,27B observations
-94,27k ratings
-95,280B parameters (dense)
-96,280K hours audio
-97,2B parameters (dense)
-98,3 trillion tokens
-99,3.3B parameters (dense)
-100,"3.3M (image, text) pairs"
-101,3.5B parameters (dense)
-102,3.8B parameters
-103,3.92 TB
-104,3.9B parameters (dense)
-105,30 trillion tokens
-106,300B tokens
-107,300M parameters (dense)
-108,306M
-109,30B parameters (dense)
-110,311M parameters
-111,314B parameters (dense)
-112,330M parameters (dense)
-113,33B parameters (dense)
-114,33k response pairs
-115,340M parameters (dense)
-116,340k hours audio
-117,340k hours audio with pseudolabels
-118,34B parameters (dense)
-119,35B parameters (dense)
-120,35M parameters (dense)
-121,363B tokens
-122,370K hours audio
-123,385M parameters (dense)
-124,39B parameters
-125,3B parameters
-126,3B parameters (dense)
-127,3T tokens
-128,4.3B parameters (dense)
-129,4.4B parameters (dense)
-130,4.5M text queries
-131,40 GB
-132,"400M (image, text) pairs"
-133,400M image-text pairs
-134,40B parameters (dense)
-135,41B parameters (dense)
-136,430M parameters (dense)
-137,43B English tokens with 101.2M documents and 571M images
-138,43M instructions
-139,472M parameters (dense)
-140,4B parameters (dense)
-141,50 vision-language datasets
-142,500 billion words
-143,500M parameters (dense)
-144,50B parameters (dense)
-145,52B parameters (dense)
-146,52B parameters (sparse)
-147,52K instruction-following demonstrations
-148,530B parameters (dense)
-149,540B parameters (dense)
-150,55B parameters (dense)
-151,55B tokens
-152,562B parameters (dense)
-153,562M parameters (dense)
-154,570 GB
-155,580M annotated video clip pairs
-156,5B image-text pairs
-157,5B parameters (dense)
-158,6 TB
-159,6 million images
-160,6.3 trillion tokens
-161,600B tokens
-162,600M parameters (dense)
-163,62 tasks
-164,627B tokens
-165,650K hours audio (60TB)
-166,65B parameters (dense)
-167,67B parameters (dense)
-168,680k hours
-169,6B parameters
-170,6B parameters (dense)
-171,7.3B parameters (dense)
-172,7.5B parameters (dense)
-173,70B parameters
-174,70B parameters (dense)
-175,70M
-176,70M images
-177,70k hours
-178,710M parameters (dense)
-179,72B parameters (dense)
-180,72k comparisons
-181,"730k videos, 6k Wikipedia pages, 340k reddit posts"
-182,747M image-text pairs
-183,750GB
-184,771M parameters (dense)
-185,7B parameters
-186,7B parameters (dense model)
-187,7B parameters (dense)
-188,80B parameters (dense)
-189,825 GB
-190,82B parameters
-191,8B parameters
-192,8B parameters (dense)
-193,9.4GB
-194,900M image-text pairs
-195,900M parameters (dense)
-196,93M parameters (dense)
-197,9B parameters (dense)
-198,unknkown
-199,unknown
+92,256k samples
+93,25B parameters (dense)
+94,25B tokens
+95,260B parameters (dense)
+96,271.5 MB
+97,27B observations
+98,27k ratings
+99,280B parameters (dense)
+100,280K hours audio
+101,2B parameters (dense)
+102,3 trillion tokens
+103,3.3B parameters (dense)
+104,"3.3M (image, text) pairs"
+105,3.5B parameters (dense)
+106,3.92 TB
+107,3.9B parameters (dense)
+108,30 trillion tokens
+109,300B tokens
+110,300M parameters (dense)
+111,306M
+112,30B parameters (dense)
+113,311M parameters
+114,314B parameters (dense)
+115,330M parameters (dense)
+116,33B parameters (dense)
+117,33k response pairs
+118,340M parameters (dense)
+119,340k hours audio
+120,340k hours audio with pseudolabels
+121,34B parameters
+122,34B parameters (dense)
+123,35B parameters
+124,35B parameters (dense)
+125,35M parameters (dense)
+126,363B tokens
+127,370K hours audio
+128,385M parameters (dense)
+129,39B parameters
+130,3B parameters
+131,3B parameters (dense)
+132,3T tokens
+133,4.3B parameters (dense)
+134,4.4B parameters (dense)
+135,4.5M text queries
+136,40 GB
+137,"400M (image, text) pairs"
+138,400M image-text pairs
+139,40B parameters (dense)
+140,41B parameters (dense)
+141,430M parameters (dense)
+142,43B English tokens with 101.2M documents and 571M images
+143,43M instructions
+144,472M parameters (dense)
+145,4B parameters (dense)
+146,50 vision-language datasets
+147,500 billion words
+148,500M parameters (dense)
+149,50B parameters (dense)
+150,52B parameters (dense)
+151,52B parameters (sparse)
+152,52K instruction-following demonstrations
+153,530B parameters (dense)
+154,540B parameters (dense)
+155,55B parameters (dense)
+156,55B tokens
+157,562B parameters (dense)
+158,562M parameters (dense)
+159,570 GB
+160,580M annotated video clip pairs
+161,5B image-text pairs
+162,5B parameters (dense)
+163,6 TB
+164,6 million images
+165,6.3 trillion tokens
+166,600B tokens
+167,600M parameters (dense)
+168,62 tasks
+169,627B tokens
+170,650K hours audio (60TB)
+171,65B parameters
+172,65B parameters (dense)
+173,67B parameters (dense)
+174,680k hours
+175,6B parameters
+176,6B parameters (dense)
+177,7.3B parameters (dense)
+178,7.5B parameters (dense)
+179,70B parameters
+180,70B parameters (dense)
+181,70M
+182,70M images
+183,70k hours
+184,710M parameters (dense)
+185,72B parameters (dense)
+186,72k comparisons
+187,"730k videos, 6k Wikipedia pages, 340k reddit posts"
+188,747M image-text pairs
+189,750GB
+190,771M parameters (dense)
+191,7B parameters
+192,7B parameters (dense model)
+193,7B parameters (dense)
+194,80B parameters (dense)
+195,825 GB
+196,82B parameters
+197,8B parameters
+198,8B parameters (dense)
+199,9.4GB
+200,900M image-text pairs
+201,900M parameters (dense)
+202,93M parameters (dense)
+203,9B parameters (dense)
+204,unknkown
+205,unknown
