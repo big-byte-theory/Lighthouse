@@ -8,8 +8,7 @@ const Header = () => {
 	const [isLoggedIn, setIsLoggedIn] = useState(loggedIn());
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	const [searchbarOpen, setSearchbarOpen] = useState(false);
-	console.log(searchbarOpen);
-
+	
 	useEffect(() => {
 		setIsLoggedIn(loggedIn());
 	}, [isLoggedIn]);
