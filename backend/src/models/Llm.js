@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 
 const LlmSchema = new mongoose.Schema({
   type_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_type',
     required: true,
   },
   name: {
@@ -10,119 +11,147 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   organisation_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_organization',
     required: true,
   },
-  description: {
-    type: String,
+  description_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_description',
     required: true,
   },
-  date_id: {
-    type: Date,
+  created_date_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_created_date',
     required: true,
   },
   url_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_url',
     required: true,
   },
-  datasheet: {
-    type: String,
+  datasheet_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_datasheet',
     required: true,
   },
   modality_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_modality',
     required: true,
   },
   size_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_size',
     required: true,
   },
-  sample: {
-    type: String,
+  sample_id: {
+    type: mongoose.Schema.Types.ObjectId,
     required: true,
   },
-  analysis: {
-    type: String,
+  analysis_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_analysis',
     required: true,
   },
   dependencies_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_dependencies',
     required: true,
   },
-  included: {
-    type: String,
+  included_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_included',
     required: true,
   },
-  excluded: {
-    type: String,
+  excluded_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_excluded',
     required: true,
   },
-  quality_control: {
-    type: String,
+  quality_control_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_quality_control',
     required: true,
   },
   access_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_access',
     required: true,
   },
-  license: {
-    type: String,
+  license_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_license',
     required: true,
   },
-  intended_use: {
-    type: String,
+  intended_uses_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_intended_uses',
     required: true,
   },
-  prohibited_uses: {
+  prohibited_uses_id: {
     type: String,
+    ref: 'llm_prohibited_uses',
     required: true,
   },
-  monitoring: {
-    type: String,
+  monitoring_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_monitoring',
     required: true,
   },
-  feedback: {
-    type: String,
+  feedback_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_feedback',
     required: true,
   },
   model_type_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_model_type',
     required: true,
   },
-  training_emissions: {
-    type: String,
+  training_emissions_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_training_emissions',
     required: true,
   },
-  training_time: {
-    type: String,
+  training_time_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_training_time',
     required: true,
   },
-  training_hardware: {
-    type: String,
+  training_hardware_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_training_hardware',
     required: true,
   },
-  adaptation: {
-    type: String,
+  adaptation_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_adaptation',
     required: true,
   },
-  output_space: {
-    type: String,
+  output_space_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_output_space',
     required: true,
   },
-  terms_of_service: {
-    type: String,
+  terms_of_service_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_terms_of_service',
     required: true,
   },
-  monthly_active_users: {
-    type: Number,
+  monthly_active_users_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_monthly_active_users',
     required: true,
   },
-  user_distribution: {
-    type: String,
+  user_distribution_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_user_distribution',
     required: true,
   },
-  failures: {
-    type: String,
+  failures_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_failures',
     required: true,
   },
 }, { timestamps: true });

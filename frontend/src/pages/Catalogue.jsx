@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getLlms } from "../services/llmService";
 import { isAdmin } from "../services/AuthUserService";
@@ -6,24 +6,28 @@ import Layout from "../components/Layout";
 
 const Catalogue = ({ user }) => {
 	const [llms, setLlms] = useState([]);
-	const adminUser = isAdmin(user);
+	const [isAdminUser, setIsAdminUser] = useState(false);
 
-	useEffect(() => {
-		const fetchLlms = async () => {
-			const data = await getLlms();
-			setLlms(data);
-		};
-
-		fetchLlms();
+	const adminUser = useCallback(async () => {
+		const result = await isAdmin(user);
+		setIsAdminUser(result);
 	}, []);
 
-	useEffect(() => {}, [user]);
+	const fetchLlms = useCallback(async () => {
+		const data = await getLlms();
+		setLlms(data);
+	}, []);
+
+	useEffect(() => {
+		adminUser();
+		fetchLlms();
+	}, [user]);
 
 	return (
 		<>
 			<Layout>
 				<section className="container wrapper pb-14">
-					{adminUser && (
+					{isAdminUser && (
 						<div className="col-span-12">
 							<Link to="/llm/add" className="btn btn-primary">
 								Add LLM

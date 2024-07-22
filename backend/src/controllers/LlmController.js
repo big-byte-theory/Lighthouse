@@ -1,15 +1,38 @@
 import Llm from '../models/Llm.js';
 
 export default class LlmController {
-  // #service;
-
-  // constructor(service = new LlmService()) {
-  //   this.#service = service;
-  // }
-
   getAllLlms = async (req, res) => {
     try {
-      const llms = await Llm.find({});
+      const llms = await Llm.find({})
+        .populate({
+          path: 'organization',
+          model: 'llm_organization',
+        })
+        .populate('type_id');
+        // .populate('modality_id')
+        // .populate('size_id')
+        // .populate('dependencies_id')
+        // .populate('access_id')
+        // .populate('model_type_id')
+        // .populate('training_emissions_id')
+        // .populate('training_time_id')
+        // .populate('training_hardware_id')
+        // .populate('output_space_id')
+        // .populate('url_id')
+        // .populate('description_id')
+        // .populate('analysis_id')
+        // .populate('license_id')
+        // .populate('intended_use_id')
+        // .populate('prohibited_uses_id')
+        // .populate('monitoring_id')
+        // .populate('feedback_id')
+        // .populate('quality_control_id')
+        // .populate('terms_of_service_id')
+        // .populate('monthly_active_users_id')
+        // .populate('user_distribution_id')
+        // .populate('failures_id')
+        // .populate('created_date_id')
+        // .populate('model_card_id');
       return res.status(200).json(llms);
     } catch (err) {
       console.error(err.message);
