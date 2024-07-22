@@ -44,92 +44,96 @@ quality_control_id,quality_control
 15,"Despite efforts in red teaming and safety fine-tuning and enforcement, the creators suggest, developers and stakeholders should perform their own red teaming and provide related security measures before deployment, and they must abide by and comply with local governance and regulations."
 16,"Documents are filtered, processed for mathematical value, deduplicated, and then the largest documents are manually inspected for quality."
 17,"Employed de-duplication, removal of sensitive-PII and filtering. Added control tokens marking toxicity of text."
-18,"Extensive internal and external testing for safety, and design of new trust and safety tools."
-19,"FLAVA introduces a variety of new modeling techniques, specifically with an interest in improved text-image alignment through contrastive objectives."
-20,"GitHub is working on a filter to detect and suppress code generations that are verbatim from the training set [[GitHub Research Recitation]] (https://docs.github.com/en/github/copilot/research-recitation). According to the FAQ, GitHub implemented a simple filter that blocks emails in standard formats to protect personally identifiable data that may be present in the training data [[GitHub CoPilot]](https://copilot.github.com/).
+18,"Extensive filtering and data labeling were used to minimize harmful content in datasets and reduce the likelihood of harmful outputs. Privacy, safety, and security technologies were leveraged in deploying the model, including watermarking tool SynthID."
+19,"Extensive internal and external testing for safety, and design of new trust and safety tools."
+20,"FLAVA introduces a variety of new modeling techniques, specifically with an interest in improved text-image alignment through contrastive objectives."
+21,"GitHub is working on a filter to detect and suppress code generations that are verbatim from the training set [[GitHub Research Recitation]] (https://docs.github.com/en/github/copilot/research-recitation). According to the FAQ, GitHub implemented a simple filter that blocks emails in standard formats to protect personally identifiable data that may be present in the training data [[GitHub CoPilot]](https://copilot.github.com/).
 "
-21,"Given a prompt, OpenAI API checks whether a completion contains unsafe language using its filters and marks the completion accordingly if so. The API also provides developers with special endpoints that scope the API usage. OpenAI also developed user guidelines to help developers understand safety issues [[OpenAI API]](https://openai.com/api/).
+22,"Given a prompt, OpenAI API checks whether a completion contains unsafe language using its filters and marks the completion accordingly if so. The API also provides developers with special endpoints that scope the API usage. OpenAI also developed user guidelines to help developers understand safety issues [[OpenAI API]](https://openai.com/api/).
 "
-22,"Heuristics and edit filtering was used on data set, which consisted mostly of Wikipedia pages."
-23,"In addition to excluding low quality documents from the Common Crawl dataset, the authors fuzzily deduplicated documents within each dataset, by removing documents that have high overlap with each other. The same procedure was followed to fuzzily deduplicate WebText from Common Crawl [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A). Text occurring in benchmark datasets were also partially removed [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C)."
-24,"In addition to filtering, basic text standardization was done.
+23,"Heuristics and edit filtering was used on data set, which consisted mostly of Wikipedia pages."
+24,"In addition to excluding low quality documents from the Common Crawl dataset, the authors fuzzily deduplicated documents within each dataset, by removing documents that have high overlap with each other. The same procedure was followed to fuzzily deduplicate WebText from Common Crawl [[Appendix A]](https://arxiv.org/pdf/2005.14165.pdf#appendix.A). Text occurring in benchmark datasets were also partially removed [[Appendix C]](https://arxiv.org/pdf/2005.14165.pdf#appendix.C)."
+25,"In addition to filtering, basic text standardization was done.
 "
-25,"In addition to the data inclusion and exclusion decisions, the quality was controlled through filtering for English (pycld2 language classifier), filtering for documents similar to OpenWebText2 (classifier on CommonCrawl), and several forms of deduplication as detailed in the paper [[Appendix C]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.C) [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
+26,"In addition to the data inclusion and exclusion decisions, the quality was controlled through filtering for English (pycld2 language classifier), filtering for documents similar to OpenWebText2 (classifier on CommonCrawl), and several forms of deduplication as detailed in the paper [[Appendix C]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.C) [[Appendix D]](https://arxiv.org/pdf/2101.00027.pdf#appendix.1.D).
 "
-26,"In order to reduce low quality web pages, the web pages were sampled according to a ""quality score"" classifier. Code files were de-duplicated using Levenshtein distance [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
+27,"In order to reduce low quality web pages, the web pages were sampled according to a ""quality score"" classifier. Code files were de-duplicated using Levenshtein distance [[Section 3]](https://arxiv.org/pdf/2204.02311.pdf#section.3).
 "
-27,"In the datasheet, it is implied that Cohere employs filtration methods for removing racist, biased and toxic content, but the details are not provided. These filtration methods take both the context and the language, as opposed to using a list of blockwords [[Datasheet]](https://docs.cohere.ai/data-statement).
+28,"In the datasheet, it is implied that Cohere employs filtration methods for removing racist, biased and toxic content, but the details are not provided. These filtration methods take both the context and the language, as opposed to using a list of blockwords [[Datasheet]](https://docs.cohere.ai/data-statement).
 "
-28,"Input candidate (image, caption) pairs pass through several stages of filtering and processing to ensure quality."
-29,"Input candidate (image, caption) pairs pass through several stages of filtering and processing to ensure quality. Person-name substitutions are performed in the alt-texts to protect the privacy of individuals in the associated images."
-30,"KT tried to remove unethical expressions such as profanity, slang, prejudice, and discrimination from training data."
-31,"LaMDA was fine-tuned to predict sensibleness, specificity and interestingness as well as safety. Then, the candidates were filtered out if the model safety predictions were below a certain threshold. The next candidates in the conversation were selected as a combination of these predictions. The model was also fine-tuned for groundedness. The results are shown in [[Figure 5]](https://arxiv.org/pdf/2201.08239.pdf#figure.caption.23).
+29,"Input candidate (image, caption) pairs pass through several stages of filtering and processing to ensure quality."
+30,"Input candidate (image, caption) pairs pass through several stages of filtering and processing to ensure quality. Person-name substitutions are performed in the alt-texts to protect the privacy of individuals in the associated images."
+31,"KT tried to remove unethical expressions such as profanity, slang, prejudice, and discrimination from training data."
+32,"LaMDA was fine-tuned to predict sensibleness, specificity and interestingness as well as safety. Then, the candidates were filtered out if the model safety predictions were below a certain threshold. The next candidates in the conversation were selected as a combination of these predictions. The model was also fine-tuned for groundedness. The results are shown in [[Figure 5]](https://arxiv.org/pdf/2201.08239.pdf#figure.caption.23).
 "
-32,Limited release
-33,Measures were taken to reduce redundancy and ensure diversity in generated content. A decontamination pipeline was implemented to avoid benchmark contamination.
-34,"Model underwent supervised fine-tuning, leading to a greater diversity of responses."
-35,"Multiple evaluations and red-teaming conducted, with particular focus on ethics, bias, fair use cases, and safety."
-36,"No specific quality control is mentioned in model training, though details on data processing and collection are provided in the paper."
-37,"No specific quality control is mentioned in model training, though details on data processing and how the model was trained are provided in the paper."
-38,"No specific quality control is mentioned in model training, though details on data processing and how the tokenizer was trained are provided in the paper."
-39,No specific quality control methods are documented.
-40,Number data is randomly generated from log space to reduce likelihood of redundancy and range of magnitudes.
-41,"One quality control method OpenAI employed was releasing GPT-3 only through the OpenAI API. OpenAI states that it is easier to respond to misuse when the access to the model is gated through the API. It also hints that it plans to broaden the API access over time based on the amount of misuse [[OpenAI API Blog Post]](https://openai.com/blog/openai-api/). The authors identify potential misuses of GPT-3 in the paper and analyze it for fairness, bias and representation issues, but do not identify mitigation strategies [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
+33,Limited release
+34,Measures were taken to reduce redundancy and ensure diversity in generated content. A decontamination pipeline was implemented to avoid benchmark contamination.
+35,"Model underwent supervised fine-tuning, leading to a greater diversity of responses."
+36,"Multiple evaluations and red-teaming conducted, with particular focus on ethics, bias, fair use cases, and safety."
+37,"No specific quality control is mentioned in model training, though details on data processing and collection are provided in the paper."
+38,"No specific quality control is mentioned in model training, though details on data processing and how the model was trained are provided in the paper."
+39,"No specific quality control is mentioned in model training, though details on data processing and how the tokenizer was trained are provided in the paper."
+40,No specific quality control methods are documented.
+41,Number data is randomly generated from log space to reduce likelihood of redundancy and range of magnitudes.
+42,"One quality control method OpenAI employed was releasing GPT-3 only through the OpenAI API. OpenAI states that it is easier to respond to misuse when the access to the model is gated through the API. It also hints that it plans to broaden the API access over time based on the amount of misuse [[OpenAI API Blog Post]](https://openai.com/blog/openai-api/). The authors identify potential misuses of GPT-3 in the paper and analyze it for fairness, bias and representation issues, but do not identify mitigation strategies [[Section 6]](https://arxiv.org/pdf/2005.14165.pdf#section.6).
 "
-42,Pre-trained on diverse dataset and aligned with Constitutional AI technique.
-43,Recommendations provided for retrieval augmented generation (RAG) in scenarios where accuracy and fidelity are important and additional testing around safety in the context of the specific application and domain is suggested.
-44,Safety filtering performed to mitigate risk and remove toxic content.
-45,"Security Copilot employs a closed-loop learning system that learns from user interactions and feedback, enabling it to provide more coherent, relevant, and useful answers that continually improve over time. Security Copilot is committed to delivering safe, secure, and responsible AI solutions, ensuring that customers' data and AI models are protected with enterprise compliance and security controls. Customer data is owned and controlled by them, and not used to train AI models for anyone outside their organization."
-46,Sexual and violent content still present in OBELICS even after filtering.
-47,"The Pile dataset has been thoroughly analyzed from various ethical standpoints such as toxicity analysis, gender bias, pejorative content, racially sensitive content etc. Only mitigations in standard Pile dataset pre-processing were employed when pre-training Cerebras-GPT. [[Risk, Bias, Ethical Considerations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#risk-bias-ethical-considerations)
+43,Pre-trained on diverse dataset and aligned with Constitutional AI technique.
+44,Recommendations provided for retrieval augmented generation (RAG) in scenarios where accuracy and fidelity are important and additional testing around safety in the context of the specific application and domain is suggested.
+45,Safety filtering performed to mitigate risk and remove toxic content.
+46,"Security Copilot employs a closed-loop learning system that learns from user interactions and feedback, enabling it to provide more coherent, relevant, and useful answers that continually improve over time. Security Copilot is committed to delivering safe, secure, and responsible AI solutions, ensuring that customers' data and AI models are protected with enterprise compliance and security controls. Customer data is owned and controlled by them, and not used to train AI models for anyone outside their organization."
+47,Sexual and violent content still present in OBELICS even after filtering.
+48,"The Pile dataset has been thoroughly analyzed from various ethical standpoints such as toxicity analysis, gender bias, pejorative content, racially sensitive content etc. Only mitigations in standard Pile dataset pre-processing were employed when pre-training Cerebras-GPT. [[Risk, Bias, Ethical Considerations]](https://github.com/Cerebras/modelzoo/tree/main/modelzoo/transformers/pytorch/gpt3/configs/Cerebras_GPT#risk-bias-ethical-considerations)
 "
-48,The T5 paper documents many analyses/ablations that were considered before arriving at the final architecture/training procedure.
-49,"The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
+49,The T5 paper documents many analyses/ablations that were considered before arriving at the final architecture/training procedure.
+50,"The authors exclude NSFW, toxic, and likely watermarked data from LAION-5B.
 "
-50,"The authors found that the performance of the model depended heavily on which classes are included (and excluded) for a given task. They reported significant race and gender based disparities on the Fairface dataset, depending on how the classes were constructed. The authors also demonstrated that the model was capable of racial profiling with high accuracy [[Section 7]](https://arxiv.org/pdf/2103.00020.pdf#section.7).
+51,"The authors found that the performance of the model depended heavily on which classes are included (and excluded) for a given task. They reported significant race and gender based disparities on the Fairface dataset, depending on how the classes were constructed. The authors also demonstrated that the model was capable of racial profiling with high accuracy [[Section 7]](https://arxiv.org/pdf/2103.00020.pdf#section.7).
 "
-51,"The authors provide a basic description of data processing and cleaning.
+52,"The authors provide a basic description of data processing and cleaning.
 "
-52,"The authors use  CLIP embeddings of images and texts to filter out illegal contents. They also use CLIP to tag image-text pairs as NSFW. They note that less than 1% of images were detected as NSFW, which can be filtered out by an user with NSFW tag."
-53,"The authors use simple heuristics for filtering low quality documents as opposed to relying on a classifier based on a ""gold"" set such as the English Wikipedia, which could ""inadvertently bias towards a certain demographic or erase certain dialects or sociolects from representation."" MassiveWeb subset was filtered using Google’s SafeSearch filter, preferring it over to word filters that ""disproportinately filter out inoffensive content associated with minority groups. MassiveWeb was filtered further for word or phrase repetitions. All the subsets were filtered for document deduplication and test set contamination"" [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).
+53,"The authors use  CLIP embeddings of images and texts to filter out illegal contents. They also use CLIP to tag image-text pairs as NSFW. They note that less than 1% of images were detected as NSFW, which can be filtered out by an user with NSFW tag."
+54,"The authors use simple heuristics for filtering low quality documents as opposed to relying on a classifier based on a ""gold"" set such as the English Wikipedia, which could ""inadvertently bias towards a certain demographic or erase certain dialects or sociolects from representation."" MassiveWeb subset was filtered using Google’s SafeSearch filter, preferring it over to word filters that ""disproportinately filter out inoffensive content associated with minority groups. MassiveWeb was filtered further for word or phrase repetitions. All the subsets were filtered for document deduplication and test set contamination"" [[Appendix A]](https://arxiv.org/pdf/2112.11446.pdf#appendix.A).
 "
-54,"The data was ""only crawled websites that had policies against excessively violent and adult images and allowed us to filter out such content"" [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
+55,"The data was ""only crawled websites that had policies against excessively violent and adult images and allowed us to filter out such content"" [[Model Card]](https://github.com/openai/CLIP/blob/main/model-card.md).
 "
-55,"The data was de-duplicated [[Section 3.2]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.2). The data collected from the internet was filtered using image, text and joint image and text filters, which included: ""discarding instances whose captions are too short, are classified as non-English by the Python package cld3, or that consist primarily of boilerplate phrases such as “photographed on <date>”, where <date> matches various formats for dates that we found in the data"". The authors also discard ""instances whose images have aspect ratios not in [1/2, 2]"" [[Appendix C]](https://arxiv.org/pdf/2102.12092.pdf#appendix.C).
+56,"The data was de-duplicated [[Section 3.2]](https://arxiv.org/pdf/2102.12092.pdf#subsection.3.2). The data collected from the internet was filtered using image, text and joint image and text filters, which included: ""discarding instances whose captions are too short, are classified as non-English by the Python package cld3, or that consist primarily of boilerplate phrases such as “photographed on <date>”, where <date> matches various formats for dates that we found in the data"". The authors also discard ""instances whose images have aspect ratios not in [1/2, 2]"" [[Appendix C]](https://arxiv.org/pdf/2102.12092.pdf#appendix.C).
 "
-56,"The evaluation dataset was handwritten to ensure that the evaluation problems do not exist in the Codex dataset [[Section 2.2]](https://arxiv.org/pdf/2107.03374.pdf#subsection.2.2).
+57,"The evaluation dataset was handwritten to ensure that the evaluation problems do not exist in the Codex dataset [[Section 2.2]](https://arxiv.org/pdf/2107.03374.pdf#subsection.2.2).
 "
-57,The model is not fully released to the public as part of a quality control measure. The usage of the model by testers is monitored and user provided prompts are filtered [[Input filters]] (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
-58,"The model undergoes pretraining, first stage finetuning, and second stage finetuning for refining and improving aspects such as hand and anatomy rendering."
-59,The model underwent post-training processes viz. supervised fine-tuning and direct preference optimization to increase its capability in following instructions and aligning to safety measures.
-60,"The model was evaluated across multiple tasks, displaying notable scores in GPT4All, AGIEval, BigBench, and TruthfulQA. It also has a high score on function calling and JSON mode, indicating the robustness of its capabilities."
-61,The model was filtered for permissive licenses and code with no license only. A search index is provided to identify where generated code came from to apply the proper attribution.
-62,"The model wasn't fully released to the public as a quality control measure.
+58,The model is not fully released to the public as part of a quality control measure. The usage of the model by testers is monitored and user provided prompts are filtered [[Input filters]] (https://github.com/openai/dalle-2-preview/blob/main/system-card.md#input-filters).
+59,"The model undergoes pretraining, first stage finetuning, and second stage finetuning for refining and improving aspects such as hand and anatomy rendering."
+60,The model underwent post-training processes viz. supervised fine-tuning and direct preference optimization to increase its capability in following instructions and aligning to safety measures.
+61,"The model was evaluated across multiple tasks, displaying notable scores in GPT4All, AGIEval, BigBench, and TruthfulQA. It also has a high score on function calling and JSON mode, indicating the robustness of its capabilities."
+62,The model was filtered for permissive licenses and code with no license only. A search index is provided to identify where generated code came from to apply the proper attribution.
+63,"The model wasn't fully released to the public as a quality control measure.
 "
-63,"The model wasn't fully released to the public as a quality control measure. The authors identify potential risks of Codex in their paper due to the following: over-reliance, misalignment, bias and representation, economic and labor market impacts, security implications, environmental impact and legal implications. They also make suggestions for some of these, but do not implement them in Codex [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
+64,"The model wasn't fully released to the public as a quality control measure. The authors identify potential risks of Codex in their paper due to the following: over-reliance, misalignment, bias and representation, economic and labor market impacts, security implications, environmental impact and legal implications. They also make suggestions for some of these, but do not implement them in Codex [[Section 7]](https://arxiv.org/pdf/2107.03374.pdf#section.7).
 "
-64,"The new users of the API get a limited access restricting the sizes of the models as well as the number of tokens that can be used. Users are required to go through an internal application to upgrade to full access [[Limited Access]](https://docs.cohere.ai/limited-access).
+65,"The new users of the API get a limited access restricting the sizes of the models as well as the number of tokens that can be used. Users are required to go through an internal application to upgrade to full access [[Limited Access]](https://docs.cohere.ai/limited-access).
 "
-65,The performance of Moirai was evaluated through in-distribution and out-of-distribution settings.
-66,The quality control measures taken include modeling the relationship between dense text descriptions and image pixels in a decomposed manner and enforcing attention refocusing without adding extra modules.
-67,"The quality of the model has been ensured by training it on a mixture of openly available datasets and enhancing its OCR capabilities. Further improvements include manipulating images in their native resolutions and aspect ratios, better pre-trained backbones, and allowing for sub-image splitting."
-68,"They filter out low-quality data, they employ a combination of rule-based and machine-learning-based methods. Specifically, they use multiple models to score the content, including language models, text-quality scoring models, and models for identifying potentially offensive or inappropriate content. They also manually sample texts from various sources and review them to ensure their quality. To further enhance the quality of our data, they selectively up-sample data from certain sources, to ensure that our models are trained on a diverse range of high-quality content."
-69,"To protect creator copyrights, for audio uploads, Stability AI partners with Audible Magic to use their content recognition (ACR) technology to power real-time content matching and prevent copyright infringement. Opt-out requests were honored during the training phase."
-70,"Training data passed through IBM HAP detector, language model designed to remove harmful content. Data also deduplicated and filtered for document quality."
-71,Training dataset comprised of diverse data composition and pruned and deduplicated.
-72,Unknown
-73,"Working with ""select"" crowdworkers or those screened for certain qualifications, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
+66,The performance of Moirai was evaluated through in-distribution and out-of-distribution settings.
+67,The quality control measures taken include modeling the relationship between dense text descriptions and image pixels in a decomposed manner and enforcing attention refocusing without adding extra modules.
+68,"The quality of the model has been ensured by training it on a mixture of openly available datasets and enhancing its OCR capabilities. Further improvements include manipulating images in their native resolutions and aspect ratios, better pre-trained backbones, and allowing for sub-image splitting."
+69,The research team is continually exploring new ideas at the frontier of AI and building innovative products for consistent progress.
+70,"They filter out low-quality data, they employ a combination of rule-based and machine-learning-based methods. Specifically, they use multiple models to score the content, including language models, text-quality scoring models, and models for identifying potentially offensive or inappropriate content. They also manually sample texts from various sources and review them to ensure their quality. To further enhance the quality of our data, they selectively up-sample data from certain sources, to ensure that our models are trained on a diverse range of high-quality content."
+71,"To protect creator copyrights, for audio uploads, Stability AI partners with Audible Magic to use their content recognition (ACR) technology to power real-time content matching and prevent copyright infringement. Opt-out requests were honored during the training phase."
+72,Training data filtering and post-training refinement act as additional guardrails for preventing harmful outputs.
+73,"Training data passed through IBM HAP detector, language model designed to remove harmful content. Data also deduplicated and filtered for document quality."
+74,Training dataset comprised of diverse data composition and pruned and deduplicated.
+75,Unknown
+76,"Videos created by Veo are watermarked using SynthID, DeepMinds tool for watermarking and identifying AI-generated content, and passed through safety filters and memorization checking processes to mitigate privacy, copyright and bias risks."
+77,"Working with ""select"" crowdworkers or those screened for certain qualifications, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
 "
-74,"Working with a screened set of crowdworkers, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
+78,"Working with a screened set of crowdworkers, and employing simple data quality measures [[Appendix D]](https://arxiv.org/pdf/2204.05862.pdf#appendix.D).
 "
-75,allowed users whose data were part of The Stack's training data to opt-out
-76,"data is deduplicated, normalized, cleaned, and filtered for toxicity"
-77,generic web-crawl data is removed from dataset.
-78,https://arxiv.org/pdf/2110.08207.pdf
-79,https://arxiv.org/pdf/2211.01786.pdf
-80,tokens filtered and deduplicated
-81,training data from Dolma filtered and deduplicated before being trained on.
-82,unknown
-83,"unknown
+79,allowed users whose data were part of The Stack's training data to opt-out
+80,"data is deduplicated, normalized, cleaned, and filtered for toxicity"
+81,generic web-crawl data is removed from dataset.
+82,https://arxiv.org/pdf/2110.08207.pdf
+83,https://arxiv.org/pdf/2211.01786.pdf
+84,tokens filtered and deduplicated
+85,training data from Dolma filtered and deduplicated before being trained on.
+86,unknown
+87,"unknown
 "
-84,worked with artists and music industry to ensure utility
+88,worked with artists and music industry to ensure utility

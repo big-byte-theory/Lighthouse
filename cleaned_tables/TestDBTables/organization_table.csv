@@ -1,194 +1,197 @@
 organization_id,organization
 1,01 AI
-2,AI2
-3,AI21 Labs
-4,Adept
-5,Adobe
-6,Aleph Alpha
-7,Alibaba
-8,Amazon
-9,Anthropic
-10,Apple
-11,Argilla
-12,Argonne National Laboratory
-13,AssemblyAI
-14,Auto-GPT
-15,"Avignon University, Nantes University"
-16,Baichuan Inc.
-17,Baidu
-18,"Baidu, PengCheng Laboratory"
-19,Bain
-20,Be My Eyes
-21,Beijing Academy of Artificial Intelligence
-22,"Beijing Academy of Artificial Intelligence, Tsinghua University"
-23,"Beijing Academy of Artificial Intelligence, University of Science and Technology of China"
-24,Beijing Institute of Technology
-25,Berkeley
-26,BigCode
-27,BigScience
-28,Bloomberg
-29,Boston University
-30,Brex
-31,ByteDance
-32,"ByteDance, Tsinghua University"
-33,Cagliostro Research Lab
-34,Carnegie Mellon University
-35,"Carnegie Mellon University, University of Pennsylvania"
-36,CausalLM
-37,Cerebras
-38,Character AI
-39,ChatGLM
-40,Cognition Labs
-41,Cognitive Computations
-42,Cohere
-43,"Cohere for AI, Beijing Academy of Artificial Intelligence, Cohere, Binghamton University"
-44,"Cohere for AI, Cohere, Brown University, Carnegie Mellon University, MIT"
-45,Columbia
-46,"Columbia, Apple AI"
-47,"Continue Dev, Inc."
-48,"Cornell University, Mosaic"
-49,Cresta
-50,"DAMO Academy, Alibaba"
-51,Data is Better Together
-52,Databricks
-53,Deci
-54,Deepnight Research
-55,Deepseek AI
-56,DuckDuckGo
-57,Duolingo
-58,"EPFL, Idiap Research Institute, OpenAssistant, Yale"
-59,Eleuther AI
-60,EleutherAI
-61,Faraday Lab
-62,FuseAI
-63,Google
-64,Google DeepMind
-65,Google Deepmind
-66,GooseAI
-67,GreenBit AI
-68,H2O AI
-69,"Hong Kong University of Science and Technology (Guangzhou + original), Beijing Academy of Artificial Intelligence"
-70,HubSpot
-71,Hugging Face
-72,HuggingFace
-73,IBM
-74,Ideogram AI
-75,"Inception Institute of Artificial Intelligence, Cerebras, Mohamed bin Zayed University of Artificial Intelligence"
-76,Inflection AI
-77,Instacart
-78,Institute of Automation Chinese Academy of Sciences
-79,InternLM
-80,"International Digital Economy Academy, South China University of Technology, University of Science and Technology of China"
-81,Juni Learning
-82,KT Corporation
-83,Kakao Brain
-84,Khan Academy
-85,Konan
-86,Kotoba Tech
-87,Kunlun Inc.
-88,LAION
-89,LG AI Research
-90,LLM360
-91,LMSYS
-92,Latitude
-93,Lehigh University
-94,LinkedIn
-95,Math AI
-96,Maya Philippines
-97,Meta
-98,"Meta, CMU, TTI-Chicago, UC Berkeley, University of Washington"
-99,Microsoft
-100,"Microsoft, NVIDIA"
-101,Mila-Quebec AI Institute
-102,Mistral AI
-103,Moonhub
-104,Moreh
-105,"Morgan Stanley, ServiceNow Research, University of Montreal, Mila-Quebec AI Institute"
-106,Mosaic
-107,NAVER
-108,NCSOFT
-109,NVIDIA
-110,"NVIDIA, Stanford"
-111,Nanyang Technological University
-112,National University of Singapore
-113,"National University of Singapore, University of Edinburgh, ETH Zurich"
-114,Neeva
-115,Nextdoor
-116,Nolano
-117,Notion
-118,Nous
-119,Nous Research
-120,"Nous Research, EleutherAI, University of Geneva"
-121,Nucleus.AI
-122,Nvidia
-123,Ohio State University
-124,Ollama
-125,Open X-Embodiment
-126,"Open X-Embodiment, Google Deepmind"
-127,OpenAI
-128,"OpenAI, Salesforce"
-129,OpenAssistant
-130,OpenBMB
-131,OpenLemur
-132,OrionStarAI
-133,OthersideAI
-134,Paladin Group and Dais Technology
-135,Peking University Institute for Artificial Intelligence
-136,Perplexity
-137,Pleias
-138,Portkey
-139,"Princeton University, Eleuther AI"
-140,Quizlet
-141,Quora
-142,Qwen Team
-143,RWKV
-144,Rakuten
-145,Reexpress AI
-146,Reka
-147,Robin AI
-148,SK Telecom
-149,Salesforce
-150,Samba Nova Systems
-151,Sana
-152,SciPhi
-153,Shanghai AI Laboratory
-154,"Shanghai AI Laboratory, Nanjing University, Zhejiang University"
-155,Shop
-156,Snap
-157,Soochow University
-158,South Korea Graduate School of Culture Technology
-159,Speak
-160,Spotify
-161,Stability AI
-162,Stanford
-163,Stony Brook University
-164,Suno
-165,The Trevor Project
-166,TigerResearch
-167,Together
-168,"Together, LAION, Ontocord"
-169,"Tokyo Institute of Technology, MIT-IBM Watson Lab, Sapienza University of Rome"
-170,Toyota Research Institute
-171,Transformify
-172,Tsinghua University
-173,Twelve Labs
-174,UAE Technology Innovation Institute
-175,"University of Oregon, Adobe"
-176,University of Oxford
-177,University of Toronto
-178,"University of Turku, HuggingFace, National Library of Finland"
-179,University of Washington
-180,"University of Washington, Spotify"
-181,VAGO Solutions
-182,Viable
-183,Virtual Interactive
-184,Wayve
-185,Writer
-186,Xverse
-187,Xwin
-188,Yandex
-189,You
-190,Zhejiang University
-191,"Zhipu AI, Tsinghua University"
-192,xAI
-193,"École Normale Supérieure, Inria"
+2,360 Security
+3,AI2
+4,AI21 Labs
+5,Adept
+6,Adobe
+7,Aleph Alpha
+8,Alibaba
+9,Amazon
+10,Anthropic
+11,Apple
+12,Argilla
+13,Argonne National Laboratory
+14,AssemblyAI
+15,Auto-GPT
+16,"Avignon University, Nantes University"
+17,Baichuan Inc.
+18,Baidu
+19,"Baidu, PengCheng Laboratory"
+20,Bain
+21,Be My Eyes
+22,Beijing Academy of Artificial Intelligence
+23,"Beijing Academy of Artificial Intelligence, Tsinghua University"
+24,"Beijing Academy of Artificial Intelligence, University of Science and Technology of China"
+25,Beijing Institute of Technology
+26,Berkeley
+27,BigCode
+28,BigScience
+29,Bloomberg
+30,Boston University
+31,Brex
+32,ByteDance
+33,"ByteDance, Tsinghua University"
+34,Cagliostro Research Lab
+35,Carnegie Mellon University
+36,"Carnegie Mellon University, University of Pennsylvania"
+37,Cartesia
+38,CausalLM
+39,Cerebras
+40,Character AI
+41,ChatGLM
+42,Cognition Labs
+43,Cognitive Computations
+44,Cohere
+45,"Cohere for AI, Beijing Academy of Artificial Intelligence, Cohere, Binghamton University"
+46,"Cohere for AI, Cohere, Brown University, Carnegie Mellon University, MIT"
+47,Columbia
+48,"Columbia, Apple AI"
+49,"Continue Dev, Inc."
+50,"Cornell University, Mosaic"
+51,Cresta
+52,"DAMO Academy, Alibaba"
+53,Data is Better Together
+54,Databricks
+55,Deci
+56,Deepnight Research
+57,Deepseek AI
+58,DuckDuckGo
+59,Duolingo
+60,"EPFL, Idiap Research Institute, OpenAssistant, Yale"
+61,Eleuther AI
+62,EleutherAI
+63,Faraday Lab
+64,FuseAI
+65,Google
+66,Google DeepMind
+67,Google Deepmind
+68,GooseAI
+69,GreenBit AI
+70,H2O AI
+71,"Hong Kong University of Science and Technology (Guangzhou + original), Beijing Academy of Artificial Intelligence"
+72,HubSpot
+73,Hugging Face
+74,HuggingFace
+75,IBM
+76,Ideogram AI
+77,"Inception Institute of Artificial Intelligence, Cerebras, Mohamed bin Zayed University of Artificial Intelligence"
+78,Inflection AI
+79,Instacart
+80,Institute of Automation Chinese Academy of Sciences
+81,InternLM
+82,"International Digital Economy Academy, South China University of Technology, University of Science and Technology of China"
+83,Juni Learning
+84,KT Corporation
+85,Kakao Brain
+86,Khan Academy
+87,Konan
+88,Kotoba Tech
+89,Kunlun Inc.
+90,LAION
+91,LG AI Research
+92,LLM360
+93,LMSYS
+94,Latitude
+95,Lehigh University
+96,LinkedIn
+97,Math AI
+98,Maya Philippines
+99,Meta
+100,Meta FAIR
+101,"Meta, CMU, TTI-Chicago, UC Berkeley, University of Washington"
+102,Microsoft
+103,"Microsoft, NVIDIA"
+104,Mila-Quebec AI Institute
+105,Mistral AI
+106,Moonhub
+107,Moreh
+108,"Morgan Stanley, ServiceNow Research, University of Montreal, Mila-Quebec AI Institute"
+109,Mosaic
+110,NAVER
+111,NCSOFT
+112,NVIDIA
+113,"NVIDIA, Stanford"
+114,Nanyang Technological University
+115,National University of Singapore
+116,"National University of Singapore, University of Edinburgh, ETH Zurich"
+117,Neeva
+118,Nextdoor
+119,Nolano
+120,Notion
+121,Nous
+122,Nous Research
+123,"Nous Research, EleutherAI, University of Geneva"
+124,Nucleus.AI
+125,Nvidia
+126,Ohio State University
+127,Ollama
+128,Open X-Embodiment
+129,"Open X-Embodiment, Google Deepmind"
+130,OpenAI
+131,"OpenAI, Salesforce"
+132,OpenAssistant
+133,OpenBMB
+134,OpenLemur
+135,OrionStarAI
+136,OthersideAI
+137,Paladin Group and Dais Technology
+138,Peking University Institute for Artificial Intelligence
+139,Perplexity
+140,Pleias
+141,Portkey
+142,"Princeton University, Eleuther AI"
+143,Quizlet
+144,Quora
+145,Qwen Team
+146,RWKV
+147,Rakuten
+148,Reexpress AI
+149,Reka
+150,Robin AI
+151,SK Telecom
+152,Salesforce
+153,Samba Nova Systems
+154,Sana
+155,SciPhi
+156,Shanghai AI Laboratory
+157,"Shanghai AI Laboratory, Nanjing University, Zhejiang University"
+158,Shop
+159,Snap
+160,Soochow University
+161,South Korea Graduate School of Culture Technology
+162,Speak
+163,Spotify
+164,Stability AI
+165,Stanford
+166,Stony Brook University
+167,Suno
+168,The Trevor Project
+169,TigerResearch
+170,Together
+171,"Together, LAION, Ontocord"
+172,"Tokyo Institute of Technology, MIT-IBM Watson Lab, Sapienza University of Rome"
+173,Toyota Research Institute
+174,Transformify
+175,Tsinghua University
+176,Twelve Labs
+177,UAE Technology Innovation Institute
+178,"University of Oregon, Adobe"
+179,University of Oxford
+180,University of Toronto
+181,"University of Turku, HuggingFace, National Library of Finland"
+182,University of Washington
+183,"University of Washington, Spotify"
+184,VAGO Solutions
+185,Viable
+186,Virtual Interactive
+187,Wayve
+188,Writer
+189,Xverse
+190,Xwin
+191,Yandex
+192,You
+193,Zhejiang University
+194,"Zhipu AI, Tsinghua University"
+195,xAI
+196,"École Normale Supérieure, Inria"

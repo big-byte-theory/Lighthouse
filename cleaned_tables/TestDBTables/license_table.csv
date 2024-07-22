@@ -16,40 +16,43 @@ license_id,license
 15,CC BY-SA 4.0
 16,CC by-NC-SA 4.0
 17,CC-BY-4.0
-18,CC-BY-NC 4.0
-19,CC-BY-NC-4.0
-20,Conceptual Captions License
-21,Custom
-22,Databricks Open Model License
-23,Fair AI Public License 1.0-SD
-24,GLM-130B License
-25,LLaMA 2
-26,LLaMA2
-27,"LLaMa License (model weights), GPLv3 (code)"
-28,"Limited use license to Cohere platform users [[Terms of Use]](https://cohere.ai/terms-of-use).
+18,CC-BY-NC
+19,CC-BY-NC 4.0
+20,CC-BY-NC-4.0
+21,Conceptual Captions License
+22,Custom
+23,Databricks Open Model License
+24,Fair AI Public License 1.0-SD
+25,GLM-130B License
+26,Googles Terms and Conditions
+27,LLaMA 2
+28,LLaMA2
+29,"LLaMa License (model weights), GPLv3 (code)"
+30,"Limited use license to Cohere platform users [[Terms of Use]](https://cohere.ai/terms-of-use).
 "
-29,Llama 2
-30,Llama 3
-31,MIT
-32,Modified MIT License
-33,Noncommercial Use License
-34,ODC-BY
-35,ODC-By
-36,ODC-By 1.0
-37,OPT-175B License
-38,OPT-IML 175B License
-39,Open Rail++
-40,OpenRail++
-41,SA-1B Dataset Research License
-42,StabilityAI Non-Commercial Research Community License
-43,"The Stack is a collection of source code from repositories with various licenses. Any use of all or part of the code gathered in The Stack must abide by the terms of the original licenses, including attribution clauses when relevant. Provenance information is provided for each data point."
-44,WTFPL
-45,WebVid Dataset Terms
-46,Wordtune License
-47,bigscience-bloom-rail-1.0
-48,custom
-49,"mC4, OSCAR"
-50,"none (model weights), BSD-3-Clause (code)"
-51,unknkown
-52,unknown
-53,"unknown (model weights), Apache 2.0 (SayCan code)"
+31,Llama 2
+32,Llama 3
+33,MIT
+34,Mistral AI Non-Production License
+35,Modified MIT License
+36,Noncommercial Use License
+37,ODC-BY
+38,ODC-By
+39,ODC-By 1.0
+40,OPT-175B License
+41,OPT-IML 175B License
+42,Open Rail++
+43,OpenRail++
+44,SA-1B Dataset Research License
+45,StabilityAI Non-Commercial Research Community License
+46,"The Stack is a collection of source code from repositories with various licenses. Any use of all or part of the code gathered in The Stack must abide by the terms of the original licenses, including attribution clauses when relevant. Provenance information is provided for each data point."
+47,WTFPL
+48,WebVid Dataset Terms
+49,Wordtune License
+50,bigscience-bloom-rail-1.0
+51,custom
+52,"mC4, OSCAR"
+53,"none (model weights), BSD-3-Clause (code)"
+54,unknkown
+55,unknown
+56,"unknown (model weights), Apache 2.0 (SayCan code)"
