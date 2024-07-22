@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getLlms } from "../services/llmService";
+import { isAdmin } from "../services/AuthUserService";
 import Layout from "../components/Layout";
 
-const Catalogue = () => {
+const Catalogue = ({ user }) => {
 	const [llms, setLlms] = useState([]);
+	const adminUser = isAdmin(user);
 
 	useEffect(() => {
 		const fetchLlms = async () => {
@@ -15,17 +17,21 @@ const Catalogue = () => {
 		fetchLlms();
 	}, []);
 
+	useEffect(() => {}, [user]);
+
 	return (
 		<>
 			<Layout>
 				<section className="container wrapper pb-14">
-					<div className="col-span-12">
-						<Link to="/llm/add" className="btn btn-primary">
-							Add LLM
-						</Link>
-					</div>
+					{adminUser && (
+						<div className="col-span-12">
+							<Link to="/llm/add" className="btn btn-primary">
+								Add LLM
+							</Link>
+						</div>
+					)}
 					<div className="col-span-12 overflow-x-scroll">
-						<table className="catalogue table-auto">
+						<table className="catalogue table-auto w-full">
 							<thead>
 								<tr>
 									<th>Type</th>
@@ -58,13 +64,18 @@ const Catalogue = () => {
 											<td>
 												<Link
 													to={`/llm/${llm.llm_data_id}`}
-													state={{ data: llm }}>View</Link>
+													state={{ data: llm }}
+												>
+													View
+												</Link>
 											</td>
 										</tr>
 									))
 								) : (
 									<tr>
-										<td className="text-center" colSpan="6">No LLMs found</td>
+										<td className="text-center" colSpan="9">
+											No LLMs found
+										</td>
 									</tr>
 								)}
 							</tbody>
