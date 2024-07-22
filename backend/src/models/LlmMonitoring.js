@@ -10,6 +10,6 @@ const MonitoringSchema = new mongoose.Schema({
   },
 });
 
-const llmMonitoring = mongoose.model('llm_monitoring', MonitoringSchema);
+const LlmMonitoring = mongoose.model('llm_monitoring', MonitoringSchema, 'llm_monitoring');
 
-export default llmMonitoring;
+export default LlmMonitoring;

@@ -10,6 +10,6 @@ const AnalysisSchema = new mongoose.Schema({
   },
 });
 
-const llmCreatedDate = mongoose.model('llm_analysis', AnalysisSchema);
+const LlmAnalysis = mongoose.model('llm_analysis', AnalysisSchema, 'llm_analysis');
 
-export default llmCreatedDate;
+export default LlmAnalysis;

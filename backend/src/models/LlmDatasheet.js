@@ -10,6 +10,6 @@ const DatasheetSchema = new mongoose.Schema({
   },
 });
 
-const llmDatasheet = mongoose.model('llm_datasheet', DatasheetSchema);
+const LlmDatasheet = mongoose.model('llm_datasheet', DatasheetSchema);
 
-export default llmDatasheet;
+export default LlmDatasheet;

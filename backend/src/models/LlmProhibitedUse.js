@@ -10,6 +10,6 @@ const ProhibitedUseSchema = new mongoose.Schema({
   },
 });
 
-const llmProhibitedUse = mongoose.model('llm_prohibited_use', ProhibitedUseSchema);
+const LlmProhibitedUse = mongoose.model('llm_prohibited_use', ProhibitedUseSchema);
 
-export default llmProhibitedUse;
+export default LlmProhibitedUse;

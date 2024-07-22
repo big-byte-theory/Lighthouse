@@ -10,6 +10,6 @@ const UrlSchema = new mongoose.Schema({
   },
 });
 
-const url = mongoose.model('llm_url', UrlSchema);
+const LlmUrl = mongoose.model('llm_url', UrlSchema);
 
-export default url;
+export default LlmUrl;

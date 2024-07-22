@@ -10,6 +10,6 @@ const LicensesSchema = new mongoose.Schema({
   },
 });
 
-const llmLicense = mongoose.model('llm_license', LicensesSchema);
+const LlmLicense = mongoose.model('llm_license', LicensesSchema);
 
-export default llmLicense;
+export default LlmLicense;

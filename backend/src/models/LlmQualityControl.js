@@ -10,6 +10,6 @@ const QualityControlSchema = new mongoose.Schema({
   },
 });
 
-const llmQualityControl = mongoose.model('llm_quality_control', QualityControlSchema);
+const LlmQualityControl = mongoose.model('llm_quality_control', QualityControlSchema);
 
-export default llmQualityControl;
+export default LlmQualityControl;

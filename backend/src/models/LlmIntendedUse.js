@@ -10,6 +10,6 @@ const IntendedUseSchema = new mongoose.Schema({
   },
 });
 
-const llmIntendedUse = mongoose.model('llm_intended_use', IntendedUseSchema);
+const LlmIntendedUse = mongoose.model('llm_intended_use', IntendedUseSchema);
 
-export default llmIntendedUse;
+export default LlmIntendedUse;

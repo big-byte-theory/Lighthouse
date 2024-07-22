@@ -13,6 +13,6 @@ const DependenciesSchema = new mongoose.Schema({
   }],
 });
 
-const llmDependencies = mongoose.model('llm_dependencies', DependenciesSchema);
+const LlmDependencies = mongoose.model('llm_dependencies', DependenciesSchema);
 
-export default llmDependencies;
+export default LlmDependencies;

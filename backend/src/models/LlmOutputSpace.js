@@ -10,6 +10,6 @@ const OutputSpacesSchema = new mongoose.Schema({
   },
 });
 
-const llmOutputSpace = mongoose.model('llm_output_space', OutputSpacesSchema);
+const LlmOutputSpace = mongoose.model('llm_output_space', OutputSpacesSchema);
 
-export default llmOutputSpace;
+export default LlmOutputSpace;

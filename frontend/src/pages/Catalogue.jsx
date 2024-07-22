@@ -22,6 +22,7 @@ const Catalogue = ({ user }) => {
 		adminUser();
 		fetchLlms();
 	}, [user]);
+	console.log("llms", llms[5]);
 
 	return (
 		<>
@@ -34,7 +35,7 @@ const Catalogue = ({ user }) => {
 							</Link>
 						</div>
 					)}
-					<div className="col-span-12 overflow-x-scroll">
+					<div className="col-span-12 overflow-x-auto">
 						<table className="catalogue table-auto w-full">
 							<thead>
 								<tr>
@@ -53,18 +54,24 @@ const Catalogue = ({ user }) => {
 								{llms.length > 0 ? (
 									llms.map((llm) => (
 										<tr key={llm.llm_data_id}>
-											<td>{llm.type_id}</td>
+											<td>{llm.type_id.type}</td>
 											<td>{llm.name}</td>
-											<td>{llm.organization_id}</td>
-											<td>{llm.created_date_id}</td>
-											<td>{llm.modality_id}</td>
+											<td>{llm.organization_id.organization}</td>
+											<td>{llm.created_date_id.created_date}</td>
+											<td>{llm.modality_id.modality}</td>
 											<td>
-												<div className={`label label-${llm.access_id}`}>
-													{llm.access_id}
+												<div className={`label label-${llm.access_id.access}`}>
+													{llm.access_id.access}
 												</div>
 											</td>
-											<td>{llm.license_id}</td>
-											<td>{llm.dependencies_id}</td>
+											<td>{llm.license_id.license}</td>
+											<td>{llm.dependencies_id.dependencies.map((dependency, index) => {
+												return `${
+													dependency + (index < llm.dependencies_id.dependencies.length - 1
+														? ", "
+														: ""
+											)}`;
+											})}</td>
 											<td>
 												<Link
 													to={`/llm/${llm.llm_data_id}`}

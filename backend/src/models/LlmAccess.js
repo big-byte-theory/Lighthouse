@@ -10,6 +10,6 @@ const AccessSchema = new mongoose.Schema({
   },
 });
 
-const llmAccess = mongoose.model('llm_access', AccessSchema);
+const LlmAccess = mongoose.model('llm_access', AccessSchema, 'llm_access');
 
-export default llmAccess;
+export default LlmAccess;

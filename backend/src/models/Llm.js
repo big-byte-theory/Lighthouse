@@ -12,7 +12,7 @@ const LlmSchema = new mongoose.Schema({
   },
   organisation_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'llm_organization',
+    ref: 'LlmOrganization',
     required: true,
   },
   description_id: {
@@ -156,6 +156,6 @@ const LlmSchema = new mongoose.Schema({
   },
 }, { timestamps: true });
 
-const llm = mongoose.model('llm_data', LlmSchema);
+const Llm = mongoose.model('llm_data', LlmSchema);
 
-export default llm;
+export default Llm;

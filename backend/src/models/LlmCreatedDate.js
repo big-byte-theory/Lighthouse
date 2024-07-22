@@ -10,6 +10,6 @@ const CreatedDateSchema = new mongoose.Schema({
   },
 });
 
-const llmCreatedDate = mongoose.model('llm_created_date', CreatedDateSchema);
+const LlmCreatedDate = mongoose.model('llm_created_date', CreatedDateSchema);
 
-export default llmCreatedDate;
+export default LlmCreatedDate;

@@ -10,6 +10,6 @@ const ExclusionSchema = new mongoose.Schema({
   },
 });
 
-const llmExcluded = mongoose.model('llm_excluded', ExclusionSchema);
+const LlmExcluded = mongoose.model('llm_exclusion', ExclusionSchema);
 
-export default llmExcluded;
+export default LlmExcluded;

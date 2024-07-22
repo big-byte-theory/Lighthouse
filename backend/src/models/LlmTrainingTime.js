@@ -10,6 +10,6 @@ const TrainingTimeSchema = new mongoose.Schema({
   },
 });
 
-const llmTrainingTime = mongoose.model('llm_training_time', TrainingTimeSchema);
+const LlmTrainingTime = mongoose.model('llm_training_time', TrainingTimeSchema);
 
-export default llmTrainingTime;
+export default LlmTrainingTime;

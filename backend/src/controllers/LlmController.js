@@ -1,48 +1,167 @@
 import Llm from '../models/Llm.js';
+import LlmAccess from '../models/LlmAccess.js';
+import LlmAnalysis from '../models/LlmAnalysis.js';
+import LlmCreatedDate from '../models/LlmCreatedDate.js';
+import LlmDatasheet from '../models/LlmDatasheet.js';
+import LlmDependencies from '../models/LlmDependencies.js';
+import LlmDescription from '../models/LlmDescription.js';
+import LlmExcluded from '../models/LlmExclusion.js';
+import LlmFailure from '../models/LlmFailure.js';
+import LlmFeedback from '../models/LlmFeedback.js';
+import LlmLicense from '../models/LlmLicense.js';
+import LlmIntendedUse from '../models/LlmIntendedUse.js';
+import LlmProhibitedUse from '../models/LlmProhibitedUse.js';
+import LlmMonitoring from '../models/LlmMonitoring.js';
+import LlmModelCard from '../models/LlmModelCard.js';
+import LlmModality from '../models/LlmModality.js';
+import LlmMonthlyActiveUser from '../models/LlmMonthlyActiveUser.js';
+import LlmTrainingEmission from '../models/LlmTrainingEmission.js';
+import LlmTrainingTime from '../models/LlmTrainingTime.js';
+import LlmTrainingHardware from '../models/LlmTrainingHardware.js';
+import LlmOrganization from '../models/LlmOrganization.js';
+import LlmOutputSpace from '../models/LlmOutputSpace.js';
+import LlmQualityControl from '../models/LlmQualityControl.js';
+import LlmSize from '../models/LlmSize.js';
+import LlmTermsOfService from '../models/LlmTermsOfService.js';
+import LlmType from '../models/LlmType.js';
+import LlmUrl from '../models/LlmUrl.js';
+import LlmUserDistribution from '../models/LlmUserDistribution.js';
 
 export default class LlmController {
   getAllLlms = async (req, res) => {
     try {
-      const llms = await Llm.find({})
-        // .populate({
-        //   path: 'organization_id',
-        //   model: 'llm_organization',
-        //   select: 'organization'
-        // });
-        // .populate(
-        //   {
-        //     path: 'type_id',
-        //     model: 'llm_type',
-        //   }
-        // )
-        // .populate('llm_type')
-        .populate('organization_id'); //is blank?
-        
-      // .populate('modality_id')
-      // .populate('size_id')
-      // .populate('dependencies_id')
-      // .populate('access_id')
-      // .populate('model_type_id')
-      // .populate('training_emissions_id')
-      // .populate('training_time_id')
-      // .populate('training_hardware_id')
-      // .populate('output_space_id')
-      // .populate('url_id')
-      // .populate('description_id')
-      // .populate('analysis_id')
-      // .populate('license_id')
-      // .populate('intended_use_id')
-      // .populate('prohibited_uses_id')
-      // .populate('monitoring_id')
-      // .populate('feedback_id')
-      // .populate('quality_control_id')
-      // .populate('terms_of_service_id')
-      // .populate('monthly_active_users_id')
-      // .populate('user_distribution_id')
-      // .populate('failures_id')
-      // .populate('created_date_id')
-      // .populate('model_card_id')
-      //   .exec();
+      const llms = await Llm.find()
+        .populate({
+          path: 'organization_id',
+          model: LlmOrganization,
+          select: 'organization'
+        })
+        .populate({
+          path: 'type_id',
+          model: LlmType,
+          select: 'type'
+        })
+        .populate({
+          path: 'created_date',
+          model: LlmCreatedDate,
+          select: 'created_date'
+        })
+        .populate({
+          path: 'modality_id',
+          model: LlmModality,
+          select: 'modality'
+        })
+        .populate({
+          path: 'size_id',
+          model: LlmSize,
+          select: 'size'
+        })
+        .populate({
+          path: 'access_id',
+          model: LlmAccess,
+          select: 'access'
+        })
+        .populate({
+          path: 'dependencies_id',
+          model: LlmDependencies,
+          // select: 'dependencies'
+        })
+        .populate({
+          path: 'training_emissions_id',
+          model: LlmTrainingEmission,
+          select: 'training_emissions'
+        })
+        .populate({
+          path: 'training_time_id',
+          model: LlmTrainingTime,
+          select: 'training_time'
+        })
+        .populate({
+          path: 'training_hardware_id',
+          model: LlmTrainingHardware,
+          select: 'training_hardware'
+        })
+        .populate({
+          path: 'output_space_id',
+          model: LlmOutputSpace,
+          select: 'output_space'
+        })
+        .populate({
+          path: 'url_id',
+          model: LlmUrl,
+          select: 'url'
+        })
+        .populate({
+          path: 'description_id',
+          model: LlmDescription,
+          select: 'description'
+        })
+        .populate({
+          path: 'analysis_id',
+          model: LlmAnalysis,
+          select: 'analysis'
+        })
+        .populate({
+          path: 'license_id',
+          model: LlmLicense,
+          select: 'license'
+        })
+        .populate({
+          path: 'intended_use_id',
+          model: LlmIntendedUse,
+          select: 'intended_use'
+        })
+        .populate({
+          path: 'prohibited_uses_id',
+          model: LlmProhibitedUse,
+          select: 'prohibited_uses'
+        })
+        .populate({
+          path: 'monitoring_id',
+          model: LlmMonitoring,
+          select: 'monitoring'
+        })
+        .populate({
+          path: 'feedback_id',
+          model: LlmFeedback,
+          select: 'feedback'
+        })
+        .populate({
+          path: 'quality_control_id',
+          model: LlmQualityControl,
+          select: 'quality_control'
+        })
+        .populate({
+          path: 'terms_of_service_id',
+          model: LlmTermsOfService,
+          select: 'terms_of_service'
+        })
+        .populate({
+          path: 'monthly_active_users_id',
+          model: LlmMonthlyActiveUser,
+          select: 'monthly_active_users'
+        })
+        .populate({
+          path: 'user_distribution_id',
+          model: LlmUserDistribution,
+          select: 'user_distribution'
+        })
+        .populate({
+          path: 'failures_id',
+          model: LlmFailure,
+          select: 'failures'
+        })
+        .populate({
+          path: 'created_date_id',
+          model: LlmCreatedDate,
+          select: 'created_date'
+        })
+        .populate({
+          path: 'model_card_id',
+          model: LlmModelCard,
+          select: 'model_card'
+        })
+        .exec();
       return res.status(200).json(llms);
     } catch (err) {
       console.error(err.message);
@@ -52,7 +171,138 @@ export default class LlmController {
 
   getLlm = async (req, res) => {
     try {
-      const llm = await Llm.findById(req.params.id);
+      const llm = await Llm.findById(req.params.id)
+        .populate({
+          path: 'organization_id',
+          model: LlmOrganization,
+          select: 'organization'
+        })
+        .populate({
+          path: 'type_id',
+          model: LlmType,
+          select: 'type'
+        })
+        .populate({
+          path: 'created_date',
+          model: LlmCreatedDate,
+          select: 'created_date'
+        })
+        .populate({
+          path: 'modality_id',
+          model: LlmModality,
+          select: 'modality'
+        })
+        .populate({
+          path: 'size_id',
+          model: LlmSize,
+          select: 'size'
+        })
+        .populate({
+          path: 'access_id',
+          model: LlmAccess,
+          select: 'access'
+        })
+        .populate({
+          path: 'dependencies_id',
+          model: LlmDependencies,
+          // select: 'dependencies'
+        })
+        .populate({
+          path: 'training_emissions_id',
+          model: LlmTrainingEmission,
+          select: 'training_emissions'
+        })
+        .populate({
+          path: 'training_time_id',
+          model: LlmTrainingTime,
+          select: 'training_time'
+        })
+        .populate({
+          path: 'training_hardware_id',
+          model: LlmTrainingHardware,
+          select: 'training_hardware'
+        })
+        .populate({
+          path: 'output_space_id',
+          model: LlmOutputSpace,
+          select: 'output_space'
+        })
+        .populate({
+          path: 'url_id',
+          model: LlmUrl,
+          select: 'url'
+        })
+        .populate({
+          path: 'description_id',
+          model: LlmDescription,
+          select: 'description'
+        })
+        .populate({
+          path: 'analysis_id',
+          model: LlmAnalysis,
+          select: 'analysis'
+        })
+        .populate({
+          path: 'license_id',
+          model: LlmLicense,
+          select: 'license'
+        })
+        .populate({
+          path: 'intended_use_id',
+          model: LlmIntendedUse,
+          select: 'intended_use'
+        })
+        .populate({
+          path: 'prohibited_uses_id',
+          model: LlmProhibitedUse,
+          select: 'prohibited_uses'
+        })
+        .populate({
+          path: 'monitoring_id',
+          model: LlmMonitoring,
+          select: 'monitoring'
+        })
+        .populate({
+          path: 'feedback_id',
+          model: LlmFeedback,
+          select: 'feedback'
+        })
+        .populate({
+          path: 'quality_control_id',
+          model: LlmQualityControl,
+          select: 'quality_control'
+        })
+        .populate({
+          path: 'terms_of_service_id',
+          model: LlmTermsOfService,
+          select: 'terms_of_service'
+        })
+        .populate({
+          path: 'monthly_active_users_id',
+          model: LlmMonthlyActiveUser,
+          select: 'monthly_active_users'
+        })
+        .populate({
+          path: 'user_distribution_id',
+          model: LlmUserDistribution,
+          select: 'user_distribution'
+        })
+        .populate({
+          path: 'failures_id',
+          model: LlmFailure,
+          select: 'failures'
+        })
+        .populate({
+          path: 'created_date_id',
+          model: LlmCreatedDate,
+          select: 'created_date'
+        })
+        .populate({
+          path: 'model_card_id',
+          model: LlmModelCard,
+          select: 'model_card'
+        })
+        .exec();
 
       if (!llm) {
         return res.status(404).json({ msg: 'LLM not found' });
@@ -88,7 +338,7 @@ export default class LlmController {
       access_id,
       license,
       intended_use,
-      prohibited_uses,
+      prohibited_use,
       monitoring,
       feedback,
       model_type_id,
@@ -123,7 +373,7 @@ export default class LlmController {
         access_id,
         license,
         intended_use,
-        prohibited_uses,
+        prohibited_use,
         monitoring,
         feedback,
         model_type_id,
@@ -166,7 +416,7 @@ export default class LlmController {
       access_id,
       license,
       intended_use,
-      prohibited_uses,
+      prohibited_use,
       monitoring,
       feedback,
       model_type_id,
@@ -201,7 +451,7 @@ export default class LlmController {
       access_id,
       license,
       intended_use,
-      prohibited_uses,
+      prohibited_use,
       monitoring,
       feedback,
       model_type_id,

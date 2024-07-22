@@ -10,6 +10,6 @@ const TypeSchema = new mongoose.Schema({
   },
 });
 
-const type = mongoose.model('llm_type', TypeSchema);
+const LlmType = mongoose.model('llm_type', TypeSchema);
 
-export default type;
+export default LlmType;

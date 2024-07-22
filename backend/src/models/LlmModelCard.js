@@ -10,6 +10,6 @@ const ModelCardSchema = new mongoose.Schema({
   },
 });
 
-const llmModelCard = mongoose.model('llm_model_card', ModelCardSchema);
+const LlmModelCard = mongoose.model('llm_model_card', ModelCardSchema);
 
-export default llmModelCard;
+export default LlmModelCard;

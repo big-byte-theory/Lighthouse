@@ -10,6 +10,6 @@ const ModalitySchema = new mongoose.Schema({
   },
 });
 
-const llmModality = mongoose.model('llm_modality', ModalitySchema);
+const LlmModality = mongoose.model('llm_modality', ModalitySchema, 'llm_modality');
 
-export default llmModality;
+export default LlmModality;

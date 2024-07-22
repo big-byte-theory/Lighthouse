@@ -11,6 +11,6 @@ const OrganizationSchema = new mongoose.Schema({
   },
 });
 
-const organization = mongoose.model('llm_organization', OrganizationSchema);
+const LlmOrganization = mongoose.model('llm_organization', OrganizationSchema);
 
-export default organization;
+export default LlmOrganization;

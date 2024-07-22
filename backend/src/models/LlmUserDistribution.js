@@ -10,6 +10,6 @@ const UserDistributionSchema = new mongoose.Schema({
   },
 });
 
-const llmUserDistribution = mongoose.model('llm_user_distribution', UserDistributionSchema);
+const LlmUserDistribution = mongoose.model('llm_user_distribution', UserDistributionSchema);
 
-export default llmUserDistribution;
+export default LlmUserDistribution;

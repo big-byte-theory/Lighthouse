@@ -10,6 +10,6 @@ const DescriptionSchema = new mongoose.Schema({
   },
 });
 
-const description = mongoose.model('llm_description', DescriptionSchema);
+const LlmDescription = mongoose.model('llm_description', DescriptionSchema);
 
-export default description;
+export default LlmDescription;

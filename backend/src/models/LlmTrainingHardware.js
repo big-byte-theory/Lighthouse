@@ -10,6 +10,6 @@ const TrainingHardwareSchema = new mongoose.Schema({
   },
 });
 
-const llmTrainingHardware = mongoose.model('llm_training_hardware', TrainingHardwareSchema);
+const LlmTrainingHardware = mongoose.model('llm_training_hardware', TrainingHardwareSchema);
 
-export default llmTrainingHardware;
+export default LlmTrainingHardware;

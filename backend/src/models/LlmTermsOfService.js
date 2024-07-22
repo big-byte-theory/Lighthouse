@@ -10,6 +10,6 @@ const TermsOfServiceSchema = new mongoose.Schema({
   },
 });
 
-const llmTermsOfService = mongoose.model('llm_terms_of_service', TermsOfServiceSchema);
+const LlmTermsOfService = mongoose.model('llm_terms_of_service', TermsOfServiceSchema);
 
-export default llmTermsOfService;
+export default LlmTermsOfService;

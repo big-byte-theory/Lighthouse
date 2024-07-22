@@ -10,6 +10,6 @@ const SizeSchema = new mongoose.Schema({
   },
 });
 
-const llmSize = mongoose.model('llm_size', SizeSchema);
+const LlmSize = mongoose.model('llm_size', SizeSchema);
 
-export default llmSize;
+export default LlmSize;

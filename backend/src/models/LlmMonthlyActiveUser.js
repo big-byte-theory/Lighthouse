@@ -10,6 +10,6 @@ const MonthlyActiveUserSchema = new mongoose.Schema({
   },
 });
 
-const llmMonthlyActiveUser = mongoose.model('llm_monthly_active_user', MonthlyActiveUserSchema);
+const LlmMonthlyActiveUser = mongoose.model('llm_monthly_active_user', MonthlyActiveUserSchema);
 
-export default llmMonthlyActiveUser;
+export default LlmMonthlyActiveUser;

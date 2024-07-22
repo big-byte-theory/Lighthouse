@@ -10,6 +10,6 @@ const FeedbackSchema = new mongoose.Schema({
   },
 });
 
-const llmFeedback = mongoose.model('llm_feedback', FeedbackSchema);
+const LlmFeedback = mongoose.model('llm_feedback', FeedbackSchema);
 
-export default llmFeedback;
+export default LlmFeedback;

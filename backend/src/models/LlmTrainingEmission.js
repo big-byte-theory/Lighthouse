@@ -10,6 +10,6 @@ const TrainingEmissionSchema = new mongoose.Schema({
   },
 });
 
-const llmTrainingEmission = mongoose.model('llm_training_emission', TrainingEmissionSchema);
+const LlmTrainingEmission = mongoose.model('llm_training_emission', TrainingEmissionSchema);
 
-export default llmTrainingEmission;
+export default LlmTrainingEmission;
