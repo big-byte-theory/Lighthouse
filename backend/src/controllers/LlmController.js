@@ -4,20 +4,19 @@ export default class LlmController {
   getAllLlms = async (req, res) => {
     try {
       const llms = await Llm.find({})
-        .populate(
-          {
-            path: 'organization_id',
-            model: 'llm_organization',
-          }
-        )
-        .populate(
-          {
-            path: 'type_id',
-            model: 'llm_type',
-          }
-        )
+        // .populate({
+        //   path: 'organization_id',
+        //   model: 'llm_organization',
+        //   select: 'organization'
+        // });
+        // .populate(
+        //   {
+        //     path: 'type_id',
+        //     model: 'llm_type',
+        //   }
+        // )
         // .populate('llm_type')
-        // .populate('llm_organization')
+        .populate('organization_id'); //is blank?
         
       // .populate('modality_id')
       // .populate('size_id')
@@ -42,8 +41,8 @@ export default class LlmController {
       // .populate('user_distribution_id')
       // .populate('failures_id')
       // .populate('created_date_id')
-      .populate('model_card_id')
-        .exec();
+      // .populate('model_card_id')
+      //   .exec();
       return res.status(200).json(llms);
     } catch (err) {
       console.error(err.message);
