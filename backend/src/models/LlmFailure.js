@@ -10,6 +10,6 @@ const FailureSchema = new mongoose.Schema({
   },
 });
 
-const llmFailures = mongoose.model('llm_failures', FailureSchema);
+const llmFailure = mongoose.model('llm_failure', FailureSchema);
 
-export default llmFailures;
+export default llmFailure;

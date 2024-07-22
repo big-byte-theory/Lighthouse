@@ -86,12 +86,12 @@ const LlmSchema = new mongoose.Schema({
   },
   intended_uses_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'llm_intended_uses',
+    ref: 'llm_intended_use',
     required: true,
   },
   prohibited_uses_id: {
     type: String,
-    ref: 'llm_prohibited_uses',
+    ref: 'llm_prohibited_use',
     required: true,
   },
   monitoring_id: {
@@ -111,7 +111,7 @@ const LlmSchema = new mongoose.Schema({
   },
   training_emissions_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'llm_training_emissions',
+    ref: 'llm_training_emission',
     required: true,
   },
   training_time_id: {
@@ -141,7 +141,7 @@ const LlmSchema = new mongoose.Schema({
   },
   monthly_active_users_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'llm_monthly_active_users',
+    ref: 'llm_monthly_active_user',
     required: true,
   },
   user_distribution_id: {
@@ -151,7 +151,7 @@ const LlmSchema = new mongoose.Schema({
   },
   failures_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'llm_failures',
+    ref: 'llm_failure',
     required: true,
   },
 }, { timestamps: true });
