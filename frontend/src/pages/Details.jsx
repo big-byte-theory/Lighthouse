@@ -51,22 +51,26 @@ const Details = () => {
 								<p className="font-bold">Dependencies</p>
 								<ul>
 									<li>
-										{/* {details.dependencies_id.dependencies} */}
 										{details.dependencies_id.dependencies.map(
 											(dependency, index) => {
-												return `${
-													(
-														<Link
-															to={`/llm/{ dependency.dependencies_llm_ids }`}
-														>
-															{dependency}
-														</Link>
-													) +
-													(index <
-													details.dependencies_id.dependencies.length - 1
-														? ", "
-														: "")
-												}`;
+												return (
+													<span key={index}>
+														{details.dependencies_id.dependencies_llm_ids[index] !== null && (
+															<Link
+																to={`/llm/${details.dependencies_id.dependencies_llm_ids[index]}`}
+															>
+																{dependency}
+															</Link>
+														)}
+														{details.dependencies_id.dependencies_llm_ids[index] === null && (
+																<span>{ dependency }</span>
+														)}
+														{index <
+														details.dependencies_id.dependencies.length - 1
+															? ", "
+															: ""}
+													</span>
+												);
 											}
 										)}
 									</li>
