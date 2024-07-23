@@ -102,8 +102,13 @@ const Catalogue = ({ user }) => {
 			sortableItems.sort((a, b) => {
 				let i = 0;
 				while (i < len) {
-					a = a[prop[i]];
-					b = b[prop[i]];
+					if (sortConfig.key === "created_date") {
+						a = a[prop[i]];
+						b = b[prop[i]];
+					} else {
+						a = typeof a[prop[i]] === "string" ? (a[prop[i]]).toLowerCase() : a[prop[i]];
+						b = typeof b[prop[i]] === "string" ? (b[prop[i]]).toLowerCase() : b[prop[i]];
+					}
 					i++;
 				}
 				if (a < b) {
