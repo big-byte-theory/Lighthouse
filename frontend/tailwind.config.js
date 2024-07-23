@@ -48,6 +48,9 @@ export default {
         '1': '1',
         '5': '5',
       },
+      aspectRatio: {
+        'card': '3 / 4',
+      },
     },
   },
   plugins: [],

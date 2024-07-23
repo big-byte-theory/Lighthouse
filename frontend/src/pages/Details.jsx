@@ -12,7 +12,6 @@ const Details = () => {
 	const isAdmin = state.adminUser;
 
 	const fetchLlmData = useCallback(async () => {
-		console.log("fetching data");
 		const data = await getLlmData();
 		details = data;
 	}, [details]);
@@ -32,9 +31,6 @@ const Details = () => {
 			fetchLlmData();
 		}
 	}, [fetchLlmData]);
-
-	console.log(llmData);
-	// console.log("article", llmData?.news_ids[0]?.articles);
 
 	return (
 		<>
@@ -89,25 +85,25 @@ const Details = () => {
 								<p className="font-bold min-w-44">Dependencies</p>
 								<ul>
 									<li>
-										{details.dependencies_id.dependencies.map(
+										{llmData?.dependencies_id?.dependencies.map(
 											(dependency, index) => {
 												return (
 													<span key={index}>
-														{details.dependencies_id.dependencies_llm_ids[
+														{llmData?.dependencies_id?.dependencies_llm_ids[
 															index
 														] === null && <span>{dependency}</span>}
-														{details.dependencies_id.dependencies_llm_ids[
+														{details.dependencies_id?.dependencies_llm_ids[
 															index
 														] !== null && (
 															<Link
-																to={`/llm/${details.dependencies_id.dependencies_llm_ids[index]?.llm_data_id}`}
+																to={`/llm/${llmData?.dependencies_id?.dependencies_llm_ids[index]?.llm_data_id}`}
 															>
 																{dependency}
 																{}
 															</Link>
 														)}
 														{index <
-														details.dependencies_id.dependencies.length - 1
+														llmData?.dependencies_id?.dependencies.length - 1
 															? ", "
 															: ""}
 													</span>
@@ -166,24 +162,44 @@ const Details = () => {
 									<span>{llmData?.feedback_id?.feedback}</span>
 								)}
 							</div>
-							<div className="flex space-x-5 py-2 border-b last:border-b-0 border-light-grey items-center">
-								<p className="font-bold min-w-44">News</p>
-								{llmData?.news_ids?.map((articles, index) => (
-									<div key={index}>
-										{articles.articles.map((news, newsIndex) => (
-											<div key={newsIndex}>
-												<p>{news.title}</p>
-												<p>{news.description}</p>
-												<Link to={news.link}>{news.link}</Link>
-											</div>
-										))}
-									</div>
-								))}
-							</div>
 						</div>
 					</div>
 					<div className="col-span-12">
-
+						<h4>News</h4>
+						{llmData?.news_ids?.map((articles, index) => (
+							<div key={index} className="container">
+								{articles.articles.map((news, newsIndex) => (
+									<article
+										key={newsIndex}
+										className="col-span-6 lg:col-span-4 w-full"
+									>
+										<div className="card group relative max-w-sm bg-white rounded-lg h-full overflow-hidden aspect-card">
+											<div className="card-image overflow-hidden max-h-52 h-48">
+												<img
+													src={news.image_url}
+													alt={news.title}
+													className="bg-white w-full object-cover object-center group-hover:scale-110 transition-all"
+												/>
+											</div>
+											<div className="card-body flex flex-col justify-start h-full p-5">
+												<h2 className="card-title mb-2 md:text-2xl font-bold">
+													{news.title}
+												</h2>
+												<p className="card-text mb-3 font-normal text-black hidden md:line-clamp-3">
+													{news.description}
+												</p>
+												<Link
+													to={news.link}
+													className="inline-flex items-center text-sm font-medium text-center text-red after:absolute after:inset-0 after:content-['']"
+												>
+													View Article &raquo;
+												</Link>
+											</div>
+										</div>
+									</article>
+								))}
+							</div>
+						))}
 					</div>
 				</section>
 			</Layout>
