@@ -1,28 +1,26 @@
 import { useState, useEffect, useCallback } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 import { getLlmData } from "../services/llmService";
+import { formatDate } from "../utils/formatDate";
 
 const Details = () => {
 	// TODO: Navigate directly to this page not from catalogue,
 	// TODO: if state is null, query API by params id
 	const { state } = useLocation();
 	const [llmData, setLlmData] = useState({});
-	let details = state.data;
-	const isAdmin = state.adminUser;
+	const { id } = useParams();
+	let details = state?.data;
+	const isAdmin = state?.adminUser;
 
 	const fetchLlmData = useCallback(async () => {
-		const data = await getLlmData();
-		details = data;
+		try {
+			const data = await getLlmData(id);
+			details = data;
+		} catch (error) {
+			console.error("Error fetching LLM data: ", error);
+		}
 	}, [details]);
-
-	const dateString = llmData?.created_date_id?.created_date;
-	const dateObject = new Date(dateString);
-	const formattedDate = dateObject.toLocaleDateString("en-US", {
-		year: "numeric",
-		month: "long",
-		day: "numeric",
-	});
 
 	useEffect(() => {
 		if (details) {
@@ -59,7 +57,7 @@ const Details = () => {
 							</div>
 							<div className="flex space-x-5 py-2 border-b last:border-b-0 border-light-grey items-center">
 								<p className="font-bold min-w-44">Created Date</p>
-								<p>{formattedDate}</p>
+								<p>{formatDate(llmData?.created_date_id?.created_date)}</p>
 							</div>
 							<div className="flex space-x-5 py-2 border-b last:border-b-0 border-light-grey items-center">
 								<p className="font-bold min-w-44">URL</p>

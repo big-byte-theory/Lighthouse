@@ -2,6 +2,7 @@ import { useCallback, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getLlms } from "../services/llmService";
 import { isAdmin } from "../services/AuthUserService";
+import { formatDate } from "../utils/formatDate";
 import Layout from "../components/Layout";
 
 const Catalogue = ({ user }) => {
@@ -56,7 +57,7 @@ const Catalogue = ({ user }) => {
 											<td>{llm.type_id.type}</td>
 											<td>{llm.name}</td>
 											<td>{llm.organization_id.organization}</td>
-											<td>{llm.created_date_id.created_date}</td>
+											<td>{formatDate(llm.created_date_id.created_date)}</td>
 											<td>{llm.modality_id.modality}</td>
 											<td>
 												<div className={`label label-${llm.access_id.access}`}>
@@ -64,13 +65,19 @@ const Catalogue = ({ user }) => {
 												</div>
 											</td>
 											<td>{llm.license_id.license}</td>
-											<td>{llm.dependencies_id.dependencies.map((dependency, index) => {
-												return `${
-													dependency + (index < llm.dependencies_id.dependencies.length - 1
-														? ", "
-														: ""
-											)}`;
-											})}</td>
+											<td>
+												{llm.dependencies_id.dependencies.map(
+													(dependency, index) => {
+														return `${
+															dependency +
+															(index <
+															llm.dependencies_id.dependencies.length - 1
+																? ", "
+																: "")
+														}`;
+													}
+												)}
+											</td>
 											<td>
 												<Link
 													to={`/llm/${llm.llm_data_id}`}
