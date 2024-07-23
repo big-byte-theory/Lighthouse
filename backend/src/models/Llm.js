@@ -158,6 +158,10 @@ const LlmSchema = new mongoose.Schema({
     ref: 'llm_failure',
     required: true,
   },
+  news_ids: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'llm_news',    
+  },
 }, { timestamps: true });
 
 const Llm = mongoose.model('llm_data', LlmSchema);

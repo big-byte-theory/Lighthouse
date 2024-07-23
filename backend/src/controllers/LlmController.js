@@ -166,8 +166,9 @@ export default class LlmController {
           select: 'model_card'
         })
         .populate({
-          path: 'news_id',
+          path: 'news_ids',
           model: LlmNews,
+          select: 'articles'
         })
         .exec();
       return res.status(200).json(llms);
@@ -314,7 +315,7 @@ export default class LlmController {
           select: 'model_card'
         })
         .populate({
-          path: 'news_id',
+          path: 'news_ids',
           model: LlmNews,
         })
         .exec();
