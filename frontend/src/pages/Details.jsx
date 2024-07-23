@@ -27,7 +27,6 @@ const Details = () => {
 			fetchLlmData();
 		}
 	}, [details, fetchLlmData]);
-	console.log(llmData.dependencies_id);
 
 	return (
 		<>
