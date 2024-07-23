@@ -15,6 +15,7 @@ import LlmMonitoring from '../models/LlmMonitoring.js';
 import LlmModelCard from '../models/LlmModelCard.js';
 import LlmModality from '../models/LlmModality.js';
 import LlmMonthlyActiveUser from '../models/LlmMonthlyActiveUser.js';
+import LlmNews from '../models/LlmNews.js';
 import LlmTrainingEmission from '../models/LlmTrainingEmission.js';
 import LlmTrainingTime from '../models/LlmTrainingTime.js';
 import LlmTrainingHardware from '../models/LlmTrainingHardware.js';
@@ -64,7 +65,11 @@ export default class LlmController {
         .populate({
           path: 'dependencies_id',
           model: LlmDependencies,
-          // select: 'dependencies'
+          populate: ({
+            path: 'dependencies_llm_ids',
+            model: Llm,
+            select: 'llm_data_id'
+          })
         })
         .populate({
           path: 'training_emissions_id',
@@ -107,9 +112,8 @@ export default class LlmController {
           select: 'license'
         })
         .populate({
-          path: 'intended_use_id',
+          path: 'intended_uses_id',
           model: LlmIntendedUse,
-          select: 'intended_use'
         })
         .populate({
           path: 'prohibited_uses_id',
@@ -160,6 +164,10 @@ export default class LlmController {
           path: 'model_card_id',
           model: LlmModelCard,
           select: 'model_card'
+        })
+        .populate({
+          path: 'news_id',
+          model: LlmNews,
         })
         .exec();
       return res.status(200).json(llms);
@@ -205,7 +213,11 @@ export default class LlmController {
         .populate({
           path: 'dependencies_id',
           model: LlmDependencies,
-          // select: 'dependencies'
+          populate: ({
+            path: 'dependencies_llm_ids',
+            model: Llm,
+            select: 'llm_data_id'
+          })
         })
         .populate({
           path: 'training_emissions_id',
@@ -248,9 +260,8 @@ export default class LlmController {
           select: 'license'
         })
         .populate({
-          path: 'intended_use_id',
+          path: 'intended_uses_id',
           model: LlmIntendedUse,
-          select: 'intended_use'
         })
         .populate({
           path: 'prohibited_uses_id',
@@ -301,6 +312,10 @@ export default class LlmController {
           path: 'model_card_id',
           model: LlmModelCard,
           select: 'model_card'
+        })
+        .populate({
+          path: 'news_id',
+          model: LlmNews,
         })
         .exec();
 

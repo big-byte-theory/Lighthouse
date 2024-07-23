@@ -22,7 +22,6 @@ const Catalogue = ({ user }) => {
 		adminUser();
 		fetchLlms();
 	}, [user]);
-	console.log("llms", llms[5]);
 
 	return (
 		<>
@@ -75,7 +74,7 @@ const Catalogue = ({ user }) => {
 											<td>
 												<Link
 													to={`/llm/${llm.llm_data_id}`}
-													state={{ data: llm }}
+													state={{ data: llm, adminUser: isAdminUser }}
 												>
 													View
 												</Link>

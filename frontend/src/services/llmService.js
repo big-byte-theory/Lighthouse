@@ -7,6 +7,11 @@ export const getLlms = async () => {
   return response.data;
 };
 
+export const getLlmData = async (id) => {
+  const response = await axios.get(`${ apiUrl }/llm/${id}`);
+  return response.data;
+};
+
 export const addLlm = async (llm) => {
   const response = await axios.post(`${apiUrl}/llms`, llm);
   return response.data;
