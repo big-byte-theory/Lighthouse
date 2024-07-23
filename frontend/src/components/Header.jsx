@@ -7,8 +7,8 @@ import { loggedIn, logout } from "../services/AuthUserService";
 const Header = () => {
 	const [isLoggedIn, setIsLoggedIn] = useState(loggedIn());
 	const [navbarOpen, setNavbarOpen] = useState(false);
-	const [searchbarOpen, setSearchbarOpen] = useState(false);
-	
+	const [searchbarOpen, setSearchbarOpen] = useState(false);	
+
 	useEffect(() => {
 		setIsLoggedIn(loggedIn());
 	}, [isLoggedIn]);

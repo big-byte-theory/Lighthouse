@@ -1,12 +1,18 @@
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { isAdmin } from "../services/AuthUserService.js";
 import Layout from "../components/Layout.jsx";
 
 const Dashboard = ({ user }) => {
-	const adminUser = isAdmin(user);
-	console.log(adminUser);
-	useEffect(() => {}, [user]);
+	const [isAdminUser, setIsAdminUser] = useState(false);
+	const adminUser = useCallback(async () => {
+		const result = await isAdmin(user);
+		setIsAdminUser(result);
+	}, []);
+
+	useEffect(() => {
+		adminUser();
+	}, [user]);
 
 	return (
 		<>
@@ -14,7 +20,7 @@ const Dashboard = ({ user }) => {
 				<section className="container wrapper pb-14">
 					<div className="col-span-12 flex flex-col justify-evenly items-center gap-3 text-center z-1">
 						<div className="flex container">
-							{!adminUser && (
+							{!isAdminUser && (
 								<>
 									<h1 className="col-span-full">Dashboard - User</h1>
 									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
@@ -37,7 +43,7 @@ const Dashboard = ({ user }) => {
 									</div>
 								</>
 							)}
-							{adminUser && (
+							{isAdminUser && (
 								<>
 									<h1 className="col-span-full">Dashboard - Admin</h1>
 									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">

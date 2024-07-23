@@ -7,17 +7,22 @@ export const getLlms = async () => {
   return response.data;
 };
 
+export const getLlmData = async (id) => {
+  const response = await axios.get(`${ apiUrl }/llm/${id}`);
+  return response.data;
+};
+
 export const addLlm = async (llm) => {
   const response = await axios.post(`${apiUrl}/llms`, llm);
   return response.data;
 };
 
 export const updateLlm = async (id, llm) => {
-  const response = await axios.put(`${apiUrl}/${id}`, llm);
+  const response = await axios.put(`${apiUrl}/llms/${id}`, llm);
   return response.data;
 };
 
 export const deleteLlm = async (id) => {
-  const response = await axios.delete(`${apiUrl}/${id}`);
+  const response = await axios.delete(`${apiUrl}/llms/${id}`);
   return response.data;
 };
