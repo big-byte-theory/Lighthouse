@@ -26,6 +26,7 @@ const Catalogue = ({ user }) => {
 		direction: "ascending",
 	});
 	const [searchQuery, setSearchQuery] = useState("");
+	const [loading, setLoading] = useState(true);
 
 	const adminUser = useCallback(async () => {
 		const result = await isAdmin(user);
@@ -33,9 +34,11 @@ const Catalogue = ({ user }) => {
 	}, []);
 
 	const fetchLlms = useCallback(async () => {
+		setLoading(true);
 		const data = await getLlms();
 		setLlms(data);
 		filterLlms(data);
+		setLoading(false);
 	}, []);
 
 	const sortCatalogue = (e, column, direction) => {
@@ -85,7 +88,7 @@ const Catalogue = ({ user }) => {
 			setSortMenuOpen(false);
 		}
 	};
-	
+
 	const handleSortMenu = () => {
 		setSortMenuOpen(!sortMenuOpen);
 		if (filterMenuOpen) {
@@ -112,8 +115,14 @@ const Catalogue = ({ user }) => {
 						a = a[prop[i]];
 						b = b[prop[i]];
 					} else {
-						a = typeof a[prop[i]] === "string" ? (a[prop[i]]).toLowerCase() : a[prop[i]];
-						b = typeof b[prop[i]] === "string" ? (b[prop[i]]).toLowerCase() : b[prop[i]];
+						a =
+							typeof a[prop[i]] === "string"
+								? a[prop[i]].toLowerCase()
+								: a[prop[i]];
+						b =
+							typeof b[prop[i]] === "string"
+								? b[prop[i]].toLowerCase()
+								: b[prop[i]];
 					}
 					i++;
 				}
@@ -137,7 +146,7 @@ const Catalogue = ({ user }) => {
 	useEffect(() => {
 		filterLlms(llms);
 	}, [filterByType, filterByAccess, llms, searchQuery]);
-	
+
 	return (
 		<>
 			<Layout>
@@ -151,32 +160,32 @@ const Catalogue = ({ user }) => {
 					)}
 					<div className="col-span-12 flex flex-col md:flex-row md:justify-between md:items-center">
 						<div className="flex justify-start relative">
-								<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-									<svg
-										className="w-4 h-4 text-red "
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 20 20"
-									>
-										<path
-											stroke="currentColor"
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="2"
-											d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-										/>
-									</svg>
-									<span className="sr-only">Search icon</span>
-								</div>
-								<input
-									type="text"
-									id="search-catalogue"
-									className="block w-full p-2 ps-10 text-sm text-black rounded-lg outline-red outline-1 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-									placeholder="Search..."
-									value={searchQuery}
-									onChange={(e) => setSearchQuery(e.target.value)}
-								/>
+							<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+								<svg
+									className="w-4 h-4 text-red "
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 20 20"
+								>
+									<path
+										stroke="currentColor"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+									/>
+								</svg>
+								<span className="sr-only">Search icon</span>
+							</div>
+							<input
+								type="text"
+								id="search-catalogue"
+								className="block w-full p-2 ps-10 text-sm text-black rounded-lg outline-red outline-1 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+								placeholder="Search..."
+								value={searchQuery}
+								onChange={(e) => setSearchQuery(e.target.value)}
+							/>
 						</div>
 						<div className="flex space-x-5 ml-0 pt-2.5 md:pt-0">
 							<div className="relative text-left">
@@ -446,65 +455,76 @@ const Catalogue = ({ user }) => {
 						</div>
 					</div>
 					<div className="col-span-12 overflow-x-auto">
-						<table className="catalogue table-auto w-full">
-							<thead>
-								<tr>
-									<th>Type</th>
-									<th>Name</th>
-									<th>Organization</th>
-									<th>Created date</th>
-									<th>Modality (In; Out)</th>
-									<th>Access</th>
-									<th>License</th>
-									<th>Dependencies</th>
-								</tr>
-							</thead>
-							<tbody>
-								{sortedLlms.length > 0 ? (
-									sortedLlms.map((llm) => (
-										<tr key={llm.llm_data_id}>
-											<td>{llm.type_id.type}</td>
-											<td>
-												<Link
-													to={`/llm/${llm.llm_data_id}`}
-													state={{ data: llm, adminUser: isAdminUser }}
-												>
-													{llm.name}
-												</Link>
-											</td>
-											<td>{llm.organization_id.organization}</td>
-											<td>{formatDate(llm.created_date_id.created_date)}</td>
-											<td>{llm.modality_id.modality}</td>
-											<td>
-												<div className={`label label-${llm.access_id.access}`}>
-													{llm.access_id.access}
-												</div>
-											</td>
-											<td>{llm.license_id.license}</td>
-											<td>
-												{llm.dependencies_id.dependencies.map(
-													(dependency, index) => {
-														return `${
-															dependency +
-															(index <
-															llm.dependencies_id.dependencies.length - 1
-																? ", "
-																: "")
-														}`;
-													}
-												)}
+						{loading ? (
+							<div className="loading-indicator bg-white">
+								<div className="h-10 bg-red-dark">&nbsp;</div>
+								<p className="py-2.5 px-5 text-center animate-pulse">
+									Loading...
+								</p>
+							</div>
+						) : (
+							<table className="catalogue table-auto w-full">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Name</th>
+										<th>Organization</th>
+										<th>Created date</th>
+										<th>Modality (In; Out)</th>
+										<th>Access</th>
+										<th>License</th>
+										<th>Dependencies</th>
+									</tr>
+								</thead>
+								<tbody>
+									{sortedLlms.length > 0 ? (
+										sortedLlms.map((llm) => (
+											<tr key={llm.llm_data_id}>
+												<td>{llm.type_id.type}</td>
+												<td>
+													<Link
+														to={`/llm/${llm.llm_data_id}`}
+														state={{ data: llm, adminUser: isAdminUser }}
+													>
+														{llm.name}
+													</Link>
+												</td>
+												<td>{llm.organization_id.organization}</td>
+												<td>{formatDate(llm.created_date_id.created_date)}</td>
+												<td>{llm.modality_id.modality}</td>
+												<td>
+													<div
+														className={`label label-${llm.access_id.access}`}
+													>
+														{llm.access_id.access}
+													</div>
+												</td>
+												<td>{llm.license_id.license}</td>
+												<td>
+													{llm.dependencies_id.dependencies.map(
+														(dependency, index) => {
+															return `${
+																dependency +
+																(index <
+																llm.dependencies_id.dependencies.length - 1
+																	? ", "
+																	: "")
+															}`;
+														}
+													)}
+												</td>
+											</tr>
+										))
+									) : (
+										<tr>
+											<td className="text-center" colSpan="9">
+												No LLMs found
 											</td>
 										</tr>
-									))
-								) : (
-									<tr>
-										<td className="text-center" colSpan="9">
-											No LLMs found
-										</td>
-									</tr>
-								)}
-							</tbody>
-						</table>
+									)}
+								</tbody>
+							</table>
+						)}
 					</div>
 				</section>
 			</Layout>
