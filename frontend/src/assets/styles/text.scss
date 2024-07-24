@@ -27,9 +27,9 @@ h6 {
 }
 
 a {
-		@apply text-accent-purple transition-colors;
+		@apply text-red transition-colors;
 
 		&:hover {
-			@apply text-red-dark;
+			@apply text-blue;
 		}
 	}

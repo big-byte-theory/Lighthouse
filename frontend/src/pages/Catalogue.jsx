@@ -137,272 +137,304 @@ const Catalogue = ({ user }) => {
 			<Layout>
 				<section className="container wrapper pb-14">
 					{isAdminUser && (
-						<div className="col-span-12 flex flex-row justify-end">
+						<div className="col-span-12 flex flex-row justify-start">
 							<Link to="/llm/add" className="btn btn-primary !mt-0">
 								Add LLM
 							</Link>
 						</div>
 					)}
-					<div className="col-span-12 flex flex-row space-x-5 last:mr-0 justify-end items-center">
-						<div className="relative inline-block text-left">
-							<div>
-								<button
-									type="button"
-									className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-									id="menu-button"
-									aria-expanded={filterMenuOpen}
-									aria-haspopup="true"
-									onClick={() => handleFilterMenu()}
-								>
-									Filter
+					<div className="col-span-12 flex flex-row space-x-5 last:mr-0 justify-between items-center">
+						<div className="flex col-span-1 md:col-span-3 col-start-12 md:col-start-auto justify-center">
+							<div className="relative block mr-5 w-full">
+								<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
 									<svg
-										className="-mr-1 h-5 w-5 text-gray-400"
-										viewBox="0 0 20 20"
-										fill="currentColor"
+										className="w-4 h-4 text-red "
 										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 20 20"
 									>
 										<path
-											fillRule="evenodd"
-											d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-											clipRule="evenodd"
+											stroke="currentColor"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
 										/>
 									</svg>
-								</button>
+									<span className="sr-only">Search icon</span>
+								</div>
+								<input
+									type="text"
+									id="search-navbar"
+									className="block w-full p-2 ps-10 text-sm text-black rounded-lg outline-red outline-1 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+									placeholder="Search..."
+								/>
 							</div>
-							{/* Filter Menu */}
-							<div
-								className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
-									filterMenuOpen
-										? "transform visible opacity-100 scale-100"
-										: "transform invisible opacity-0 scale-95"
-								}`}
-								role="menu"
-								aria-orientation="vertical"
-								aria-labelledby="menu-button"
-								tabIndex="-1"
-							>
-								<div className="px-4 py-2" role="none">
-									<p className="font-semibold text-sm">Type:</p>
-									<div className="flex items-center py-2">
-										<input
-											id="type-application"
-											type="checkbox"
-											checked={filterByType.includes("application")}
-											value=""
-											className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-											// onClick={() => filterBy({ type: "application" })}
-											onChange={() => updateTypes("application")}
-										/>
-										<label
-											htmlFor="type-application"
-											className="ms-2 text-sm font-medium text-black"
+						</div>
+						<div className="space-x-5">
+							<div className="relative inline-block text-left">
+								<div>
+									<button
+										type="button"
+										className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+										id="menu-button"
+										aria-expanded={filterMenuOpen}
+										aria-haspopup="true"
+										onClick={() => handleFilterMenu()}
+									>
+										Filter
+										<svg
+											className="-mr-1 h-5 w-5 text-gray-400"
+											viewBox="0 0 20 20"
+											fill="currentColor"
+											aria-hidden="true"
 										>
-											Application
-										</label>
-									</div>
-									<div className="flex items-center py-2">
-										<input
-											id="type-dataset"
-											type="checkbox"
-											checked={filterByType.includes("dataset")}
-											value=""
-											className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-											// onClick={() => filterBy({ type: "dataset" })}
-											onChange={() => updateTypes("dataset")}
-										/>
-										<label
-											htmlFor="type-dataset"
-											className="ms-2 text-sm font-medium text-black"
-										>
-											Dataset
-										</label>
-									</div>
-									<div className="flex items-center py-2">
-										<input
-											id="type-model"
-											type="checkbox"
-											checked={filterByType.includes("model")}
-											value=""
-											className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-											// onClick={() => filterBy({ type: "model" })}
-											onChange={() => updateTypes("model")}
-										/>
-										<label
-											htmlFor="type-model"
-											className="ms-2 text-sm font-medium text-black"
-										>
-											Model
-										</label>
-									</div>
-									<p className="font-semibold text-sm mt-2">Access:</p>
-									<div className="flex items-center py-2">
-										<input
-											id="type-open"
-											type="checkbox"
-											checked={filterByAccess.includes("open")}
-											value=""
-											className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-											// onClick={() => filterBy({ access: "open" })}
-											onChange={() => updateAccess("open")}
-										/>
-										<label
-											htmlFor="type-open"
-											className="ms-2 text-sm font-medium text-black"
-										>
-											Open
-										</label>
-									</div>
-									<div className="flex items-center py-2">
-										<input
-											id="type-limited"
-											type="checkbox"
-											checked={filterByAccess.includes("limited")}
-											value=""
-											className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-											// onClick={() => filterBy({ access: "limited" })}
-											onChange={() => updateAccess("limited")}
-										/>
-										<label
-											htmlFor="type-limited"
-											className="ms-2 text-sm font-medium text-black"
-										>
-											Limited
-										</label>
-									</div>
-									<div className="flex items-center py-2">
-										<input
-											id="type-closed"
-											type="checkbox"
-											checked={filterByAccess.includes("closed") ? true : false}
-											value=""
-											className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-											// onClick={() => filterBy({ access: "closed" })}
-											onChange={() => updateAccess("closed")}
-										/>
-										<label
-											htmlFor="type-closed"
-											className="ms-2 text-sm font-medium text-black"
-										>
-											closed
-										</label>
+											<path
+												fillRule="evenodd"
+												d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+												clipRule="evenodd"
+											/>
+										</svg>
+									</button>
+								</div>
+								{/* Filter Menu */}
+								<div
+									className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
+										filterMenuOpen
+											? "transform visible opacity-100 scale-100"
+											: "transform invisible opacity-0 scale-95"
+									}`}
+									role="menu"
+									aria-orientation="vertical"
+									aria-labelledby="menu-button"
+									tabIndex="-1"
+								>
+									<div className="px-4 py-2" role="none">
+										<p className="font-semibold text-sm">Type:</p>
+										<div className="flex items-center py-2">
+											<input
+												id="type-application"
+												type="checkbox"
+												checked={filterByType.includes("application")}
+												value=""
+												className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+												// onClick={() => filterBy({ type: "application" })}
+												onChange={() => updateTypes("application")}
+											/>
+											<label
+												htmlFor="type-application"
+												className="ms-2 text-sm font-medium text-black"
+											>
+												Application
+											</label>
+										</div>
+										<div className="flex items-center py-2">
+											<input
+												id="type-dataset"
+												type="checkbox"
+												checked={filterByType.includes("dataset")}
+												value=""
+												className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+												// onClick={() => filterBy({ type: "dataset" })}
+												onChange={() => updateTypes("dataset")}
+											/>
+											<label
+												htmlFor="type-dataset"
+												className="ms-2 text-sm font-medium text-black"
+											>
+												Dataset
+											</label>
+										</div>
+										<div className="flex items-center py-2">
+											<input
+												id="type-model"
+												type="checkbox"
+												checked={filterByType.includes("model")}
+												value=""
+												className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+												// onClick={() => filterBy({ type: "model" })}
+												onChange={() => updateTypes("model")}
+											/>
+											<label
+												htmlFor="type-model"
+												className="ms-2 text-sm font-medium text-black"
+											>
+												Model
+											</label>
+										</div>
+										<p className="font-semibold text-sm mt-2">Access:</p>
+										<div className="flex items-center py-2">
+											<input
+												id="type-open"
+												type="checkbox"
+												checked={filterByAccess.includes("open")}
+												value=""
+												className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+												// onClick={() => filterBy({ access: "open" })}
+												onChange={() => updateAccess("open")}
+											/>
+											<label
+												htmlFor="type-open"
+												className="ms-2 text-sm font-medium text-black"
+											>
+												Open
+											</label>
+										</div>
+										<div className="flex items-center py-2">
+											<input
+												id="type-limited"
+												type="checkbox"
+												checked={filterByAccess.includes("limited")}
+												value=""
+												className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+												// onClick={() => filterBy({ access: "limited" })}
+												onChange={() => updateAccess("limited")}
+											/>
+											<label
+												htmlFor="type-limited"
+												className="ms-2 text-sm font-medium text-black"
+											>
+												Limited
+											</label>
+										</div>
+										<div className="flex items-center py-2">
+											<input
+												id="type-closed"
+												type="checkbox"
+												checked={
+													filterByAccess.includes("closed") ? true : false
+												}
+												value=""
+												className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+												// onClick={() => filterBy({ access: "closed" })}
+												onChange={() => updateAccess("closed")}
+											/>
+											<label
+												htmlFor="type-closed"
+												className="ms-2 text-sm font-medium text-black"
+											>
+												closed
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div className="relative inline-block text-left">
-							<div>
-								<button
-									type="button"
-									className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-									id="menu-button"
-									aria-expanded={sortMenuOpen}
-									aria-haspopup="true"
-									onClick={() => handleSortMenu()}
+							<div className="relative inline-block text-left">
+								<div>
+									<button
+										type="button"
+										className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+										id="menu-button"
+										aria-expanded={sortMenuOpen}
+										aria-haspopup="true"
+										onClick={() => handleSortMenu()}
+									>
+										Sort
+										<svg
+											className="-mr-1 h-5 w-5 text-gray-400"
+											viewBox="0 0 20 20"
+											fill="currentColor"
+											aria-hidden="true"
+										>
+											<path
+												fillRule="evenodd"
+												d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+												clipRule="evenodd"
+											/>
+										</svg>
+									</button>
+								</div>
+								{/* Menu */}
+								<div
+									className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
+										sortMenuOpen
+											? "transform visible opacity-100 scale-100"
+											: "transform invisible opacity-0 scale-95"
+									}`}
+									role="menu"
+									aria-orientation="vertical"
+									aria-labelledby="menu-button"
+									tabIndex="-1"
 								>
-									Sort
-									<svg
-										className="-mr-1 h-5 w-5 text-gray-400"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										aria-hidden="true"
-									>
-										<path
-											fillRule="evenodd"
-											d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-											clipRule="evenodd"
-										/>
-									</svg>
-								</button>
-							</div>
-							{/* Menu */}
-							<div
-								className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
-									sortMenuOpen
-										? "transform visible opacity-100 scale-100"
-										: "transform invisible opacity-0 scale-95"
-								}`}
-								role="menu"
-								aria-orientation="vertical"
-								aria-labelledby="menu-button"
-								tabIndex="-1"
-							>
-								<div className="py-1" role="none">
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-black"
-										role="menuitem"
-										tabIndex="-1"
-										id="menu-item-0"
-										onClick={(e) => sortCatalogue(e, "name", "ascending")}
-									>
-										Name ASC
-									</a>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-black"
-										role="menuitem"
-										tabIndex="-1"
-										id="menu-item-1"
-										onClick={(e) => sortCatalogue(e, "name", "descending")}
-									>
-										Name DESC
-									</a>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-black"
-										role="menuitem"
-										tabIndex="-1"
-										id="menu-item-2"
-										onClick={(e) =>
-											sortCatalogue(e, "created_date", "ascending")
-										}
-									>
-										Date Created ASC
-									</a>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-black"
-										role="menuitem"
-										tabIndex="-1"
-										id="menu-item-3"
-										onClick={(e) =>
-											sortCatalogue(e, "created_date", "descending")
-										}
-									>
-										Date Created DESC
-									</a>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-black"
-										role="menuitem"
-										tabIndex="-1"
-										id="menu-item-4"
-										onClick={(e) =>
-											sortCatalogue(
-												e,
-												"organization_id.organization",
-												"ascending"
-											)
-										}
-									>
-										Organization ASC
-									</a>
-									<a
-										href="#"
-										className="block px-4 py-2 text-sm text-black"
-										role="menuitem"
-										tabIndex="-1"
-										id="menu-item-5"
-										onClick={(e) =>
-											sortCatalogue(
-												e,
-												"organization_id.organization",
-												"descending"
-											)
-										}
-									>
-										Organization DESC
-									</a>
+									<div className="py-1" role="none">
+										<a
+											href="#"
+											className="block px-4 py-2 text-sm text-black"
+											role="menuitem"
+											tabIndex="-1"
+											id="menu-item-0"
+											onClick={(e) => sortCatalogue(e, "name", "ascending")}
+										>
+											Name ASC
+										</a>
+										<a
+											href="#"
+											className="block px-4 py-2 text-sm text-black"
+											role="menuitem"
+											tabIndex="-1"
+											id="menu-item-1"
+											onClick={(e) => sortCatalogue(e, "name", "descending")}
+										>
+											Name DESC
+										</a>
+										<a
+											href="#"
+											className="block px-4 py-2 text-sm text-black"
+											role="menuitem"
+											tabIndex="-1"
+											id="menu-item-2"
+											onClick={(e) =>
+												sortCatalogue(e, "created_date", "ascending")
+											}
+										>
+											Date Created ASC
+										</a>
+										<a
+											href="#"
+											className="block px-4 py-2 text-sm text-black"
+											role="menuitem"
+											tabIndex="-1"
+											id="menu-item-3"
+											onClick={(e) =>
+												sortCatalogue(e, "created_date", "descending")
+											}
+										>
+											Date Created DESC
+										</a>
+										<a
+											href="#"
+											className="block px-4 py-2 text-sm text-black"
+											role="menuitem"
+											tabIndex="-1"
+											id="menu-item-4"
+											onClick={(e) =>
+												sortCatalogue(
+													e,
+													"organization_id.organization",
+													"ascending"
+												)
+											}
+										>
+											Organization ASC
+										</a>
+										<a
+											href="#"
+											className="block px-4 py-2 text-sm text-black"
+											role="menuitem"
+											tabIndex="-1"
+											id="menu-item-5"
+											onClick={(e) =>
+												sortCatalogue(
+													e,
+													"organization_id.organization",
+													"descending"
+												)
+											}
+										>
+											Organization DESC
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
