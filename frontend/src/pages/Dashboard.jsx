@@ -56,8 +56,8 @@ const Dashboard = ({ user }) => {
 							{isAdminUser && (
 								<>
 									<h1 className="col-span-full">Dashboard - Admin</h1>
-									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<Link to="/llm/add" className="btn btn-primary !mt-0">
+									<div className="relative col-span-4 bg-red hover:bg-red-dark rounded-lg p-5 min-h-40 place-content-center text-black font-semibold transition-all">
+										<Link to="/llm/add" className="text-white hover:text-white after:content-[''] after:inset-0 after:absolute">
 											Add New LLM
 										</Link>
 									</div>
