@@ -3,7 +3,7 @@
 		"model": "Claude",
 		"x": 0.4837649932,
 		"y": 0.5114896078,
-		"Quadrant": "Visionary",
+		"quadrant": "Visionary",
 		"xNormalized": 0.7310567238,
 		"yNormalized": 0.5713910227,
 		"objectId": 161
@@ -12,7 +12,7 @@
 		"model": "Claude 2",
 		"x": 0.4751134112,
 		"y": 0.4037758133,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.7160015455,
 		"yNormalized": 0.4314220003,
 		"objectId": 163
@@ -21,7 +21,7 @@
 		"model": "Claude 2.1",
 		"x": 0.4712379027,
 		"y": 0.400700653,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.7092575224,
 		"yNormalized": 0.4274259738,
 		"objectId": 164
@@ -30,7 +30,7 @@
 		"model": "Claude 3",
 		"x": 0.3895237629,
 		"y": 0.3267620214,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.5670614553,
 		"yNormalized": 0.3313461911,
 		"objectId": 166
@@ -39,7 +39,7 @@
 		"model": "Claude Instant",
 		"x": 0.4536526477,
 		"y": 0.3881458613,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.6786562811,
 		"yNormalized": 0.4111116111,
 		"objectId": 162
@@ -48,7 +48,7 @@
 		"model": "Cohere Command",
 		"x": 0.3785513566,
 		"y": 0.4461610903,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.5479676606,
 		"yNormalized": 0.4864996792,
 		"objectId": 186
@@ -57,7 +57,7 @@
 		"model": "Command-R",
 		"x": 0.3984840772,
 		"y": 0.358600948,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.5826538786,
 		"yNormalized": 0.3727193824,
 		"objectId": 196
@@ -66,7 +66,7 @@
 		"model": "DBRX",
 		"x": 0.4264947825,
 		"y": 0.3632556636,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.631397121,
 		"yNormalized": 0.378767967,
 		"objectId": 102
@@ -75,7 +75,7 @@
 		"model": "Deepseek Chat",
 		"x": 0.4877551927,
 		"y": 0.4074857545,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.7380003284,
 		"yNormalized": 0.4362428949,
 		"objectId": 434
@@ -84,7 +84,7 @@
 		"model": "Falcon-40B",
 		"x": 0.3292567535,
 		"y": 0.4106483587,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.4621869291,
 		"yNormalized": 0.4403525507,
 		"objectId": 38
@@ -93,7 +93,7 @@
 		"model": "GPT-4",
 		"x": 0.5663503286,
 		"y": 0.7643721333,
-		"Quadrant": "Leader",
+		"quadrant": "Leader",
 		"xNormalized": 0.8747688146,
 		"yNormalized": 0.9,
 		"objectId": 308
@@ -102,7 +102,7 @@
 		"model": "GPT-4 Turbo",
 		"x": 0.5602248512,
 		"y": 0.4592190166,
-		"Quadrant": "Challenger",
+		"quadrant": "Challenger",
 		"xNormalized": 0.8641094746,
 		"yNormalized": 0.5034678418,
 		"objectId": 292
@@ -111,7 +111,7 @@
 		"model": "GPT-4o",
 		"x": 0.5808496369,
 		"y": 0.4736187159,
-		"Quadrant": "Challenger",
+		"quadrant": "Challenger",
 		"xNormalized": 0.9,
 		"yNormalized": 0.5221795754,
 		"objectId": 313
@@ -120,7 +120,7 @@
 		"model": "Gemini",
 		"x": 0.4351151375,
 		"y": 0.3921660251,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.646397959,
 		"yNormalized": 0.4163356253,
 		"objectId": 382
@@ -129,7 +129,7 @@
 		"model": "Gemini 1.5 Flash",
 		"x": 0.5163672157,
 		"y": 0.4358466649,
-		"Quadrant": "Challenger",
+		"quadrant": "Challenger",
 		"xNormalized": 0.7877899627,
 		"yNormalized": 0.4730965674,
 		"objectId": 556
@@ -138,7 +138,7 @@
 		"model": "Gemma",
 		"x": 0.4217261931,
 		"y": 0.3761495728,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.6230989898,
 		"yNormalized": 0.3955229969,
 		"objectId": 384
@@ -147,7 +147,7 @@
 		"model": "LLaMA",
 		"x": 0.3904641183,
 		"y": 0.6537711312,
-		"Quadrant": "Visionary",
+		"quadrant": "Visionary",
 		"xNormalized": 0.5686978287,
 		"yNormalized": 0.7562791868,
 		"objectId": 506
@@ -156,7 +156,7 @@
 		"model": "Llama 2",
 		"x": 0.4451060969,
 		"y": 0.6847246671,
-		"Quadrant": "Visionary",
+		"quadrant": "Visionary",
 		"xNormalized": 0.6637838745,
 		"yNormalized": 0.7965018545,
 		"objectId": 507
@@ -165,7 +165,7 @@
 		"model": "Llama 3",
 		"x": 0.5392807581,
 		"y": 0.4466058012,
-		"Quadrant": "Challenger",
+		"quadrant": "Challenger",
 		"xNormalized": 0.8276633018,
 		"yNormalized": 0.4870775602,
 		"objectId": 520
@@ -174,7 +174,7 @@
 		"model": "Llama-2-7B-32K-Instruct",
 		"x": 0.2920992872,
 		"y": 0.2897190908,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.3975268154,
 		"yNormalized": 0.2832106407,
 		"objectId": 395
@@ -183,7 +183,7 @@
 		"model": "Luminous",
 		"x": 0.1785888775,
 		"y": 0.2256839657,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.2,
 		"yNormalized": 0.2,
 		"objectId": 24
@@ -192,7 +192,7 @@
 		"model": "Mistral",
 		"x": 0.3951841954,
 		"y": 0.5523793231,
-		"Quadrant": "Visionary",
+		"quadrant": "Visionary",
 		"xNormalized": 0.5769115405,
 		"yNormalized": 0.6245252892,
 		"objectId": 266
@@ -201,7 +201,7 @@
 		"model": "Mistral Large",
 		"x": 0.4396384712,
 		"y": 0.3771118062,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.6542693049,
 		"yNormalized": 0.3967733741,
 		"objectId": 267
@@ -210,7 +210,7 @@
 		"model": "OLMo",
 		"x": 0.1854217126,
 		"y": 0.2275098948,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.2118902589,
 		"yNormalized": 0.2023727092,
 		"objectId": 113
@@ -219,7 +219,7 @@
 		"model": "Palmyra",
 		"x": 0.4843839336,
 		"y": 0.4132134217,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.732133782,
 		"yNormalized": 0.4436857296,
 		"objectId": 215
@@ -228,7 +228,7 @@
 		"model": "Phi-1.5",
 		"x": 0.3352820069,
 		"y": 0.3252569893,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.4726718627,
 		"yNormalized": 0.3293904725,
 		"objectId": 476
@@ -237,7 +237,7 @@
 		"model": "Qwen",
 		"x": 0.459760984,
 		"y": 0.5000043362,
-		"Quadrant": "Visionary",
+		"quadrant": "Visionary",
 		"xNormalized": 0.6892857928,
 		"yNormalized": 0.5564664511,
 		"objectId": 572
@@ -246,7 +246,7 @@
 		"model": "Qwen 1.5",
 		"x": 0.5132305258,
 		"y": 0.422968891,
-		"Quadrant": "Challenger",
+		"quadrant": "Challenger",
 		"xNormalized": 0.7823316055,
 		"yNormalized": 0.4563625043,
 		"objectId": 573
@@ -255,7 +255,7 @@
 		"model": "Yi",
 		"x": 0.470893619,
 		"y": 0.5016283422,
-		"Quadrant": "Visionary",
+		"quadrant": "Visionary",
 		"xNormalized": 0.708658412,
 		"yNormalized": 0.5585767707,
 		"objectId": 488
@@ -264,7 +264,7 @@
 		"model": "gpt-3.5-turbo",
 		"x": 0.444084564,
 		"y": 0.4843550082,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.6620062389,
 		"yNormalized": 0.5361308836,
 		"objectId": 291
@@ -273,7 +273,7 @@
 		"model": "text-davinci-002",
 		"x": 0.4155512987,
 		"y": 0.4678844802,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.6123536561,
 		"yNormalized": 0.5147282051,
 		"objectId": 296
@@ -282,7 +282,7 @@
 		"model": "text-davinci-003",
 		"x": 0.4396575143,
 		"y": 0.4840832527,
-		"Quadrant": "Niche Player",
+		"quadrant": "Niche Player",
 		"xNormalized": 0.6543024431,
 		"yNormalized": 0.53577775,
 		"objectId": 297
