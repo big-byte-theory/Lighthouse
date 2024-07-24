@@ -7,6 +7,7 @@ import { formatDate } from "../utils/formatDate";
 const Details = () => {
 	const { state } = useLocation();
 	const [llmData, setLlmData] = useState({});
+	const [newsArticles, setNewsArticles] = useState([]);
 	const { id } = useParams();
 	let details = state?.data;
 	const isAdmin = state?.adminUser;
@@ -20,12 +21,23 @@ const Details = () => {
 		}
 	}, [id]);
 
+	const fetchNewsArticles = () => {
+		if (llmData !== null && llmData.news_ids !== null) {
+			let combinedArticles = [];
+			llmData?.news_ids?.forEach((articles) => {
+				combinedArticles = [...combinedArticles, ...articles.articles];
+			});
+			setNewsArticles(combinedArticles);
+		}
+	};
+
 	useEffect(() => {
 		if (details) {
 			setLlmData(details);
 		} else {
 			fetchLlmData();
 		}
+		fetchNewsArticles();
 	}, [details, fetchLlmData]);
 
 	return (
@@ -34,10 +46,16 @@ const Details = () => {
 				<section className="container wrapper pb-14">
 					{isAdmin && (
 						<div className="col-span-12 space-x-5">
-							<Link to="/llm/archive" className="btn btn-primary">
+							<Link
+								to="/llm/archive"
+								className="btn btn-primary pointer-events-none"
+							>
 								Archive LLM
 							</Link>
-							<Link to="/llm/delete" className="btn btn-primary">
+							<Link
+								to="/llm/delete"
+								className="btn btn-primary pointer-events-none"
+							>
 								Delete LLM
 							</Link>
 						</div>
@@ -337,9 +355,9 @@ const Details = () => {
 							</div>
 							<div className="col-span-12">
 								<h3>News</h3>
-								{llmData?.news_ids?.map((articles, index) => (
-									<div key={index} className="container">
-										{articles.articles.map((news, newsIndex) => (
+								{
+									<div className="container space-y-7.5 md:space-y-0 pb-7.5">
+										{newsArticles.map((news, newsIndex) => (
 											<article
 												key={newsIndex}
 												className="col-span-12 sm:col-span-6 lg:col-span-4 w-full"
@@ -370,7 +388,7 @@ const Details = () => {
 											</article>
 										))}
 									</div>
-								))}
+								}
 							</div>
 						</>
 					)}
