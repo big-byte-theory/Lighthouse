@@ -20,8 +20,35 @@ const Header = () => {
 						<img src={logo} className="h-auto w-40" alt="Lighthouse" />
 					</NavLink>
 				</div>
+				<div className="flex col-span-1 md:col-span-3 col-start-12 md:col-start-auto justify-center">
+					<button
+						data-collapse-toggle="navbar-search"
+						type="button"
+						className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-red rounded-lg md:hidden"
+						aria-controls="navbar-search"
+						aria-expanded={navbarOpen}
+						onClick={() => setNavbarOpen(!navbarOpen)}
+					>
+						<span className="sr-only">Open main menu</span>
+						<svg
+							className="w-5 h-5"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 17 14"
+						>
+							<path
+								stroke="currentColor"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
+								d="M1 1h15M1 7h15M1 13h15"
+							/>
+						</svg>
+					</button>
+				</div>
 				<div
-					className={`col-span-12 md:col-span-10 md:order-3 md:flex flex-col md:flex-row md:justify-end md:items-center mt-5 md:mt-0 ${
+					className={`col-span-12 md:col-span-7 md:order-3 md:flex flex-col md:flex-row md:justify-end md:items-center mt-5 md:mt-0 ${
 						navbarOpen ? "block" : "hidden"
 					}`}
 				>
