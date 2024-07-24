@@ -182,18 +182,29 @@ const Matrix = () => {
 			<section className="container wrapper pb-14">
 				<div className="col-span-12 flex flex-col justify-evenly items-center gap-3 z-1">
 					<h1 className="text-center">LLM Matrix</h1>
-					<p>
-						Welcome to our comprehensive matrix evaluating various language
-						models (LLMs). This interactive visualization plots each model based
-						on two key dimensions: Business Readiness and Perceived Business
-						Value.
-					</p>
-					<p className="mb-7.5">
-						This matrix is designed to help you make informed decisions based on
-						comprehensive and standardized performance data. Explore the
-						visualization to understand the strengths and weaknesses of each
-						language model in relation to your business needs.
-					</p>
+					<div>
+						<p>
+							Welcome to our comprehensive matrix evaluating various language
+							models (LLMs). This interactive visualization plots each model based
+							on two key dimensions:
+							<ul className="pt-2.5">
+								<li>
+									<strong>Business Readiness:</strong> Reflects the model's
+									performance across various accuracy and benchmark tests.
+								</li>
+								<li>
+									<strong>Perceived Business Value:</strong> Adjusts for the model's popularity and capability scores,
+									indicating its practical utility and adoption in the industry.
+								</li>
+							</ul>
+						</p>
+						<p className="mt-5 mb-7.5">
+							This matrix is designed to help you make informed decisions based on
+							comprehensive and standardized performance data. Explore the
+							visualization to understand the strengths and weaknesses of each
+							language model in relation to your business needs.
+						</p>
+					</div>
 					<Plot
 						data={[
 							{
@@ -275,8 +286,7 @@ const Matrix = () => {
 								},
 							],
 							annotations: labels,
-							width: 960,
-							height: 720,
+							style: {width: "100%", height: "100%"},
 							showlegend: false,
 							title:
 								"Lighthouse Matrix based on Business Readiness and Perceived Business Value",
