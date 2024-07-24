@@ -149,9 +149,8 @@ const Catalogue = ({ user }) => {
 							</Link>
 						</div>
 					)}
-					<div className="col-span-12 flex flex-col md:flex-row space-x-5 last:mr-0 md:justify-between md:items-center">
-						<div className="flex col-span-1 md:col-span-3 col-start-12 md:col-start-auto justify-center">
-							<div className="relative block md:mr-5 w-full">
+					<div className="col-span-12 flex flex-col md:flex-row md:justify-between md:items-center">
+						<div className="flex justify-start relative">
 								<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
 									<svg
 										className="w-4 h-4 text-red "
@@ -178,10 +177,9 @@ const Catalogue = ({ user }) => {
 									value={searchQuery}
 									onChange={(e) => setSearchQuery(e.target.value)}
 								/>
-							</div>
 						</div>
-						<div className="space-x-5 ml-0 pt-2.5 md:pt-0">
-							<div className="relative inline-block text-left">
+						<div className="flex space-x-5 ml-0 pt-2.5 md:pt-0">
+							<div className="relative text-left">
 								<div>
 									<button
 										type="button"
@@ -208,7 +206,7 @@ const Catalogue = ({ user }) => {
 								</div>
 								{/* Filter Menu */}
 								<div
-									className={`absolute left-0 md:right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
+									className={`absolute left-0 md:left-auto md:right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
 										filterMenuOpen
 											? "transform visible opacity-100 scale-100"
 											: "transform invisible opacity-0 scale-95"
@@ -328,7 +326,7 @@ const Catalogue = ({ user }) => {
 									</div>
 								</div>
 							</div>
-							<div className="relative inline-block text-left">
+							<div className="relative text-left">
 								<div>
 									<button
 										type="button"
@@ -355,7 +353,7 @@ const Catalogue = ({ user }) => {
 								</div>
 								{/* Menu */}
 								<div
-									className={`absolute left-0 md:right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
+									className={`absolute left-0 md:left-auto md:right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
 										sortMenuOpen
 											? "transform visible opacity-100 scale-100"
 											: "transform invisible opacity-0 scale-95"
@@ -459,7 +457,6 @@ const Catalogue = ({ user }) => {
 									<th>Access</th>
 									<th>License</th>
 									<th>Dependencies</th>
-									{/* <th>View</th> */}
 								</tr>
 							</thead>
 							<tbody>
@@ -497,14 +494,6 @@ const Catalogue = ({ user }) => {
 													}
 												)}
 											</td>
-											{/* <td>
-												<Link
-													to={`/llm/${llm.llm_data_id}`}
-													state={{ data: llm, adminUser: isAdminUser }}
-												>
-													View
-												</Link>
-											</td> */}
 										</tr>
 									))
 								) : (

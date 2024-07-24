@@ -9,7 +9,7 @@
 		@apply bg-red-dark text-left text-white;
 
 		th {
-			@apply py-2.5 px-4;
+			@apply py-2.5 px-4 text-nowrap;
 		}
 	}
 	tbody {
