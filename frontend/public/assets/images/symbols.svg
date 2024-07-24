@@ -11,4 +11,7 @@
   <symbol id="twitter-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
     <path d="m14.11 9.98 11.26 16.05h-2.99L11.13 9.98h2.97ZM36 6v24c0 3.31-2.69 6-6 6H6c-3.31 0-6-2.69-6-6V6c0-3.31 2.69-6 6-6h24c3.31 0 6 2.69 6 6Zm-6.92 22-8.37-11.98L27.55 8h-2.62l-5.41 6.32L15.11 8h-7.7l7.88 11.27L7.82 28h2.67l6-7.03L21.41 28h7.68Z" fill="currentColor" strokeWidth="0"/>
   </symbol>
+  <symbol id="info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+   <path fill="currentColor" d="M12 2C6.489 2 2 6.489 2 12s4.489 10 10 10 10-4.489 10-10S17.511 2 12 2zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8-8-3.57-8-8 3.57-8 8-8zm-1 3v2h2V7h-2zm0 4v6h2v-6h-2z"/>
+  </symbol>
 </svg>
