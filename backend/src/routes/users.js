@@ -1,6 +1,6 @@
 import { Router } from "express";
 import UserController from "../controllers/UserController.js";
-// import UserValidator from "../middleware/User.validator.js";
+import UserAuthenticator from "../middleware/UserAuthenticator.js";
 import Jwt from "../middleware/JwtAuthenticator.js";
 
 export default class UserRoutes {
@@ -22,8 +22,8 @@ export default class UserRoutes {
     );
     this.#router.post(
       "/sign-up",
-      // UserValidator.validate(),
-      // UserValidator.checkDuplicateEmail,
+      UserAuthenticator.validate(),
+      UserAuthenticator.checkDuplicateEmail,
       this.#controller.addUser
     );
     this.#router.get(

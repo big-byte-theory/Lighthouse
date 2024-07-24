@@ -65,11 +65,11 @@ export default class LlmController {
         .populate({
           path: 'dependencies_id',
           model: LlmDependencies,
-          populate: ({
+          populate: {
             path: 'dependencies_llm_ids',
             model: Llm,
             select: 'llm_data_id'
-          })
+          }
         })
         .populate({
           path: 'training_emissions_id',
@@ -166,8 +166,9 @@ export default class LlmController {
           select: 'model_card'
         })
         .populate({
-          path: 'news_id',
+          path: 'news_ids',
           model: LlmNews,
+          select: 'articles'
         })
         .exec();
       return res.status(200).json(llms);
@@ -179,7 +180,7 @@ export default class LlmController {
 
   getLlm = async (req, res) => {
     try {
-      const llm = await Llm.findById(req.params.id)
+      const llm = await Llm.find({ llm_data_id: req.params.id })
         .populate({
           path: 'organization_id',
           model: LlmOrganization,
@@ -213,11 +214,11 @@ export default class LlmController {
         .populate({
           path: 'dependencies_id',
           model: LlmDependencies,
-          populate: ({
+          populate: {
             path: 'dependencies_llm_ids',
             model: Llm,
             select: 'llm_data_id'
-          })
+          }
         })
         .populate({
           path: 'training_emissions_id',
@@ -314,7 +315,7 @@ export default class LlmController {
           select: 'model_card'
         })
         .populate({
-          path: 'news_id',
+          path: 'news_ids',
           model: LlmNews,
         })
         .exec();
@@ -323,7 +324,7 @@ export default class LlmController {
         return res.status(404).json({ msg: 'LLM not found' });
       }
 
-      res.json(llm);
+      res.status(200).json(llm);
     } catch (err) {
       console.error(err.message);
       if (err.kind === 'ObjectId') {

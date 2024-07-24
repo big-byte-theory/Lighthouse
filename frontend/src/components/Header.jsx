@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "/assets/images/lighthouse-logo.svg";
+import logoIcon from "/assets/images/lighthouse-icon-dark.svg";
 import { loggedIn, logout } from "../services/AuthUserService";
 
 const Header = () => {
 	const [isLoggedIn, setIsLoggedIn] = useState(loggedIn());
 	const [navbarOpen, setNavbarOpen] = useState(false);
-	const [searchbarOpen, setSearchbarOpen] = useState(false);	
 
 	useEffect(() => {
 		setIsLoggedIn(loggedIn());
@@ -18,62 +18,11 @@ const Header = () => {
 			<nav className="container wrapper pt-2.5 pb-5 md:py-2.5 items-center border-b border-gray-300">
 				<div className="logo col-span-2">
 					<NavLink to="/">
-						<img src={logo} className="h-auto w-40" alt="Lighthouse" />
+						<img src={logo} className="hidden md:block h-auto w-40" alt="Lighthouse" />
+						<img src={logoIcon} className="block md:hidden h-auto w-12" alt="Lighthouse" />
 					</NavLink>
 				</div>
 				<div className="flex col-span-1 md:col-span-3 col-start-12 md:col-start-auto justify-center">
-					{/* <button
-						type="button"
-						data-collapse-toggle="navbar-search"
-						aria-controls="navbar-search"
-						aria-expanded={searchbarOpen}
-						id="navBtn"
-						className="md:hidden text-red hover:bg-gray-100 focus:outline-none rounded-lg text-sm p-2.5 me-1"
-						onClick={() => setSearchbarOpen(!searchbarOpen)}
-					>
-						<svg
-							className="w-5 h-5"
-							aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 20 20"
-						>
-							<path
-								stroke="currentColor"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-							/>
-						</svg>
-						<span className="sr-only">Search</span>
-					</button> */}
-					<div className="relative hidden md:block mr-5 w-full">
-						<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-							<svg
-								className="w-4 h-4 text-red "
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 20 20"
-							>
-								<path
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-								/>
-							</svg>
-							<span className="sr-only">Search icon</span>
-						</div>
-						<input
-							type="text"
-							id="search-navbar"
-							className="block w-full p-2 ps-10 text-sm text-gray-900 rounded-lg outline-red outline-1"
-							placeholder="Search..."
-						/>
-					</div>
 					<button
 						data-collapse-toggle="navbar-search"
 						type="button"

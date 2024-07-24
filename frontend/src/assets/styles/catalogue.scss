@@ -1,11 +1,15 @@
 .catalogue {
 	@apply relative bg-white;
+	
+	&-details {
+		word-break: break-word;
+	}
 
 	thead {
-		@apply bg-blue-light text-left text-white;
+		@apply bg-red-dark text-left text-white;
 
 		th {
-			@apply p-2.5;
+			@apply py-2.5 px-4 text-nowrap;
 		}
 	}
 	tbody {
@@ -13,7 +17,7 @@
 			@apply relative border-b border-gray-200 py-2.5;
 		}
     td {
-      @apply p-2.5;
+      @apply py-2.5 px-4;
     }
 
     a {

@@ -2,7 +2,11 @@ footer {
   .social-icons {
     .social-icon {
       .icon {
-        @apply text-red w-full h-full;
+        @apply text-white w-full h-full transition-colors;
+
+        &:hover {
+          @apply text-red-dark
+        };
       }
     }
   }
