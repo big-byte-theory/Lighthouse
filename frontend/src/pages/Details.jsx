@@ -34,10 +34,10 @@ const Details = () => {
 				<section className="container wrapper pb-14">
 					{isAdmin && (
 						<div className="col-span-12 space-x-5">
-							<Link to="/llm/archive" className="btn btn-primary">
+							<Link to="/llm/archive" className="btn btn-primary pointer-events-none">
 								Archive LLM
 							</Link>
-							<Link to="/llm/delete" className="btn btn-primary">
+							<Link to="/llm/delete" className="btn btn-primary pointer-events-none">
 								Delete LLM
 							</Link>
 						</div>
@@ -338,7 +338,7 @@ const Details = () => {
 							<div className="col-span-12">
 								<h3>News</h3>
 								{llmData?.news_ids?.map((articles, index) => (
-									<div key={index} className="container">
+									<div key={index} className="container space-y-7.5 md:space-y-0 pb-7.5">
 										{articles.articles.map((news, newsIndex) => (
 											<article
 												key={newsIndex}

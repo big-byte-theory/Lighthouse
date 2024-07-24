@@ -25,6 +25,7 @@ const Catalogue = ({ user }) => {
 		key: null,
 		direction: "ascending",
 	});
+	const [searchQuery, setSearchQuery] = useState("");
 
 	const adminUser = useCallback(async () => {
 		const result = await isAdmin(user);
@@ -52,6 +53,11 @@ const Catalogue = ({ user }) => {
 		if (filterByAccess.length > 0) {
 			filteredLlmsData = filteredLlmsData.filter((llm) =>
 				filterByAccess.includes(llm.access_id.access)
+			);
+		}
+		if (searchQuery.length > 0) {
+			filteredLlmsData = filteredLlmsData.filter((llm) =>
+				llm.name.toLowerCase().includes(searchQuery.toLowerCase())
 			);
 		}
 		setFilteredLlms(filteredLlmsData);
@@ -130,7 +136,7 @@ const Catalogue = ({ user }) => {
 
 	useEffect(() => {
 		filterLlms(llms);
-	}, [filterByType, filterByAccess, llms]);
+	}, [filterByType, filterByAccess, llms, searchQuery]);
 	
 	return (
 		<>
@@ -143,9 +149,9 @@ const Catalogue = ({ user }) => {
 							</Link>
 						</div>
 					)}
-					<div className="col-span-12 flex flex-row space-x-5 last:mr-0 justify-between items-center">
+					<div className="col-span-12 flex flex-col md:flex-row space-x-5 last:mr-0 md:justify-between md:items-center">
 						<div className="flex col-span-1 md:col-span-3 col-start-12 md:col-start-auto justify-center">
-							<div className="relative block mr-5 w-full">
+							<div className="relative block md:mr-5 w-full">
 								<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
 									<svg
 										className="w-4 h-4 text-red "
@@ -166,13 +172,15 @@ const Catalogue = ({ user }) => {
 								</div>
 								<input
 									type="text"
-									id="search-navbar"
+									id="search-catalogue"
 									className="block w-full p-2 ps-10 text-sm text-black rounded-lg outline-red outline-1 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
 									placeholder="Search..."
+									value={searchQuery}
+									onChange={(e) => setSearchQuery(e.target.value)}
 								/>
 							</div>
 						</div>
-						<div className="space-x-5">
+						<div className="space-x-5 ml-0 pt-2.5 md:pt-0">
 							<div className="relative inline-block text-left">
 								<div>
 									<button
@@ -200,7 +208,7 @@ const Catalogue = ({ user }) => {
 								</div>
 								{/* Filter Menu */}
 								<div
-									className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
+									className={`absolute left-0 md:right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
 										filterMenuOpen
 											? "transform visible opacity-100 scale-100"
 											: "transform invisible opacity-0 scale-95"
@@ -347,7 +355,7 @@ const Catalogue = ({ user }) => {
 								</div>
 								{/* Menu */}
 								<div
-									className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
+									className={`absolute left-0 md:right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform ease-out duration-100 ${
 										sortMenuOpen
 											? "transform visible opacity-100 scale-100"
 											: "transform invisible opacity-0 scale-95"
@@ -451,7 +459,7 @@ const Catalogue = ({ user }) => {
 									<th>Access</th>
 									<th>License</th>
 									<th>Dependencies</th>
-									<th>View</th>
+									{/* <th>View</th> */}
 								</tr>
 							</thead>
 							<tbody>
@@ -459,7 +467,14 @@ const Catalogue = ({ user }) => {
 									sortedLlms.map((llm) => (
 										<tr key={llm.llm_data_id}>
 											<td>{llm.type_id.type}</td>
-											<td>{llm.name}</td>
+											<td>
+												<Link
+													to={`/llm/${llm.llm_data_id}`}
+													state={{ data: llm, adminUser: isAdminUser }}
+												>
+													{llm.name}
+												</Link>
+											</td>
 											<td>{llm.organization_id.organization}</td>
 											<td>{formatDate(llm.created_date_id.created_date)}</td>
 											<td>{llm.modality_id.modality}</td>
@@ -482,14 +497,14 @@ const Catalogue = ({ user }) => {
 													}
 												)}
 											</td>
-											<td>
+											{/* <td>
 												<Link
 													to={`/llm/${llm.llm_data_id}`}
 													state={{ data: llm, adminUser: isAdminUser }}
 												>
 													View
 												</Link>
-											</td>
+											</td> */}
 										</tr>
 									))
 								) : (
