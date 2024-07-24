@@ -30,16 +30,26 @@ const Dashboard = ({ user }) => {
 										<Link to="/matrix">Matrix</Link>
 									</div>
 									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p className="font-bold text-6xl">580</p>
 										<p>Number of LLMs</p>
 									</div>
 									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<p>Widget 1/2</p>
+										<p>Starred LLMs</p>
 									</div>
 									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<p>News Stories</p>
+										<p>Dashboard Widget</p>
 									</div>
-									<div className="col-span-full bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<p>Starred LLMs</p>
+									<div className="col-span-full min-h-40 text-left text-black container">
+										<h3 className="col-span-12 text-red mb-0">News Stories</h3>
+										<div className="col-span-12 md:col-span-6 lg:col-span-4 bg-light-grey rounded-lg p-5">
+											<p>Story</p>
+										</div>
+										<div className="col-span-12 md:col-span-6 lg:col-span-4 bg-light-grey rounded-lg p-5">
+											<p>Story</p>
+										</div>
+										<div className="col-span-12 md:col-span-6 lg:col-span-4 bg-light-grey rounded-lg p-5">
+											<p>Story</p>
+										</div>
 									</div>
 								</>
 							)}
@@ -47,22 +57,35 @@ const Dashboard = ({ user }) => {
 								<>
 									<h1 className="col-span-full">Dashboard - Admin</h1>
 									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<p>Add New LLM</p>
+										<Link to="/llm/add" className="btn btn-primary !mt-0">
+											Add New LLM
+										</Link>
 									</div>
 									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
+										<p className="font-bold text-6xl">580</p>
 										<p>Number of LLMs</p>
 									</div>
 									<div className="col-span-4 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<p>Number of Users</p>
+										<p className="font-bold text-6xl">57</p>
+										<p>Users Online</p>
 									</div>
 									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<p>News Stories</p>
+										<p>Widget Panel</p>
 									</div>
 									<div className="col-span-6 bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
 										<p>Top 5 models</p>
 									</div>
-									<div className="col-span-full bg-light-grey rounded-lg p-5 min-h-40 place-content-center text-black font-semibold">
-										<p>Widget Full</p>
+									<div className="col-span-full min-h-40 text-left text-black container">
+										<h3 className="col-span-12 text-red mb-0">News Stories</h3>
+										<div className="col-span-12 md:col-span-6 lg:col-span-4 bg-light-grey rounded-lg p-5">
+											<p>Story</p>
+										</div>
+										<div className="col-span-12 md:col-span-6 lg:col-span-4 bg-light-grey rounded-lg p-5">
+											<p>Story</p>
+										</div>
+										<div className="col-span-12 md:col-span-6 lg:col-span-4 bg-light-grey rounded-lg p-5">
+											<p>Story</p>
+										</div>
 									</div>
 								</>
 							)}
