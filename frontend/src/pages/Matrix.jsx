@@ -9,6 +9,7 @@ const Matrix = () => {
 	const [newXaxis, setNewXaxis] = useState([]);
 	const [newYaxis, setNewYaxis] = useState([]);
 	const [newModelLabels, setNewModelLabels] = useState([]);
+	const [modelUrls, setModelUrls] = useState([]);
 
 	const labelsTop = {
 		x: [0.25, 0.75],
@@ -33,17 +34,29 @@ const Matrix = () => {
 		const newX = [];
 		const newY = [];
 		const newModelLabels = [];
+		const newModelURLs = [];
 
 		matrixData.map((item) => {
+			const itemURL = "/llm/" + item.objectId;
+
 			newX.push(item.x);
 			newY.push(item.y);
 			newModelLabels.push(item.model);
+			newModelURLs.push(itemURL);
 		});
 
 		setNewXaxis(newX);
 		setNewYaxis(newY);
 		setNewModelLabels(newModelLabels);
-		// console.log(newX, newY, newModelLabels);
+		setModelUrls(newModelURLs);
+	};
+
+	const handlePlotClick = (data) => {
+		const pointIndex = data.points[0].pointIndex;
+		const url = modelUrls[pointIndex];
+		if (url) {
+			window.open(url, "_self");
+		}
 	};
 
 	useEffect(() => {
@@ -67,60 +80,80 @@ const Matrix = () => {
 						visualization to understand the strengths and weaknesses of each
 						language model in relation to your business needs.
 					</p>
-					<Plot
-						data={[
-							{
-								x: newXaxis,
-								y: newYaxis,
-								text: newModelLabels,
-								textposition: "top center",
-								name: "LLMs",
-								type: "scatter",
-								mode: "markers+text",
-								marker: { color: "#a41c30", size: 10 },
-							},
-							labelsTop,
-							labelsBottom,
-						]}
-						layout={{
-							xaxis: { title: "Business Readiness", dtick: 0.2, range: [0, 1] },
-							yaxis: {
-								title: "Perceived Business Value",
-								dtick: 0.2,
-								range: [0, 1],
-							},
-							shapes: [
+					<div>
+						<Plot
+							data={[
 								{
-									layer: "below",
-									type: "line",
-									x0: 0.5,
-									x1: 0.5,
-									y0: 0,
-									y1: 1,
-									fillcolor: "black",
-									line: { width: 2, color: "black" },
+									x: newXaxis,
+									y: newYaxis,
+									text: newModelLabels,
+									textposition: "top center",
+									name: "LLMs",
+									type: "scatter",
+									mode: "markers+text",
+									marker: { color: "#a41c30", size: 10 },
+									customdata: modelUrls,
 								},
-								{
-									layer: "below",
-									type: "line",
-									x0: 0,
-									x1: 1,
-									y0: 0.5,
-									y1: 0.5,
-									fillcolor: "black",
-									line: { width: 2, color: "black" },
+								labelsTop,
+								labelsBottom,
+							]}
+							layout={{
+								xaxis: {
+									title: "Business Readiness",
+									dtick: 0.2,
+									range: [0, 1],
 								},
-							],
-							width: 960,
-							height: 720,
-							title:
-								"Lighthouse Matrix based on Business Readiness and Perceived Business Value",
-							showlegend: false,
-						}}
-					/>
+								yaxis: {
+									title: "Perceived Business Value",
+									dtick: 0.2,
+									range: [0, 1],
+								},
+								shapes: [
+									{
+										layer: "below",
+										type: "line",
+										x0: 0.5,
+										x1: 0.5,
+										y0: 0,
+										y1: 1,
+										fillcolor: "black",
+										line: { width: 2, color: "black" },
+									},
+									{
+										layer: "below",
+										type: "line",
+										x0: 0,
+										x1: 1,
+										y0: 0.5,
+										y1: 0.5,
+										fillcolor: "black",
+										line: { width: 2, color: "black" },
+									},
+								],
+								width: 960,
+								height: 720,
+								showlegend: false,
+								title:
+									"Lighthouse Matrix based on Business Readiness and Perceived Business Value",
+							}}
+							onClick={handlePlotClick}
+						/>
+						<div>
+							<strong>Quadrants</strong>
+							Leader: High in both Business Readiness and Perceived Business
+							Value. These models are well-rounded and widely adopted.
+							Visionary: High in Perceived Business Value but lower in Business
+							Readiness. These models show strong potential but may need further
+							refinement. Challenger: High in Business Readiness but lower in
+							Perceived Business Value. These models are technically strong but
+							lack widespread adoption or perceived utility. Niche Player: Low
+							in both Business Readiness and Perceived Business Value. These
+							models are specialized or underutilized.
+						</div>
+					</div>
 					<p>
-						<strong>Interaction:</strong> Hover over each point to see detailed information about
-						the model.
+						<strong>Interaction:</strong> Hover over each point to see detailed
+						information about the model.
 					</p>
 				</div>
 			</section>
