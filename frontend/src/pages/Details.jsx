@@ -38,7 +38,7 @@ const Details = () => {
 			fetchLlmData();
 		}
 		fetchNewsArticles();
-	}, [details, fetchLlmData]);
+	}, [details, fetchLlmData, llmData]);
 
 	return (
 		<>

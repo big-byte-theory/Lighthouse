@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "/assets/images/lighthouse-logo.svg";
+import logoIcon from "/assets/images/lighthouse-icon-dark.svg";
 import { loggedIn, logout } from "../services/AuthUserService";
 
 const Header = () => {
@@ -17,7 +18,8 @@ const Header = () => {
 			<nav className="container wrapper pt-2.5 pb-5 md:py-2.5 items-center border-b border-gray-300">
 				<div className="logo col-span-2">
 					<NavLink to="/">
-						<img src={logo} className="h-auto w-40" alt="Lighthouse" />
+						<img src={logo} className="hidden md:block h-auto w-40" alt="Lighthouse" />
+						<img src={logoIcon} className="block md:hidden h-auto w-12" alt="Lighthouse" />
 					</NavLink>
 				</div>
 				<div className="flex col-span-1 md:col-span-3 col-start-12 md:col-start-auto justify-center">
