@@ -54,42 +54,6 @@
 		"objectId": 186
 	},
 	{
-		"model": "Command-R",
-		"x": 0.3984840772,
-		"y": 0.358600948,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.5826538786,
-		"yNormalized": 0.3727193824,
-		"objectId": 196
-	},
-	{
-		"model": "DBRX",
-		"x": 0.4264947825,
-		"y": 0.3632556636,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.631397121,
-		"yNormalized": 0.378767967,
-		"objectId": 102
-	},
-	{
-		"model": "Deepseek Chat",
-		"x": 0.4877551927,
-		"y": 0.4074857545,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.7380003284,
-		"yNormalized": 0.4362428949,
-		"objectId": 434
-	},
-	{
-		"model": "Falcon-40B",
-		"x": 0.3292567535,
-		"y": 0.4106483587,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.4621869291,
-		"yNormalized": 0.4403525507,
-		"objectId": 38
-	},
-	{
 		"model": "GPT-4",
 		"x": 0.5663503286,
 		"y": 0.7643721333,
@@ -135,15 +99,6 @@
 		"objectId": 556
 	},
 	{
-		"model": "Gemma",
-		"x": 0.4217261931,
-		"y": 0.3761495728,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.6230989898,
-		"yNormalized": 0.3955229969,
-		"objectId": 384
-	},
-	{
 		"model": "LLaMA",
 		"x": 0.3904641183,
 		"y": 0.6537711312,
@@ -180,15 +135,6 @@
 		"objectId": 395
 	},
 	{
-		"model": "Luminous",
-		"x": 0.1785888775,
-		"y": 0.2256839657,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.2,
-		"yNormalized": 0.2,
-		"objectId": 24
-	},
-	{
 		"model": "Mistral",
 		"x": 0.3951841954,
 		"y": 0.5523793231,
@@ -196,33 +142,6 @@
 		"xNormalized": 0.5769115405,
 		"yNormalized": 0.6245252892,
 		"objectId": 266
-	},
-	{
-		"model": "Mistral Large",
-		"x": 0.4396384712,
-		"y": 0.3771118062,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.6542693049,
-		"yNormalized": 0.3967733741,
-		"objectId": 267
-	},
-	{
-		"model": "OLMo",
-		"x": 0.1854217126,
-		"y": 0.2275098948,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.2118902589,
-		"yNormalized": 0.2023727092,
-		"objectId": 113
-	},
-	{
-		"model": "Palmyra",
-		"x": 0.4843839336,
-		"y": 0.4132134217,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.732133782,
-		"yNormalized": 0.4436857296,
-		"objectId": 215
 	},
 	{
 		"model": "Phi-1.5",
@@ -268,23 +187,5 @@
 		"xNormalized": 0.6620062389,
 		"yNormalized": 0.5361308836,
 		"objectId": 291
-	},
-	{
-		"model": "text-davinci-002",
-		"x": 0.4155512987,
-		"y": 0.4678844802,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.6123536561,
-		"yNormalized": 0.5147282051,
-		"objectId": 296
-	},
-	{
-		"model": "text-davinci-003",
-		"x": 0.4396575143,
-		"y": 0.4840832527,
-		"quadrant": "Niche Player",
-		"xNormalized": 0.6543024431,
-		"yNormalized": 0.53577775,
-		"objectId": 297
 	}
 ]
