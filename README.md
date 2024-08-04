@@ -52,3 +52,5 @@ This project is licensed under the MIT License.
 `npm start` - project start locally with locally hosted database
 `npm run prod` - run project in production linked to cloud database
 `npm build` - build dist files for the project (frontend)
+
+Live View: https://lighthouse-29v4.onrender.com/
