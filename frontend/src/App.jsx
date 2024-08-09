@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 
-import { useEffect, useState } from "react";
 import Catalogue from "./pages/Catalogue";
 import Dashboard from "./pages/Dashboard";
 import Details from "./pages/Details";
@@ -20,7 +19,8 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/login" element={<Login />} />
 				<Route path="/llm/:id" element={<Details user={user} />} />
-				<Route path="/llm/add" element={<NewLlm />} />
+				<Route path="/llm/add" element={<NewLlm user={user} />} />
+				<Route path="/matrix" element={<Matrix />} />
 				<Route path="/sign-up" element={<Login />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>

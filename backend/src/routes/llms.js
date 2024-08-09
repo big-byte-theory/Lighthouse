@@ -34,7 +34,7 @@ export default class LlmRoutes {
     // @desc    Create a new LLM
     this.#router.post(
       "/llm/add",
-      Jwt.verifyToken,
+      Jwt.verifyAdmin,
       this.#controller.addLlm
     );
 
@@ -42,7 +42,7 @@ export default class LlmRoutes {
     // @desc    Update LLM by ID
     this.#router.put(
       "/llm/:id",
-      Jwt.verifyToken,
+      Jwt.verifyAdmin,
       this.#controller.updateLlm
     );
 
@@ -50,7 +50,7 @@ export default class LlmRoutes {
     // @desc    Delete LLM by ID
     this.#router.delete(
       "/llm/:id",
-      Jwt.verifyToken,
+      Jwt.verifyAdmin,
       this.#controller.deleteLlm
     );
   };

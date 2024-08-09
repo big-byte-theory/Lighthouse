@@ -1,11 +1,15 @@
 import { useCallback, useMemo, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+import { formatDate } from "../utils/formatDate";
 import { getLlms } from "../services/llmService";
 import { isAdmin } from "../services/AuthUserService";
-import { formatDate } from "../utils/formatDate";
+import { loggedIn } from "../services/AuthUserService";
 import Layout from "../components/Layout";
 
-const Catalogue = ({ user }) => {
+const Catalogue = ({ user }) => {	
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
+	const navigate = useNavigate();
 	const [llms, setLlms] = useState([]);
 	const [filteredLlms, setFilteredLlms] = useState([]);
 	const [isAdminUser, setIsAdminUser] = useState(false);
@@ -137,7 +141,19 @@ const Catalogue = ({ user }) => {
 	useEffect(() => {
 		filterLlms(llms);
 	}, [filterByType, filterByAccess, llms, searchQuery]);
-	
+
+	// useEffect(() => {
+	// 	const result = loggedIn();
+	// 	console.log("result", result);
+	// 	setIsLoggedIn(result);
+	// 	// console.log("isLoggedIn", isLoggedIn);
+
+	// 	// if (!isLoggedIn) {
+	// 	// 	navigate("/login");
+	// 	// 	return;
+	// 	// }
+	// }, []);
+
 	return (
 		<>
 			<Layout>

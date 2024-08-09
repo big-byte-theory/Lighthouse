@@ -13,7 +13,7 @@ export const getUser = async (id, token) => {
     });
     return response;
   } catch (e) {
-    console.log(e);
+    console.log(e.response);
     return e.response;
   }
 };
