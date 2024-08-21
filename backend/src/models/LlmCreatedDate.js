@@ -6,7 +6,7 @@ const CreatedDateSchema = new mongoose.Schema({
     unique: true,
   },
   created_date: {
-    type: String,
+    type: Date,
   },
 });
 

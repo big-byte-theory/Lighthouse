@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
 const UrlSchema = new mongoose.Schema({
-  type_id: {
+  url_id: {
     type: Number,
     unique: true,
   },
-  type: {
+  url: {
     type: String,
   },
 });

@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
 const TrainingEmissionSchema = new mongoose.Schema({
-  training_emission_id: {
+  training_emissions_id: {
     type: Number,
     unique: true,
   },
-  training_emission: {
+  training_emissions: {
     type: String,
   },
 });

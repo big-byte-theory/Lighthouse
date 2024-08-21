@@ -2,6 +2,7 @@
 import { Router } from "express";
 import LlmController from "../controllers/LlmController.js";
 import Jwt from "../middleware/JwtAuthenticator.js";
+import LlmAuthenticator from "../middleware/LlmAuthenticator.js";
 
 export default class LlmRoutes {
   #controller;
@@ -34,25 +35,34 @@ export default class LlmRoutes {
     // @desc    Create a new LLM
     this.#router.post(
       "/llm/add",
-      Jwt.verifyAdmin,
+      // Jwt.verifyAdmin,
+      // LlmAuthenticator.validate(),
       this.#controller.addLlm
     );
 
     // @route   PUT api/llms/:id
     // @desc    Update LLM by ID
-    this.#router.put(
-      "/llm/:id",
-      Jwt.verifyAdmin,
-      this.#controller.updateLlm
-    );
+    // this.#router.put(
+    //   "/llm/:id",
+    //   Jwt.verifyAdmin,
+    //   this.#controller.updateLlm
+    // );
+    
+    // @route   POST api/llms/:id
+    // @desc    Archive LLM by ID
+    // this.#router.post(
+    //   "/llm/:id",
+    //   Jwt.verifyAdmin,
+    //   this.#controller.archiveLlm
+    // );
 
     // @route   DELETE api/llms/:id
     // @desc    Delete LLM by ID
-    this.#router.delete(
-      "/llm/:id",
-      Jwt.verifyAdmin,
-      this.#controller.deleteLlm
-    );
+    // this.#router.delete(
+    //   "/llm/:id",
+    //   Jwt.verifyAdmin,
+    //   this.#controller.deleteLlm
+    // );
   };
 
   getRouter = () => {

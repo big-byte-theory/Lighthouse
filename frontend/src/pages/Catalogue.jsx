@@ -151,17 +151,15 @@ const Catalogue = ({ user }) => {
 		filterLlms(llms);
 	}, [filterByType, filterByAccess, llms, searchQuery]);
 
-	// useEffect(() => {
-	// 	const result = loggedIn();
-	// 	console.log("result", result);
-	// 	setIsLoggedIn(result);
-	// 	// console.log("isLoggedIn", isLoggedIn);
+	useEffect(() => {
+		const result = loggedIn();
+		setIsLoggedIn(result);
 
-	// 	// if (!isLoggedIn) {
-	// 	// 	navigate("/login");
-	// 	// 	return;
-	// 	// }
-	// }, []);
+		// if (!isLoggedIn) {
+		// 	navigate("/login");
+		// 	return;
+		// }
+	}, []);
 
 	return (
 		<>

@@ -11,10 +11,10 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   llm_data_id: {
-    type: Number,
+    type: String,
     unique: true,
   },
-  organisation_id: {
+  organization_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'LlmOrganization',
     required: true,

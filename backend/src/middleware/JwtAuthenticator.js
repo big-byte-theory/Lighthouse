@@ -50,7 +50,7 @@ export default class Jwt {
 
   static verifyUser = async (req, res, next) => {
     try {
-      const tokenVerified = await JwtAuthenticator.verifyToken(req);
+      const tokenVerified = await this.verifyToken(req);
       if (!tokenVerified) {
         return res.status(401).send({ message: 'No token provided' });
       }
@@ -62,7 +62,8 @@ export default class Jwt {
 
   static verifyAdmin = async (req, res, next) => {
     try {
-      const tokenVerified = await JwtAuthenticator.verifyToken(req);
+      const tokenVerified = await this.verifyToken(req);
+      console.log("tokenVerified", tokenVerified); 
       if (!tokenVerified) {
         return res.status(401).send({ message: 'No token provided' });
       }

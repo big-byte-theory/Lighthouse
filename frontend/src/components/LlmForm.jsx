@@ -3,28 +3,28 @@ import { getLlms, addLlm, updateLlm, deleteLlm } from "../services/llmService";
 
 const LlmForm = () => {
 	const [llm, setLlm] = useState({
-		type_id: "",
+		type: "",
 		name: "",
-		organisation_id: "",
+		organization: "",
 		description: "",
-		date_id: "",
-		url_id: "",
+		created_date: "",
+		url: "",
 		datasheet: "",
-		modality_id: "",
-		size_id: "",
+		modality: "",
+		size: "",
 		sample: "",
 		analysis: "",
-		dependencies_id: "",
+		dependencies: "",
 		included: "",
 		excluded: "",
 		quality_control: "",
-		access_id: "",
+		access: "",
 		license: "",
 		intended_use: "",
 		prohibited_uses: "",
 		monitoring: "",
 		feedback: "",
-		model_type_id: "",
+		model_type: "",
 		training_emissions: "",
 		training_time: "",
 		training_hardware: "",
@@ -54,15 +54,15 @@ const LlmForm = () => {
 					<fieldset className="flex gap-x-2.5">
 						<input
 							type="text"
-							name="type_id"
+							name="type"
 							placeholder="Type ID"
 							className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-1/2 focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 							onChange={onChange}
 						/>
 						<input
 							type="date"
-							name="date_id"
-							placeholder="Date"
+							name="created_date"
+							placeholder="Created Date"
 							className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-1/2 focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 							onChange={onChange}
 						/>
@@ -76,14 +76,14 @@ const LlmForm = () => {
 					/>
 					<input
 						type="text"
-						name="organisation_id"
-						placeholder="Organisation ID"
+						name="organization"
+						placeholder="Organization ID"
 						className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-full focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 						onChange={onChange}
 					/>
 					<input
 						type="text"
-						name="url_id"
+						name="url"
 						placeholder="URL ID"
 						className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-full focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 						onChange={onChange}
@@ -97,14 +97,14 @@ const LlmForm = () => {
 					/>
 					<input
 						type="text"
-						name="modality_id"
+						name="modality"
 						placeholder="Modality ID"
 						className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-full focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 						onChange={onChange}
 					/>
 					<input
 						type="text"
-						name="size_id"
+						name="size"
 						placeholder="Size ID"
 						className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-full focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 						onChange={onChange}
@@ -125,7 +125,7 @@ const LlmForm = () => {
 					/>
 					<input
 						type="text"
-						name="dependencies_id"
+						name="dependencies"
 						placeholder="Dependencies ID"
 						className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-full focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 						onChange={onChange}
@@ -153,8 +153,8 @@ const LlmForm = () => {
 					/>
 					<input
 						type="text"
-						name="access_id"
-						placeholder="Access ID"
+						name="access"
+						placeholder="Access"
 						className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-full focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 						onChange={onChange}
 					/>
@@ -195,8 +195,8 @@ const LlmForm = () => {
 					/>
 					<input
 						type="text"
-						name="model_type_id"
-						placeholder="Model Type ID"
+						name="model_type"
+						placeholder="Model Type"
 						className="bg-white border border-gray-300 rounded-lg text-gray-dark text-sm md:text-base px-5 py-3 lg:px-4 lg:py-2 mt-1 w-full focus-visible:outline-none focus:ring-2 focus:ring-teal-600"
 						onChange={onChange}
 					/>
