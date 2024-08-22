@@ -11,7 +11,7 @@ const LlmSchema = new mongoose.Schema({
     required: true,
   },
   llm_data_id: {
-    type: String,
+    type: Number,
     unique: true,
   },
   organization_id: {

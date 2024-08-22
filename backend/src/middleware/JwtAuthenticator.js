@@ -26,7 +26,7 @@ export default class Jwt {
     //     req.user = await User.findById(decoded.userId).select('-password');
     //     next();
     //   } catch (e) {
-    //     res.status(401).send({ message: `Unauthorized` });
+    //     res.status(401).json({ message: `Unauthorized` });
     //     return;
     //   }
     // };
@@ -52,11 +52,11 @@ export default class Jwt {
     try {
       const tokenVerified = await this.verifyToken(req);
       if (!tokenVerified) {
-        return res.status(401).send({ message: 'No token provided' });
+        return res.status(401).json({ message: 'No token provided' });
       }
       next();
     } catch (e) {
-      res.status(401).send({ message: 'Unauthorized' });
+      res.status(401).json({ message: 'Unauthorized' });
     }
   };
 
@@ -65,14 +65,14 @@ export default class Jwt {
       const tokenVerified = await this.verifyToken(req);
       console.log("tokenVerified", tokenVerified); 
       if (!tokenVerified) {
-        return res.status(401).send({ message: 'No token provided' });
+        return res.status(401).json({ message: 'No token provided' });
       }
       if (tokenVerified.role !== 'admin') {
-        return res.status(401).send({ message: 'Unauthorized' }); 
+        return res.status(401).json({ message: 'Unauthorized' }); 
       }
       next();
     } catch (e) {
-      res.status(401).send({ message: `Unauthorized access` });
+      res.status(401).json({ message: `Unauthorized access` });
       return;
     }
   };

@@ -55,14 +55,22 @@ export default class LlmRoutes {
     //   Jwt.verifyAdmin,
     //   this.#controller.archiveLlm
     // );
+    
+    // @route   PUT api/llms/:id
+    // @desc    Unarchive LLM by ID
+    // this.#router.post(
+    //   "/llm/:id",
+    //   Jwt.verifyAdmin,
+    //   this.#controller.archiveLlm
+    // );
 
     // @route   DELETE api/llms/:id
     // @desc    Delete LLM by ID
-    // this.#router.delete(
-    //   "/llm/:id",
-    //   Jwt.verifyAdmin,
-    //   this.#controller.deleteLlm
-    // );
+    this.#router.delete(
+      "/llm/:id",
+      // Jwt.verifyAdmin,
+      this.#controller.deleteLlm
+    );
   };
 
   getRouter = () => {

@@ -13,16 +13,16 @@ export const getLlmData = async (id) => {
 };
 
 export const addLlm = async (llm) => {
-  const response = await axios.post(`${apiUrl}/llms`, llm);
+  const response = await axios.post(`${apiUrl}/llm/add`, llm);
   return response.data;
 };
 
 export const updateLlm = async (id, llm) => {
-  const response = await axios.put(`${apiUrl}/llms/${id}`, llm);
+  const response = await axios.put(`${apiUrl}/llm/${id}`, llm);
   return response.data;
 };
 
 export const deleteLlm = async (id) => {
-  const response = await axios.delete(`${apiUrl}/llms/${id}`);
+  const response = await axios.delete(`${apiUrl}/llm/${id}`);
   return response.data;
 };

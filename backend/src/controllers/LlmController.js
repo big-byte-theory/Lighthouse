@@ -180,7 +180,7 @@ export default class LlmController {
       return res.status(200).json(llms);
     } catch (err) {
       console.error(err.message);
-      return res.status(500).send('Server Error');
+      return res.status(500).json({ msg: 'Server Error' });
     }
   };
 
@@ -336,7 +336,7 @@ export default class LlmController {
       if (err.kind === 'ObjectId') {
         return res.status(404).json({ msg: 'LLM not found' });
       }
-      res.status(500).send('Server Error');
+      res.status(500).json({msg: 'Server Error'});
     }
   };
 
@@ -346,7 +346,7 @@ export default class LlmController {
       return count;
     } catch (err) {
       console.error(err.message);
-      res.status(500).send('Server Error');
+      res.status(500).json({msg: 'Server Error'});
     }
   };
 
@@ -493,7 +493,7 @@ export default class LlmController {
       const newLlm = new Llm({
         type_id: translatedField.type_id,
         name: name,
-        llm_data_id: llm_data,
+        llm_data_id: Number(llm_data),
         organization_id: translatedField.organization_id,
         description_id: translatedField.description_id,
         created_date_id: translatedField.created_date_id,
@@ -530,7 +530,7 @@ export default class LlmController {
       return res.status(200).json(llm);
     } catch (err) {
       console.error(err.message);
-      res.status(500).send('Server Error');
+      res.status(500).json({msg: 'Server Error'});
     }
   };
 
@@ -866,7 +866,7 @@ export default class LlmController {
   //     if (err.kind === 'ObjectId') {
   //       return res.status(404).json({ msg: 'LLM not found' });
   //     }
-  //     res.status(500).send('Server Error');
+  //     res.status(500).json({msg: 'Server Error'});
   //   }
   // };
 
@@ -888,7 +888,7 @@ export default class LlmController {
   //     if (err.kind === 'ObjectId') {
   //       return res.status(404).json({ msg: 'LLM not found' });
   //     }
-  //     res.status(500).send('Server Error');
+  //     res.status(500).json({msg: 'Server Error'});
   //   };
   // };
 
@@ -910,7 +910,7 @@ export default class LlmController {
   //     if (err.kind === 'ObjectId') {
   //       return res.status(404).json({ msg: 'LLM not found' });
   //     }
-  //     res.status(500).send('Server Error');
+  //     res.status(500).json({msg: 'Server Error'});
   //   };
 
   //   deleteLlm = async (req, res) => {
@@ -929,8 +929,70 @@ export default class LlmController {
   //       if (err.kind === 'ObjectId') {
   //         return res.status(404).json({ msg: 'LLM not found' });
   //       }
-  //       res.status(500).send('Server Error');
+  //       res.status(500).json({msg: 'Server Error'});
   //     }
   //   };
   // }
+
+  deleteLlm = async (req, res) => {
+    try {
+      const llm = await Llm.findOne({ llm_data_id: req.params.id })
+
+      if (!llm) {
+        return res.status(404).json({ msg: 'LLM not found' });
+      }
+
+      try {
+        await this.deleteIfUnique(LlmDescription, 'description_id', llm.description_id);
+        await this.deleteIfUnique(LlmOrganization, 'organization_id', llm.organization_id);
+        await this.deleteIfUnique(LlmCreatedDate, 'created_date_id', llm.created_date_id);
+        await this.deleteIfUnique(LlmUrl, 'url_id', llm.url_id);
+        await this.deleteIfUnique(LlmDatasheet, 'datasheet_id', llm.datasheet_id);
+        await this.deleteIfUnique(LlmModality, 'modality_id', llm.modality_id);
+        await this.deleteIfUnique(LlmSize, 'size_id', llm.size_id);
+        await this.deleteIfUnique(LlmSample, 'sample_id', llm.sample_id);
+        await this.deleteIfUnique(LlmAnalysis, 'analysis_id', llm.analysis_id);
+        await this.deleteIfUnique(LlmDependencies, 'dependencies_id', llm.dependencies_id);
+        await this.deleteIfUnique(LlmIncluded, 'included_id', llm.included_id);
+        await this.deleteIfUnique(LlmExcluded, 'excluded_id', llm.excluded_id);
+        await this.deleteIfUnique(LlmQualityControl, 'quality_control_id', llm.quality_control_id);
+        await this.deleteIfUnique(LlmAccess, 'access_id', llm.access_id);
+        await this.deleteIfUnique(LlmLicense, 'license_id', llm.license_id);
+        await this.deleteIfUnique(LlmIntendedUse, 'intended_uses_id', llm.intended_uses_id);
+        await this.deleteIfUnique(LlmProhibitedUse, 'prohibited_uses_id', llm.prohibited_uses_id);
+        await this.deleteIfUnique(LlmMonitoring, 'monitoring_id', llm.monitoring_id);
+        await this.deleteIfUnique(LlmFeedback, 'feedback_id', llm.feedback_id);
+        await this.deleteIfUnique(LlmModelCard, 'model_type_id', llm.model_type_id);
+        await this.deleteIfUnique(LlmTrainingEmission, 'training_emissions_id', llm.training_emissions_id);
+        await this.deleteIfUnique(LlmTrainingTime, 'training_time_id', llm.training_time_id);
+        await this.deleteIfUnique(LlmTrainingHardware, 'training_hardware_id', llm.training_hardware_id);
+        await this.deleteIfUnique(LlmAdaptation, 'adaptation_id', llm.adaptation_id);
+        await this.deleteIfUnique(LlmOutputSpace, 'output_space_id', llm.output_space_id);
+        await this.deleteIfUnique(LlmTermsOfService, 'terms_of_service_id', llm.terms_of_service_id);
+        await this.deleteIfUnique(LlmMonthlyActiveUser, 'monthly_active_users_id', llm.monthly_active_users_id);
+        await this.deleteIfUnique(LlmUserDistribution, 'user_distribution_id', llm.user_distribution_id);
+        await this.deleteIfUnique(LlmFailure, 'failures_id', llm.failures_id);
+      } catch (error) {
+        return res.status(500).json(error.message);
+      }
+
+      await llm.deleteOne();
+      return res.status(200).json({ msg: 'LLM removed' });
+    } catch (err) {
+      if (err.kind === 'ObjectId') {
+        return res.status(404).json({ msg: 'LLM not found' });
+      }
+      res.status(500).json({msg: 'Server Error'});
+    };
+  };
+
+  deleteIfUnique = async (llmModel, llmField, llmFieldId) => {
+    console.log(llmField, llmFieldId);
+    const relatedDocs = await Llm.countDocuments({ [llmField]: llmFieldId });
+
+    if (relatedDocs === 1) {
+      console.log("removing", llmFieldId, llmFieldId);
+      await llmModel.deleteOne({ _id: llmFieldId });
+    }
+  };
 }
