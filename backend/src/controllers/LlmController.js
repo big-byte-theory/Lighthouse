@@ -527,7 +527,11 @@ export default class LlmController {
       });
       
       const llm = await newLlm.save();
-      return res.status(200).json(llm);
+      return res.status(201).json({
+        status: 201,
+        msg: "LLM added successfully",
+        llm
+      });
     } catch (err) {
       console.error(err.message);
       res.status(500).json({msg: 'Server Error'});
