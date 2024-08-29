@@ -13,8 +13,12 @@ export const getLlmData = async (id) => {
 };
 
 export const addLlm = async (llm) => {
-  const response = await axios.post(`${apiUrl}/llm/add`, llm);
-  return response.data;
+  try { 
+    const response = await axios.post(`${apiUrl}/llm/add`, llm);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
 };
 
 export const updateLlm = async (id, llm) => {

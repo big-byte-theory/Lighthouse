@@ -1,4 +1,7 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Catalogue from "./pages/Catalogue";
 import Dashboard from "./pages/Dashboard";
@@ -25,6 +28,21 @@ const App = () => {
 				<Route path="/sign-up" element={<Login />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
+			<div>
+				<ToastContainer
+					position="bottom-right"
+					autoClose={4000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+					theme="light"
+					transition: Bounce
+				/>
+			</div>
 		</>
 	);
 };

@@ -49,7 +49,7 @@ export default class LlmController {
           select: 'type'
         })
         .populate({
-          path: 'created_date',
+          path: 'created_date_id',
           model: LlmCreatedDate,
           select: 'created_date'
         })
@@ -160,11 +160,6 @@ export default class LlmController {
           path: 'failures_id',
           model: LlmFailure,
           select: 'failures'
-        })
-        .populate({
-          path: 'created_date_id',
-          model: LlmCreatedDate,
-          select: 'created_date'
         })
         .populate({
           path: 'model_card_id',
@@ -198,7 +193,7 @@ export default class LlmController {
           select: 'type'
         })
         .populate({
-          path: 'created_date',
+          path: 'created_date_id',
           model: LlmCreatedDate,
           select: 'created_date'
         })
@@ -309,11 +304,6 @@ export default class LlmController {
           path: 'failures_id',
           model: LlmFailure,
           select: 'failures'
-        })
-        .populate({
-          path: 'created_date_id',
-          model: LlmCreatedDate,
-          select: 'created_date'
         })
         .populate({
           path: 'model_card_id',
@@ -351,7 +341,7 @@ export default class LlmController {
   };
 
   addLlm = async (req, res) => {
-    let {
+    const {
       type,
       name,
       organization,
@@ -373,7 +363,7 @@ export default class LlmController {
       prohibited_uses,
       monitoring,
       feedback,
-      model_type,
+      model_card,
       training_emissions,
       training_time,
       training_hardware,
@@ -409,7 +399,7 @@ export default class LlmController {
       'prohibited_uses',
       'monitoring',
       'feedback',
-      'model_type',
+      'model_card',
       'training_emissions',
       'training_time',
       'training_hardware',
@@ -425,7 +415,7 @@ export default class LlmController {
       'type': type,
       'organization': organization,
       'description': description,
-      'created_date': new Date(created_date).toISOString(),
+      'created_date': created_date,
       'url': url,
       'datasheet': datasheet,
       'modality': modality,
@@ -442,7 +432,7 @@ export default class LlmController {
       'prohibited_uses': prohibited_uses,
       'monitoring': monitoring,
       'feedback': feedback,
-      'model_type': model_type,
+      'model_card': model_card,
       'training_emissions': training_emissions,
       'training_time': training_time,
       'training_hardware': training_hardware,
@@ -456,7 +446,7 @@ export default class LlmController {
 
     this.unknownData(fields, data);
 
-    const translatedField = await this.translateField(
+    const referencedFields = await this.referenceFields(
       data.type,
       data.organization,
       data.description,
@@ -477,7 +467,7 @@ export default class LlmController {
       data.prohibited_uses,
       data.monitoring,
       data.feedback,
-      data.model_type,
+      data.model_card,
       data.training_emissions,
       data.training_time,
       data.training_hardware,
@@ -491,41 +481,42 @@ export default class LlmController {
 
     try {
       const newLlm = new Llm({
-        type_id: translatedField.type_id,
+        type_id: referencedFields.type_id,
         name: name,
         llm_data_id: Number(llm_data),
-        organization_id: translatedField.organization_id,
-        description_id: translatedField.description_id,
-        created_date_id: translatedField.created_date_id,
-        url_id: translatedField.url_id,
-        datasheet_id: translatedField.datasheet_id,
-        modality_id: translatedField.modality_id,
-        size_id: translatedField.size_id,
-        sample_id: translatedField.sample_id,
-        analysis_id: translatedField.analysis_id,
-        dependencies_id: translatedField.dependencies_id,
-        included_id: translatedField.included_id,
-        excluded_id: translatedField.excluded_id,
-        quality_control_id: translatedField.quality_control_id,
-        access_id: translatedField.access_id,
-        license_id: translatedField.license_id,
-        intended_uses_id: translatedField.intended_uses_id,
-        prohibited_uses_id: translatedField.prohibited_uses_id,
-        monitoring_id: translatedField.monitoring_id,
-        feedback_id: translatedField.feedback_id,
-        model_type_id: translatedField.model_type_id,
-        training_emissions_id: translatedField.training_emissions_id,
-        training_time_id: translatedField.training_time_id,
-        training_hardware_id: translatedField.training_hardware_id,
-        adaptation_id: translatedField.adaptation_id,
-        output_space_id: translatedField.output_space_id,
-        sample_id: translatedField.sample_id,
-        terms_of_service_id: translatedField.terms_of_service_id,
-        monthly_active_users_id: translatedField.monthly_active_users_id,
-        user_distribution_id: translatedField.user_distribution_id,
-        failures_id: translatedField.failures_id,
+        organization_id: referencedFields.organization_id,
+        description_id: referencedFields.description_id,
+        created_date_id: referencedFields.created_date_id,
+        url_id: referencedFields.url_id,
+        datasheet_id: referencedFields.datasheet_id,
+        modality_id: referencedFields.modality_id,
+        size_id: referencedFields.size_id,
+        sample_id: referencedFields.sample_id,
+        analysis_id: referencedFields.analysis_id,
+        dependencies_id: referencedFields.dependencies_id,
+        included_id: referencedFields.included_id,
+        excluded_id: referencedFields.excluded_id,
+        quality_control_id: referencedFields.quality_control_id,
+        access_id: referencedFields.access_id,
+        license_id: referencedFields.license_id,
+        intended_uses_id: referencedFields.intended_uses_id,
+        prohibited_uses_id: referencedFields.prohibited_uses_id,
+        monitoring_id: referencedFields.monitoring_id,
+        feedback_id: referencedFields.feedback_id,
+        model_card_id: referencedFields.model_card_id,
+        training_emissions_id: referencedFields.training_emissions_id,
+        training_time_id: referencedFields.training_time_id,
+        training_hardware_id: referencedFields.training_hardware_id,
+        adaptation_id: referencedFields.adaptation_id,
+        output_space_id: referencedFields.output_space_id,
+        sample_id: referencedFields.sample_id,
+        terms_of_service_id: referencedFields.terms_of_service_id,
+        monthly_active_users_id: referencedFields.monthly_active_users_id,
+        user_distribution_id: referencedFields.user_distribution_id,
+        failures_id: referencedFields.failures_id,
       });
       
+      console.log("llm to save", newLlm);
       const llm = await newLlm.save();
       return res.status(201).json({
         status: 201,
@@ -534,7 +525,7 @@ export default class LlmController {
       });
     } catch (err) {
       console.error(err.message);
-      res.status(500).json({msg: 'Server Error'});
+      res.status(500).json({status: 500, msg: 'Server Error'});
     }
   };
 
@@ -548,7 +539,7 @@ export default class LlmController {
     return fields;
   };
 
-  translateField = async (
+  referenceFields = async (
     type,
     organization,
     description,
@@ -562,226 +553,430 @@ export default class LlmController {
     dependencies,
     included,
     excluded,
-    quality_control,
+    qualityControl,
     access,
     license,
-    intended_uses,
-    prohibited_uses,
+    intendedUses,
+    prohibitedUses,
     monitoring,
     feedback,
-    model_type,
-    training_emissions,
-    training_time,
-    training_hardware,
+    modelCard,
+    trainingEmissions,
+    trainingTime,
+    trainingHardware,
     adaptation,
-    output_space,
-    terms_of_service,
-    monthly_active_users,
-    user_distribution,
+    outputSpace,
+    termsOfService,
+    monthlyActiveUsers,
+    userDistribution,
     failures,
-  ) => { 
-    const type_id = await LlmType.findOne({ type: type });
-    const organization_id = await LlmOrganization.findOneAndUpdate(
-      { organization: organization },
-      { $setOnInsert: { organization: organization } },
-      { upsert: true, returnDocument: 'after' }
-    );
+  ) => {
+    let typeId, organizationId, dateId, descriptionId, urlId, datasheetId, modalityId, sizeId, analysisId, sampleId, dependenciesId, includedId, excludedId, qualityControlId, accessId, licenseId, intendedUsesId, prohibitedUsesId, monitoringId, feedbackId, modelCardId, trainingEmissionsId, trainingTimeId, trainingHardwareId, adaptationId, outputSpaceId, termsOfServiceId, monthlyActiveUsersId, userDistributionId, failuresId;
 
-    const description_id = await LlmDescription.findOneAndUpdate(
-      { description: description },
-      { $setOnInsert: { description: description } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      typeId = await LlmType.findOne({ type: type });
+    } catch (err) {
+      console.error("type error", err.message);
+      return err.message;
+    }
+
+    try {
+      const docsCount = await LlmOrganization.countDocuments();
+      organizationId = await LlmOrganization.findOneAndUpdate(
+        { organization: organization },
+        { $setOnInsert: { organization_id: Number(docsCount + 1), organization: organization } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("organization error", err.message);
+     return err.message;
+    }
+
+    try { 
+      const docsCount = await LlmDescription.countDocuments();
+      descriptionId = await LlmDescription.findOneAndUpdate(
+        { description: description },
+        { $setOnInsert: { description_id: Number(docsCount + 1), description: description } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) { 
+      console.error("description error", err.message);
+     return err.message;
+    }
+
+    let createdDate = new Date(created_date).toISOString();
+
+    try {
+      dateId = await LlmCreatedDate.findOne({ created_date: createdDate });
+
+      if (!dateId) {
+        // Count the number of documents in the collection
+        const docsCount = await LlmCreatedDate.countDocuments();
+
+        // Insert the new document with created_date_id set to count + 1
+        dateId = await LlmCreatedDate.findOneAndUpdate(
+          { created_date: createdDate },
+          { $setOnInsert: { created_date_id: Number(docsCount + 1), created_date: createdDate } },
+          { upsert: true, returnDocument: 'after' }
+        );
+      }
+      console.log("created_date", created_date, "created_date_id", dateId, "dateId._id", dateId._id);
+    } catch (err) {
+      console.error("created_date error", err.message);
+     return err.message;
+    }
+
+    try {
+      const docsCount = await LlmUrl.countDocuments();
+      urlId = await LlmUrl.findOneAndUpdate(
+        { url: url },
+        { $setOnInsert: { url_id: Number(docsCount + 1), url: url } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("url error", err.message);
+     return err.message;
+    }
+
+    try {
+      const docsCount = await LlmDatasheet.countDocuments();
+      datasheetId = await LlmDatasheet.findOneAndUpdate(
+        { datasheet: datasheet },
+        { $setOnInsert: { datasheet_id: Number(docsCount + 1), datasheet: datasheet } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("datasheet error", err.message);
+     return err.message;
+    }
+
+    try {
+      const docsCount = await LlmModality.countDocuments();
+      modalityId = await LlmModality.findOneAndUpdate(
+        { modality: modality },
+        { $setOnInsert: { modality_id: Number(docsCount + 1), modality: modality } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("modality error", err.message);
+     return err.message;
+    }
+
+    try { 
+      const docsCount = await LlmSize.countDocuments();
+      sizeId = await LlmSize.findOneAndUpdate(
+        { size: size },
+        { $setOnInsert: { size_id: Number(docsCount + 1), size: size } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("size error", err.message);
+     return err.message;
+    }
+
+    try { 
+      const docsCount = await LlmAnalysis.countDocuments();
+      analysisId = await LlmAnalysis.findOneAndUpdate(
+        { analysis: analysis },
+        { $setOnInsert: { analysis_id: Number(docsCount + 1), analysis: analysis } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("analysis error", err.message);
+     return err.message;
+    }
+
+    try {
+      /! TODO: should have an array of dependencies/
+      const docsCount = await LlmDependencies.countDocuments();
+      dependenciesId = await LlmDependencies.findOneAndUpdate(
+        { dependencies: dependencies },
+        { $setOnInsert: { dependencies_id: Number(docsCount + 1), dependencies: dependencies } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("dependencies error", err.message);
+     return err.message;
+    }
+
+    try { 
+      const docsCount = await LlmIncluded.countDocuments();
+      includedId = await LlmIncluded.findOneAndUpdate(
+        { included: included },
+        { $setOnInsert: { included_id: docsCount +  1, included: included } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("included error", err.message);
+     return err.message;
+    }
+
+    try {
+      const docsCount = await LlmExcluded.countDocuments();
+      excludedId = await LlmExcluded.findOneAndUpdate(
+        { excluded: excluded },
+        { $setOnInsert: { excluded_id: Number(docsCount + 1), excluded: excluded } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("excluded error", err.message);
+     return err.message;
+    }
     
-    const date_id = await LlmCreatedDate.findOneAndUpdate(
-      { created_date: created_date },
-      { $setOnInsert: { created_date: created_date } },
-      { upsert: true, returnDocument: 'after' }
-    );
-    const url_id = await LlmUrl.findOneAndUpdate(
-      { url: url },
-      { $setOnInsert: { url: url } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmQualityControl.countDocuments();
+      qualityControlId = await LlmQualityControl.findOneAndUpdate(
+        { quality_control: qualityControl },
+        { $setOnInsert: { quality_control_id: Number(docsCount + 1), quality_control: qualityControl } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) { 
+      console.error("quality_control error", err.message);
+     return err.message;
+    }
+    
+    try {
+      accessId = await LlmAccess.findOne({ access: access });
+    } catch (err) {
+      console.error("access error", err.message);
+     return err.message;
+    }
 
-    const datasheet_id = await LlmDatasheet.findOneAndUpdate(
-      { datasheet: datasheet },
-      { $setOnInsert: { datasheet: datasheet } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try {
+      const docsCount = await LlmLicense.countDocuments();
+      licenseId = await LlmLicense.findOneAndUpdate(
+        { license: license },
+        { $setOnInsert: { license_id: Number(docsCount + 1), license: license } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("license error", err.message);
+     return err.message;
+    }
+    
+    try {
+      const docsCount = await LlmIntendedUse.countDocuments();
+      intendedUsesId = await LlmIntendedUse.findOneAndUpdate(
+        { intended_uses: intendedUses },
+        { $setOnInsert: { intended_uses_id: Number(docsCount + 1), intended_uses: intendedUses } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("intended_uses error", err.message);
+     return err.message;
+    }
 
-    const modality_id = await LlmModality.findOneAndUpdate(
-      { modality: modality },
-      { $setOnInsert: { modality: modality } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmProhibitedUse.countDocuments();
+      prohibitedUsesId = await LlmProhibitedUse.findOneAndUpdate(
+        { prohibited_uses: prohibitedUses },
+        { $setOnInsert: { prohibited_uses_id: Number(docsCount + 1), prohibited_uses: prohibitedUses } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("prohibited_uses error", err.message);
+     return err.message;
+    }
 
-    const size_id = await LlmSize.findOneAndUpdate(
-      { size: size },
-      { $setOnInsert: { size: size } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmMonitoring.countDocuments();
+      monitoringId = await LlmMonitoring.findOneAndUpdate(
+        { monitoring: monitoring },
+        { $setOnInsert: { monitoring_id: Number(docsCount + 1), monitoring: monitoring } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("monitoring error", err.message);
+     return err.message;
+    }
 
-    const analysis_id = await LlmAnalysis.findOneAndUpdate(
-      { analysis: analysis },
-      { $setOnInsert: { analysis: analysis } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmFeedback.countDocuments();
+      feedbackId = await LlmFeedback.findOneAndUpdate(
+        { feedback: feedback },
+        { $setOnInsert: { feedback_id: Number(docsCount + 1), feedback: feedback } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("feedback error", err.message);
+     return err.message;
+    }
 
-    const dependencies_id = await LlmDependencies.findOneAndUpdate(
-      { dependencies: dependencies },
-      { $setOnInsert: { dependencies: dependencies } },
-      { upsert: true, returnDocument: 'after' }
-    );
-    const included_id = await LlmIncluded.findOneAndUpdate(
-      { included: included },
-      { $setOnInsert: { included: included } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmModelCard.countDocuments();
+      modelCardId = await LlmModelCard.findOneAndUpdate(
+        { model_card: modelCard },
+        { $setOnInsert: { model_card_id: Number(docsCount + 1), model_card: modelCard } },
+        { upsert: true, returnDocument: 'after' }
+      );
+      console.log("model_card", modelCard, "modelCardId", modelCardId, "modelCardId._id", modelCardId._id);
+    } catch (err) { 
+      console.error("model_card error", err.message);
+     return err.message;
+    }
 
-    const excluded_id = await LlmExcluded.findOneAndUpdate(
-      { excluded: excluded },
-      { $setOnInsert: { excluded: excluded } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmSample.countDocuments();
+      sampleId = await LlmSample.findOneAndUpdate(
+        { sample: sample },
+        { $setOnInsert: { sample_id: Number(docsCount + 1), sample: sample } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("sample error", err.message);
+     return err.message;
+    }
 
-    const quality_control_id = await LlmQualityControl.findOneAndUpdate(
-      { quality_control: quality_control },
-      { $setOnInsert: { quality_control: quality_control } },
-      { upsert: true, returnDocument: 'after' }
-    );
-    const access_id = await LlmAccess.findOne({ access: access });
+    try { 
+      const docsCount = await LlmTrainingEmission.countDocuments();
+      trainingEmissionsId = await LlmTrainingEmission.findOneAndUpdate(
+        { training_emissions: trainingEmissions },
+        { $setOnInsert: { training_emissions_id: Number(docsCount + 1), training_emissions: trainingEmissions } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("training_emissions error", err.message);
+     return err.message;
+    }
 
-    const license_id = await LlmLicense.findOneAndUpdate(
-      { license: license },
-      { $setOnInsert: { license: license } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmTrainingTime.countDocuments();
+      trainingTimeId = await LlmTrainingTime.findOneAndUpdate(
+        { training_time: trainingTime },
+        { $setOnInsert: { training_time_id: Number(docsCount + 1), training_time: trainingTime } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("training_time error", err.message);
+     return err.message;
+    }
 
-    const intended_uses_id = await LlmIntendedUse.findOneAndUpdate(
-      { intended_uses: intended_uses },
-      { $setOnInsert: { intended_uses: intended_uses } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmTrainingHardware.countDocuments();
+      trainingHardwareId = await LlmTrainingHardware.findOneAndUpdate(
+        { training_hardware: trainingHardware },
+        { $setOnInsert: { training_hardware_id: Number(docsCount + 1), training_hardware: trainingHardware } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("training_hardware error", err.message);
+     return err.message;
+    }
 
-    const prohibited_uses_id = await LlmProhibitedUse.findOneAndUpdate(
-      { prohibited_uses: prohibited_uses },
-      { $setOnInsert: { prohibited_uses: prohibited_uses } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try {
+      const docsCount = await LlmAdaptation.countDocuments();
+      adaptationId = await LlmAdaptation.findOneAndUpdate(
+        { adaptation: adaptation },
+        { $setOnInsert: { adaptation_id: Number(docsCount + 1), adaptation: adaptation } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("adaptation error", err.message);
+      return err.message;
+    }
 
-    const monitoring_id = await LlmMonitoring.findOneAndUpdate(
-      { monitoring: monitoring },
-      { $setOnInsert: { monitoring: monitoring } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmOutputSpace.countDocuments();
+      outputSpaceId = await LlmOutputSpace.findOneAndUpdate(
+        { output_space: outputSpace },
+        { $setOnInsert: { output_space_id: Number(docsCount + 1), output_space: outputSpace } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("output_space error", err.message);
+      return err.message;
+    }
+    
+    try { 
+      const docsCount = await LlmTermsOfService.countDocuments();
+      termsOfServiceId = await LlmTermsOfService.findOneAndUpdate(
+        { terms_of_service: termsOfService },
+        { $setOnInsert: { terms_of_service_id: Number(docsCount + 1), terms_of_service: termsOfService } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("terms_of_service error", err.message);
+      return err.message;
+    }
 
-    const feedback_id = await LlmFeedback.findOneAndUpdate(
-      { feedback: feedback },
-      { $setOnInsert: { feedback: feedback } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmMonthlyActiveUser.countDocuments();
+      monthlyActiveUsersId = await LlmMonthlyActiveUser.findOneAndUpdate(
+        { monthly_active_users: monthlyActiveUsers },
+        { $setOnInsert: { monthly_active_users_id: Number(docsCount + 1), monthly_active_users: monthlyActiveUsers } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("monthly_active_users error", err.message);
+      return err.message;
+    }
 
-    const model_type_id = await LlmModelCard.findOneAndUpdate(
-      { model_card: model_type },
-      { $setOnInsert: { model_card: model_type } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try {
+      const docsCount = await LlmUserDistribution.countDocuments();
+      userDistributionId = await LlmUserDistribution.findOneAndUpdate(
+        { user_distribution: userDistribution },
+        { $setOnInsert: { user_distribution_id: Number(docsCount + 1), user_distribution: userDistribution } },
+        { upsert: true, returnDocument: 'after' }
+      );
+    } catch (err) {
+      console.error("user_distribution error", err.message);
+      return err.message;
+    }
 
-    const sample_id = await LlmSample.findOneAndUpdate(
-      { sample: sample },
-      { $setOnInsert: { sample: sample } },
-      { upsert: true, returnDocument: 'after' }
-    );
+    try { 
+      const docsCount = await LlmFailure.countDocuments();
+      failuresId = await LlmFailure.findOneAndUpdate(
+        { failures: failures },
+        { $setOnInsert: { failures_id: Number(docsCount + 1), failures: failures } },
+        { upsert: true, returnDocument: 'after' }
+      );
+      console.log("failures", failures, "failuresId", failuresId, "failuresId._id", failuresId._id);
+    } catch (err) { 
+      console.error("failures error", err.message);
+      return err.message;
+    }
 
-    const training_emissions_id = await LlmTrainingEmission.findOneAndUpdate(
-      { training_emissions: training_emissions },
-      { $setOnInsert: { training_emissions: training_emissions } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const training_time_id = await LlmTrainingTime.findOneAndUpdate( 
-      { training_time: training_time },
-      { $setOnInsert: { training_time: training_time } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const training_hardware_id = await LlmTrainingHardware.findOneAndUpdate(
-      { training_hardware: training_hardware },
-      { $setOnInsert: { training_hardware: training_hardware } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const adaptation_id = await LlmAdaptation.findOneAndUpdate(
-      { adaptation: adaptation },
-      { $setOnInsert: { adaptation: adaptation } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const output_space_id = await LlmOutputSpace.findOneAndUpdate(
-      { output_space: output_space },
-      { $setOnInsert: { output_space: output_space } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const terms_of_service_id = await LlmTermsOfService.findOneAndUpdate(
-      { terms_of_service: terms_of_service },
-      { $setOnInsert: { terms_of_service: terms_of_service } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const monthly_active_users_id = await LlmMonthlyActiveUser.findOneAndUpdate(
-      { monthly_active_users: monthly_active_users },
-      { $setOnInsert: { monthly_active_users: monthly_active_users } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const user_distribution_id = await LlmUserDistribution.findOneAndUpdate(
-      { user_distribution: user_distribution },
-      { $setOnInsert: { user_distribution: user_distribution } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const failures_id = await LlmFailure.findOneAndUpdate(
-      { failures: failures },
-      { $setOnInsert: { failures: failures } },
-      { upsert: true, returnDocument: 'after' }
-    );
-
-    const updatedLlm = {
-      type_id: type_id,
-      organization_id: organization_id,
-      description_id: description_id,
-      created_date_id: date_id,
-      url_id: url_id,
-      datasheet_id: datasheet_id,
-      modality_id: modality_id,
-      size_id: size_id,
-      sample_id: sample_id,
-      analysis_id: analysis_id,
-      dependencies_id: dependencies_id,
-      included_id: included_id,
-      excluded_id: excluded_id,
-      quality_control_id: quality_control_id,
-      access_id: access_id,
-      license_id: license_id,
-      intended_uses_id: intended_uses_id,
-      prohibited_uses_id: prohibited_uses_id,
-      monitoring_id: monitoring_id,
-      feedback_id: feedback_id,
-      model_type_id: model_type_id,
-      training_emissions_id: training_emissions_id,
-      training_time_id: training_time_id,
-      training_hardware_id: training_hardware_id,
-      adaptation_id: adaptation_id,
-      output_space_id: output_space_id,
-      terms_of_service_id: terms_of_service_id,
-      monthly_active_users_id: monthly_active_users_id,
-      user_distribution_id: user_distribution_id,
-      failures_id: failures_id,
+    const createLlm = {
+      type_id: typeId,
+      organization_id: organizationId,
+      description_id: descriptionId,
+      created_date_id: dateId,
+      url_id: urlId,
+      datasheet_id: datasheetId,
+      modality_id: modalityId,
+      size_id: sizeId,
+      sample_id: sampleId,
+      analysis_id: analysisId,
+      dependencies_id: dependenciesId,
+      included_id: includedId,
+      excluded_id: excludedId,
+      quality_control_id: qualityControlId,
+      access_id: accessId,
+      license_id: licenseId,
+      intended_uses_id: intendedUsesId,
+      prohibited_uses_id: prohibitedUsesId,
+      monitoring_id: monitoringId,
+      feedback_id: feedbackId,
+      model_card_id: modelCardId,
+      training_emissions_id: trainingEmissionsId,
+      training_time_id: trainingTimeId,
+      training_hardware_id: trainingHardwareId,
+      adaptation_id: adaptationId,
+      output_space_id: outputSpaceId,
+      terms_of_service_id: termsOfServiceId,
+      monthly_active_users_id: monthlyActiveUsersId,
+      user_distribution_id: userDistributionId,
+      failures_id: failuresId,
     };
-    return updatedLlm;
+    console.log("the newly made llm is:", createLlm);
+    return createLlm;
   };
+
+  // countMongoDocs = async (collection) => {
+  //   const docsCount = await collection.countDocuments();
+
+  //   return Number(docsCount + 1);
+  // };
 
   // updateLlm = async (req, res) => {
   //   const {
@@ -806,7 +1001,7 @@ export default class LlmController {
   //     prohibited_uses_id,
   //     monitoring_id,
   //     feedback_id,
-  //     model_type_id,
+  //     model_card_id,
   //     training_emissions_id,
   //     training_time_id,
   //     training_hardware_id,
@@ -841,7 +1036,7 @@ export default class LlmController {
   //     prohibited_use,
   //     monitoring_id,
   //     feedback,
-  //     model_type_id,
+  //     model_card_id,
   //     training_emissions,
   //     training_time,
   //     training_hardware,
@@ -966,7 +1161,7 @@ export default class LlmController {
         await this.deleteIfUnique(LlmProhibitedUse, 'prohibited_uses_id', llm.prohibited_uses_id);
         await this.deleteIfUnique(LlmMonitoring, 'monitoring_id', llm.monitoring_id);
         await this.deleteIfUnique(LlmFeedback, 'feedback_id', llm.feedback_id);
-        await this.deleteIfUnique(LlmModelCard, 'model_type_id', llm.model_type_id);
+        await this.deleteIfUnique(LlmModelCard, 'model_card_id', llm.model_card_id);
         await this.deleteIfUnique(LlmTrainingEmission, 'training_emissions_id', llm.training_emissions_id);
         await this.deleteIfUnique(LlmTrainingTime, 'training_time_id', llm.training_time_id);
         await this.deleteIfUnique(LlmTrainingHardware, 'training_hardware_id', llm.training_hardware_id);
@@ -981,7 +1176,7 @@ export default class LlmController {
       }
 
       await llm.deleteOne();
-      return res.status(200).json({ msg: 'LLM removed' });
+      return res.status(200).json({ msg: 'LLM removed', status: 200 });
     } catch (err) {
       if (err.kind === 'ObjectId') {
         return res.status(404).json({ msg: 'LLM not found' });

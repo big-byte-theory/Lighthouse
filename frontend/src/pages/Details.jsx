@@ -1,16 +1,19 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import Layout from "../components/Layout";
-import { getLlmData } from "../services/llmService";
+import { deleteLlm, getLlmData } from "../services/llmService";
 import { formatDate } from "../utils/formatDate";
 
 const Details = () => {
 	const { state } = useLocation();
 	const [llmData, setLlmData] = useState({});
 	const [newsArticles, setNewsArticles] = useState([]);
+	const [isArchived, setIsArchived] = useState(false);
 	const { id } = useParams();
 	let details = state?.data;
 	const isAdmin = state?.adminUser;
+
+	console.log(details);
 
 	const fetchLlmData = useCallback(async () => {
 		try {
@@ -31,6 +34,31 @@ const Details = () => {
 		}
 	};
 
+	const handleDelete = async () => {
+		console.log("deleting", id);
+		const result = await deleteLlm(id);
+		console.log(result, result.status);
+		switch (result.status) {
+			case 200:
+				console.log(result.msg);
+				navigate("/catalogue");
+				break;
+			case 400:
+				console.log("Error deleting LLM", result.msg);
+				break;
+			case 500:
+				console.log("Error deleting LLM", result.msg);
+				break;
+		}
+		console.log("delete clicked!");
+		return;
+	};
+	
+	const handleArchive = async () => {
+		setIsArchived((prev) => !prev);
+		console.log("archived?", isArchived);
+	};
+
 	useEffect(() => {
 		if (details) {
 			setLlmData(details);
@@ -46,18 +74,12 @@ const Details = () => {
 				<section className="container wrapper pb-14">
 					{isAdmin && (
 						<div className="col-span-12 space-x-5">
-							<Link
-								to="/llm/archive"
-								className="btn btn-primary pointer-events-none"
-							>
+							<button className="btn btn-primary !mt-0" onClick={handleArchive}>
 								Archive LLM
-							</Link>
-							<Link
-								to="/llm/delete"
-								className="btn btn-primary pointer-events-none"
-							>
+							</button>
+							<button className="btn btn-primary !mt-0" onClick={handleDelete}>
 								Delete LLM
-							</Link>
+							</button>
 						</div>
 					)}
 					{llmData.name !== null && (

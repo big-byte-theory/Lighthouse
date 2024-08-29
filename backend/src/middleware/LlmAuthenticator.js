@@ -27,8 +27,8 @@ export default class LlmAuthenticator {
           .withMessage("Please enter the description of the LLM"),
         expressValidator
           .body("created_date")
-          .optional()
-          .isDate()
+          .notEmpty()
+          .isISO8601()
           .withMessage("Please enter the created date of the LLM"),
         expressValidator
           .body("url")
@@ -60,11 +60,11 @@ export default class LlmAuthenticator {
           .optional()
           .isString()
           .withMessage("Please enter the analysis of the LLM"),
-        expressValidator
-          .body("dependencies")
-          .optional()
-          .isString()
-          .withMessage("Please enter the dependencies of the LLM"),
+        // expressValidator
+        //   .body("dependencies")
+        //   .optional()
+        //   .isString()
+        //   .withMessage("Please enter the dependencies of the LLM"),
         expressValidator
           .body("included")
           .optional()
@@ -111,10 +111,10 @@ export default class LlmAuthenticator {
           .isString()
           .withMessage("Please enter the feedback of the LLM"),
         expressValidator
-          .body("model_type")
+          .body("model_card")
           .optional()
           .isString()
-          .withMessage("Please enter the LLM model type"),
+          .withMessage("Please enter the model card of the LLM"),
         expressValidator
           .body("training_emissions")
           .optional()
