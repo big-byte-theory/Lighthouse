@@ -3,6 +3,7 @@ import { addLlm, updateLlm } from "../services/llmService";
 import { llmFormValidity } from "../utils/isLlmFormValid";
 import { scrollToTop } from "../utils/scrollToTop";
 import { toast } from "react-toastify";
+import { getToken } from "../services/AuthUserService";
 
 const LlmForm = () => {
 	const initialState = {
@@ -48,7 +49,6 @@ const LlmForm = () => {
 
 		llmForm.reset();
 		setNewLlm(initialState);
-		console.log("form cleared");
 	};
 
 	const onChange = (e) => {
@@ -83,17 +83,22 @@ const LlmForm = () => {
 			return notifyError(formatErrors);
 		}
 
-		const result = await addLlm(newLlm);
+		const token = getToken();
+		const result = await addLlm(newLlm, token);
 
 		if (!result.status) {
-			console.log("ERROR", result.message);
-			return notifyError("Something went wrong. Please try again later.");
+			console.log("ERROR", result, result.message);
+			switch (result.response.status) {
+				case 401:
+					return notifyError("Unauthorised. " + result.response.data.message);
+				default:
+					return notifyError("Something went wrong. Please try again later.");
+			}
 		}
 
 		switch (result.status) {
 			case 201:
 				notifySuccess(result.msg);
-				// setNewLlm(initialState);
 				scrollToTop();
 				clearForm();
 				break;

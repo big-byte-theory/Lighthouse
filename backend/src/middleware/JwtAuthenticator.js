@@ -63,7 +63,7 @@ export default class Jwt {
   static verifyAdmin = async (req, res, next) => {
     try {
       const tokenVerified = await this.verifyToken(req);
-      console.log("tokenVerified", tokenVerified); 
+      console.log("tokenVerified", tokenVerified, req, req.headers.authorization); 
       if (!tokenVerified) {
         return res.status(401).json({ message: 'No token provided' });
       }

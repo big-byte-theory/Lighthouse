@@ -12,9 +12,13 @@ export const getLlmData = async (id) => {
   return response.data;
 };
 
-export const addLlm = async (llm) => {
+export const addLlm = async (llm, token) => {
   try { 
-    const response = await axios.post(`${apiUrl}/llm/add`, llm);
+    const response = await axios.post(`${apiUrl}/llm/add`, llm, {
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    });
     return response.data;
   } catch (error) {
     return error;

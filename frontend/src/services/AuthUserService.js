@@ -34,7 +34,7 @@ export const isTokenExpired = (token) => {
 };
 
 export const loggedIn = () => {
-  const token = Cookies.get("token");
+  const token = getToken();
   if (!token) {
     return false;
   }
@@ -52,6 +52,10 @@ export const isAdmin = async (localUser) => {
     console.error("Error decoding token:", error);
     return error.message;
   }
+};
+
+export const getToken = () => {
+  return Cookies.get("token");
 };
 
 export const logout = () => {

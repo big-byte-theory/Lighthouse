@@ -4,7 +4,6 @@ export default class LlmAuthenticator {
   static validate = () => {
     try {
       return [
-        expressValidator.body("").optional().isMongoId(),
         expressValidator
           .body("name")
           .notEmpty()
