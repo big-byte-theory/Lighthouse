@@ -36,7 +36,7 @@ export default class LlmRoutes {
     this.#router.post(
       "/llm/add",
       Jwt.verifyAdmin,
-      // LlmAuthenticator.validate(),
+      LlmAuthenticator.validate(),
       this.#controller.addLlm
     );
 
