@@ -12,17 +12,25 @@ export const getLlmData = async (id) => {
   return response.data;
 };
 
-export const addLlm = async (llm) => {
-  const response = await axios.post(`${apiUrl}/llms`, llm);
-  return response.data;
+export const addLlm = async (llm, token) => {
+  try { 
+    const response = await axios.post(`${apiUrl}/llm/add`, llm, {
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    });
+    return response.data;
+  } catch (error) {
+    return error;
+  }
 };
 
 export const updateLlm = async (id, llm) => {
-  const response = await axios.put(`${apiUrl}/llms/${id}`, llm);
+  const response = await axios.put(`${apiUrl}/llm/${id}`, llm);
   return response.data;
 };
 
 export const deleteLlm = async (id) => {
-  const response = await axios.delete(`${apiUrl}/llms/${id}`);
+  const response = await axios.delete(`${apiUrl}/llm/${id}`);
   return response.data;
 };

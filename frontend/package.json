@@ -46,6 +46,7 @@
 		"react-plotly.js": "^2.6.0",
 		"react-router-dom": "^6.24.1",
 		"react-scripts": "5.0.1",
+		"react-toastify": "^10.0.5",
 		"svgxuse": "^1.2.6",
 		"web-vitals": "^2.1.4"
 	},

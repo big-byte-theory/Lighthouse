@@ -9,7 +9,7 @@ export default class UserController {
       return res.status(200).json(user);
     } catch (err) {
       console.error(err.message);
-      res.status(500).send('Server Error');
+      res.status(500).json({ msg: 'Server Error' });
     }
   };
 
@@ -53,12 +53,12 @@ export default class UserController {
       try {
         const isSamePass = await BcryptHash.verify(req.body.password, user.password);
         if (!isSamePass) {
-          res.status(401).send("Invalid password");
+          res.status(401).json({ msg: "Invalid password" });
           return;
         }
       } catch (error) {
         console.error("Error during authentication", error);
-        res.status(500).send("An error occurred during authentication");
+        res.status(500).json({ msg: "An error occurred during authentication" });
       }
       const token = Jwt.generateToken(user._id);
 

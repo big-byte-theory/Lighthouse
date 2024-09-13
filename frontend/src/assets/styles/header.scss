@@ -1,7 +1,7 @@
 header {
   .logo a {
     &:hover {
-      @apply text-red-dark;
+      @apply text-red-dark after:w-0;
     }
   }
 

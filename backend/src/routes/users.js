@@ -28,12 +28,12 @@ export default class UserRoutes {
     );
     this.#router.get(
       "/user/:id",
-      Jwt.verifyToken,
+      Jwt.verifyUser,
       this.#controller.getUser
     );
     // this.#router.put(
     //   "/user/:id",
-    //   // Jwt.verifyToken,
+    //   // Jwt.verifyUser,
     //   // ProfileValidator.validate(),
     //   this.#controller.editUser
     // );

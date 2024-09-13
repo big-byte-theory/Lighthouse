@@ -14,7 +14,7 @@ const LlmSchema = new mongoose.Schema({
     type: Number,
     unique: true,
   },
-  organisation_id: {
+  organization_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'LlmOrganization',
     required: true,
@@ -108,9 +108,9 @@ const LlmSchema = new mongoose.Schema({
     ref: 'llm_feedback',
     required: true,
   },
-  model_type_id: {
+  model_card_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'llm_model_type',
+    ref: 'llm_model_card',
     required: true,
   },
   training_emissions_id: {
